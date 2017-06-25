@@ -8,18 +8,18 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1325;
+		nextID=1337;
 	};
 	class MarkerIDProvider
 	{
-		nextID=10;
+		nextID=17;
 	};
 	class Camera
 	{
-		pos[]={11569.776,123.25651,2143.2036};
-		dir[]={-0.0050399448,-0.94576263,0.32504308};
-		up[]={-0.014661335,0.32495001,0.94562089};
-		aside[]={0.99994773,1.6772829e-006,0.015502071};
+		pos[]={11643.474,12.731537,2332.6567};
+		dir[]={-0.017999019,-0.50857043,0.86085552};
+		up[]={-0.010630817,0.86101657,0.50847238};
+		aside[]={0.99980289,-2.2992026e-007,0.020903245};
 	};
 };
 binarizationWanted=0;
@@ -64,7 +64,7 @@ addons[]=
 	"CUP_Creatures_Military_Russia",
 	"ZSN_ColdWarWest_Plus",
 	"RH_m4_cfg",
-	"ace_rh_m4_cfg_comp",
+	"ace_compat_rh_m4",
 	"CUP_Weapons_Colt1911",
 	"ace_optics",
 	"ace_dagr",
@@ -81,13 +81,15 @@ addons[]=
 	"hlcweapons_core",
 	"tf47_smaw",
 	"A3_Structures_F_EPA_Civ_Constructions",
-	"A3_Structures_F_Civ_Constructions"
+	"A3_Structures_F_Civ_Constructions",
+	"CUP_Editor_Plants_Config",
+	"A3_Modules_F_Effects"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=51;
+		items=52;
 		class Item0
 		{
 			className="ace_advanced_fatigue";
@@ -304,7 +306,7 @@ class AddonsMetaData
 		};
 		class Item34
 		{
-			className="ace_rh_m4_cfg_comp";
+			className="ace_compat_rh_m4";
 			name="ACE3 - RH M4 Compatibility";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
@@ -411,10 +413,14 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item51
+		{
+			className="CUP_Editor_Plants_Config";
+			name="CUP_Editor_Plants_Config";
+		};
 	};
 };
 randomSeed=8628309;
-assetType="Free";
 class ScenarioData
 {
 	author="Trubb";
@@ -447,7 +453,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=573;
+		items=583;
 		class Item0
 		{
 			dataType="Logic";
@@ -9255,7 +9261,7 @@ class Mission
 			};
 			id=685;
 			type="Land_BagBunker_01_large_green_F";
-			atlOffset=0.026900768;
+			atlOffset=0.057331085;
 		};
 		class Item260
 		{
@@ -9308,7 +9314,7 @@ class Mission
 			};
 			id=693;
 			type="Land_ClutterCutter_large_F";
-			atlOffset=0.00013923645;
+			atlOffset=0.20100021;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -9349,7 +9355,7 @@ class Mission
 			};
 			id=694;
 			type="Land_BagBunker_01_large_green_F";
-			atlOffset=0.0096130371;
+			atlOffset=0.040043354;
 		};
 		class Item264
 		{
@@ -9367,7 +9373,7 @@ class Mission
 			};
 			id=696;
 			type="Land_ClutterCutter_large_F";
-			atlOffset=0.13273287;
+			atlOffset=0.10228443;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -9408,6 +9414,7 @@ class Mission
 			};
 			id=697;
 			type="Land_BagBunker_01_large_green_F";
+			atlOffset=0.030430317;
 		};
 		class Item266
 		{
@@ -9424,7 +9431,7 @@ class Mission
 			};
 			id=698;
 			type="Land_ClutterCutter_large_F";
-			atlOffset=0.38409805;
+			atlOffset=0.35318327;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -37749,6 +37756,169 @@ class Mission
 								};
 							};
 							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item573
+		{
+			dataType="Marker";
+			position[]={11388.096,0,2516.489};
+			name="marker_10";
+			text="Plutonsnät: 70";
+			type="mil_box";
+			colorName="ColorRed";
+			id=1325;
+			atlOffset=-6.8965449;
+		};
+		class Item574
+		{
+			dataType="Marker";
+			position[]={11387.403,9.2894478,2496.4355};
+			name="marker_11";
+			text="Baffle: 100";
+			type="mil_box";
+			colorName="ColorRed";
+			id=1327;
+		};
+		class Item575
+		{
+			dataType="Marker";
+			position[]={11386.904,0,2479.9778};
+			name="marker_12";
+			text="Mudbug RED: 110";
+			type="mil_box";
+			colorName="ColorRed";
+			id=1328;
+			atlOffset=-10.24649;
+		};
+		class Item576
+		{
+			dataType="Marker";
+			position[]={11386.692,0,2463.1152};
+			name="marker_13";
+			text="Mudbug WHITE: 120";
+			type="mil_box";
+			colorName="ColorRed";
+			id=1329;
+			atlOffset=-11.723224;
+		};
+		class Item577
+		{
+			dataType="Marker";
+			position[]={11386.442,0,2445.1399};
+			name="marker_14";
+			text="Mudbug BLUE 130";
+			type="mil_box";
+			colorName="ColorRed";
+			id=1330;
+			atlOffset=-10.29086;
+		};
+		class Item578
+		{
+			dataType="Marker";
+			position[]={11387.44,0,2427.4141};
+			name="marker_15";
+			text="Bandsaw: 140";
+			type="mil_box";
+			colorName="ColorRed";
+			id=1331;
+			atlOffset=-7.3085098;
+		};
+		class Item579
+		{
+			dataType="Marker";
+			position[]={7084.8838,0,7369.8242};
+			name="respawn_west";
+			type="respawn_inf";
+			alpha=0.1;
+			id=1332;
+			atlOffset=-2.6600001;
+		};
+		class Item580
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11641.093,4.6048398,2345.0083};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="zsn_respawn_west";
+			};
+			id=1334;
+			type="CUP_ker_trs_travy3";
+		};
+		class Item581
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11644.323,4.7240539,2342.28};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1335;
+			type="TF_NATO_Radio_Crate";
+			atlOffset=-9.5367432e-007;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[""tf_anprc152"",""tf_rf7800str""],[40,100]],[[""ZSN_st138_prc77""],[10]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item582
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={11644.334,4.4400001,2341.5596};
+			};
+			id=1336;
+			type="ModuleChemlight_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleChemlight_F_Type";
+					expression="_this setVariable ['Type',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Chemlight_Red";
 						};
 					};
 				};
