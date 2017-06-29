@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2486.2935,126.36681,2911.9873};
-		dir[]={0.37173921,-0.73368382,0.56886953};
-		up[]={0.40134421,0.67948711,0.61417639};
-		aside[]={0.83714867,-2.7089845e-007,-0.54705083};
+		pos[]={2001.0739,120.75149,2644.2397};
+		dir[]={0.46248642,-0.60550499,0.64775068};
+		up[]={0.35185584,0.79582304,0.49280488};
+		aside[]={0.81388849,-1.9697472e-007,-0.58110619};
 	};
 };
 binarizationWanted=0;
@@ -2239,7 +2239,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2122.1931,8.2956228,2700.3308};
+						position[]={2122.1931,8.2956181,2700.3311};
 						angles[]={0,5.9848037,0};
 					};
 					side="Independent";
@@ -2247,7 +2247,7 @@ class Mission
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						description="Joukkueenjohtaja  - Kalle Sakari";
+						description="Joukkueenjohtaja@Kalle Sakari";
 						isPlayable=1;
 						aiRadarUsage=1936287744;
 						class Inventory
@@ -3271,7 +3271,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2117.6228,8.0538397,2712.012};
+						position[]={2117.623,8.053791,2712.012};
 						angles[]={0,1.0340203,0};
 					};
 					side="Independent";
@@ -3280,7 +3280,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="trubb";
-						description="Ryhmänjohtaja - Eemeli Kalle - Trubb";
+						description="Ryhmänjohtaja (Trubb)@Eemeli Kalle";
 						isPlayer=1;
 						isPlayable=1;
 						aiRadarUsage=-1054867456;
@@ -4754,7 +4754,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2109.3137,8.8625355,2729.6104};
+						position[]={2109.314,8.8625565,2729.6101};
 						angles[]={0,1.0340203,0};
 					};
 					side="Independent";
@@ -4762,7 +4762,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="Ryhmänjohtaja - Faarao Kalle";
+						description="Ryhmänjohtaja@Faarao Kalle";
 						isPlayable=1;
 						aiRadarUsage=-1054867456;
 						class Inventory
@@ -6235,15 +6235,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2096.7815,7.106513,2764.1243};
-						angles[]={0,1.3289846,0};
+						position[]={2096.781,7.1065278,2764.124};
+						angles[]={0,1.3289809,0};
 					};
 					side="Independent";
 					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="Ryhmänjohtaja - Heikki Kalle";
+						description="Ryhmänjohtaja@Heikki Kalle";
 						isPlayable=1;
 						aiRadarUsage=-1054867456;
 						class Inventory
@@ -6429,7 +6429,6 @@ class Mission
 					};
 					id=68;
 					type="ffp_m05w_squadleader";
-					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7616,7 +7615,6 @@ class Mission
 				combatMode="BLUE";
 			};
 			id=39;
-			atlOffset=-9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -7681,7 +7679,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2094.4092,11.791125,2745.1526};
+						position[]={2094.4089,11.791019,2745.1531};
 						angles[]={0,1.0340203,0};
 					};
 					side="Independent";
@@ -7689,7 +7687,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="Ryhmänjohtaja - Gideon Kalle";
+						description="Ryhmänjohtaja@Gideon Kalle";
 						isPlayable=1;
 						aiRadarUsage=-1054867456;
 						class Inventory

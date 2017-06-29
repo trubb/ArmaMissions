@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1495.1469,405.77243,2506.8501};
-		dir[]={0.69574994,-0.60957301,0.37995243};
-		up[]={0.53499591,0.79272789,0.29216406};
-		aside[]={0.47929436,-4.0279701e-008,-0.87765765};
+		pos[]={1017.4757,170.02327,2928.4495};
+		dir[]={0.77202725,-0.63545048,-0.014056161};
+		up[]={0.63535112,0.77213621,-0.011567497};
+		aside[]={-0.018202759,-1.278022e-008,-0.99984199};
 	};
 };
 binarizationWanted=0;
@@ -2274,7 +2274,7 @@ class Mission
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						description="Joukkueenjohtaja  - Kalle Sakari";
+						description="Joukkueenjohtaja@Kalle Sakari";
 						isPlayable=1;
 						aiRadarUsage=1936287744;
 						class Inventory
@@ -3303,7 +3303,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="trubb";
-						description="Ryhmänjohtaja - Eemeli Kalle - Trubb";
+						description="Ryhmänjohtaja (Trubb)@Eemeli Kalle";
 						isPlayer=1;
 						isPlayable=1;
 						aiRadarUsage=-1054867456;
@@ -4786,7 +4786,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="Ryhmänjohtaja - Faarao Kalle";
+						description="Ryhmänjohtaja@Faarao Kalle";
 						isPlayable=1;
 						aiRadarUsage=-1054867456;
 						class Inventory
@@ -4966,7 +4966,6 @@ class Mission
 					};
 					id=121;
 					type="ffp_m05w_squadleader";
-					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -6207,7 +6206,6 @@ class Mission
 				combatMode="BLUE";
 			};
 			id=35;
-			atlOffset=9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -6271,7 +6269,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="Ryhmänjohtaja - Heikki Kalle";
+						description="Ryhmänjohtaja@Heikki Kalle";
 						isPlayable=1;
 						aiRadarUsage=-1054867456;
 						class Inventory
@@ -8123,7 +8121,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="Ryhmänjohtaja - Gideon Kalle";
+						description="Ryhmänjohtaja@Gideon Kalle";
 						isPlayable=1;
 						aiRadarUsage=-1054867456;
 						class Inventory

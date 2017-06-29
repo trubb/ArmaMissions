@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={11639.756,353.56366,3699.2847};
-		dir[]={0.4942956,-0.53952801,0.68163431};
-		up[]={0.31673789,0.8419643,0.43678203};
-		aside[]={0.8095637,-5.4482371e-008,-0.58706319};
+		pos[]={11929.063,128.04701,3161.9644};
+		dir[]={0.13551889,-0.866193,0.4810358};
+		up[]={0.23488207,0.49971935,0.83373481};
+		aside[]={0.96255255,-8.2375482e-007,-0.27117181};
 	};
 };
 binarizationWanted=0;
@@ -20264,7 +20264,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11951.244,9.5632391,3239.7622};
+						position[]={11951.244,9.5632334,3239.762};
 						angles[]={0,0.35320228,0};
 					};
 					side="West";
@@ -20272,7 +20272,7 @@ class Mission
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						description="Plutonchef - BAFFLE";
+						description="Plutonchef@BAFFLE";
 						isPlayable=1;
 						stance="Middle";
 						class Inventory
@@ -21277,7 +21277,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11890.546,8.4644861,3263.7356};
+						position[]={11890.546,8.4645452,3263.7361};
 						angles[]={0,5.5583501,0};
 					};
 					side="West";
@@ -21285,7 +21285,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="Gruppchef - BANDSAW";
+						description="Gruppchef@BANDSAW";
 						isPlayable=1;
 						stance="Down";
 						class Inventory
@@ -22421,7 +22421,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11921.379,6.8401413,3242.8638};
+						position[]={11921.379,6.8401484,3242.864};
 						angles[]={0,6.0284367,0};
 					};
 					side="West";
@@ -22429,7 +22429,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						description="Gruppchef - MUDBUG BLUE";
+						description="Gruppchef@MUDBUG BLUE";
 						isPlayable=1;
 						stance="Middle";
 						class Inventory
@@ -22598,7 +22598,6 @@ class Mission
 					};
 					id=1493;
 					type="ZSN_MarineWLeader";
-					atlOffset=-4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -23596,7 +23595,6 @@ class Mission
 				formation="LINE";
 			};
 			id=1492;
-			atlOffset=-4.7683716e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23652,7 +23650,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11945.952,8.4082546,3278.1572};
+						position[]={11945.952,8.4082432,3278.157};
 						angles[]={0,0.20038125,0};
 					};
 					side="West";
@@ -23661,7 +23659,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="trubb";
-						description="Gruppchef  - MUDBUG RED - Trubb";
+						description="Gruppchef (Trubb)@MUDBUG RED";
 						isPlayer=1;
 						isPlayable=1;
 						stance="Middle";
@@ -24882,15 +24880,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12015.306,14.7957,3253.3113};
-						angles[]={0,1.2433879,0};
+						position[]={12015.306,14.795699,3253.311};
+						angles[]={0,1.24339,0};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
 						rank="CORPORAL";
-						description="Gruppchef - MUDBUG WHITE";
+						description="Gruppchef@MUDBUG WHITE";
 						isPlayable=1;
 						stance="Down";
 						class Inventory
@@ -27021,11 +27019,11 @@ class Mission
 	{
 		class LinkIDProvider
 		{
-			nextID=7;
+			nextID=31;
 		};
 		class Links
 		{
-			items=7;
+			items=31;
 			class Item0
 			{
 				linkID=0;
@@ -27091,6 +27089,246 @@ class Mission
 				linkID=6;
 				item0=1307;
 				item1=1161;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item7
+			{
+				linkID=7;
+				item0=1482;
+				item1=204;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item8
+			{
+				linkID=8;
+				item0=1483;
+				item1=204;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item9
+			{
+				linkID=9;
+				item0=1484;
+				item1=204;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item10
+			{
+				linkID=10;
+				item0=1485;
+				item1=204;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item11
+			{
+				linkID=11;
+				item0=1487;
+				item1=204;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item12
+			{
+				linkID=12;
+				item0=1488;
+				item1=204;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item13
+			{
+				linkID=13;
+				item0=1489;
+				item1=204;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item14
+			{
+				linkID=14;
+				item0=1490;
+				item1=204;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item15
+			{
+				linkID=15;
+				item0=1491;
+				item1=204;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item16
+			{
+				linkID=16;
+				item0=1493;
+				item1=204;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item17
+			{
+				linkID=17;
+				item0=1494;
+				item1=204;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item18
+			{
+				linkID=18;
+				item0=1495;
+				item1=204;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item19
+			{
+				linkID=19;
+				item0=1496;
+				item1=204;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item20
+			{
+				linkID=20;
+				item0=1497;
+				item1=204;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item21
+			{
+				linkID=21;
+				item0=1499;
+				item1=204;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item22
+			{
+				linkID=22;
+				item0=1500;
+				item1=204;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item23
+			{
+				linkID=23;
+				item0=1501;
+				item1=204;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item24
+			{
+				linkID=24;
+				item0=1502;
+				item1=204;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item25
+			{
+				linkID=25;
+				item0=1503;
+				item1=204;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item26
+			{
+				linkID=26;
+				item0=1505;
+				item1=204;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item27
+			{
+				linkID=27;
+				item0=1506;
+				item1=204;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item28
+			{
+				linkID=28;
+				item0=1507;
+				item1=204;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item29
+			{
+				linkID=29;
+				item0=1508;
+				item1=204;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item30
+			{
+				linkID=30;
+				item0=1509;
+				item1=204;
 				class CustomData
 				{
 					type="Sync";
