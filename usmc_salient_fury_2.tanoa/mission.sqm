@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={11929.063,128.04701,3161.9644};
-		dir[]={0.13551889,-0.866193,0.4810358};
-		up[]={0.23488207,0.49971935,0.83373481};
-		aside[]={0.96255255,-8.2375482e-007,-0.27117181};
+		pos[]={10213.52,70.930473,3949.968};
+		dir[]={-0.79236186,-0.33844802,0.50764841};
+		up[]={-0.28501135,0.94096768,0.18260112};
+		aside[]={0.53947717,6.2398612e-008,0.84204388};
 	};
 };
 binarizationWanted=0;
@@ -35,7 +35,7 @@ addons[]=
 	"ace_medical",
 	"acex_headless",
 	"A3_Characters_F",
-	"task_force_radio_items",
+	"tfar_core",
 	"A3_Modules_F_Curator_Curator",
 	"A3_Ui_F",
 	"A3_Structures_F_Exp_Military_Fortifications",
@@ -71,6 +71,7 @@ addons[]=
 	"CUP_Weapons_Colt1911",
 	"CUP_Weapons_Ammunition",
 	"ace_optics",
+	"tfar_handhelds",
 	"ace_dagr",
 	"ace_trenches",
 	"ace_flashlights",
@@ -84,13 +85,14 @@ addons[]=
 	"CUP_Weapons_M72A6",
 	"CUP_Weapons_ACE_compat",
 	"tf47_smaw",
-	"hlcweapons_m60e4"
+	"hlcweapons_m60e4",
+	"tfar_backpacks"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=56;
+		items=58;
 		class Item0
 		{
 			className="ace_advanced_fatigue";
@@ -163,10 +165,9 @@ class AddonsMetaData
 		};
 		class Item10
 		{
-			className="task_force_radio_items";
-			name="task_force_radio_items";
-			author="[TF]Nkey";
-			url="https://github.com/michail-nikolaev/task-force-arma-3-radio";
+			className="tfar_core";
+			name="TFAR - Core";
+			author="Task Force Arrowhead Radio Team";
 		};
 		class Item11
 		{
@@ -359,86 +360,98 @@ class AddonsMetaData
 		};
 		class Item43
 		{
+			className="tfar_handhelds";
+			name="tfar_handhelds";
+			url="https://github.com/michail-nikolaev/task-force-arma-3-radio";
+		};
+		class Item44
+		{
 			className="ace_dagr";
 			name="ACE3 - DAGR";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item44
+		class Item45
 		{
 			className="ace_trenches";
 			name="ACE3 - Trenches";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item45
+		class Item46
 		{
 			className="ace_flashlights";
 			name="ACE3 - Flashlights";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item46
+		class Item47
 		{
 			className="ace_smallarms";
 			name="ACE3 - Small Arms";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item47
+		class Item48
 		{
 			className="hlcweapons_m14";
 			name="hlcweapons_m14";
 			author="toadie";
 		};
-		class Item48
+		class Item49
 		{
 			className="ace_rangecard";
 			name="ACE3 - Range Card";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item49
+		class Item50
 		{
 			className="ace_logistics_wirecutter";
 			name="ACE3 - Logistics Wire Cutter";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item50
+		class Item51
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item51
+		class Item52
 		{
 			className="hlcweapons_core";
 			name="hlcweapons_core";
 			author="toadie";
 		};
-		class Item52
+		class Item53
 		{
 			className="CUP_Weapons_M72A6";
 			name="CUP_Weapons_M72A6";
 		};
-		class Item53
+		class Item54
 		{
 			className="CUP_Weapons_ACE_compat";
 			name="CUP_Weapons_ACE_compat";
 			author="Community Upgrade Project";
 		};
-		class Item54
+		class Item55
 		{
 			className="tf47_smaw";
 			name="tf47_smaw";
 		};
-		class Item55
+		class Item56
 		{
 			className="hlcweapons_m60e4";
 			name="hlcweapons_m60e4";
 			author="toadie";
+		};
+		class Item57
+		{
+			className="tfar_backpacks";
+			name="tfar_backpacks";
+			url="https://github.com/michail-nikolaev/task-force-arma-3-radio";
 		};
 	};
 };
@@ -1865,12 +1878,12 @@ class Mission
 				angles[]={0.02666023,0,0.02666023};
 			};
 			id=144;
-			type="tfar_ModuleTaskForceRadioEnforceUsage";
+			type="TFAR_ModuleTaskForceRadioEnforceUsage";
 			class CustomAttributes
 			{
 				class Attribute0
 				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_radio_channel_password";
+					property="TFAR_ModuleTaskForceRadioEnforceUsage_radio_channel_password";
 					expression="_this setVariable ['radio_channel_password',_value,true];";
 					class Value
 					{
@@ -1889,7 +1902,7 @@ class Mission
 				};
 				class Attribute1
 				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_RiflemanRadio";
+					property="TFAR_ModuleTaskForceRadioEnforceUsage_RiflemanRadio";
 					expression="_this setVariable ['RiflemanRadio',_value,true];";
 					class Value
 					{
@@ -1908,7 +1921,7 @@ class Mission
 				};
 				class Attribute2
 				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_radio_channel_name";
+					property="TFAR_ModuleTaskForceRadioEnforceUsage_radio_channel_name";
 					expression="_this setVariable ['radio_channel_name',_value,true];";
 					class Value
 					{
@@ -1927,7 +1940,7 @@ class Mission
 				};
 				class Attribute3
 				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_same_sw_frequencies_for_side";
+					property="TFAR_ModuleTaskForceRadioEnforceUsage_same_sw_frequencies_for_side";
 					expression="_this setVariable ['same_sw_frequencies_for_side',_value,true];";
 					class Value
 					{
@@ -1946,7 +1959,7 @@ class Mission
 				};
 				class Attribute4
 				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_TeamLeaderRadio";
+					property="TFAR_ModuleTaskForceRadioEnforceUsage_TeamLeaderRadio";
 					expression="_this setVariable ['TeamLeaderRadio',_value,true];";
 					class Value
 					{
@@ -1965,7 +1978,7 @@ class Mission
 				};
 				class Attribute5
 				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_same_lr_frequencies_for_side";
+					property="TFAR_ModuleTaskForceRadioEnforceUsage_same_lr_frequencies_for_side";
 					expression="_this setVariable ['same_lr_frequencies_for_side',_value,true];";
 					class Value
 					{
@@ -1984,7 +1997,7 @@ class Mission
 				};
 				class Attribute6
 				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_terrain_interception_coefficient";
+					property="TFAR_ModuleTaskForceRadioEnforceUsage_terrain_interception_coefficient";
 					expression="_this setVariable ['terrain_interception_coefficient',_value,true];";
 					class Value
 					{
