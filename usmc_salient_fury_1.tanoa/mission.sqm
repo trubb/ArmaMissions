@@ -16,7 +16,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={11662.162,225.02249,2148.2566};
+		pos[]={11676.26,270.44873,2045.1194};
 		dir[]={-0.095920905,-0.70596278,0.70177788};
 		up[]={-0.095605589,0.70823914,0.6994772};
 		aside[]={0.9908281,-5.0896779e-007,0.13542786};
@@ -35,7 +35,7 @@ addons[]=
 	"ace_medical",
 	"acex_headless",
 	"A3_Characters_F",
-	"task_force_radio_items",
+	"tfar_core",
 	"A3_Modules_F_Curator_Curator",
 	"A3_Ui_F",
 	"CUP_Creatures_StaticWeapons",
@@ -67,6 +67,7 @@ addons[]=
 	"ace_compat_rh_m4",
 	"CUP_Weapons_Colt1911",
 	"ace_optics",
+	"tfar_handhelds",
 	"ace_dagr",
 	"ace_trenches",
 	"ace_flashlights",
@@ -83,13 +84,14 @@ addons[]=
 	"A3_Structures_F_EPA_Civ_Constructions",
 	"A3_Structures_F_Civ_Constructions",
 	"CUP_Editor_Plants_Config",
+	"tfar_backpacks",
 	"A3_Modules_F_Effects"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=52;
+		items=54;
 		class Item0
 		{
 			className="ace_advanced_fatigue";
@@ -162,10 +164,9 @@ class AddonsMetaData
 		};
 		class Item10
 		{
-			className="task_force_radio_items";
-			name="task_force_radio_items";
-			author="[TF]Nkey";
-			url="https://github.com/michail-nikolaev/task-force-arma-3-radio";
+			className="tfar_core";
+			name="TFAR - Core";
+			author="Task Force Arrowhead Radio Team";
 		};
 		class Item11
 		{
@@ -325,98 +326,110 @@ class AddonsMetaData
 		};
 		class Item37
 		{
+			className="tfar_handhelds";
+			name="tfar_handhelds";
+			url="https://github.com/michail-nikolaev/task-force-arma-3-radio";
+		};
+		class Item38
+		{
 			className="ace_dagr";
 			name="ACE3 - DAGR";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item38
+		class Item39
 		{
 			className="ace_trenches";
 			name="ACE3 - Trenches";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item39
+		class Item40
 		{
 			className="ace_flashlights";
 			name="ACE3 - Flashlights";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item40
+		class Item41
 		{
 			className="ace_smallarms";
 			name="ACE3 - Small Arms";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item41
+		class Item42
 		{
 			className="hlcweapons_m14";
 			name="hlcweapons_m14";
 			author="toadie";
 		};
-		class Item42
+		class Item43
 		{
 			className="ace_rangecard";
 			name="ACE3 - Range Card";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item43
+		class Item44
 		{
 			className="ace_logistics_wirecutter";
 			name="ACE3 - Logistics Wire Cutter";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item44
+		class Item45
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item45
+		class Item46
 		{
 			className="CUP_Weapons_M72A6";
 			name="CUP_Weapons_M72A6";
 		};
-		class Item46
+		class Item47
 		{
 			className="CUP_Weapons_ACE_compat";
 			name="CUP_Weapons_ACE_compat";
 			author="Community Upgrade Project";
 		};
-		class Item47
+		class Item48
 		{
 			className="hlcweapons_m60e4";
 			name="hlcweapons_m60e4";
 			author="toadie";
 		};
-		class Item48
+		class Item49
 		{
 			className="hlcweapons_core";
 			name="hlcweapons_core";
 			author="toadie";
 		};
-		class Item49
+		class Item50
 		{
 			className="tf47_smaw";
 			name="tf47_smaw";
 		};
-		class Item50
+		class Item51
 		{
 			className="A3_Structures_F_EPA";
 			name="Arma 3 Survive Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item51
+		class Item52
 		{
 			className="CUP_Editor_Plants_Config";
 			name="CUP_Editor_Plants_Config";
+		};
+		class Item53
+		{
+			className="tfar_backpacks";
+			name="tfar_backpacks";
+			url="https://github.com/michail-nikolaev/task-force-arma-3-radio";
 		};
 	};
 };
@@ -1843,13 +1856,13 @@ class Mission
 				angles[]={0.12468339,0,0.055941612};
 			};
 			id=144;
-			type="tfar_ModuleTaskForceRadioEnforceUsage";
+			type="TFAR_ModuleTaskForceRadioEnforceUsage";
 			atlOffset=-9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
 				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_radio_channel_password";
+					property="TFAR_ModuleTaskForceRadioEnforceUsage_radio_channel_password";
 					expression="_this setVariable ['radio_channel_password',_value,true];";
 					class Value
 					{
@@ -1868,7 +1881,7 @@ class Mission
 				};
 				class Attribute1
 				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_RiflemanRadio";
+					property="TFAR_ModuleTaskForceRadioEnforceUsage_RiflemanRadio";
 					expression="_this setVariable ['RiflemanRadio',_value,true];";
 					class Value
 					{
@@ -1887,7 +1900,7 @@ class Mission
 				};
 				class Attribute2
 				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_radio_channel_name";
+					property="TFAR_ModuleTaskForceRadioEnforceUsage_radio_channel_name";
 					expression="_this setVariable ['radio_channel_name',_value,true];";
 					class Value
 					{
@@ -1906,7 +1919,7 @@ class Mission
 				};
 				class Attribute3
 				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_same_sw_frequencies_for_side";
+					property="TFAR_ModuleTaskForceRadioEnforceUsage_same_sw_frequencies_for_side";
 					expression="_this setVariable ['same_sw_frequencies_for_side',_value,true];";
 					class Value
 					{
@@ -1925,7 +1938,7 @@ class Mission
 				};
 				class Attribute4
 				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_TeamLeaderRadio";
+					property="TFAR_ModuleTaskForceRadioEnforceUsage_TeamLeaderRadio";
 					expression="_this setVariable ['TeamLeaderRadio',_value,true];";
 					class Value
 					{
@@ -1944,7 +1957,7 @@ class Mission
 				};
 				class Attribute5
 				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_same_lr_frequencies_for_side";
+					property="TFAR_ModuleTaskForceRadioEnforceUsage_same_lr_frequencies_for_side";
 					expression="_this setVariable ['same_lr_frequencies_for_side',_value,true];";
 					class Value
 					{
@@ -1963,7 +1976,7 @@ class Mission
 				};
 				class Attribute6
 				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_terrain_interception_coefficient";
+					property="TFAR_ModuleTaskForceRadioEnforceUsage_terrain_interception_coefficient";
 					expression="_this setVariable ['terrain_interception_coefficient',_value,true];";
 					class Value
 					{
@@ -6916,7 +6929,7 @@ class Mission
 			};
 			id=557;
 			type="CUP_O_DSHKM_ChDKZ";
-			atlOffset=3.8146973e-006;
+			atlOffset=4.7683716e-006;
 		};
 		class Item181
 		{

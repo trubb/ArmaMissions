@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={10213.52,70.930473,3949.968};
-		dir[]={-0.79236186,-0.33844802,0.50764841};
-		up[]={-0.28501135,0.94096768,0.18260112};
-		aside[]={0.53947717,6.2398612e-008,0.84204388};
+		pos[]={11858.079,1098.5286,3144.5283};
+		dir[]={0.14404999,-0.89248329,0.427573};
+		up[]={0.28493845,0.45110589,0.84576011};
+		aside[]={0.94770217,-9.3039125e-007,-0.31928086};
 	};
 };
 binarizationWanted=0;
@@ -1978,6 +1978,25 @@ class Mission
 				};
 				class Attribute5
 				{
+					property="TFAR_ModuleTaskForceRadioEnforceUsage_full_duplex";
+					expression="_this setVariable ['full_duplex',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute6
+				{
 					property="TFAR_ModuleTaskForceRadioEnforceUsage_same_lr_frequencies_for_side";
 					expression="_this setVariable ['same_lr_frequencies_for_side',_value,true];";
 					class Value
@@ -1995,7 +2014,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute6
+				class Attribute7
 				{
 					property="TFAR_ModuleTaskForceRadioEnforceUsage_terrain_interception_coefficient";
 					expression="_this setVariable ['terrain_interception_coefficient',_value,true];";
@@ -2014,7 +2033,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=7;
+				nAttributes=8;
 			};
 		};
 		class Item13
