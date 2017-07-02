@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1338;
+		nextID=1343;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={11676.26,270.44873,2045.1194};
-		dir[]={-0.095920905,-0.70596278,0.70177788};
-		up[]={-0.095605589,0.70823914,0.6994772};
-		aside[]={0.9908281,-5.0896779e-007,0.13542786};
+		pos[]={11584.277,221.12952,2055.6003};
+		dir[]={0.03147421,-0.75081795,0.65986156};
+		up[]={0.035773475,0.66048813,0.74998879};
+		aside[]={0.99893188,2.1295273e-007,-0.047649782};
 	};
 };
 binarizationWanted=0;
@@ -437,6 +437,33 @@ randomSeed=8628309;
 class ScenarioData
 {
 	author="Trubb";
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="EnableDebugConsole";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		nAttributes=1;
+	};
 };
 class Mission
 {
@@ -1148,12 +1175,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={11564.63,14.791842,2217.333};
-				angles[]={0.15604989,0,0.047961645};
+				position[]={11561.374,13.502938,2228.0771};
+				angles[]={0.034652505,0,0.10362703};
 			};
 			id=138;
 			type="ACE_moduleAdvancedMedicalSettings";
-			atlOffset=-9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1411,12 +1437,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={11563.551,14.606798,2218.1799};
-				angles[]={0.15604989,0,0.047961645};
+				position[]={11570.109,14.483068,2226.8896};
+				angles[]={0.050623242,0,0.14040335};
 			};
 			id=139;
 			type="ACE_moduleMedicalSettings";
-			atlOffset=-9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1693,8 +1718,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={11562.327,14.437519,2218.8762};
-				angles[]={0.13517068,0,0.069222413};
+				position[]={11564.221,13.999257,2223.8225};
+				angles[]={0.053282689,0,0.098347999};
 			};
 			id=141;
 			type="ACE_moduleAssignMedicRoles";
@@ -1957,6 +1982,25 @@ class Mission
 				};
 				class Attribute5
 				{
+					property="TFAR_ModuleTaskForceRadioEnforceUsage_full_duplex";
+					expression="_this setVariable ['full_duplex',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute6
+				{
 					property="TFAR_ModuleTaskForceRadioEnforceUsage_same_lr_frequencies_for_side";
 					expression="_this setVariable ['same_lr_frequencies_for_side',_value,true];";
 					class Value
@@ -1974,7 +2018,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute6
+				class Attribute7
 				{
 					property="TFAR_ModuleTaskForceRadioEnforceUsage_terrain_interception_coefficient";
 					expression="_this setVariable ['terrain_interception_coefficient',_value,true];";
@@ -1993,7 +2037,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=7;
+				nAttributes=8;
 			};
 		};
 		class Item13
@@ -2093,11 +2137,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={11595.429,23.340065,2313.2158};
+				position[]={11595.429,12.308135,2313.2158};
 			};
 			id=204;
 			type="ModuleCuratorAddEditableObjects";
-			atlOffset=11.786303;
+			atlOffset=0.7543726;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2146,8 +2190,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={11560.615,14.115175,2220.4729};
-				angles[]={0.12468339,0,0.055941612};
+				position[]={11566.593,13.902198,2230.6023};
+				angles[]={0.055941612,0,0.085126832};
 			};
 			id=264;
 			type="ACE_moduleReviveSettings";
@@ -2168,7 +2212,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=2;
+							value=-1;
 						};
 					};
 				};
@@ -2187,7 +2231,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -2206,7 +2250,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=300;
+							value=-1;
 						};
 					};
 				};
@@ -6929,7 +6973,7 @@ class Mission
 			};
 			id=557;
 			type="CUP_O_DSHKM_ChDKZ";
-			atlOffset=4.7683716e-006;
+			atlOffset=3.8146973e-006;
 		};
 		class Item181
 		{

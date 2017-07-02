@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2051.2041,69.248749,2761.6321};
-		dir[]={0.85141033,-0.3612878,-0.38037881};
-		up[]={0.32990855,0.93243361,-0.14739017};
-		aside[]={-0.40792754,-2.4959445e-007,-0.91307384};
+		pos[]={1950.3008,248.16971,2653.9009};
+		dir[]={0.61871564,-0.62464172,0.47659984};
+		up[]={0.49486727,0.78089494,0.38119999};
+		aside[]={0.61028636,-4.3213367e-007,-0.7922644};
 	};
 };
 binarizationWanted=0;
@@ -328,6 +328,33 @@ randomSeed=6028861;
 class ScenarioData
 {
 	author="Trubb";
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="EnableDebugConsole";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		nAttributes=1;
+	};
 };
 class Mission
 {
