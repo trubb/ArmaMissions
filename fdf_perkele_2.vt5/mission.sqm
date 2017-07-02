@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2001.0739,120.75149,2644.2397};
-		dir[]={0.46248642,-0.60550499,0.64775068};
-		up[]={0.35185584,0.79582304,0.49280488};
-		aside[]={0.81388849,-1.9697472e-007,-0.58110619};
+		pos[]={2051.2041,69.248749,2761.6321};
+		dir[]={0.85141033,-0.3612878,-0.38037881};
+		up[]={0.32990855,0.93243361,-0.14739017};
+		aside[]={-0.40792754,-2.4959445e-007,-0.91307384};
 	};
 };
 binarizationWanted=0;
@@ -59,6 +59,7 @@ addons[]=
 	"rhs_c_weapons",
 	"ace_compat_rhs_afrf3",
 	"A3_Weapons_F_Explosives",
+	"ace_vector",
 	"A3_Ui_F",
 	"rhs_c_btr",
 	"rhs_c_troops",
@@ -70,7 +71,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=37;
+		items=38;
 		class Item0
 		{
 			className="ace_advanced_fatigue";
@@ -281,33 +282,40 @@ class AddonsMetaData
 		};
 		class Item32
 		{
+			className="ace_vector";
+			name="ACE3 - Vector";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item33
+		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item33
+		class Item34
 		{
 			className="rhs_c_btr";
 			name="BTR-70 & 80";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item34
+		class Item35
 		{
 			className="rhs_c_troops";
 			name="AFRF Infantry & Equipment";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item35
+		class Item36
 		{
 			className="rhs_c_a2port_car";
 			name="A2 ported cars";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item36
+		class Item37
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
@@ -6723,6 +6731,10 @@ class Mission
 									name="ffp_30Rnd_762x39";
 									ammoLeft=30;
 								};
+							};
+							class binocular
+							{
+								name="ACE_Vector";
 							};
 							class uniform
 							{
