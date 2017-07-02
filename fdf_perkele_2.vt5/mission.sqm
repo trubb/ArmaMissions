@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1414;
+		nextID=1415;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1950.3008,248.16971,2653.9009};
-		dir[]={0.61871564,-0.62464172,0.47659984};
-		up[]={0.49486727,0.78089494,0.38119999};
-		aside[]={0.61028636,-4.3213367e-007,-0.7922644};
+		pos[]={1968.028,149.11047,2773.5957};
+		dir[]={0.35627961,-0.57596385,0.73575461};
+		up[]={0.25102162,0.81747407,0.51838577};
+		aside[]={0.90003103,2.8638169e-008,-0.43582833};
 	};
 };
 binarizationWanted=0;
@@ -19069,7 +19069,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2702.522,37.974579,2872.2451};
+						position[]={2026.8351,10.474135,2898.1763};
 					};
 					side="Civilian";
 					flags=7;
@@ -19202,7 +19202,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2308.062,14.917317,3527.303};
+						position[]={2031.8174,10.384631,2897.5615};
 					};
 					side="Civilian";
 					flags=7;
@@ -19785,7 +19785,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3563.5681,12.097449,1730.9331};
+						position[]={2021.9569,9.9042654,2899.2495};
+						angles[]={0,6.0253906,0};
 					};
 					side="Civilian";
 					flags=7;
@@ -19796,7 +19797,6 @@ class Mission
 					};
 					id=1405;
 					type="C_man_p_beggar_F";
-					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -19864,7 +19864,6 @@ class Mission
 			{
 			};
 			id=1404;
-			atlOffset=-9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
