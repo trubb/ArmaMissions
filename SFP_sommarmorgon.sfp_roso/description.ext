@@ -1,0 +1,13 @@
+class CfgSounds
+{
+	sounds[] = {};
+	class flyglarm
+	{
+		// how the sound is referred to in the editor (e.g. trigger effects)
+		name = "chechen1";
+		// filename, volume, pitch
+		sound[] = {"flyglarm.ogg", 1, 1};
+		// subtitle delay in seconds, subtitle text 
+		titles[] = {0, ""};
+	};
+};
