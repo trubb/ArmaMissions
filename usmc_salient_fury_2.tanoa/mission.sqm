@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={12070.464,322.81363,3281.2952};
-		dir[]={-0.26807037,-0.74568146,0.61016977};
-		up[]={-0.29993981,0.66630095,0.68270928};
-		aside[]={0.91562402,-1.9813888e-007,0.40226662};
+		pos[]={11873.641,67.012039,3168.1252};
+		dir[]={0.038298644,-0.68976235,0.72317356};
+		up[]={0.036479771,0.72402108,0.68882442};
+		aside[]={0.99870425,-1.884473e-007,-0.052892629};
 	};
 };
 binarizationWanted=0;
@@ -20304,7 +20304,7 @@ class Mission
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						description="Plutonchef@BAFFLE";
+						description="Plutonchef@ADAM QVINTUS";
 						isPlayable=1;
 						stance="Middle";
 						class Inventory
@@ -21271,7 +21271,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BAFFLE";
+							value="ADAM QVINTUS";
 						};
 					};
 				};
@@ -21317,7 +21317,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="Gruppchef@BANDSAW";
+						description="Gruppchef@HELGE ADAM";
 						isPlayable=1;
 						stance="Down";
 						class Inventory
@@ -22415,7 +22415,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BANDSAW";
+							value="HELGE ADAM";
 						};
 					};
 				};
@@ -22461,7 +22461,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						description="Gruppchef@MUDBUG BLUE";
+						description="Gruppchef@GUSTAV ADAM";
 						isPlayable=1;
 						stance="Middle";
 						class Inventory
@@ -23644,7 +23644,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="MUDBUG BLUE";
+							value="GUSTAV ADAM";
 						};
 					};
 				};
@@ -23691,7 +23691,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="trubb";
-						description="Gruppchef (Trubb)@MUDBUG RED";
+						description="Gruppchef (Trubb)@ERIK ADAM";
 						isPlayer=1;
 						isPlayable=1;
 						stance="Middle";
@@ -24874,7 +24874,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="MUDBUG RED";
+							value="ERIK ADAM";
 						};
 					};
 				};
@@ -24920,7 +24920,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						description="Gruppchef@MUDBUG WHITE";
+						description="Gruppchef@FILIP ADAM";
 						isPlayable=1;
 						stance="Down";
 						class Inventory
@@ -26103,7 +26103,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="MUDBUG WHITE";
+							value="FILIP ADAM";
 						};
 					};
 				};
@@ -26920,65 +26920,68 @@ class Mission
 		class Item148
 		{
 			dataType="Marker";
-			position[]={11708.963,49.390484,3417.0281};
+			position[]={11708.963,0,3417.0281};
 			name="marker_14";
 			text="Plutonsnät: 70";
 			type="mil_box";
-			colorName="ColorRed";
+			colorName="ColorBlue";
 			id=1530;
+			atlOffset=-49.390484;
 		};
 		class Item149
 		{
 			dataType="Marker";
-			position[]={11708.271,45.125641,3396.9746};
+			position[]={11708.271,0,3396.9751};
 			name="marker_15";
-			text="Baffle: 100";
+			text="ADAM QVINTUS: 100";
 			type="mil_box";
 			colorName="ColorRed";
 			id=1531;
-			atlOffset=-0.00025939941;
+			atlOffset=-45.125992;
 		};
 		class Item150
 		{
 			dataType="Marker";
-			position[]={11707.771,44.193333,3380.5168};
+			position[]={11707.771,0,3380.5171};
 			name="marker_16";
-			text="Mudbug RED: 110";
+			text="ERIK ADAM: 110";
 			type="mil_box";
 			colorName="ColorRed";
 			id=1532;
+			atlOffset=-44.193329;
 		};
 		class Item151
 		{
 			dataType="Marker";
-			position[]={11707.56,42.082458,3363.6543};
+			position[]={11707.56,0,3363.6541};
 			name="marker_17";
-			text="Mudbug WHITE: 120";
+			text="FILIP ADAM: 120";
 			type="mil_box";
 			colorName="ColorRed";
 			id=1533;
+			atlOffset=-42.082359;
 		};
 		class Item152
 		{
 			dataType="Marker";
-			position[]={11707.31,34.391338,3345.679};
+			position[]={11707.31,0,3345.679};
 			name="marker_18";
-			text="Mudbug BLUE 130";
+			text="GUSTAV ADAM: 130";
 			type="mil_box";
 			colorName="ColorRed";
 			id=1534;
-			atlOffset=-3.8146973e-006;
+			atlOffset=-34.391342;
 		};
 		class Item153
 		{
 			dataType="Marker";
-			position[]={11708.308,21.443604,3327.9531};
+			position[]={11708.308,0,3327.9529};
 			name="marker_19";
-			text="Bandsaw: 140";
+			text="HELGE ADAM: 140";
 			type="mil_box";
 			colorName="ColorRed";
 			id=1535;
-			atlOffset=-7.6406193;
+			atlOffset=-29.084166;
 		};
 		class Item154
 		{
