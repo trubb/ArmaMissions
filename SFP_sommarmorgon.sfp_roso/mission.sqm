@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7374.8184,57.333542,7527.0337};
-		dir[]={-0.35478956,-0.54915339,-0.75668544};
-		up[]={-0.23313089,0.83572197,-0.49721619};
-		aside[]={-0.90542549,-8.312054e-008,0.42452911};
+		pos[]={5782.7397,83.645004,6437.25};
+		dir[]={0.26525128,-0.65938914,0.70346367};
+		up[]={0.23264514,0.75179875,0.61698854};
+		aside[]={0.93569815,-1.1408702e-007,-0.35281891};
 	};
 };
 binarizationWanted=0;
@@ -855,7 +855,7 @@ class Mission
 					};
 					id=81;
 					type="sfp_m90w_officer";
-					atlOffset=0.00035476685;
+					atlOffset=0.00035572052;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1043,7 +1043,7 @@ class Mission
 					};
 					id=149;
 					type="sfp_m90w_medic";
-					atlOffset=2.7050738;
+					atlOffset=2.7050748;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1131,7 +1131,7 @@ class Mission
 				combatMode="BLUE";
 			};
 			id=80;
-			atlOffset=0.00035476685;
+			atlOffset=0.00035572052;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1190,6 +1190,7 @@ class Mission
 			};
 			id=86;
 			type="land_sfp_kassun_green";
+			atlOffset=-9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1248,6 +1249,7 @@ class Mission
 			};
 			id=91;
 			type="Land_WoodenCrate_01_stack_x5_F";
+			atlOffset=9.5367432e-007;
 		};
 		class Item8
 		{
@@ -1264,6 +1266,7 @@ class Mission
 			};
 			id=92;
 			type="Land_WoodenCrate_01_stack_x5_F";
+			atlOffset=9.5367432e-007;
 		};
 		class Item9
 		{
@@ -1280,6 +1283,7 @@ class Mission
 			};
 			id=93;
 			type="Land_WoodenCrate_01_stack_x5_F";
+			atlOffset=9.5367432e-007;
 		};
 		class Item10
 		{
@@ -1296,6 +1300,7 @@ class Mission
 			};
 			id=94;
 			type="Land_WoodenCrate_01_stack_x5_F";
+			atlOffset=9.5367432e-007;
 		};
 		class Item11
 		{
@@ -1312,6 +1317,7 @@ class Mission
 			};
 			id=95;
 			type="Land_WoodenCrate_01_stack_x5_F";
+			atlOffset=9.5367432e-007;
 		};
 		class Item12
 		{
@@ -1328,6 +1334,7 @@ class Mission
 			};
 			id=96;
 			type="Land_WoodenCrate_01_stack_x5_F";
+			atlOffset=9.5367432e-007;
 		};
 		class Item13
 		{
@@ -1344,6 +1351,7 @@ class Mission
 			};
 			id=97;
 			type="Land_WoodenCrate_01_stack_x5_F";
+			atlOffset=9.5367432e-007;
 		};
 		class Item14
 		{
@@ -1360,6 +1368,7 @@ class Mission
 			};
 			id=98;
 			type="Land_WoodenCrate_01_stack_x5_F";
+			atlOffset=9.5367432e-007;
 		};
 		class Item15
 		{
@@ -1376,7 +1385,7 @@ class Mission
 			};
 			id=99;
 			type="Land_WoodenCrate_01_stack_x5_F";
-			atlOffset=9.5367432e-007;
+			atlOffset=1.9073486e-006;
 		};
 		class Item16
 		{
@@ -1393,6 +1402,7 @@ class Mission
 			};
 			id=100;
 			type="Land_WoodenCrate_01_stack_x5_F";
+			atlOffset=9.5367432e-007;
 		};
 		class Item17
 		{
@@ -1409,7 +1419,7 @@ class Mission
 			};
 			id=101;
 			type="Land_WoodenCrate_01_stack_x5_F";
-			atlOffset=7.6293945e-006;
+			atlOffset=8.5830688e-006;
 		};
 		class Item18
 		{
@@ -1426,6 +1436,7 @@ class Mission
 			};
 			id=102;
 			type="Land_WoodenCrate_01_stack_x5_F";
+			atlOffset=9.5367432e-007;
 		};
 		class Item19
 		{
@@ -1442,6 +1453,7 @@ class Mission
 			};
 			id=103;
 			type="Land_WoodenCrate_01_stack_x5_F";
+			atlOffset=9.5367432e-007;
 		};
 		class Item20
 		{
@@ -1458,6 +1470,7 @@ class Mission
 			};
 			id=104;
 			type="Land_WoodenCrate_01_stack_x5_F";
+			atlOffset=9.5367432e-007;
 		};
 		class Item21
 		{
@@ -1523,8 +1536,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7371.6299,12.345471,7487.8765};
-				angles[]={0,3.6435068,0};
+				position[]={7371.6299,12.3453,7487.876};
+				angles[]={0,3.6435144,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1533,6 +1546,7 @@ class Mission
 			};
 			id=107;
 			type="Land_WoodenCrate_01_F";
+			atlOffset=0.13700008;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1550,7 +1564,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[""ACE_fieldDressing"",""ACE_epinephrine"",""ACE_morphine"",""ACE_bloodIV""],[200,30,100,10]],[[""sfp_backpack_sjvv9""],[2]]],false]";
+							value="[[[[],[]],[[],[]],[[""ACE_fieldDressing"",""ACE_epinephrine"",""ACE_morphine"",""ACE_bloodIV""],[250,30,150,15]],[[""sfp_backpack_sjvv9""],[2]]],false]";
 						};
 					};
 				};
@@ -1591,6 +1605,7 @@ class Mission
 			};
 			id=108;
 			type="Land_WoodenCrate_01_stack_x5_F";
+			atlOffset=9.5367432e-007;
 		};
 		class Item24
 		{
@@ -1607,6 +1622,7 @@ class Mission
 			};
 			id=109;
 			type="Land_WoodenCrate_01_stack_x5_F";
+			atlOffset=9.5367432e-007;
 		};
 		class Item25
 		{
@@ -1623,6 +1639,7 @@ class Mission
 			};
 			id=110;
 			type="Land_WoodenCrate_01_stack_x5_F";
+			atlOffset=9.5367432e-007;
 		};
 		class Item26
 		{
@@ -1639,6 +1656,7 @@ class Mission
 			};
 			id=111;
 			type="Land_WoodenCrate_01_stack_x5_F";
+			atlOffset=9.5367432e-007;
 		};
 		class Item27
 		{
@@ -1655,6 +1673,7 @@ class Mission
 			};
 			id=112;
 			type="Land_WoodenCrate_01_stack_x5_F";
+			atlOffset=9.5367432e-007;
 		};
 		class Item28
 		{
@@ -1671,6 +1690,7 @@ class Mission
 			};
 			id=113;
 			type="Land_WoodenCrate_01_stack_x5_F";
+			atlOffset=9.5367432e-007;
 		};
 		class Item29
 		{
@@ -1687,6 +1707,7 @@ class Mission
 			};
 			id=114;
 			type="Land_WoodenCrate_01_stack_x5_F";
+			atlOffset=9.5367432e-007;
 		};
 		class Item30
 		{
@@ -1703,6 +1724,7 @@ class Mission
 			};
 			id=115;
 			type="Land_WoodenCrate_01_stack_x5_F";
+			atlOffset=9.5367432e-007;
 		};
 		class Item31
 		{
@@ -1719,7 +1741,7 @@ class Mission
 			};
 			id=116;
 			type="Land_WoodenCrate_01_F";
-			atlOffset=0.00024986267;
+			atlOffset=0.00025081635;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1848,7 +1870,7 @@ class Mission
 					};
 					id=121;
 					type="sfp_m90w_platoonleader";
-					atlOffset=2.7049632;
+					atlOffset=2.7049642;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1999,7 +2021,7 @@ class Mission
 					};
 					id=127;
 					type="sfp_m90w_teamleader";
-					atlOffset=2.7051663;
+					atlOffset=2.7051673;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2151,7 +2173,7 @@ class Mission
 					};
 					id=129;
 					type="sfp_m90w_rifleman_ak4";
-					atlOffset=2.7050729;
+					atlOffset=2.7050738;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2245,7 +2267,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						description="Soldat";
+						description="StfC@ERIK CESAR";
 						isPlayable=1;
 						class Inventory
 						{
@@ -2304,7 +2326,7 @@ class Mission
 					};
 					id=134;
 					type="sfp_m90w_crew";
-					atlOffset=2.7052922;
+					atlOffset=2.7052932;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2455,7 +2477,7 @@ class Mission
 					};
 					id=140;
 					type="sfp_m90w_rifleman_ak4";
-					atlOffset=2.7050681;
+					atlOffset=2.7050691;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2608,6 +2630,7 @@ class Mission
 					};
 					id=2435;
 					type="sfp_m90w_crew";
+					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2695,7 +2718,7 @@ class Mission
 				combatMode="BLUE";
 			};
 			id=120;
-			atlOffset=2.7049632;
+			atlOffset=2.7049642;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2822,7 +2845,7 @@ class Mission
 					};
 					id=123;
 					type="sfp_m90w_platoonleader";
-					atlOffset=2.7050447;
+					atlOffset=2.7050457;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2974,7 +2997,7 @@ class Mission
 					};
 					id=125;
 					type="sfp_m90w_teamleader";
-					atlOffset=2.7052026;
+					atlOffset=2.7052035;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3125,7 +3148,7 @@ class Mission
 					};
 					id=131;
 					type="sfp_m90w_rifleman_ak4";
-					atlOffset=2.7051339;
+					atlOffset=2.7051349;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3278,7 +3301,7 @@ class Mission
 					};
 					id=136;
 					type="sfp_m90w_crew";
-					atlOffset=0.00024843216;
+					atlOffset=0.00024938583;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3429,7 +3452,7 @@ class Mission
 					};
 					id=138;
 					type="sfp_m90w_rifleman_ak4";
-					atlOffset=0.00043392181;
+					atlOffset=0.00043487549;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3516,14 +3539,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5779.8511,7.8312321,6512.4731};
-						angles[]={0,1.6236179,0};
+						position[]={5779.8511,7.8312092,6512.4727};
+						angles[]={0,1.62361,0};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
-						description="Soldat";
+						description="StfC@FILIP CESAR";
 						isPlayable=1;
 						class Inventory
 						{
@@ -3581,6 +3604,7 @@ class Mission
 					};
 					id=2437;
 					type="sfp_m90w_rifleman_ak4";
+					atlOffset=2.7054372;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3668,7 +3692,7 @@ class Mission
 				combatMode="BLUE";
 			};
 			id=122;
-			atlOffset=2.7050447;
+			atlOffset=2.7050457;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3833,7 +3857,7 @@ class Mission
 					};
 					id=144;
 					type="sfp_m90w_platoonleader";
-					atlOffset=2.7054315;
+					atlOffset=2.7054324;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3985,7 +4009,7 @@ class Mission
 					};
 					id=145;
 					type="sfp_m90w_teamleader";
-					atlOffset=2.7054505;
+					atlOffset=2.7054515;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4137,7 +4161,7 @@ class Mission
 					};
 					id=146;
 					type="sfp_m90w_rifleman_ak4";
-					atlOffset=0.00033140182;
+					atlOffset=0.0003323555;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4231,7 +4255,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						description="Soldat";
+						description="StfC@GUSTAV CESAR";
 						isPlayable=1;
 						class Inventory
 						{
@@ -4290,7 +4314,7 @@ class Mission
 					};
 					id=147;
 					type="sfp_m90w_crew";
-					atlOffset=2.7052598;
+					atlOffset=2.7052608;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4442,7 +4466,7 @@ class Mission
 					};
 					id=148;
 					type="sfp_m90w_rifleman_ak4";
-					atlOffset=2.7053089;
+					atlOffset=2.7053099;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4594,6 +4618,7 @@ class Mission
 					};
 					id=2439;
 					type="sfp_m90w_rifleman_ak4";
+					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4681,7 +4706,7 @@ class Mission
 				combatMode="BLUE";
 			};
 			id=143;
-			atlOffset=2.7054315;
+			atlOffset=2.7054324;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4739,7 +4764,7 @@ class Mission
 			};
 			id=155;
 			type="Land_WoodenCrate_01_F";
-			atlOffset=1.8677759;
+			atlOffset=1.8677769;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4778,7 +4803,7 @@ class Mission
 			};
 			id=156;
 			type="Land_WoodenCrate_01_F";
-			atlOffset=1.8677759;
+			atlOffset=1.8677769;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4856,7 +4881,7 @@ class Mission
 			};
 			id=159;
 			type="Land_WoodenCrate_01_F";
-			atlOffset=1.8645334;
+			atlOffset=1.8645344;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4895,7 +4920,7 @@ class Mission
 			};
 			id=160;
 			type="Land_WoodenCrate_01_F";
-			atlOffset=1.8677759;
+			atlOffset=1.8677769;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4934,7 +4959,7 @@ class Mission
 			};
 			id=161;
 			type="Land_WoodenCrate_01_F";
-			atlOffset=1.8677759;
+			atlOffset=1.8677769;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -5129,7 +5154,7 @@ class Mission
 			};
 			id=167;
 			type="Land_WoodenCrate_01_F";
-			atlOffset=1.8645353;
+			atlOffset=1.8645363;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -5168,7 +5193,7 @@ class Mission
 			};
 			id=168;
 			type="Land_WoodenCrate_01_F";
-			atlOffset=1.864542;
+			atlOffset=1.864543;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -5267,7 +5292,7 @@ class Mission
 			};
 			id=184;
 			type="Land_CampingTable_F";
-			atlOffset=4.7683716e-007;
+			atlOffset=1.4305115e-006;
 		};
 		class Item50
 		{
@@ -9706,7 +9731,7 @@ class Mission
 			};
 			id=571;
 			type="sfp_tgb20";
-			atlOffset=0.00039958954;
+			atlOffset=0.00040054321;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -65441,13 +65466,14 @@ class Mission
 				position[]={5645.7314,19.272322,7166.0483};
 			};
 			side="Empty";
-			flags=5;
+			flags=1;
 			class Attributes
 			{
 				name="tyfon_0";
 			};
 			id=2304;
 			type="Land_Loudspeakers_F";
+			atlOffset=5.7022514;
 		};
 		class Item517
 		{
@@ -65501,7 +65527,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={6146.1113,4.7655125,7995.5};
-			angle=6.2526159;
+			angle=6.2526155;
 			class Attributes
 			{
 				name="flyglarm";
