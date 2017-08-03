@@ -1190,6 +1190,7 @@ class Mission
 			};
 			id=86;
 			type="land_sfp_kassun_green";
+			atlOffset=-9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -65525,14 +65526,14 @@ class Mission
 		class Item520
 		{
 			dataType="Trigger";
-			position[]={6146.1113,4.7655125,7995.5};
-			angle=6.252615;
+			position[]={6146.1108,4.7655106,7995.5};
+			angle=6.2526064;
 			class Attributes
 			{
 				name="flyglarm";
 				condition="call{this && isServer}";
-				onActivation="call{playSound3D [MISSION_ROOT + ""flyglarm.ogg"", tyfon_0, false, getposASL tyfon_0, 25, 0, 0]; " \n "playSound3D [MISSION_ROOT + ""flyglarm.ogg"", tyfon_1, false, getposASL tyfon_1, 25, 0, 0]; " \n "playSound3D [MISSION_ROOT + ""flyglarm.ogg"", tyfon_2, false, getposASL tyfon_2, 25, 0, 0]; " \n "playSound3D [MISSION_ROOT + ""flyglarm.ogg"", tyfon_3, false, getposASL tyfon_3, 25, 0, 0]; " \n "playSound3D [MISSION_ROOT + ""flyglarm.ogg"", tyfon_4, false, getposASL tyfon_4, 25, 0, 0]; " \n "playSound3D [MISSION_ROOT + ""flyglarm.ogg"", tyfon_5, false, getposASL tyfon_5, 25, 0, 0];}";
-				sizeA=502.58319;
+				onActivation="call{playSound3D [MISSION_ROOT + ""flyglarm.ogg"", tyfon_0, false, getposASL tyfon_0, 5, 0, 0];  " \n "playSound3D [MISSION_ROOT + ""flyglarm.ogg"", tyfon_1, false, getposASL tyfon_1, 5, 0, 0];  " \n "playSound3D [MISSION_ROOT + ""flyglarm.ogg"", tyfon_2, false, getposASL tyfon_2, 5, 0, 0];  " \n "playSound3D [MISSION_ROOT + ""flyglarm.ogg"", tyfon_3, false, getposASL tyfon_3, 5, 0, 0];  " \n "playSound3D [MISSION_ROOT + ""flyglarm.ogg"", tyfon_4, false, getposASL tyfon_4, 5, 0, 0];  " \n "playSound3D [MISSION_ROOT + ""flyglarm.ogg"", tyfon_5, false, getposASL tyfon_5, 5, 0, 0];}";
+				sizeA=502.58301;
 				sizeB=355.81201;
 				activationBy="WEST";
 			};
