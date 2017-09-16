@@ -1,5 +1,5 @@
 
-_initdate = [1985, 5, 5, 03, 15];
+_initdate = [1985, 5, 5, 03, 25];
 
 while {true} do {
 	setdate _initdate;
