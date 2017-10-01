@@ -8,11 +8,11 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1342;
+		nextID=1347;
 	};
 	class MarkerIDProvider
 	{
-		nextID=11;
+		nextID=12;
 	};
 	class LayerIndexProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3969.7603,776.87939,2173.8574};
-		dir[]={-0.83102477,-0.50280374,-0.23795375};
-		up[]={-0.48339933,0.86438942,-0.13841587};
-		aside[]={-0.27528095,-2.5029294e-007,0.96138507};
+		pos[]={3451.3633,776.54974,2512.637};
+		dir[]={0.10546619,-0.42134276,0.90076798};
+		up[]={0.0489989,0.90690047,0.41849068};
+		aside[]={0.99323559,-3.1053787e-008,-0.11629192};
 	};
 };
 binarizationWanted=0;
@@ -456,7 +456,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=232;
+		items=237;
 		class Item0
 		{
 			dataType="Group";
@@ -5328,7 +5328,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={4207.0679,469.82645,1786.299};
-				angles[]={-0,0,0.077663146};
+				angles[]={0,0,0.077663146};
 			};
 			id=101;
 			type="ace_weather_ModuleSettings";
@@ -9323,7 +9323,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4297.7393,511.14099,2743.6316};
+						position[]={4874.8931,511.31656,2581.5576};
 						angles[]={0,1.2913691,0};
 					};
 					side="West";
@@ -9398,7 +9398,6 @@ class Mission
 					};
 					id=567;
 					type="B_Soldier_F";
-					atlOffset=0.008026123;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9428,7 +9427,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4295.7998,511.16937,2745.6482};
+						position[]={4872.9536,511.30731,2583.5742};
 						angles[]={0,1.2913691,0};
 					};
 					side="West";
@@ -9503,7 +9502,6 @@ class Mission
 					};
 					id=568;
 					type="B_Soldier_F";
-					atlOffset=0.0079956055;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9533,7 +9531,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4295.4932,511.09454,2742.0505};
+						position[]={4872.647,511.32379,2579.9766};
 						angles[]={0,1.2913691,0};
 					};
 					side="West";
@@ -9618,7 +9616,6 @@ class Mission
 					};
 					id=569;
 					type="B_Soldier_F";
-					atlOffset=0.0068664551;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9648,7 +9645,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4293.502,511.06262,2740.4319};
+						position[]={4870.6558,511.33121,2578.3579};
 						angles[]={0,1.2913691,0};
 					};
 					side="West";
@@ -9723,7 +9720,6 @@ class Mission
 					};
 					id=570;
 					type="B_Soldier_F";
-					atlOffset=0.0068359375;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9762,7 +9758,7 @@ class Mission
 				class Item5
 				{
 					dataType="Waypoint";
-					position[]={3814.2549,494.94287,2147.8528};
+					position[]={3929.6587,489.06427,1972.4426};
 					class Effects
 					{
 					};
@@ -9773,7 +9769,7 @@ class Mission
 				class Item6
 				{
 					dataType="Waypoint";
-					position[]={4211.5898,503.1701,2325.1174};
+					position[]={4342.9204,490.2944,2179.6755};
 					class Effects
 					{
 					};
@@ -9784,7 +9780,7 @@ class Mission
 				class Item7
 				{
 					dataType="Waypoint";
-					position[]={3878.7593,509.74994,2334.4932};
+					position[]={4256.1714,496.13171,2024.2507};
 					class Effects
 					{
 					};
@@ -9795,7 +9791,7 @@ class Mission
 				class Item8
 				{
 					dataType="Waypoint";
-					position[]={4080.3325,496.77606,2117.6843};
+					position[]={4633.2866,504.11771,2271.2437};
 					class Effects
 					{
 					};
@@ -9806,7 +9802,7 @@ class Mission
 				class Item9
 				{
 					dataType="Waypoint";
-					position[]={4468.2441,474.35153,2112.9966};
+					position[]={4310.3892,489.3757,1889.3085};
 					class Effects
 					{
 					};
@@ -9832,7 +9828,6 @@ class Mission
 				formation="COLUMN";
 			};
 			id=566;
-			atlOffset=0.008026123;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10412,6 +10407,7 @@ class Mission
 				};
 			};
 			id=587;
+			atlOffset=-0.00018310547;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10451,6 +10447,7 @@ class Mission
 			};
 			id=594;
 			type="UK3CB_BAF_LandRover_Snatch_FFR_NI_A";
+			atlOffset=-0.00018310547;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10480,7 +10477,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={3613.6399,495.37497,2426.3059};
+				position[]={3630.2241,483.33521,1825.345};
+				angles[]={0.059445914,0,0.013735741};
 			};
 			name="tsk_0";
 			id=634;
@@ -10521,7 +10519,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Default";
+							value="destroy";
 						};
 					};
 				};
@@ -10578,7 +10576,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Causing Havoc In People's Streets";
+							value="Fighting In Someone's House";
 						};
 					};
 				};
@@ -10597,7 +10595,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Poliser från Royal Ulster Constabulary har satt upp två checkpoints i anslutning till byn Ballybrian. </br>" \n "I byn finns ungefär en pluton brittiska soldater samtett fåtal poliser från RUC och en mängd militära transportfordon. </br>" \n "</br>" \n "Anfall bägge checkpoints samtidigt för att locka ut soldaterna och möjliggöra för en grupp att innästla i byn och försåtsminera britternas fordon.";
+							value="Fasta, semipermanenta, fordonscheckpoints är ett stående inslag på den Nordirländska sidan av gränsen. </br>" \n "För att slå mot lojalisternas rörelsefrihet i områden nära gränsen planeras en kombinerad räd och bombattack mot checkpointen söder om Ballybrian.</br>" \n "</br>" \n "Vår Flying Column har för attacken stulit två land rovers som används för att transportera bomber.</br>" \n "Fienden utgörs av Brittiska soldater från King's Own Scottish Borderers som bemannar checkpointen. Upp till en pluton förväntas befinna sig där. </br>" \n "Närområdet patrulleras också av soldater från checkpointen. Då patrullerna rör sig till fots är de främst ett hot under rädens innästlnings- och urdragningsskeden.</br>" \n "Närmsta Brittiska arméenhet befinner sig en handfull miles från checkpointen, en larmstyrka kan förväntas anlända därifrån inom en halvtimme från att de nås av uppgifter om attacken.</br>";
 						};
 					};
 				};
@@ -10704,7 +10702,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={3509.8181,491.37418,2397.502};
+				position[]={3758.1082,485.11658,1847.1442};
+				angles[]={6.2648797,0,0.032031279};
 			};
 			id=635;
 			type="ModuleTaskSetState_F";
@@ -10845,13 +10844,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3816.969,493.96994,1771.6029};
-				angles[]={0,2.4749734,0};
+				position[]={3816.969,493.96994,1771.603};
+				angles[]={0,2.4749815,0};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
+				name="tower";
 			};
 			id=738;
 			type="Land_Cargo_Tower_V1_No1_F";
@@ -18740,7 +18740,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3477.5632,467.85681,1206.4524};
+						position[]={3458.1643,462.56622,1125.2529};
 						angles[]={0,0.27544713,0};
 					};
 					side="West";
@@ -18844,7 +18844,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3474.8271,467.83743,1205.8662};
+						position[]={3455.4282,462.65518,1124.6667};
 						angles[]={0,0.27544713,0};
 					};
 					side="West";
@@ -18949,7 +18949,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3477.7239,467.59378,1203.7102};
+						position[]={3458.325,462.08322,1122.5107};
 						angles[]={0,0.27544713,0};
 					};
 					side="West";
@@ -19064,7 +19064,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3478.0508,467.35355,1201.165};
+						position[]={3458.6519,461.50385,1119.9656};
 						angles[]={0,0.27544713,0};
 					};
 					side="West";
@@ -19725,6 +19725,7 @@ class Mission
 				};
 			};
 			id=1186;
+			atlOffset=-0.00018310547;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -20304,6 +20305,7 @@ class Mission
 				};
 			};
 			id=1192;
+			atlOffset=-3.0517578e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -20343,6 +20345,7 @@ class Mission
 			};
 			id=1198;
 			type="UK3CB_BAF_LandRover_Snatch_FFR_NI_A";
+			atlOffset=-3.0517578e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -21540,6 +21543,7 @@ class Mission
 				};
 			};
 			id=1269;
+			atlOffset=-0.00076293945;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -21995,6 +21999,7 @@ class Mission
 				};
 			};
 			id=1275;
+			atlOffset=-0.00076293945;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22034,6 +22039,7 @@ class Mission
 			};
 			id=1282;
 			type="UK3CB_BAF_LandRover_Snatch_FFR_NI_A";
+			atlOffset=-0.00076293945;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22613,6 +22619,7 @@ class Mission
 				};
 			};
 			id=1283;
+			atlOffset=-0.001739502;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22652,6 +22659,7 @@ class Mission
 			};
 			id=1289;
 			type="UK3CB_BAF_LandRover_Snatch_FFR_NI_A";
+			atlOffset=-0.001739502;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23231,6 +23239,7 @@ class Mission
 				};
 			};
 			id=1290;
+			atlOffset=-0.0037231445;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23270,6 +23279,7 @@ class Mission
 			};
 			id=1296;
 			type="UK3CB_BAF_LandRover_Snatch_FFR_NI_A";
+			atlOffset=-0.0037231445;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23294,21 +23304,95 @@ class Mission
 				nAttributes=1;
 			};
 		};
+		class Item232
+		{
+			dataType="Marker";
+			position[]={3115.7581,0,3324.3069};
+			name="marker_11";
+			type="mil_arrow";
+			colorName="ColorBlue";
+			angle=155.38399;
+			id=1342;
+			atlOffset=-505.34753;
+		};
+		class Item233
+		{
+			dataType="Marker";
+			position[]={3478.96,-7.8614502,2582.0239};
+			name="marker_12";
+			type="mil_arrow";
+			colorName="ColorBlue";
+			angle=213.9536;
+			id=1343;
+			atlOffset=-505.31778;
+		};
+		class Item234
+		{
+			dataType="Marker";
+			position[]={3679.3318,490.12585,2199.7085};
+			name="marker_13";
+			type="mil_arrow";
+			colorName="ColorBlue";
+			angle=126.86993;
+			id=1344;
+		};
+		class Item235
+		{
+			dataType="Trigger";
+			position[]={3777.2061,483.40927,1809.929};
+			class Attributes
+			{
+				condition="call{!alive(tower);}";
+				sizeA=0;
+				sizeB=0;
+			};
+			id=1345;
+			type="EmptyDetector";
+		};
+		class Item236
+		{
+			dataType="Marker";
+			position[]={3818.4307,473.06247,1770.7261};
+			name="marker_4";
+			type="flag_UK";
+			id=1346;
+			atlOffset=-7.8566589;
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=1;
+			nextID=3;
 		};
 		class Links
 		{
-			items=1;
+			items=3;
 			class Item0
 			{
 				linkID=0;
 				item0=635;
 				item1=634;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item1
+			{
+				linkID=1;
+				item0=738;
+				item1=1345;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item2
+			{
+				linkID=2;
+				item0=1345;
+				item1=635;
 				class CustomData
 				{
 					type="Sync";
