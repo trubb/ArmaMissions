@@ -101,7 +101,7 @@ class CfgDebriefing {
 		subtitle = "";
 		description = "OPFOR slog ut alla BLUFOR!";
 		pictureBackground = "";
-		picture = "_inf";
+		picture = "o_inf";
 		pictureColor[] = {0.0,0.3,0.6,1};
 	};
 

@@ -1,0 +1,3038 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=402;
+	};
+	class MarkerIDProvider
+	{
+		nextID=18;
+	};
+	class Camera
+	{
+		pos[]={8534.7432,61.795799,9098.7949};
+		dir[]={-0.88656092,-0.44441062,0.12877922};
+		up[]={-0.43981469,0.89581621,0.063886113};
+		aside[]={0.1437524,-3.3018296e-007,0.98964781};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Ui_F",
+	"A3_Modules_F_Curator_Misc",
+	"A3_Modules_F_Curator_Curator",
+	"tfar_core",
+	"A3_Modules_F_Intel",
+	"A3_Structures_F_Mil_Helipads",
+	"A3_Structures_F_Argo_Military_Bunkers",
+	"A3_Structures_F_Argo_Military_Fortifications",
+	"A3_Structures_F_Exp_Military_Fortifications",
+	"A3_Modules_F",
+	"A3_Structures_F_Dominants_Lighthouse",
+	"A3_Characters_F"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=9;
+		class Item0
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item2
+		{
+			className="tfar_core";
+			name="TFAR - Core";
+			author="Task Force Arrowhead Radio Team";
+		};
+		class Item3
+		{
+			className="A3_Modules_F";
+			name="Arma 3 Alpha - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item4
+		{
+			className="A3_Structures_F_Mil";
+			name="Arma 3 - Military Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item5
+		{
+			className="A3_Structures_F_Argo";
+			name="Arma 3 Malden - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item6
+		{
+			className="A3_Structures_F_Exp";
+			name="Arma 3 Apex - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item7
+		{
+			className="A3_Structures_F";
+			name="Arma 3 - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item8
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+	};
+};
+randomSeed=1928215;
+class ScenarioData
+{
+	author="Trubb | Anrop.se";
+	showGPS=0;
+	showUAVFeed=0;
+	saving=0;
+	class Header
+	{
+		gameType="TDM";
+		minPlayers=2;
+		maxPlayers=43;
+	};
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Multiplayer";
+		class Attribute0
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		nAttributes=1;
+	};
+	class Category1
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="cba_settings_hash";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+					class value
+					{
+						items=4;
+						class Item0
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="#CBA_HASH#";
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=21;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_cookoff_enable";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_cookoff_enableammobox";
+										};
+									};
+									class Item2
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_cookoff_enableammocookoff";
+										};
+									};
+									class Item3
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_map_mapshowcursorcoordinates";
+										};
+									};
+									class Item4
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_medical_level";
+										};
+									};
+									class Item5
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_medical_medicsetting";
+										};
+									};
+									class Item6
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_medical_enableoverdosing";
+										};
+									};
+									class Item7
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_medical_enablevehiclecrashes";
+										};
+									};
+									class Item8
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_medical_playerdamagethreshold";
+										};
+									};
+									class Item9
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_advanced_fatigue_enabled";
+										};
+									};
+									class Item10
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_advanced_throwing_enabled";
+										};
+									};
+									class Item11
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_advanced_throwing_enablepickup";
+										};
+									};
+									class Item12
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_advanced_throwing_enablepickupattached";
+										};
+									};
+									class Item13
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_hearing_enablecombatdeafness";
+										};
+									};
+									class Item14
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_hearing_enabledforzeusunits";
+										};
+									};
+									class Item15
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_hearing_autoaddearplugstounits";
+										};
+									};
+									class Item16
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_finger_enabled";
+										};
+									};
+									class Item17
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_finger_maxrange";
+										};
+									};
+									class Item18
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_viewdistance_enabled";
+										};
+									};
+									class Item19
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_viewdistance_objectviewdistancecoeff";
+										};
+									};
+									class Item20
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_weather_windsimulation";
+										};
+									};
+								};
+							};
+						};
+						class Item2
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=21;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item2
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item3
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item4
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item5
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item6
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item7
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item8
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=2;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item9
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item10
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item11
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item12
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item13
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item14
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item15
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item16
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item17
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=7;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item18
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item19
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=6;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item20
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+								};
+							};
+						};
+						class Item3
+						{
+							class data
+							{
+								nil=1;
+								class type
+								{
+									type[]=
+									{
+										"ANY"
+									};
+								};
+							};
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="Enh_ambientFlyby_speed";
+			expression="missionNamespace setVariable ['Enh_ambientFlyby_speed',_value]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="LIMITED";
+				};
+			};
+		};
+		class Attribute2
+		{
+			property="EnableDebugConsole";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute3
+		{
+			property="Enh_disableTeamSwitch";
+			expression="if (!is3DEN && !isMultiplayer) then {enableTeamSwitch _value}";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"BOOL"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		nAttributes=4;
+	};
+};
+class Mission
+{
+	assetType="Free";
+	class Intel
+	{
+		briefingName="TVT 34 - Eldöverfallsträning";
+		overviewText="Eldöverfallsträning";
+		resistanceWest=0;
+		timeOfChanges=1800.0002;
+		startWeather=0.51270777;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		rainForced=1;
+		wavesForced=1;
+		windForced=1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+		class CustomAttributes
+		{
+			name="Intel";
+			class Attribute0
+			{
+				property="Enh_disableGrass";
+				expression="if (((parseNumber _value) > 0) && !is3DEN) then {setTerrainGrid (parseNumber _value)}";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="-1";
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+	class Entities
+	{
+		items=63;
+		class Item0
+		{
+			dataType="Marker";
+			position[]={7885.2251,189.43079,9090.7109};
+			name="bluf_start";
+			type="b_inf";
+			id=141;
+			atlOffset=157.23079;
+		};
+		class Item1
+		{
+			dataType="Marker";
+			position[]={6213.7427,208.00574,7725.0947};
+			name="marker_4";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorRed";
+			fillName="FDiagonal";
+			a=355.64249;
+			b=986.51001;
+			angle=51.021358;
+			id=145;
+			atlOffset=30.757095;
+		};
+		class Item2
+		{
+			dataType="Marker";
+			position[]={8004.2988,196.172,9146.6016};
+			name="marker_6";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorBlue";
+			a=10;
+			b=359.28601;
+			id=159;
+			atlOffset=163.98199;
+		};
+		class Item3
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={8296.5859,24.081621,9146.623};
+				angles[]={0.081419863,0,6.122191};
+			};
+			areaSize[]={696.37012,0,359.22992};
+			areaIsRectangle=1;
+			flags=1;
+			id=160;
+			type="ModuleCoverMap_F";
+			atlOffset=1.5483227;
+		};
+		class Item4
+		{
+			dataType="Marker";
+			position[]={8320.0898,140.278,8900.1201};
+			name="marker_7";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorRed";
+			a=5;
+			b=124.047;
+			angle=335.13699;
+			id=173;
+			atlOffset=138.10922;
+		};
+		class Item5
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={6015.5933,404.3808,5901.8496};
+			};
+			id=174;
+			type="ModuleCurator_F";
+			atlOffset=70.81369;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="#adminLogged";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=2;
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item6
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={5756.6323,411.24982,5745.2471};
+			};
+			id=199;
+			type="TFAR_ModuleTaskForceRadioEnforceUsage";
+			atlOffset=37.789001;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="TFAR_ModuleTaskForceRadioEnforceUsage_radio_channel_password";
+					expression="_this setVariable ['radio_channel_password',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="123";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="TFAR_ModuleTaskForceRadioEnforceUsage_RiflemanRadio";
+					expression="_this setVariable ['RiflemanRadio',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="TFAR_ModuleTaskForceRadioEnforceUsage_radio_channel_name";
+					expression="_this setVariable ['radio_channel_name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="TaskForceRadio";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="TFAR_ModuleTaskForceRadioEnforceUsage_same_sw_frequencies_for_side";
+					expression="_this setVariable ['same_sw_frequencies_for_side',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="TFAR_ModuleTaskForceRadioEnforceUsage_TeamLeaderRadio";
+					expression="_this setVariable ['TeamLeaderRadio',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="TFAR_ModuleTaskForceRadioEnforceUsage_full_duplex";
+					expression="_this setVariable ['full_duplex',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="TFAR_ModuleTaskForceRadioEnforceUsage_same_lr_frequencies_for_side";
+					expression="_this setVariable ['same_lr_frequencies_for_side',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="TFAR_ModuleTaskForceRadioEnforceUsage_terrain_interception_coefficient";
+					expression="_this setVariable ['terrain_interception_coefficient',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=7;
+						};
+					};
+				};
+				nAttributes=8;
+			};
+		};
+		class Item7
+		{
+			dataType="Marker";
+			position[]={6212.2212,208.98431,7726.2305};
+			name="marker_11";
+			text="Minfält";
+			type="mil_warning";
+			colorName="ColorRed";
+			id=217;
+			atlOffset=31.465424;
+		};
+		class Item8
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={5183.8218,368.61807,7111.873};
+				angles[]={6.2200685,0,6.2511969};
+			};
+			name="diary_bluf";
+			id=248;
+			type="ModuleCreateDiaryRecord_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCreateDiaryRecord_F_PresetTitle";
+					expression="_this setVariable ['PresetTitle',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Situation";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCreateDiaryRecord_F_Title";
+					expression="_this setVariable ['Title',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="TvT34 - Eldöverfallsträning";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCreateDiaryRecord_F_Description";
+					expression="_this setVariable ['Description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Ta er från <marker name = 'bluf_start'>startpunkten</marker> till <marker name = 'bluf_safe'>det markerade området.</marker> " \n "<br/>  " \n "<br/>  " \n "Ni vinner genom att antingen ta er till den blå zonen eller genom att nedkämpa alla motståndare. " \n "<br/> " \n "Ni har <b>FEMTON MINUTER</b> på er från att safe start gått ut. " \n "<br/> " \n "<br/>  " \n "Ni har tillgripit en lastbil med förnödenheter och måste nu ta er till ett område ni behärskar.  " \n "<br/>  " \n "<br/>  " \n "Ni befinner er <marker name = 'bluf_start'>HÄR</marker> och ska ta er till <marker name = 'bluf_safe'>det markerade området.</marker>  " \n "<br/>  " \n "<br/> " \n "Er motståndare är en rivaliserande gerillagrupp som med alla medel de besitter kommer försöka stoppa er. " \n "<br/> " \n "<br/> " \n "Ni får <b>INTE</b> korsa <marker name = 'marker_6'>LINJEN</marker> innan safe start gått ut. " \n "<br/> " \n "Gör ni det kommer ni att förlora. " \n "<br/> " \n "<br/> " \n "Er motståndare får inte korsa den södra <marker name = 'marker_7'>RÖDA LINJEN</marker>. " \n "";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCreateDiaryRecord_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=2;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCreateDiaryRecord_F_Subject";
+					expression="_this setVariable ['Subject',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item9
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={5324.6836,360.75476,7110.8315};
+				angles[]={6.0325694,0,6.0597758};
+			};
+			name="diary_opfo";
+			id=249;
+			type="ModuleCreateDiaryRecord_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCreateDiaryRecord_F_PresetTitle";
+					expression="_this setVariable ['PresetTitle',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Situation";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCreateDiaryRecord_F_Title";
+					expression="_this setVariable ['Title',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="TvT34 - Eldöverfallsträning";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCreateDiaryRecord_F_Description";
+					expression="_this setVariable ['Description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Hindra motståndarna från att ta sig från <marker name = 'bluf_start'>startpunkten</marker> till <marker name = 'bluf_safe'>det markerade området.</marker> " \n "<br/>  " \n "<br/>  " \n "Ni vinner genom att nedkämpa alla motståndare. " \n "<br/> " \n "<br/>  " \n "Er motståndare har tillgripit en lastbil med förnödenheter och måste nu ta sig till ett område som de behärskar.  " \n "<br/>  " \n "<br/>  " \n "Ni befinner er <marker name = 'opfo_start'>HÄR</marker> och ska hindra motståndaren från att ta sig till <marker name = 'bluf_safe'>det markerade området.</marker> " \n "<br/>  " \n "<br/> " \n "Er motståndare är en rivaliserande gerillagrupp som kommit över en lastbil med förnödenheter. " \n "<br/> " \n "<br/> " \n "Ni får <b>INTE</b> korsa den södra <marker name = 'marker_7'>RÖDA LINJEN</marker>. " \n "<br/> " \n "Gör ni det kommer ni att förlora.";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCreateDiaryRecord_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=2;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCreateDiaryRecord_F_Subject";
+					expression="_this setVariable ['Subject',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item10
+		{
+			dataType="Marker";
+			position[]={6219.1431,52.314209,3406.3579};
+			name="respawn_west";
+			type="respawn_unknown";
+			id=263;
+			atlOffset=-3.4335365;
+		};
+		class Item11
+		{
+			dataType="Marker";
+			position[]={6881.2886,78.355469,3444.6814};
+			name="respawn_east";
+			type="respawn_unknown";
+			id=264;
+			atlOffset=-4.014534;
+		};
+		class Item12
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7875.1836,32.200321,9076.2422};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="zsn_respawn_west";
+			};
+			id=265;
+			type="Land_HelipadEmpty_F";
+			atlOffset=0.00032043457;
+		};
+		class Item13
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8529.6973,3.0231354,9080.7314};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="zsn_respawn_east";
+			};
+			id=266;
+			type="Land_HelipadEmpty_F";
+			atlOffset=0.29927492;
+		};
+		class Item14
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={3092.7151,230.095,6850.3398};
+			};
+			title="Möjlig pos";
+			description="Om man spelar med dissimilar så kan man använda här" \n "väldigt barebone försvar, typ gerilla försvarar en utpost.";
+			id=273;
+			atlOffset=-3.0517578e-005;
+		};
+		class Item15
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={5554.8149,352.04401,7883.1582};
+			};
+			title="Ett till möjligt ställe";
+			description="Ännu ett möjligt ställe, kräver mer basbygge";
+			id=274;
+			atlOffset=0.00024414063;
+		};
+		class Item16
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={7643.2139,27.1,10721.238};
+			};
+			title="Möjligt område att slåss om";
+			description="Lite knepigt område, kanske borde vara search and destroy och inte försvar";
+			id=277;
+		};
+		class Item17
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={7029.7949,125.01,10006.772};
+			};
+			title="Fighting area";
+			description="Också möjligt område att slåss om";
+			id=284;
+		};
+		class Item18
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={7380.1851,84.029999,9193.333};
+			};
+			title="Möjlig area";
+			description="Om man städar bort en del träd";
+			id=285;
+		};
+		class Item19
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={11627.836,14.06,4460.814};
+			};
+			title="Fighting area";
+			description="En till möjlig";
+			id=286;
+		};
+		class Item20
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={4730.7378,93.666,2903.3989};
+			};
+			title="Försvaraområde";
+			description="Om man städar upp så kan ha bas här";
+			id=287;
+			atlOffset=0.00042724609;
+		};
+		class Item21
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8439.8389,16.698156,9121.6172};
+				angles[]={5.9357543,5.4926147,6.2046146};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=290;
+			type="Land_Bunker_01_blocks_1_F";
+			atlOffset=-0.37143135;
+		};
+		class Item22
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8437.1943,16.926487,9116.7061};
+				angles[]={5.985065,5.1773353,6.1012964};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=291;
+			type="Land_Bunker_01_blocks_3_F";
+			atlOffset=-0.26099968;
+		};
+		class Item23
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8460.1133,18.177181,9112.1211};
+				angles[]={0,5.3783336,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=292;
+			type="Land_SandbagBarricade_01_half_F";
+		};
+		class Item24
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8458.9629,18.687511,9110.3789};
+				angles[]={0,5.2931457,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=293;
+			type="Land_SandbagBarricade_01_F";
+		};
+		class Item25
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8461.4902,18.840601,9113.6797};
+				angles[]={0,5.4374309,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=294;
+			type="Land_SandbagBarricade_01_hole_F";
+		};
+		class Item26
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8459.1279,18.220222,9100.0117};
+				angles[]={-0,1.5995469,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=296;
+			type="Land_BagBunker_01_small_green_F";
+			atlOffset=0.0017166138;
+		};
+		class Item27
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8457.6611,19.048529,9091.6406};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=297;
+			type="Land_HBarrier_01_tower_green_F";
+		};
+		class Item28
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8477.376,18.792454,9115.0352};
+				angles[]={0.11864,2.4561327,6.1378183};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=305;
+			type="Land_HBarrier_01_big_tower_green_F";
+		};
+		class Item29
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8442.1357,16.704882,9123.8584};
+				angles[]={0.39423004,5.548562,6.2589808};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=308;
+			type="Land_Bunker_01_blocks_1_F";
+			atlOffset=-0.39498329;
+		};
+		class Item30
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8468.4131,37.668999,9105.4043};
+				angles[]={-0,1.9514347,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=309;
+			type="Land_BagFence_01_round_green_F";
+		};
+		class Item31
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={8478.1523,16.749001,9099.959};
+			};
+			title="Mission: försvara fyren";
+			description="Ena sidan försvarar, är mycket färre (8-12) vs resten ~24" \n "Anfallarna ska ta fyren för att spränga, försvararna för att hindra";
+			id=310;
+			atlOffset=0.0004863739;
+		};
+		class Item32
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={8468.7021,16.577118,9098.6738};
+				angles[]={6.2328291,0.67211223,0.0032018756};
+			};
+			areaSize[]={15.535662,0,29.429943};
+			areaIsRectangle=1;
+			flags=1;
+			id=320;
+			type="ModuleHideTerrainObjects_F";
+			atlOffset=-0.62319374;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="#filter";
+					expression="_this setVariable [""#filter"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=15;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="#hideLocally";
+					expression="_this setVariable [""#hideLocally"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item33
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8457.7588,17.958158,9108.5234};
+				angles[]={0,5.2266603,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=322;
+			type="Land_SandbagBarricade_01_half_F";
+		};
+		class Item34
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8453.3457,17.56731,9104.335};
+				angles[]={-0,4.920176,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=327;
+			type="Land_BagFence_01_long_green_F";
+		};
+		class Item35
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8473.5303,29.100323,9103.0234};
+				angles[]={0,2.0491037,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				name="fyrtorn";
+			};
+			id=328;
+			type="Land_LightHouse_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Enh_featureType";
+					expression="_this setFeatureType (parseNumber _value)";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item36
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8466.1113,17.480145,9118.0918};
+				angles[]={0,5.6299396,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=363;
+			type="Land_SandbagBarricade_01_half_F";
+		};
+		class Item37
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8464.5635,18.323856,9116.6904};
+				angles[]={0,5.5447516,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=364;
+			type="Land_SandbagBarricade_01_F";
+		};
+		class Item38
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8467.833,17.892345,9119.2588};
+				angles[]={0,5.6890368,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=365;
+			type="Land_SandbagBarricade_01_hole_F";
+		};
+		class Item39
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8462.9355,17.948456,9115.1934};
+				angles[]={0,5.4782662,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=366;
+			type="Land_SandbagBarricade_01_half_F";
+		};
+		class Item40
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8400.3652,10.612947,9074.8594};
+				angles[]={0.22103374,2.0132506,6.2823768};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=367;
+			type="Land_Bunker_01_blocks_1_F";
+			atlOffset=-0.51790619;
+		};
+		class Item41
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8401.4688,10.98421,9080.3164};
+				angles[]={0.14073437,1.701174,0.080599628};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=368;
+			type="Land_Bunker_01_blocks_3_F";
+			atlOffset=-0.28458977;
+		};
+		class Item42
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8398.8262,10.565325,9072.0488};
+				angles[]={5.7998137,2.2051411,6.0240831};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=369;
+			type="Land_Bunker_01_blocks_1_F";
+			atlOffset=-0.56480408;
+		};
+		class Item43
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8392.9541,11.219293,9063.4199};
+				angles[]={0.35584137,2.5666883,6.2823768};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=370;
+			type="Land_Bunker_01_blocks_1_F";
+			atlOffset=0.024252892;
+		};
+		class Item44
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8396.7998,10.722815,9067.5947};
+				angles[]={0.015660733,2.184128,0.34592977};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=371;
+			type="Land_Bunker_01_blocks_3_F";
+			atlOffset=-0.37824535;
+		};
+		class Item45
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8390.207,11.26973,9061.7607};
+				angles[]={5.9034424,2.620018,0.11118831};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=372;
+			type="Land_Bunker_01_blocks_1_F";
+			atlOffset=-0.040694237;
+		};
+		class Item46
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8372.1152,14.518956,9104.2168};
+				angles[]={0.22103374,2.0132506,6.2823768};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=376;
+			type="Land_Bunker_01_blocks_1_F";
+			atlOffset=-0.12766647;
+		};
+		class Item47
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8373.2188,14.89022,9109.6738};
+				angles[]={0.14073437,1.701174,0.080599628};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=377;
+			type="Land_Bunker_01_blocks_3_F";
+			atlOffset=-0.16787624;
+		};
+		class Item48
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8370.5762,14.471334,9101.4063};
+				angles[]={5.7998137,2.2051411,6.0240831};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=378;
+			type="Land_Bunker_01_blocks_1_F";
+			atlOffset=-0.034022331;
+		};
+		class Item49
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8364.7031,14.421638,9092.5156};
+				angles[]={0.35584137,2.5666883,6.2823768};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=379;
+			type="Land_Bunker_01_blocks_1_F";
+			atlOffset=0.12427616;
+		};
+		class Item50
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8368.5488,13.92516,9096.6904};
+				angles[]={0.015660733,2.184128,0.34592977};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=380;
+			type="Land_Bunker_01_blocks_3_F";
+			atlOffset=-0.36960506;
+		};
+		class Item51
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8361.9561,14.472075,9090.8564};
+				angles[]={5.9034424,2.620018,0.11118831};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=381;
+			type="Land_Bunker_01_blocks_1_F";
+			atlOffset=0.085636139;
+		};
+		class Item52
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8264.6104,25.416021,9146.8945};
+				angles[]={0.17640784,2.652385,6.1493144};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=382;
+			type="Land_Bunker_01_blocks_1_F";
+			atlOffset=-0.22292709;
+		};
+		class Item53
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8268.793,25.209923,9150.5674};
+				angles[]={0.16073641,2.3447261,6.2625241};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=383;
+			type="Land_Bunker_01_blocks_3_F";
+			atlOffset=-0.11500359;
+		};
+		class Item54
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8261.6846,25.368399,9145.5908};
+				angles[]={5.7435393,2.7729018,0.068431981};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=384;
+			type="Land_Bunker_01_blocks_1_F";
+			atlOffset=-0.30809784;
+		};
+		class Item55
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8251.7842,25.738449,9142.2832};
+				angles[]={0.28700194,3.1868024,6.0698514};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=385;
+			type="Land_Bunker_01_blocks_1_F";
+			atlOffset=-0.086647034;
+		};
+		class Item56
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8257.3711,25.525888,9143.2773};
+				angles[]={0.22689241,2.8625302,0.26386952};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=386;
+			type="Land_Bunker_01_blocks_3_F";
+			atlOffset=0.0029773712;
+		};
+		class Item57
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8248.5908,25.444725,9142.6279};
+				angles[]={6.0432343,3.2538164,0.31675151};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=387;
+			type="Land_Bunker_01_blocks_1_F";
+			atlOffset=-0.39537239;
+		};
+		class Item58
+		{
+			dataType="Marker";
+			position[]={8265.7959,163.83667,9131.9736};
+			name="marker_8";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorRed";
+			a=5;
+			b=124.047;
+			angle=358.29382;
+			id=390;
+			atlOffset=138.98071;
+		};
+		class Item59
+		{
+			dataType="Marker";
+			position[]={8325.8516,158.99841,9380.9961};
+			name="marker_9";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorRed";
+			a=5;
+			b=144.34106;
+			angle=26.565048;
+			id=391;
+			atlOffset=138.3334;
+		};
+		class Item60
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8462.917,17.345955,9104.873};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=396;
+					type="O_Soldier_F";
+					atlOffset=2.2888184e-005;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=395;
+			atlOffset=2.2888184e-005;
+		};
+		class Item61
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={8422.5352,16.513,9133.0957};
+			};
+			title="TODO";
+			description="Fixa lagom mängd tickets för anfallaren" \n "Försvararen oändligt typ";
+			id=397;
+			atlOffset=-0.00049591064;
+		};
+		class Item62
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8468.4453,38.113373,9105.4033};
+				angles[]={0,1.9514347,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=399;
+			type="Land_BagFence_01_round_green_F";
+			atlOffset=0.44437408;
+		};
+	};
+};
