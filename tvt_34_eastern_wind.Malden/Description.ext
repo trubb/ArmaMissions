@@ -1,5 +1,5 @@
 author = "Trubb | Anrop.se";
-onLoadName = "TVT34 - Eldöverfallsträning";
+onLoadName = "TVT34 - Eastern Wind";
 
 class Header
 {
@@ -47,9 +47,9 @@ class Params
 	    class f_param_mission_timer
     {
             title = "Safe Start";
-            values[] = {0,3,5,7,10};
-            texts[] = {"Safe Start Off","3","5","7","10"};
-            default = 3;
+            values[] = {0,3,5,7,10,15};
+            texts[] = {"Safe Start Off","3","5","7","10","15"};
+            default = 10;
             code = "f_param_mission_timer = %1";
     };
 };
@@ -83,7 +83,7 @@ class CfgDebriefing {
 	class End1 {
 		title = "BLUFOR vinner!";
 		subtitle = "";
-		description = "BLUFOR tog sig genom zonen!";
+		description = "BLUFOR slog ut alla OPFOR!";
 		pictureBackground = "";
 		picture = "b_inf";
 		pictureColor[] = {0.0,0.3,0.6,1};
@@ -95,23 +95,6 @@ class CfgDebriefing {
 		description = "OPFOR slog ut alla BLUFOR!";
 		pictureBackground = "";
 		picture = "o_inf";
-		pictureColor[] = {0.0,0.3,0.6,1};
-	};
-
-	class End3 {
-		title = "BLUFOR vinner!";
-		subtitle = "";
-		description = "BLUFOR slog ut alla OPFOR!";
-		pictureBackground = "";
-		picture = "b_inf";
-		pictureColor[] = {0.0,0.3,0.6,1};
-	};
-	class End4 {
-		title = "Tiden tog slut!";
-		subtitle = "";
-		description = "Oavgjort, tiden tog slut!";
-		pictureBackground = "";
-		picture = "b_inf";
 		pictureColor[] = {0.0,0.3,0.6,1};
 	};
 };

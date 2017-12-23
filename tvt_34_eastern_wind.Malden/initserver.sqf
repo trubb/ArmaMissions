@@ -1,7 +1,7 @@
 // [side, wave size, wave coutn, custom loadout, pvp] <script call>
 // [resistance] remoteExec ["zsn_waverespawn", 2];
-[west, 4, 6, false, true] remoteExec ["zsn_waverespawn", 2];
-[east, 1, 4, false, true] remoteExec ["zsn_waverespawn", 2];
+[west, 4, 7, false, true] remoteExec ["zsn_waverespawn", 2];
+[east, 1, 18, false, true] remoteExec ["zsn_waverespawn", 2];
 
 zsn_waverespawn = {
 	params [
