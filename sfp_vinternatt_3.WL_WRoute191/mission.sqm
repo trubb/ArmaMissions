@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2231.9797,152.89359,4200.8975};
-		dir[]={0.091658115,-0.72711289,-0.68039203};
-		up[]={0.09707424,0.68652004,-0.72060084};
-		aside[]={-0.99105966,1.1262309e-006,-0.13350685};
+		pos[]={2214.5459,84.248352,4085.1018};
+		dir[]={0.64793819,-0.61689115,-0.44682503};
+		up[]={0.50784481,0.78704578,-0.3502157};
+		aside[]={-0.56771767,8.8766683e-007,-0.82323998};
 	};
 };
 binarizationWanted=0;
@@ -47,7 +47,6 @@ addons[]=
 	"ace_optics",
 	"tfar_handhelds",
 	"ace_dagr",
-	"ace_trenches",
 	"ace_flashlights",
 	"ace_maptools",
 	"ace_realisticnames",
@@ -82,7 +81,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=45;
+		items=44;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -217,159 +216,152 @@ class AddonsMetaData
 		};
 		class Item20
 		{
-			className="ace_trenches";
-			name="ACE3 - Trenches";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item21
-		{
 			className="ace_flashlights";
 			name="ACE3 - Flashlights";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item22
+		class Item21
 		{
 			className="ace_maptools";
 			name="ACE3 - Map Tools";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item23
+		class Item22
 		{
 			className="sfp_weapons_grenades";
 			name="sfp_weapons_grenades";
 		};
-		class Item24
+		class Item23
 		{
 			className="ace_chemlights";
 			name="ace_chemlights";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item25
+		class Item24
 		{
 			className="ace_grenades";
 			name="ACE3 - Grenades";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item26
+		class Item25
 		{
 			className="tf47_at4";
 			name="tf47_at4";
 		};
-		class Item27
+		class Item26
 		{
 			className="sfp_attachment";
 			name="sfp_attachment";
 		};
-		class Item28
+		class Item27
 		{
 			className="sfp_ksp90w";
 			name="sfp_ksp90w";
 		};
-		class Item29
+		class Item28
 		{
 			className="ace_attach";
 			name="ACE3 - Attach";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item30
+		class Item29
 		{
 			className="sfp_ksp58";
 			name="sfp_ksp58";
 		};
-		class Item31
+		class Item30
 		{
 			className="ace_overheating";
 			name="ACE3 - Overheating";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item32
+		class Item31
 		{
 			className="tf47_m3maaws";
 			name="tf47_m3maaws";
 		};
-		class Item33
+		class Item32
 		{
 			className="ace_advanced_fatigue";
 			name="ACE3 - Advanced Fatigue";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item34
+		class Item33
 		{
 			className="acex_headless";
 			name="ACEX - Headless";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item35
+		class Item34
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item36
+		class Item35
 		{
 			className="rhs_c_troops";
 			name="AFRF Infantry & Equipment";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item37
+		class Item36
 		{
 			className="rhs_c_btr";
 			name="BTR-70 & 80";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item38
+		class Item37
 		{
 			className="ace_compat_rhs_afrf3";
 			name="ACE3 - RHS AFRF Compatibility";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item39
+		class Item38
 		{
 			className="rhs_c_bmp";
 			name="BMP-1 & 2 IFV";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item40
+		class Item39
 		{
 			className="rhs_c_trucks";
 			name="GAZ-66";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item41
+		class Item40
 		{
 			className="rhs_c_a2port_car";
 			name="A2 ported cars";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item42
+		class Item41
 		{
 			className="CUP_Editor_Plants_Config";
 			name="CUP_Editor_Plants_Config";
 		};
-		class Item43
+		class Item42
 		{
 			className="A3_Rocks_F";
 			name="Arma 3 - Rocks and Stones";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item44
+		class Item43
 		{
 			className="sfp_tgb11";
 			name="sfp_tgb11";
@@ -397,7 +389,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -471,7 +463,7 @@ class CustomAttributes
 		};
 		nAttributes=2;
 	};
-	class Category1
+	class Category2
 	{
 		name="Scenario";
 		class Attribute0
@@ -953,162 +945,6 @@ class Mission
 			};
 			id=34;
 			type="TFAR_ModuleTaskForceRadioEnforceUsage";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="TFAR_ModuleTaskForceRadioEnforceUsage_radio_channel_password";
-					expression="_this setVariable ['radio_channel_password',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="123";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="TFAR_ModuleTaskForceRadioEnforceUsage_RiflemanRadio";
-					expression="_this setVariable ['RiflemanRadio',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="TFAR_ModuleTaskForceRadioEnforceUsage_radio_channel_name";
-					expression="_this setVariable ['radio_channel_name',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="TaskForceRadio";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="TFAR_ModuleTaskForceRadioEnforceUsage_same_sw_frequencies_for_side";
-					expression="_this setVariable ['same_sw_frequencies_for_side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="TFAR_ModuleTaskForceRadioEnforceUsage_TeamLeaderRadio";
-					expression="_this setVariable ['TeamLeaderRadio',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="TFAR_ModuleTaskForceRadioEnforceUsage_full_duplex";
-					expression="_this setVariable ['full_duplex',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="TFAR_ModuleTaskForceRadioEnforceUsage_same_lr_frequencies_for_side";
-					expression="_this setVariable ['same_lr_frequencies_for_side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="TFAR_ModuleTaskForceRadioEnforceUsage_terrain_interception_coefficient";
-					expression="_this setVariable ['terrain_interception_coefficient',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=7;
-						};
-					};
-				};
-				nAttributes=8;
-			};
 		};
 		class Item3
 		{
@@ -2343,7 +2179,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -2356,20 +2192,15 @@ class Mission
 									};
 									class Item2
 									{
-										name="ACE_EntrenchingTool";
+										name="ACE_Flashlight_XL50";
 										count=1;
 									};
 									class Item3
 									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item4
-									{
 										name="ACE_MapTools";
 										count=1;
 									};
-									class Item5
+									class Item4
 									{
 										name="ACE_morphine";
 										count=5;
@@ -2645,7 +2476,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -2658,20 +2489,15 @@ class Mission
 									};
 									class Item2
 									{
-										name="ACE_EntrenchingTool";
+										name="ACE_Flashlight_XL50";
 										count=1;
 									};
 									class Item3
 									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item4
-									{
 										name="ACE_MapTools";
 										count=1;
 									};
-									class Item5
+									class Item4
 									{
 										name="ACE_morphine";
 										count=5;
@@ -3042,7 +2868,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -3055,20 +2881,15 @@ class Mission
 									};
 									class Item2
 									{
-										name="ACE_EntrenchingTool";
+										name="ACE_Flashlight_XL50";
 										count=1;
 									};
 									class Item3
 									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item4
-									{
 										name="ACE_MapTools";
 										count=1;
 									};
-									class Item5
+									class Item4
 									{
 										name="ACE_morphine";
 										count=5;
@@ -3356,7 +3177,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -3369,20 +3190,15 @@ class Mission
 									};
 									class Item2
 									{
-										name="ACE_EntrenchingTool";
+										name="ACE_Flashlight_XL50";
 										count=1;
 									};
 									class Item3
 									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item4
-									{
 										name="ACE_MapTools";
 										count=1;
 									};
-									class Item5
+									class Item4
 									{
 										name="ACE_morphine";
 										count=5;
@@ -3647,7 +3463,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -3660,20 +3476,15 @@ class Mission
 									};
 									class Item2
 									{
-										name="ACE_EntrenchingTool";
+										name="ACE_Flashlight_XL50";
 										count=1;
 									};
 									class Item3
 									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item4
-									{
 										name="ACE_MapTools";
 										count=1;
 									};
-									class Item5
+									class Item4
 									{
 										name="ACE_morphine";
 										count=5;
@@ -3914,7 +3725,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -3927,20 +3738,15 @@ class Mission
 									};
 									class Item2
 									{
-										name="ACE_EntrenchingTool";
+										name="ACE_Flashlight_XL50";
 										count=1;
 									};
 									class Item3
 									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item4
-									{
 										name="ACE_MapTools";
 										count=1;
 									};
-									class Item5
+									class Item4
 									{
 										name="ACE_morphine";
 										count=5;
@@ -4190,7 +3996,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -4203,20 +4009,15 @@ class Mission
 									};
 									class Item2
 									{
-										name="ACE_EntrenchingTool";
+										name="ACE_Flashlight_XL50";
 										count=1;
 									};
 									class Item3
 									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item4
-									{
 										name="ACE_MapTools";
 										count=1;
 									};
-									class Item5
+									class Item4
 									{
 										name="ACE_morphine";
 										count=5;
@@ -4466,7 +4267,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -4479,20 +4280,15 @@ class Mission
 									};
 									class Item2
 									{
-										name="ACE_EntrenchingTool";
+										name="ACE_Flashlight_XL50";
 										count=1;
 									};
 									class Item3
 									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item4
-									{
 										name="ACE_MapTools";
 										count=1;
 									};
-									class Item5
+									class Item4
 									{
 										name="ACE_morphine";
 										count=5;
@@ -4733,7 +4529,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=8;
+									items=7;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -4746,30 +4542,25 @@ class Mission
 									};
 									class Item2
 									{
-										name="ACE_EntrenchingTool";
+										name="ACE_Flashlight_XL50";
 										count=1;
 									};
 									class Item3
 									{
-										name="ACE_Flashlight_XL50";
+										name="ACE_MapTools";
 										count=1;
 									};
 									class Item4
 									{
-										name="ACE_MapTools";
-										count=1;
-									};
-									class Item5
-									{
 										name="ACE_morphine";
 										count=5;
 									};
-									class Item6
+									class Item5
 									{
 										name="ACE_M26_Clacker";
 										count=1;
 									};
-									class Item7
+									class Item6
 									{
 										name="ACE_DefusalKit";
 										count=1;
@@ -5053,7 +4844,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -5066,20 +4857,15 @@ class Mission
 									};
 									class Item2
 									{
-										name="ACE_EntrenchingTool";
+										name="ACE_Flashlight_XL50";
 										count=1;
 									};
 									class Item3
 									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item4
-									{
 										name="ACE_MapTools";
 										count=1;
 									};
-									class Item5
+									class Item4
 									{
 										name="ACE_morphine";
 										count=5;
@@ -5405,7 +5191,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -5418,20 +5204,15 @@ class Mission
 									};
 									class Item2
 									{
-										name="ACE_EntrenchingTool";
+										name="ACE_Flashlight_XL50";
 										count=1;
 									};
 									class Item3
 									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item4
-									{
 										name="ACE_MapTools";
 										count=1;
 									};
-									class Item5
+									class Item4
 									{
 										name="ACE_morphine";
 										count=5;
@@ -5719,7 +5500,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -5732,20 +5513,15 @@ class Mission
 									};
 									class Item2
 									{
-										name="ACE_EntrenchingTool";
+										name="ACE_Flashlight_XL50";
 										count=1;
 									};
 									class Item3
 									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item4
-									{
 										name="ACE_MapTools";
 										count=1;
 									};
-									class Item5
+									class Item4
 									{
 										name="ACE_morphine";
 										count=5;
@@ -6010,7 +5786,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -6023,20 +5799,15 @@ class Mission
 									};
 									class Item2
 									{
-										name="ACE_EntrenchingTool";
+										name="ACE_Flashlight_XL50";
 										count=1;
 									};
 									class Item3
 									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item4
-									{
 										name="ACE_MapTools";
 										count=1;
 									};
-									class Item5
+									class Item4
 									{
 										name="ACE_morphine";
 										count=5;
@@ -6277,7 +6048,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -6290,20 +6061,15 @@ class Mission
 									};
 									class Item2
 									{
-										name="ACE_EntrenchingTool";
+										name="ACE_Flashlight_XL50";
 										count=1;
 									};
 									class Item3
 									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item4
-									{
 										name="ACE_MapTools";
 										count=1;
 									};
-									class Item5
+									class Item4
 									{
 										name="ACE_morphine";
 										count=5;
@@ -6553,7 +6319,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -6566,20 +6332,15 @@ class Mission
 									};
 									class Item2
 									{
-										name="ACE_EntrenchingTool";
+										name="ACE_Flashlight_XL50";
 										count=1;
 									};
 									class Item3
 									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item4
-									{
 										name="ACE_MapTools";
 										count=1;
 									};
-									class Item5
+									class Item4
 									{
 										name="ACE_morphine";
 										count=5;
@@ -6829,7 +6590,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -6842,20 +6603,15 @@ class Mission
 									};
 									class Item2
 									{
-										name="ACE_EntrenchingTool";
+										name="ACE_Flashlight_XL50";
 										count=1;
 									};
 									class Item3
 									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item4
-									{
 										name="ACE_MapTools";
 										count=1;
 									};
-									class Item5
+									class Item4
 									{
 										name="ACE_morphine";
 										count=5;
@@ -7096,7 +6852,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=8;
+									items=7;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -7109,30 +6865,25 @@ class Mission
 									};
 									class Item2
 									{
-										name="ACE_EntrenchingTool";
+										name="ACE_Flashlight_XL50";
 										count=1;
 									};
 									class Item3
 									{
-										name="ACE_Flashlight_XL50";
+										name="ACE_MapTools";
 										count=1;
 									};
 									class Item4
 									{
-										name="ACE_MapTools";
-										count=1;
-									};
-									class Item5
-									{
 										name="ACE_morphine";
 										count=5;
 									};
-									class Item6
+									class Item5
 									{
 										name="ACE_M26_Clacker";
 										count=1;
 									};
-									class Item7
+									class Item6
 									{
 										name="ACE_DefusalKit";
 										count=1;
@@ -7416,7 +7167,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -7429,20 +7180,15 @@ class Mission
 									};
 									class Item2
 									{
-										name="ACE_EntrenchingTool";
+										name="ACE_Flashlight_XL50";
 										count=1;
 									};
 									class Item3
 									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item4
-									{
 										name="ACE_MapTools";
 										count=1;
 									};
-									class Item5
+									class Item4
 									{
 										name="ACE_morphine";
 										count=5;
@@ -7768,7 +7514,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -7781,20 +7527,15 @@ class Mission
 									};
 									class Item2
 									{
-										name="ACE_EntrenchingTool";
+										name="ACE_Flashlight_XL50";
 										count=1;
 									};
 									class Item3
 									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item4
-									{
 										name="ACE_MapTools";
 										count=1;
 									};
-									class Item5
+									class Item4
 									{
 										name="ACE_morphine";
 										count=5;
@@ -8084,7 +7825,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -8097,20 +7838,15 @@ class Mission
 									};
 									class Item2
 									{
-										name="ACE_EntrenchingTool";
+										name="ACE_Flashlight_XL50";
 										count=1;
 									};
 									class Item3
 									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item4
-									{
 										name="ACE_MapTools";
 										count=1;
 									};
-									class Item5
+									class Item4
 									{
 										name="ACE_morphine";
 										count=5;
@@ -8379,7 +8115,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -8392,20 +8128,15 @@ class Mission
 									};
 									class Item2
 									{
-										name="ACE_EntrenchingTool";
+										name="ACE_Flashlight_XL50";
 										count=1;
 									};
 									class Item3
 									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item4
-									{
 										name="ACE_MapTools";
 										count=1;
 									};
-									class Item5
+									class Item4
 									{
 										name="ACE_morphine";
 										count=5;
@@ -8647,7 +8378,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -8660,20 +8391,15 @@ class Mission
 									};
 									class Item2
 									{
-										name="ACE_EntrenchingTool";
+										name="ACE_Flashlight_XL50";
 										count=1;
 									};
 									class Item3
 									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item4
-									{
 										name="ACE_MapTools";
 										count=1;
 									};
-									class Item5
+									class Item4
 									{
 										name="ACE_morphine";
 										count=5;
@@ -8930,7 +8656,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -8943,20 +8669,15 @@ class Mission
 									};
 									class Item2
 									{
-										name="ACE_EntrenchingTool";
+										name="ACE_Flashlight_XL50";
 										count=1;
 									};
 									class Item3
 									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item4
-									{
 										name="ACE_MapTools";
 										count=1;
 									};
-									class Item5
+									class Item4
 									{
 										name="ACE_morphine";
 										count=5;
@@ -9207,7 +8928,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -9220,20 +8941,15 @@ class Mission
 									};
 									class Item2
 									{
-										name="ACE_EntrenchingTool";
+										name="ACE_Flashlight_XL50";
 										count=1;
 									};
 									class Item3
 									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item4
-									{
 										name="ACE_MapTools";
 										count=1;
 									};
-									class Item5
+									class Item4
 									{
 										name="ACE_morphine";
 										count=5;
@@ -9496,7 +9212,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -9509,20 +9225,15 @@ class Mission
 									};
 									class Item2
 									{
-										name="ACE_EntrenchingTool";
+										name="ACE_Flashlight_XL50";
 										count=1;
 									};
 									class Item3
 									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item4
-									{
 										name="ACE_MapTools";
 										count=1;
 									};
-									class Item5
+									class Item4
 									{
 										name="ACE_morphine";
 										count=5;
@@ -9773,7 +9484,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=5;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -9786,20 +9497,15 @@ class Mission
 									};
 									class Item2
 									{
-										name="ACE_EntrenchingTool";
+										name="ACE_Flashlight_XL50";
 										count=1;
 									};
 									class Item3
 									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item4
-									{
 										name="ACE_MapTools";
 										count=1;
 									};
-									class Item5
+									class Item4
 									{
 										name="ACE_morphine";
 										count=5;
@@ -10975,6 +10681,25 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="Enh_disableAI_suppression";
 							expression="_this disableAI 'SUPPRESSION'";
 							class Value
@@ -10992,7 +10717,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="Enh_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -11008,25 +10733,6 @@ class Mission
 										};
 									};
 									value=1;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
 								};
 							};
 						};
@@ -17893,6 +17599,25 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="Enh_disableAI_suppression";
 							expression="_this disableAI 'SUPPRESSION'";
 							class Value
@@ -17910,7 +17635,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="Enh_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -17926,25 +17651,6 @@ class Mission
 										};
 									};
 									value=1;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
 								};
 							};
 						};
@@ -18994,25 +18700,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="Enh_disableAI_suppression";
 							expression="_this disableAI 'SUPPRESSION'";
 							class Value
@@ -19030,7 +18717,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
+						class Attribute1
 						{
 							property="Enh_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -19046,6 +18733,25 @@ class Mission
 										};
 									};
 									value=1;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
 								};
 							};
 						};
@@ -19733,6 +19439,25 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="Enh_disableAI_suppression";
 							expression="_this disableAI 'SUPPRESSION'";
 							class Value
@@ -19750,7 +19475,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="Enh_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -19766,25 +19491,6 @@ class Mission
 										};
 									};
 									value=1;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
 								};
 							};
 						};
@@ -20162,25 +19868,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="Enh_disableAI_suppression";
 							expression="_this disableAI 'SUPPRESSION'";
 							class Value
@@ -20198,7 +19885,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
+						class Attribute1
 						{
 							property="Enh_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -20214,6 +19901,25 @@ class Mission
 										};
 									};
 									value=1;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
 								};
 							};
 						};
@@ -20405,25 +20111,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="Enh_disableAI_suppression";
 							expression="_this disableAI 'SUPPRESSION'";
 							class Value
@@ -20441,7 +20128,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
+						class Attribute1
 						{
 							property="Enh_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -20457,6 +20144,25 @@ class Mission
 										};
 									};
 									value=1;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
 								};
 							};
 						};
@@ -21467,6 +21173,25 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="Enh_disableAI_suppression";
 							expression="_this disableAI 'SUPPRESSION'";
 							class Value
@@ -21484,7 +21209,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="Enh_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -21500,25 +21225,6 @@ class Mission
 										};
 									};
 									value=1;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
 								};
 							};
 						};
@@ -21710,25 +21416,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="Enh_disableAI_suppression";
 							expression="_this disableAI 'SUPPRESSION'";
 							class Value
@@ -21746,7 +21433,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
+						class Attribute1
 						{
 							property="Enh_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -21762,6 +21449,25 @@ class Mission
 										};
 									};
 									value=1;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
 								};
 							};
 						};
@@ -22625,25 +22331,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="Enh_disableAI_suppression";
 							expression="_this disableAI 'SUPPRESSION'";
 							class Value
@@ -22661,7 +22348,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
+						class Attribute1
 						{
 							property="Enh_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -22677,6 +22364,25 @@ class Mission
 										};
 									};
 									value=1;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
 								};
 							};
 						};
@@ -23402,6 +23108,25 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="Enh_disableAI_suppression";
 							expression="_this disableAI 'SUPPRESSION'";
 							class Value
@@ -23419,7 +23144,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="Enh_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -23435,25 +23160,6 @@ class Mission
 										};
 									};
 									value=1;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
 								};
 							};
 						};
@@ -23645,25 +23351,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="Enh_disableAI_suppression";
 							expression="_this disableAI 'SUPPRESSION'";
 							class Value
@@ -23681,7 +23368,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
+						class Attribute1
 						{
 							property="Enh_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -23697,6 +23384,25 @@ class Mission
 										};
 									};
 									value=1;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
 								};
 							};
 						};
@@ -25225,6 +24931,25 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="Enh_disableAI_suppression";
 							expression="_this disableAI 'SUPPRESSION'";
 							class Value
@@ -25242,7 +24967,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="Enh_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -25258,25 +24983,6 @@ class Mission
 										};
 									};
 									value=1;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
 								};
 							};
 						};
@@ -25916,25 +25622,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="Enh_disableAI_suppression";
 							expression="_this disableAI 'SUPPRESSION'";
 							class Value
@@ -25952,7 +25639,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
+						class Attribute1
 						{
 							property="Enh_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -25968,6 +25655,25 @@ class Mission
 										};
 									};
 									value=1;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
 								};
 							};
 						};
@@ -31065,6 +30771,25 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="Enh_disableAI_suppression";
 							expression="_this disableAI 'SUPPRESSION'";
 							class Value
@@ -31082,7 +30807,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="Enh_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -31098,25 +30823,6 @@ class Mission
 										};
 									};
 									value=1;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
 								};
 							};
 						};
@@ -31718,6 +31424,25 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="Enh_disableAI_suppression";
 							expression="_this disableAI 'SUPPRESSION'";
 							class Value
@@ -31735,7 +31460,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="Enh_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -31751,25 +31476,6 @@ class Mission
 										};
 									};
 									value=1;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
 								};
 							};
 						};
@@ -32147,6 +31853,25 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="Enh_disableAI_suppression";
 							expression="_this disableAI 'SUPPRESSION'";
 							class Value
@@ -32164,7 +31889,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="Enh_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -32180,25 +31905,6 @@ class Mission
 										};
 									};
 									value=1;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
 								};
 							};
 						};
@@ -32837,6 +32543,25 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="Enh_disableAI_suppression";
 							expression="_this disableAI 'SUPPRESSION'";
 							class Value
@@ -32854,7 +32579,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="Enh_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -32870,25 +32595,6 @@ class Mission
 										};
 									};
 									value=1;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
 								};
 							};
 						};
@@ -33714,6 +33420,25 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="Enh_disableAI_suppression";
 							expression="_this disableAI 'SUPPRESSION'";
 							class Value
@@ -33731,7 +33456,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="Enh_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -33747,25 +33472,6 @@ class Mission
 										};
 									};
 									value=1;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
 								};
 							};
 						};
@@ -33957,6 +33663,25 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="Enh_disableAI_suppression";
 							expression="_this disableAI 'SUPPRESSION'";
 							class Value
@@ -33974,7 +33699,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="Enh_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -33990,25 +33715,6 @@ class Mission
 										};
 									};
 									value=1;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
 								};
 							};
 						};
@@ -34717,6 +34423,25 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="Enh_disableAI_suppression";
 							expression="_this disableAI 'SUPPRESSION'";
 							class Value
@@ -34734,7 +34459,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="Enh_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -34750,25 +34475,6 @@ class Mission
 										};
 									};
 									value=1;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
 								};
 							};
 						};
@@ -34960,6 +34666,25 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="Enh_disableAI_suppression";
 							expression="_this disableAI 'SUPPRESSION'";
 							class Value
@@ -34977,7 +34702,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="Enh_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -34993,25 +34718,6 @@ class Mission
 										};
 									};
 									value=1;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
 								};
 							};
 						};
@@ -35651,6 +35357,25 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="Enh_disableAI_suppression";
 							expression="_this disableAI 'SUPPRESSION'";
 							class Value
@@ -35668,7 +35393,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="Enh_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -35684,25 +35409,6 @@ class Mission
 										};
 									};
 									value=1;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
 								};
 							};
 						};
@@ -35894,6 +35600,25 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="Enh_disableAI_suppression";
 							expression="_this disableAI 'SUPPRESSION'";
 							class Value
@@ -35911,7 +35636,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="Enh_doStop";
 							expression="if (!is3DEN && _value) then {doStop _this}";
@@ -35927,25 +35652,6 @@ class Mission
 										};
 									};
 									value=1;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
 								};
 							};
 						};
