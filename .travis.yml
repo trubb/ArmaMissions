@@ -1,0 +1,10 @@
+language: c
+sudo: required
+
+install:
+  - sudo add-apt-repository -y ppa:koffeinflummi/armake
+  - sudo apt-get update
+  - sudo apt-get -y install armake python3-pip
+  - sudo pip3 install sqflint
+script:
+  - make
