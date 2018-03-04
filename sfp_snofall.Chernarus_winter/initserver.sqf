@@ -1,5 +1,7 @@
 //[side, wavesize, wavecount, trolloadouts, pvp?, respawnside]
-[west, 16] remoteExec ["zsn_waverespawn", 2];
+//[west, 16] remoteExec ["zsn_waverespawn", 2];
+
+[west, (paramsarray select 0), (paramsarray select 1), false, false, west] remoteExec ["zsn_waverespawn", 2];
 
 zsn_waverespawn = {
 	params [
@@ -129,9 +131,8 @@ zsn_allplayersdead = {
 };
 
 zsn_spawnwave_east = {
-	_units = _this;
-	private "_units";
-	["", "BLACK OUT"] remoteexec ["titleText", _units];
+	private _units = _this;
+	["", "BLACK OUT"] remoteExec ["titleText", _units];
 	_players = _units apply {[ rankId _x, rating _x, _x ]};
 	_players = _players - [ -1 ];
 	_players sort false;
@@ -158,13 +159,12 @@ zsn_spawnwave_east = {
 	["Terminate"] remoteExec ["BIS_fnc_EGSpectator", _units];
 	zsn_wavecount_east = zsn_wavecount_east - 1;
 	publicVariable "zsn_wavecount_east";
-	["", "BLACK IN"] remoteexec ["titleText", _units];
+	["", "BLACK IN"] remoteExec ["titleText", _units];
 };
 
 zsn_spawnwave_west = {
-	_units = _this;
-	private "_units";
-	["", "BLACK OUT"] remoteexec ["titleText", _units];
+	private _units = _this;
+	["", "BLACK OUT"] remoteExec ["titleText", _units];
 	_players = _units apply {[ rankId _x, rating _x, _x ]};
 	_players = _players - [ -1 ];
 	_players sort false;
@@ -191,13 +191,13 @@ zsn_spawnwave_west = {
 	["Terminate"] remoteExec ["BIS_fnc_EGSpectator", _units];
 	zsn_wavecount_west = zsn_wavecount_west - 1;
 	publicVariable "zsn_wavecount_west";
-	["", "BLACK IN"] remoteexec ["titleText",  _units]; 	
+	["", "BLACK IN"] remoteExec ["titleText",  _units]; 	
 };
 
 zsn_spawnwave_resistance = {
 	_units = _this;
 	private "_units";
-	["", "BLACK OUT"] remoteexec ["titleText", _units];
+	["", "BLACK OUT"] remoteExec ["titleText", _units];
 	_players = _units apply {[ rankId _x, rating _x, _x ]};
 	_players = _players - [ -1 ];
 	_players sort false;
@@ -224,5 +224,5 @@ zsn_spawnwave_resistance = {
 	["Terminate"] remoteExec ["BIS_fnc_EGSpectator", _units];
 	zsn_wavecount_resistance = zsn_wavecount_resistance - 1;
 	publicVariable "zsn_wavecount_resistance";
-	["", "BLACK IN"] remoteexec ["titleText", _units];
+	["", "BLACK IN"] remoteExec ["titleText", _units];
 };

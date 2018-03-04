@@ -6,7 +6,7 @@ _unit addGoggles "sfp_skyddsmask90";
 [player, [missionNamespace, "inventory_var"]] call BIS_fnc_saveInventory;
 
 // Give FNGs safety vests, so they are easier to keep track of
-if (isMultiplayer) then {
+/*if (isMultiplayer) then {
 	if (isnil {squadParams player select 0 select 1}) then {
 		removeVest player; 
 		if (571710 in (getDLCs 1)) then	{
@@ -23,7 +23,7 @@ if (isMultiplayer) then {
 			};
 		};
 	};
-};
+};*/
 
 // Remove magazine from gun and add it to inventory
 if (currentWeapon player isKindOf ["Rifle_Base_F", configFile >> "CfgWeapons"]) then {
