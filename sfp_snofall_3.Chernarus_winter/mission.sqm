@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8539.1045,867.26758,9750.0752};
-		dir[]={-0.41006169,-0.55620527,-0.72289437};
-		up[]={-0.27443445,0.83104122,-0.48379746};
-		aside[]={-0.86983818,-1.0593794e-007,0.49341565};
+		pos[]={8467.9297,536.44525,9119.2588};
+		dir[]={-0.90546501,-0.4061867,0.12366603};
+		up[]={-0.40249139,0.9137798,0.054971054};
+		aside[]={0.13532785,3.8906001e-007,0.99086612};
 	};
 };
 binarizationWanted=0;
@@ -11105,22 +11105,22 @@ class Mission
 		class Item26
 		{
 			dataType="Marker";
-			position[]={8171.6895,503.9483,9067.7588};
+			position[]={8358.5811,503.1543,9053.1152};
 			name="ru_spawn_1";
 			type="mil_start";
 			colorName="ColorRed";
 			id=2826;
-			atlOffset=34.103485;
+			atlOffset=65.659302;
 		};
 		class Item27
 		{
 			dataType="Marker";
-			position[]={7897.4785,390.14917,9035.2725};
+			position[]={8068.5132,412.48999,8881.9971};
 			name="ru_atk_1";
 			type="mil_objective";
 			colorName="ColorRed";
 			id=2827;
-			atlOffset=-44.269348;
+			atlOffset=-44.236084;
 		};
 		class Item28
 		{
@@ -31882,7 +31882,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={8026.314,464.88538,9194.7383};
-			angle=1.998119;
+			angle=1.9981189;
 			class Attributes
 			{
 				name="trench_13";
@@ -49988,7 +49988,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={9943.2744,283.68878,8565.749};
-			angle=0.49615523;
+			angle=0.4961552;
 			class Attributes
 			{
 				sizeA=64.002304;
@@ -51147,7 +51147,7 @@ class Mission
 				class Item4
 				{
 					dataType="Waypoint";
-					position[]={8012.4883,458.88269,9102.6582};
+					position[]={8002.2642,457.43985,9101.3174};
 					type="SeekAndDestroy";
 					class Effects
 					{
@@ -51302,8 +51302,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9080.627,384.64807,9259.3447};
-						angles[]={0.019999012,4.5969605,0.019999012};
+						position[]={9074.8252,383.91025,9280.4746};
+						angles[]={0.039977662,4.5969605,0.023998493};
 					};
 					side="East";
 					flags=4;
@@ -51318,8 +51318,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9080.627,384.64807,9259.3447};
-						angles[]={0.019999012,4.5969605,0.019999012};
+						position[]={9074.8252,383.91025,9280.4746};
+						angles[]={0.039977662,4.5969605,0.023998493};
 					};
 					side="East";
 					flags=4;
@@ -51334,8 +51334,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9080.627,384.64807,9259.3447};
-						angles[]={0.019999012,4.5969605,0.019999012};
+						position[]={9074.8252,383.91025,9280.4746};
+						angles[]={0.039977662,4.5969605,0.023998493};
 					};
 					side="East";
 					flags=6;
@@ -51348,19 +51348,19 @@ class Mission
 				class Item3
 				{
 					dataType="Waypoint";
-					position[]={9067.3525,384.55652,9258.4736};
+					position[]={9061.2217,383.78668,9279.4482};
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					id=4504;
 					type="Move";
-					atlOffset=0.18939209;
+					atlOffset=0.22195435;
 				};
 				class Item4
 				{
 					dataType="Waypoint";
-					position[]={8089.5718,470.13724,9261.7598};
+					position[]={8078.4058,470.02707,9270.8369};
 					class Effects
 					{
 					};
@@ -51430,7 +51430,6 @@ class Mission
 				};
 			};
 			id=4500;
-			atlOffset=-0.032531738;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -51460,8 +51459,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9080.915,386.66492,9259.4912};
-				angles[]={0.019999012,4.5969605,0.019999012};
+				position[]={9074.7842,385.95615,9280.4658};
+				angles[]={0.039977662,4.5969605,0.023998493};
 			};
 			side="East";
 			flags=6;
@@ -51471,7 +51470,6 @@ class Mission
 			};
 			id=4506;
 			type="CUP_O_BMP2_RU";
-			atlOffset=-0.032531738;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -51585,7 +51583,7 @@ class Mission
 				class Item4
 				{
 					dataType="Waypoint";
-					position[]={8043.7734,415.17462,8515.2979};
+					position[]={8030.3662,410.82001,8484.8105};
 					type="SeekAndDestroy";
 					class Effects
 					{
@@ -51732,7 +51730,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={8153.189,414.59232,9208.0576};
-			angle=6.1269937;
+			angle=6.1269956;
 			class Attributes
 			{
 				name="blufor_line_1";
