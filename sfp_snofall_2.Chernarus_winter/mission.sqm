@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5726.6343,353.16086,7749.4551};
-		dir[]={0.61462259,-0.7670126,-0.18430823};
-		up[]={0.73470277,0.64161593,-0.22031696};
-		aside[]={-0.2872414,-1.3044337e-007,-0.95787489};
+		pos[]={5831.2959,349.474,7784.1021};
+		dir[]={0.34861615,-0.31661966,0.88220221};
+		up[]={0.11637686,0.94853848,0.29450062};
+		aside[]={0.93004513,-2.4680048e-007,-0.36752176};
 	};
 };
 binarizationWanted=0;
@@ -3602,6 +3602,7 @@ class Mission
 			};
 			class Attributes
 			{
+				formation="LINE";
 			};
 			id=0;
 			class CustomAttributes
@@ -6053,6 +6054,7 @@ class Mission
 			};
 			class Attributes
 			{
+				formation="STAG COLUMN";
 			};
 			id=3;
 			class CustomAttributes
@@ -8430,6 +8432,7 @@ class Mission
 			};
 			class Attributes
 			{
+				formation="STAG COLUMN";
 			};
 			id=6;
 			class CustomAttributes
@@ -11108,6 +11111,7 @@ class Mission
 			};
 			class Attributes
 			{
+				formation="STAG COLUMN";
 			};
 			id=9;
 			atlOffset=6.1035156e-005;
@@ -17107,7 +17111,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={6989.6172,294.00012,7747.5952};
-			angle=5.8849878;
+			angle=5.8849869;
 			class Attributes
 			{
 				name="task_5";
@@ -35546,6 +35550,7 @@ class Mission
 			};
 			class Attributes
 			{
+				formation="STAG COLUMN";
 			};
 			id=2982;
 			class CustomAttributes
@@ -35770,7 +35775,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5740.9243,319.82825,7757.5361};
-						angles[]={0,1.9997898,0};
+						angles[]={0,1.9997983,0};
 					};
 					side="West";
 					flags=7;
@@ -36008,7 +36013,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5742.0098,319.84259,7759.4858};
-						angles[]={0,1.9997898,0};
+						angles[]={0,1.9997983,0};
 					};
 					side="West";
 					flags=5;
@@ -36246,7 +36251,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5743.0127,319.86371,7761.5132};
-						angles[]={0,1.9997898,0};
+						angles[]={0,1.9997983,0};
 					};
 					side="West";
 					flags=5;
@@ -36485,7 +36490,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5743.9448,319.87897,7763.3926};
-						angles[]={0,1.9997898,0};
+						angles[]={0,1.9997983,0};
 					};
 					side="West";
 					flags=5;
@@ -36721,6 +36726,7 @@ class Mission
 			};
 			class Attributes
 			{
+				formation="LINE";
 			};
 			id=2998;
 			class CustomAttributes
@@ -37002,7 +37008,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={6991.7041,339.55527,8251.8662};
-			angle=3.3513582;
+			angle=3.3513579;
 			class Attributes
 			{
 				name="trenchup_1";
@@ -57972,7 +57978,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={8650.9482,345.77649,6538.4658};
-			angle=6.0958586;
+			angle=6.0958581;
 			class Attributes
 			{
 				condition="call{triggerActivated task_5;}";
@@ -58425,7 +58431,7 @@ class Mission
 			};
 			id=3191;
 			type="ModuleOrdnance_F";
-			atlOffset=0.010772705;
+			atlOffset=0.01071167;
 			class CustomAttributes
 			{
 				class Attribute0
