@@ -1,6 +1,12 @@
 
-params ["_trubb_start", "_trubb_end"];
+params ["_trubb_start", "_trubb_end", "_units"];
 
-private _group = [getMarkerPos _trubb_start, EAST, ["ZSN_SoldierENCO", "ZSN_SoldierEMedic", "ZSN_SoldierELeader", "ZSN_SoldierELeader", "ZSN_SoldierEAR", "ZSN_SoldierEAR", "ZSN_SoldierEB", "ZSN_SoldierEB", "ZSN_SoldierEB", "ZSN_SoldierEB"] ] call BIS_fnc_spawnGroup;
+private _group = [getMarkerPos _trubb_start, EAST, _units ] call BIS_fnc_spawnGroup;
+
+_group setFormation "LINE";
+_group setCombatMode "RED";
+_group deleteGroupWhenEmpty true;
 
 _group addWaypoint [getMarkerPos _trubb_end, 0];
+
+_group;
