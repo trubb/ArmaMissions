@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1025;
+	toggles=1;
 	class ItemIDProvider
 	{
 		nextID=2549;
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4907.4448,59.754864,2612.1863};
-		dir[]={-0.2260337,-0.44214118,0.86799884};
-		up[]={-0.11142128,0.89694494,0.42787224};
-		aside[]={0.96772677,2.7939677e-009,0.25200367};
+		pos[]={5166.479,81.550049,2530.6685};
+		dir[]={-0.10196848,-0.65664411,0.74727595};
+		up[]={-0.088778771,0.75420016,0.65061504};
+		aside[]={0.99081862,-8.5565262e-009,0.13520068};
 	};
 };
 binarizationWanted=0;
@@ -391,7 +391,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -414,7 +414,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category2
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -11559,21 +11559,21 @@ class Mission
 		class Item18
 		{
 			dataType="Trigger";
-			position[]={4611.5811,50.50161,2875.6753};
-			angle=5.716413;
+			position[]={4611.5811,50.501808,2875.675};
+			angle=5.7164063;
 			class Attributes
 			{
-				name="players_south_3";
+				name="players_south_2";
 				condition="call{this}";
 				onActivation="call{[""ru_spawn_5"", ""ru_target_11"",ru_squad] call trubb_fnc_spawnGroup;" \n "[""ru_spawn_5"", ""ru_target_12"",ru_squad] call trubb_fnc_spawnGroup;}";
-				sizeA=98.020485;
-				sizeB=139.60255;
+				sizeA=98.019997;
+				sizeB=139.603;
 				activationBy="WEST";
 				isServerOnly=1;
 			};
 			id=1527;
 			type="EmptyDetector";
-			atlOffset=1.6857986;
+			atlOffset=1.685997;
 		};
 		class Item19
 		{
@@ -42308,7 +42308,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={4735.2969,50.594337,3285.6589};
-			angle=0.74028134;
+			angle=0.74028116;
 			class Attributes
 			{
 				condition="call{triggerActivated players_south_5;}";
