@@ -206,3 +206,9 @@ class CfgRespawnInventory
 		backpack = "sfp_stridssele_backpack";
 	};
 };
+class CfgDebriefingSections {
+    class acex_killTracker {
+        title = "Acex Killed Events";
+        variable = "acex_killTracker_outputText";
+    };
+};

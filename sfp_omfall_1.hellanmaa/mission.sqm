@@ -8,7 +8,7 @@ class EditorData
 	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=2549;
+		nextID=2550;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7170.166,102.00358,5495.3672};
-		dir[]={0.49151331,-0.64684439,0.58310777};
-		up[]={0.41689286,0.76262105,0.49458113};
-		aside[]={0.76460558,-1.2211967e-007,-0.6445021};
+		pos[]={6114.2515,47.099709,5111.0703};
+		dir[]={0.95967507,-0.27353832,0.065293677};
+		up[]={0.2729212,0.96185935,0.018568896};
+		aside[]={0.067882605,-2.3440225e-007,-0.99771982};
 	};
 };
 binarizationWanted=0;
@@ -71,13 +71,14 @@ addons[]=
 	"A3_Modules_F_Intel",
 	"tf47_m3maaws",
 	"A3_Structures_F_Mil_Helipads",
-	"A3_Modules_F_Curator_Intel"
+	"A3_Modules_F_Curator_Intel",
+	"sfp_tgb11"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=39;
+		items=40;
 		class Item0
 		{
 			className="ZSN_ColdWarEast";
@@ -316,6 +317,11 @@ class AddonsMetaData
 		{
 			className="tf47_m3maaws";
 			name="tf47_m3maaws";
+		};
+		class Item39
+		{
+			className="sfp_tgb11";
+			name="sfp_tgb11";
 		};
 	};
 };
@@ -2280,7 +2286,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=345;
+		items=346;
 		class Item0
 		{
 			dataType="Group";
@@ -2433,7 +2439,7 @@ class Mission
 				class Attribute0
 				{
 					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
+					expression="_this setFeatureType parseNumber (_value)";
 					class Value
 					{
 						class data
@@ -2621,7 +2627,7 @@ class Mission
 				class Attribute0
 				{
 					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
+					expression="_this setFeatureType parseNumber (_value)";
 					class Value
 					{
 						class data
@@ -2783,7 +2789,7 @@ class Mission
 				class Attribute0
 				{
 					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
+					expression="_this setFeatureType parseNumber (_value)";
 					class Value
 					{
 						class data
@@ -3566,7 +3572,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -3962,7 +3968,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -4437,7 +4443,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -4819,7 +4825,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -5188,7 +5194,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -5543,7 +5549,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -5839,7 +5845,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -6125,7 +6131,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -6494,7 +6500,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -6836,7 +6842,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -7122,7 +7128,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -7408,7 +7414,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -8148,7 +8154,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -8274,7 +8280,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -8293,7 +8299,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -8312,7 +8318,7 @@ class Mission
 						class Attribute7
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -8462,7 +8468,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -8588,7 +8594,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -8607,7 +8613,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -8626,7 +8632,7 @@ class Mission
 						class Attribute7
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -8668,7 +8674,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -8794,7 +8800,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -8813,7 +8819,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -8832,7 +8838,7 @@ class Mission
 						class Attribute7
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -8874,7 +8880,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -9000,7 +9006,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -9019,7 +9025,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -9038,7 +9044,7 @@ class Mission
 						class Attribute7
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -9098,7 +9104,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -9117,7 +9123,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -9136,7 +9142,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -9155,7 +9161,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -9246,7 +9252,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -9372,7 +9378,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -9391,7 +9397,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -9410,7 +9416,7 @@ class Mission
 						class Attribute7
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -9561,7 +9567,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -9687,7 +9693,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -9706,7 +9712,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -9725,7 +9731,7 @@ class Mission
 						class Attribute7
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -9767,7 +9773,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -9893,7 +9899,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -9912,7 +9918,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -9931,7 +9937,7 @@ class Mission
 						class Attribute7
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -9973,7 +9979,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -10099,7 +10105,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -10118,7 +10124,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -10137,7 +10143,7 @@ class Mission
 						class Attribute7
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -10178,7 +10184,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -10304,7 +10310,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -10323,7 +10329,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -10342,7 +10348,7 @@ class Mission
 						class Attribute7
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -10439,7 +10445,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -10458,7 +10464,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -10477,7 +10483,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -10496,7 +10502,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -10714,7 +10720,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -10733,7 +10739,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -10752,7 +10758,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -10771,7 +10777,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -10990,7 +10996,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -11009,7 +11015,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -11028,7 +11034,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -11047,7 +11053,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -11158,7 +11164,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -11177,7 +11183,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -11196,7 +11202,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -11215,7 +11221,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -11326,7 +11332,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -11345,7 +11351,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -11364,7 +11370,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -11383,7 +11389,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -11492,7 +11498,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -11511,7 +11517,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -11530,7 +11536,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -11549,7 +11555,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -11659,7 +11665,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -11678,7 +11684,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -11697,7 +11703,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -11716,7 +11722,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -11826,7 +11832,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -11845,7 +11851,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -11864,7 +11870,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -11883,7 +11889,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -11993,7 +11999,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -12012,7 +12018,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -12031,7 +12037,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -12050,7 +12056,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -12160,7 +12166,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -12179,7 +12185,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -12198,7 +12204,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -12217,7 +12223,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -12423,7 +12429,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -12549,7 +12555,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -12568,7 +12574,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -12724,7 +12730,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -12850,7 +12856,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -12869,7 +12875,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -12966,7 +12972,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -12985,7 +12991,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -13004,7 +13010,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -13023,7 +13029,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -13223,7 +13229,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -13349,7 +13355,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -13368,7 +13374,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -13387,7 +13393,7 @@ class Mission
 						class Attribute7
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -13557,7 +13563,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -13576,7 +13582,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -13595,7 +13601,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -13614,7 +13620,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -13706,7 +13712,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -13832,7 +13838,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -13851,7 +13857,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -13870,7 +13876,7 @@ class Mission
 						class Attribute7
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -13932,7 +13938,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -13951,7 +13957,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -13970,7 +13976,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -13989,7 +13995,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -14080,7 +14086,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -14206,7 +14212,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -14225,7 +14231,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -14244,7 +14250,7 @@ class Mission
 						class Attribute7
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -14286,7 +14292,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -14412,7 +14418,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -14431,7 +14437,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -14450,7 +14456,7 @@ class Mission
 						class Attribute7
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -14511,7 +14517,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -14530,7 +14536,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -14549,7 +14555,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -14568,7 +14574,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -14679,7 +14685,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -14698,7 +14704,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -14717,7 +14723,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -14736,7 +14742,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -14846,7 +14852,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -14865,7 +14871,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -14884,7 +14890,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -14903,7 +14909,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -15031,7 +15037,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -15157,7 +15163,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -15176,7 +15182,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -15195,7 +15201,7 @@ class Mission
 						class Attribute7
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -15236,7 +15242,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -15362,7 +15368,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -15381,7 +15387,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -15400,7 +15406,7 @@ class Mission
 						class Attribute7
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -15441,7 +15447,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -15567,7 +15573,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -15586,7 +15592,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -15605,7 +15611,7 @@ class Mission
 						class Attribute7
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -15665,7 +15671,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -15684,7 +15690,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -15703,7 +15709,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -15722,7 +15728,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -15832,7 +15838,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -15851,7 +15857,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -15870,7 +15876,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -15889,7 +15895,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -15999,7 +16005,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -16018,7 +16024,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -16037,7 +16043,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -16056,7 +16062,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -16166,7 +16172,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -16185,7 +16191,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -16204,7 +16210,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -16223,7 +16229,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -16333,7 +16339,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -16352,7 +16358,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -16371,7 +16377,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -16390,7 +16396,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -16500,7 +16506,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -16519,7 +16525,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -16538,7 +16544,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -16557,7 +16563,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -16667,7 +16673,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -16686,7 +16692,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -16705,7 +16711,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -16724,7 +16730,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -16930,7 +16936,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -17056,7 +17062,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -17075,7 +17081,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -17748,7 +17754,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -17874,7 +17880,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -17893,7 +17899,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -18050,7 +18056,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -18176,7 +18182,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -18195,7 +18201,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -18250,7 +18256,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -18376,7 +18382,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -18395,7 +18401,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -18450,7 +18456,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -18576,7 +18582,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -18595,7 +18601,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -18887,7 +18893,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -19013,7 +19019,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -19032,7 +19038,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -19051,7 +19057,7 @@ class Mission
 						class Attribute7
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -19461,7 +19467,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -19480,7 +19486,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -19499,7 +19505,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -19518,7 +19524,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -19610,7 +19616,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -19736,7 +19742,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -19755,7 +19761,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -19774,7 +19780,7 @@ class Mission
 						class Attribute7
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -19816,7 +19822,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -19942,7 +19948,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -19961,7 +19967,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -19980,7 +19986,7 @@ class Mission
 						class Attribute7
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -20041,7 +20047,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -20060,7 +20066,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -20079,7 +20085,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -20098,7 +20104,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -20209,7 +20215,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -20228,7 +20234,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -20247,7 +20253,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -20266,7 +20272,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -20377,7 +20383,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -20396,7 +20402,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -20415,7 +20421,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -20434,7 +20440,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -20544,7 +20550,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -20563,7 +20569,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -20582,7 +20588,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -20601,7 +20607,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -20711,7 +20717,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -20730,7 +20736,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -20749,7 +20755,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -20768,7 +20774,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -20859,7 +20865,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -20985,7 +20991,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -21004,7 +21010,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -21023,7 +21029,7 @@ class Mission
 						class Attribute7
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -21084,7 +21090,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -21103,7 +21109,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -21122,7 +21128,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -21141,7 +21147,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -21348,7 +21354,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -21474,7 +21480,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -21493,7 +21499,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -21920,7 +21926,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -21939,7 +21945,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -21958,7 +21964,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -21977,7 +21983,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -22177,7 +22183,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -22303,7 +22309,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -22322,7 +22328,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -22341,7 +22347,7 @@ class Mission
 						class Attribute7
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -22510,7 +22516,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -22529,7 +22535,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -22548,7 +22554,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -22567,7 +22573,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -22659,7 +22665,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -22785,7 +22791,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -22804,7 +22810,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -22823,7 +22829,7 @@ class Mission
 						class Attribute7
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -22884,7 +22890,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -22903,7 +22909,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -22922,7 +22928,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -22941,7 +22947,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -23032,7 +23038,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -23158,7 +23164,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -23177,7 +23183,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -23196,7 +23202,7 @@ class Mission
 						class Attribute7
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -23237,7 +23243,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -23363,7 +23369,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -23382,7 +23388,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -23401,7 +23407,7 @@ class Mission
 						class Attribute7
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -23462,7 +23468,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -23481,7 +23487,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -23500,7 +23506,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -23519,7 +23525,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -23630,7 +23636,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -23649,7 +23655,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -23668,7 +23674,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -23687,7 +23693,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -23797,7 +23803,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -23816,7 +23822,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -23835,7 +23841,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -23854,7 +23860,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -24061,7 +24067,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -24187,7 +24193,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -24206,7 +24212,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -24440,7 +24446,6 @@ class Mission
 			position[]={6417.5161,41.055664,5275.3804};
 			name="ru_target_0";
 			type="mil_objective";
-			alpha=0.012877112;
 			id=753;
 			atlOffset=-1.0675163;
 		};
@@ -24622,7 +24627,7 @@ class Mission
 				class Attribute0
 				{
 					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
+					expression="_this setFeatureType parseNumber (_value)";
 					class Value
 					{
 						class data
@@ -24895,8 +24900,7 @@ class Mission
 			position[]={6739.563,40.819,5063.478};
 			name="ru_target_1";
 			type="mil_objective";
-			alpha=0;
-			angle=28.42095;
+			angle=28.420946;
 			id=868;
 			atlOffset=-1.5258789e-005;
 		};
@@ -24974,7 +24978,6 @@ class Mission
 			position[]={6397.5659,42.264999,5375.9741};
 			name="ru_target_3";
 			type="mil_objective";
-			alpha=0.012877112;
 			id=872;
 			atlOffset=-0.69365692;
 		};
@@ -24984,7 +24987,6 @@ class Mission
 			position[]={6438.4038,35.761002,5669.0811};
 			name="ru_target_4";
 			type="mil_objective";
-			alpha=0.017112894;
 			angle=332.59283;
 			id=873;
 			atlOffset=-4.4299545;
@@ -24995,7 +24997,6 @@ class Mission
 			position[]={6395.2852,35.679001,5463.1602};
 			name="ru_target_5";
 			type="mil_objective";
-			alpha=0.012877112;
 			angle=332.59283;
 			id=874;
 			atlOffset=-4.731369;
@@ -25119,7 +25120,7 @@ class Mission
 				class Attribute0
 				{
 					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
+					expression="_this setFeatureType parseNumber (_value)";
 					class Value
 					{
 						class data
@@ -25298,7 +25299,6 @@ class Mission
 			position[]={6754.1646,40.32233,4927.7974};
 			name="ru_target_6";
 			type="mil_objective";
-			alpha=0.012877112;
 			angle=28.420895;
 			id=934;
 			atlOffset=2.2385941;
@@ -25631,7 +25631,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -26012,7 +26012,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -26381,7 +26381,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -26736,7 +26736,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -27033,7 +27033,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -27320,7 +27320,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -27690,7 +27690,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -28032,7 +28032,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -28318,7 +28318,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -28604,7 +28604,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -28981,7 +28981,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -29284,7 +29284,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -29443,7 +29443,7 @@ class Mission
 				class Attribute0
 				{
 					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
+					expression="_this setFeatureType parseNumber (_value)";
 					class Value
 					{
 						class data
@@ -29483,7 +29483,7 @@ class Mission
 				class Attribute0
 				{
 					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
+					expression="_this setFeatureType parseNumber (_value)";
 					class Value
 					{
 						class data
@@ -29523,7 +29523,7 @@ class Mission
 				class Attribute0
 				{
 					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
+					expression="_this setFeatureType parseNumber (_value)";
 					class Value
 					{
 						class data
@@ -29563,7 +29563,7 @@ class Mission
 				class Attribute0
 				{
 					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
+					expression="_this setFeatureType parseNumber (_value)";
 					class Value
 					{
 						class data
@@ -29603,7 +29603,7 @@ class Mission
 				class Attribute0
 				{
 					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
+					expression="_this setFeatureType parseNumber (_value)";
 					class Value
 					{
 						class data
@@ -29642,7 +29642,7 @@ class Mission
 				class Attribute0
 				{
 					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
+					expression="_this setFeatureType parseNumber (_value)";
 					class Value
 					{
 						class data
@@ -29681,7 +29681,7 @@ class Mission
 				class Attribute0
 				{
 					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
+					expression="_this setFeatureType parseNumber (_value)";
 					class Value
 					{
 						class data
@@ -29721,7 +29721,7 @@ class Mission
 				class Attribute0
 				{
 					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
+					expression="_this setFeatureType parseNumber (_value)";
 					class Value
 					{
 						class data
@@ -29761,7 +29761,7 @@ class Mission
 				class Attribute0
 				{
 					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
+					expression="_this setFeatureType parseNumber (_value)";
 					class Value
 					{
 						class data
@@ -29944,7 +29944,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -29963,7 +29963,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -29982,7 +29982,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -30001,7 +30001,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -30093,7 +30093,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -30219,7 +30219,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -30238,7 +30238,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -30257,7 +30257,7 @@ class Mission
 						class Attribute7
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -30298,7 +30298,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -30424,7 +30424,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -30443,7 +30443,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -30462,7 +30462,7 @@ class Mission
 						class Attribute7
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -30523,7 +30523,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -30542,7 +30542,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -30561,7 +30561,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -30580,7 +30580,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -30690,7 +30690,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -30709,7 +30709,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -30728,7 +30728,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -30747,7 +30747,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -30858,7 +30858,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -30877,7 +30877,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -30896,7 +30896,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -30915,7 +30915,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -31026,7 +31026,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -31045,7 +31045,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -31064,7 +31064,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -31083,7 +31083,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -31194,7 +31194,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -31213,7 +31213,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -31232,7 +31232,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -31251,7 +31251,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -31343,7 +31343,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -31469,7 +31469,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -31488,7 +31488,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -31507,7 +31507,7 @@ class Mission
 						class Attribute7
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -31568,7 +31568,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -31587,7 +31587,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -31606,7 +31606,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -31625,7 +31625,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -31831,7 +31831,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -31957,7 +31957,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -31976,7 +31976,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -32199,7 +32199,7 @@ class Mission
 				class Attribute0
 				{
 					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
+					expression="_this setFeatureType parseNumber (_value)";
 					class Value
 					{
 						class data
@@ -32239,7 +32239,7 @@ class Mission
 				class Attribute0
 				{
 					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
+					expression="_this setFeatureType parseNumber (_value)";
 					class Value
 					{
 						class data
@@ -32455,7 +32455,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -32474,7 +32474,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -32493,7 +32493,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -32512,7 +32512,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -32712,7 +32712,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -32838,7 +32838,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -32857,7 +32857,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -32876,7 +32876,7 @@ class Mission
 						class Attribute7
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -33045,7 +33045,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -33064,7 +33064,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -33083,7 +33083,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -33102,7 +33102,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -33194,7 +33194,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -33320,7 +33320,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -33339,7 +33339,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -33358,7 +33358,7 @@ class Mission
 						class Attribute7
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -33419,7 +33419,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -33438,7 +33438,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -33457,7 +33457,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -33476,7 +33476,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -33567,7 +33567,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -33693,7 +33693,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -33712,7 +33712,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -33731,7 +33731,7 @@ class Mission
 						class Attribute7
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -33772,7 +33772,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -33898,7 +33898,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -33917,7 +33917,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -33936,7 +33936,7 @@ class Mission
 						class Attribute7
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -33996,7 +33996,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -34015,7 +34015,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -34034,7 +34034,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -34053,7 +34053,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -34163,7 +34163,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -34182,7 +34182,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -34201,7 +34201,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -34220,7 +34220,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -34330,7 +34330,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -34349,7 +34349,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -34368,7 +34368,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -34387,7 +34387,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -34593,7 +34593,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -34719,7 +34719,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -34738,7 +34738,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -34911,7 +34911,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -35185,7 +35185,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -35356,7 +35356,7 @@ class Mission
 				class Attribute0
 				{
 					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
+					expression="_this setFeatureType parseNumber (_value)";
 					class Value
 					{
 						class data
@@ -35415,7 +35415,7 @@ class Mission
 				class Attribute0
 				{
 					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
+					expression="_this setFeatureType parseNumber (_value)";
 					class Value
 					{
 						class data
@@ -35474,7 +35474,7 @@ class Mission
 				class Attribute0
 				{
 					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
+					expression="_this setFeatureType parseNumber (_value)";
 					class Value
 					{
 						class data
@@ -35586,7 +35586,7 @@ class Mission
 				class Attribute0
 				{
 					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
+					expression="_this setFeatureType parseNumber (_value)";
 					class Value
 					{
 						class data
@@ -35818,7 +35818,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -35944,7 +35944,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -35963,7 +35963,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -36018,7 +36018,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -36144,7 +36144,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -36163,7 +36163,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -36334,7 +36334,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -36460,7 +36460,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -36479,7 +36479,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -36535,7 +36535,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -36661,7 +36661,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -36680,7 +36680,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -36736,7 +36736,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -36862,7 +36862,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -36881,7 +36881,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -37022,7 +37022,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -37148,7 +37148,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -37167,7 +37167,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -37186,7 +37186,7 @@ class Mission
 						class Attribute7
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -37282,7 +37282,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -37408,7 +37408,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -37427,7 +37427,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -37481,7 +37481,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -37607,7 +37607,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -37626,7 +37626,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -37681,7 +37681,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -37807,7 +37807,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -37826,7 +37826,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -37899,7 +37899,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -38025,7 +38025,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -38044,7 +38044,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -38100,7 +38100,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -38226,7 +38226,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -38245,7 +38245,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -38301,7 +38301,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -38427,7 +38427,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -38446,7 +38446,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -38465,7 +38465,7 @@ class Mission
 						class Attribute7
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -38563,7 +38563,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -38582,7 +38582,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -38601,7 +38601,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -38620,7 +38620,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -38745,7 +38745,7 @@ class Mission
 						class Attribute1
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -38764,7 +38764,7 @@ class Mission
 						class Attribute2
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -38783,7 +38783,7 @@ class Mission
 						class Attribute3
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -38802,7 +38802,7 @@ class Mission
 						class Attribute4
 						{
 							property="Enh_disableAI_path";
-							expression="_this disableAI 'PATH'";
+							expression="if(_value) then {_this disableAI 'PATH'}";
 							class Value
 							{
 								class data
@@ -40106,7 +40106,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -40232,7 +40232,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -40251,7 +40251,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -40292,7 +40292,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -40418,7 +40418,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -40437,7 +40437,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -40478,7 +40478,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -40604,7 +40604,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -40623,7 +40623,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -40664,7 +40664,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -40790,7 +40790,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -40809,7 +40809,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -41027,7 +41027,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -41153,7 +41153,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -41172,7 +41172,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -41213,7 +41213,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -41339,7 +41339,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -41358,7 +41358,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -41399,7 +41399,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -41525,7 +41525,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -41544,7 +41544,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -41585,7 +41585,7 @@ class Mission
 						class Attribute0
 						{
 							property="Enh_disableAI_suppression";
-							expression="_this disableAI 'SUPPRESSION'";
+							expression="if(_value) then {_this disableAI 'SUPPRESSION'}";
 							class Value
 							{
 								class data
@@ -41711,7 +41711,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -41730,7 +41730,7 @@ class Mission
 						class Attribute6
 						{
 							property="Enh_disableAI_cover";
-							expression="_this disableAI 'COVER'";
+							expression="if(_value) then {_this disableAI 'COVER'}";
 							class Value
 							{
 								class data
@@ -42229,7 +42229,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -42611,7 +42611,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -42981,7 +42981,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -43336,7 +43336,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -43633,7 +43633,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -43920,7 +43920,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -44290,7 +44290,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -44633,7 +44633,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -44920,7 +44920,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -45207,7 +45207,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -45641,7 +45641,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -46022,7 +46022,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -46391,7 +46391,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -46754,7 +46754,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -47059,7 +47059,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -47345,7 +47345,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -47715,7 +47715,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -48078,7 +48078,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -48382,7 +48382,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -48668,7 +48668,7 @@ class Mission
 						class Attribute5
 						{
 							property="Enh_featureType";
-							expression="_this setFeatureType (parseNumber _value)";
+							expression="_this setFeatureType parseNumber (_value)";
 							class Value
 							{
 								class data
@@ -49845,16 +49845,76 @@ class Mission
 			id=2505;
 			type="ATMine";
 		};
+		class Item345
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7489.5669,34.818562,5743.333};
+				angles[]={0.0099949092,0,6.2531958};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				lock="UNLOCKED";
+			};
+			id=2549;
+			type="sfp_81_tgb20";
+			atlOffset=0.0042724609;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Enh_featureType";
+					expression="_this setFeatureType parseNumber (_value)";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""CUP_launch_M72A6""],[10]],[[""sfp_handgrenade_shgr56"",""sfp_100Rnd_762x51_ksp58"",""SmokeShell"",""sfp_20Rnd_762x51_ak4"",""sfp_36Rnd_9mm_kpistm45""],[20,5,8,80,20]],[[""ACE_fieldDressing"",""ACE_bloodIV"",""ACE_epinephrine"",""ACE_morphine""],[30,4,5,20]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=53;
+			nextID=54;
 		};
 		class Links
 		{
-			items=53;
+			items=54;
 			class Item0
 			{
 				linkID=0;
@@ -50380,6 +50440,16 @@ class Mission
 				linkID=52;
 				item0=2449;
 				item1=2448;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item53
+			{
+				linkID=53;
+				item0=2549;
+				item1=2310;
 				class CustomData
 				{
 					type="Sync";
