@@ -1,9 +1,13 @@
 // Define groups for spawning ai via trubb_spawngroup
 ru_squad = ["ZSN_SoldierENCO", "ZSN_SoldierEMedic", "ZSN_SoldierELeader", "ZSN_SoldierELeader", "ZSN_SoldierEAR", "ZSN_SoldierEAR", "ZSN_SoldierEB", "ZSN_SoldierEB", "ZSN_SoldierEB", "ZSN_SoldierEB"];
+ru_t72 = ["ZSN_CUP_MSV_T72"];
+ru_t72_plt = ["ZSN_CUP_MSV_T72","ZSN_CUP_MSV_T72","ZSN_CUP_MSV_T72"];
+ru_t55 = ["ZSN_CUP_VMF_T55"];
+ru_t55_plt = ["ZSN_CUP_VMF_T55","ZSN_CUP_VMF_T55","ZSN_CUP_VMF_T55"];
 
 // Initial init for wave respawn, run for the side or sides you want to use wave respawn for, this example is for all sides, resistance uses custom mission parameters that can be set in the lobby
-//[east, 1, 6, true] remoteexec ["zsn_fnc_waverespawn", 2]; // 6x 1 man waves
-[west, 9, 5, false] remoteexec ["zsn_fnc_waverespawn", 2];
+[east, 1, 6, true] remoteexec ["zsn_fnc_waverespawn", 2]; // 6x 1 man waves
+[west, 10, 5, true] remoteexec ["zsn_fnc_waverespawn", 2];
 //[resistance,(paramsarray select 0),(paramsarray select 1)] remoteexec ["zsn_fnc_waverespawn", 2];
 
 // If the fourth param is "true" you can define custom loadouts for the new wave below. Either from description.ext or config
