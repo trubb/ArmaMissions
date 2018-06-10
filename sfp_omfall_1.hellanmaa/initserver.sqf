@@ -3,7 +3,7 @@ ru_squad = ["ZSN_SoldierENCO", "ZSN_SoldierEMedic", "ZSN_SoldierELeader", "ZSN_S
 
 // Initial init for wave respawn, run for the side or sides you want to use wave respawn for, this example is for all sides, resistance uses custom mission parameters that can be set in the lobby
 //[east, 1, 6, true] remoteexec ["zsn_fnc_waverespawn", 2]; // 6x 1 man waves
-[west, 9, 5, false] remoteexec ["zsn_fnc_waverespawn", 2];
+[west, 8, 5, false] remoteexec ["zsn_fnc_waverespawn", 2];
 //[resistance,(paramsarray select 0),(paramsarray select 1)] remoteexec ["zsn_fnc_waverespawn", 2];
 
 // If the fourth param is "true" you can define custom loadouts for the new wave below. Either from description.ext or config
