@@ -4,6 +4,9 @@ ru_t72 = ["ZSN_CUP_MSV_T72"];
 ru_t72_plt = ["ZSN_CUP_MSV_T72","ZSN_CUP_MSV_T72","ZSN_CUP_MSV_T72"];
 ru_t55 = ["ZSN_CUP_VMF_T55"];
 ru_t55_plt = ["ZSN_CUP_VMF_T55","ZSN_CUP_VMF_T55","ZSN_CUP_VMF_T55"];
+ru_brdm = ["ZSN_CUP_VMF_BRDM2"];
+ru_btr60 = ["ZSN_CUP_MSV_BTR60"];
+ru_bmp2 =["ZSN_CUP_MSV_BMP2"];
 
 // Initial init for wave respawn, run for the side or sides you want to use wave respawn for, this example is for all sides, resistance uses custom mission parameters that can be set in the lobby
 [east, 1, 6, true] remoteexec ["zsn_fnc_waverespawn", 2]; // 6x 1 man waves
