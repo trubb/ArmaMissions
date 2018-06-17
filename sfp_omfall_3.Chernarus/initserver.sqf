@@ -8,6 +8,8 @@ ru_brdm = ["ZSN_CUP_VMF_BRDM2"];
 ru_btr60 = ["ZSN_CUP_MSV_BTR60"];
 ru_bmp2 =["ZSN_CUP_MSV_BMP2"];
 
+swe_squad = ["sfp_m59w_squadleader","sfp_m59w_machinegunner_ksp58","sfp_m59w_rifleman_ak4","sfp_m59w_at_specialist_pskott86","sfp_m59w_teamleader","sfp_m59w_machinegunner_ksp58","sfp_m59w_rifleman_ak4","sfp_m59w_at_specialist_pskott86","sfp_m59w_rifleman_ak4","sfp_m59w_at_specialist_pskott86","sfp_m59w_rifleman_ak4","sfp_m59w_at_specialist_pskott86"];
+
 // Initial init for wave respawn, run for the side or sides you want to use wave respawn for, this example is for all sides, resistance uses custom mission parameters that can be set in the lobby
 [east, 1, 6, true] remoteexec ["zsn_fnc_waverespawn", 2]; // 6x 1 man waves
 [west, 10, 5, true] remoteexec ["zsn_fnc_waverespawn", 2];
