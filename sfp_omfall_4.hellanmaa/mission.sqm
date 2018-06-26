@@ -5,21 +5,21 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=4310;
+		nextID=4316;
 	};
 	class MarkerIDProvider
 	{
-		nextID=45;
+		nextID=48;
 	};
 	class Camera
 	{
-		pos[]={4484.2905,251.62953,4754.8838};
-		dir[]={0.1609354,-0.4627237,0.87184715};
-		up[]={0.083998799,0.88649738,0.45505565};
-		aside[]={0.98344499,1.0541407e-006,-0.18153751};
+		pos[]={6228.5513,157.75269,5687.627};
+		dir[]={-0.10464881,-0.49106893,0.86481225};
+		up[]={-0.058992751,0.8711201,0.48751295};
+		aside[]={0.99275839,-9.1968104e-009,0.1201312};
 	};
 };
 binarizationWanted=0;
@@ -2480,7 +2480,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=255;
+		items=261;
 		class Item0
 		{
 			dataType="Group";
@@ -6297,12 +6297,11 @@ class Mission
 		class Item6
 		{
 			dataType="Marker";
-			position[]={6186.9541,41.3601,5861.1006};
+			position[]={6195.4097,41.28117,5856.9468};
 			name="marker_16";
 			type="mil_pickup";
 			colorName="ColorBlue";
 			id=846;
-			atlOffset=0.00037384033;
 		};
 		class Item7
 		{
@@ -9382,7 +9381,7 @@ class Mission
 		class Item14
 		{
 			dataType="Marker";
-			position[]={3359.5361,50.905952,5720.1587};
+			position[]={3447.8728,57.052025,5629.1099};
 			name="marker_25";
 			text="LV 135";
 			type="mil_box";
@@ -9671,7 +9670,7 @@ class Mission
 		class Item19
 		{
 			dataType="Trigger";
-			position[]={6099.7568,42.51281,6339.4077};
+			position[]={6099.7568,42.512943,6339.4082};
 			class Attributes
 			{
 				condition="call{triggerActivated opfor_dead && triggerActivated blufor_taken;}";
@@ -9681,7 +9680,6 @@ class Mission
 			};
 			id=1523;
 			type="EmptyDetector";
-			atlOffset=3.8146973e-006;
 		};
 		class Item20
 		{
@@ -15506,6 +15504,8 @@ class Mission
 			};
 			class Attributes
 			{
+				combatMode="BLUE";
+				behaviour="SAFE";
 			};
 			id=1988;
 			class CustomAttributes
@@ -15707,9 +15707,10 @@ class Mission
 		class Item26
 		{
 			dataType="Trigger";
-			position[]={6151.7588,40.934517,6360.8945};
+			position[]={6151.7588,40.934464,6360.895};
 			class Attributes
 			{
+				name="end_win";
 				condition="call{triggerActivated opfor_dead && triggerActivated blufor_taken;}";
 				sizeA=0;
 				sizeB=0;
@@ -34941,21 +34942,21 @@ class Mission
 		class Item208
 		{
 			dataType="Trigger";
-			position[]={3670.4875,69.646629,4996.8594};
+			position[]={3644.5696,69.647095,5048.9414};
 			angle=1.0579488;
 			class Attributes
 			{
 				condition="call{this}";
 				onActivation="call{[""ru_spawn_5"", ""ru_target_5"",ru_squad] call trubb_fnc_spawnGroup;}";
-				sizeA=139.3708;
-				sizeB=169.11685;
+				sizeA=197.47025;
+				sizeB=172.08783;
 				activationBy="WEST";
 				isRectangle=1;
 				isServerOnly=1;
 			};
 			id=4013;
 			type="EmptyDetector";
-			atlOffset=15.056503;
+			atlOffset=13.105839;
 		};
 		class Item209
 		{
@@ -37521,40 +37522,40 @@ class Mission
 		class Item212
 		{
 			dataType="Trigger";
-			position[]={3796.584,56.458057,4944.1021};
+			position[]={3821.4688,56.458057,4961.75};
 			angle=0.99626708;
 			class Attributes
 			{
 				condition="call{this}";
 				onActivation="call{[""ru_spawn_4"", ""ru_target_4"",ru_squad] call trubb_fnc_spawnGroup;}";
-				sizeA=122.5117;
-				sizeB=214.05167;
+				sizeA=150.05138;
+				sizeB=244.53165;
 				activationBy="WEST";
 				isRectangle=1;
 				isServerOnly=1;
 			};
 			id=4064;
 			type="EmptyDetector";
-			atlOffset=0.48236084;
+			atlOffset=0.058525085;
 		};
 		class Item213
 		{
 			dataType="Trigger";
-			position[]={3707.2205,67.085426,4885.2539};
+			position[]={3754.6433,56.50058,4856.6367};
 			angle=2.657805;
 			class Attributes
 			{
 				condition="call{this}";
 				onActivation="call{[""ru_spawn_6"", ""ru_target_6"",ru_squad] call trubb_fnc_spawnGroup;}";
-				sizeA=131.70532;
-				sizeB=177.10031;
+				sizeA=160.37503;
+				sizeB=224.49142;
 				activationBy="WEST";
 				isRectangle=1;
 				isServerOnly=1;
 			};
 			id=4065;
 			type="EmptyDetector";
-			atlOffset=13.539494;
+			atlOffset=2.6785126;
 		};
 		class Item214
 		{
@@ -39138,12 +39139,12 @@ class Mission
 		class Item237
 		{
 			dataType="Trigger";
-			position[]={7784.2026,39.724556,3487.7363};
+			position[]={7784.2031,39.724464,3487.7361};
 			angle=0.51633805;
 			class Attributes
 			{
 				condition="call{this}";
-				onActivation="call{[""veh_0"", ""veh_1"", ru_brdm, EAST] call trubb_fnc_spawnArmour;}";
+				onActivation="call{[""veh_0"", ""veh_1"", ""ZSN_CUP_VMF_BRDM2"", EAST] call trubb_fnc_spawnVehicle;}";
 				sizeA=71.399002;
 				sizeB=326.819;
 				activationBy="WEST";
@@ -39152,27 +39153,27 @@ class Mission
 			};
 			id=4263;
 			type="EmptyDetector";
-			atlOffset=2.7570953;
+			atlOffset=2.757;
 		};
 		class Item238
 		{
 			dataType="Marker";
-			position[]={7653.9795,36.895912,3250.0571};
+			position[]={7685.4692,36.987,3312.502};
 			name="veh_0";
 			type="mil_circle";
 			alpha=0;
 			id=4264;
-			atlOffset=2.7569466;
+			atlOffset=0.95306778;
 		};
 		class Item239
 		{
 			dataType="Marker";
-			position[]={7872.6338,39.155846,3608.8081};
+			position[]={7909.4292,38.542,3717.8491};
 			name="veh_1";
 			type="mil_destroy";
 			alpha=0;
 			id=4265;
-			atlOffset=2.7570953;
+			atlOffset=2.7571144;
 		};
 		class Item240
 		{
@@ -39725,16 +39726,252 @@ class Mission
 			id=4309;
 			atlOffset=-2.1724548;
 		};
+		class Item255
+		{
+			dataType="Trigger";
+			position[]={6176.1689,39.080002,5859.7681};
+			class Attributes
+			{
+				name="end_fail";
+				condition="call{this}";
+				sizeA=39.155998;
+				sizeB=39.155998;
+				timeout[]={5400,5400,5400};
+				activationBy="WEST";
+				isServerOnly=1;
+			};
+			id=4310;
+			type="EmptyDetector";
+			atlOffset=-2.2999992;
+		};
+		class Item256
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={6206.7939,42.893532,6500.7197};
+				angles[]={6.278194,0,0.0099949092};
+			};
+			id=4311;
+			type="ModuleEndMission_F";
+			atlOffset=0.051994324;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleEndMission_F_Win";
+					expression="_this setVariable ['Win',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleEndMission_F_TypeCustom";
+					expression="_this setVariable ['TypeCustom',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleEndMission_F_Type";
+					expression="_this setVariable ['Type',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="EveryoneLost";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item257
+		{
+			dataType="Marker";
+			position[]={3962.3359,50.566002,5889.5688};
+			name="marker_45";
+			text="UFA BQ";
+			type="mil_arrow";
+			colorName="ColorBlue";
+			angle=229.94746;
+			id=4312;
+			atlOffset=0.00044250488;
+		};
+		class Item258
+		{
+			dataType="Marker";
+			position[]={4594.8799,48.853001,4276.0508};
+			name="marker_46";
+			text="UFA CQ";
+			type="mil_arrow";
+			colorName="ColorBlue";
+			angle=293.13901;
+			id=4313;
+			atlOffset=-0.024459839;
+		};
+		class Item259
+		{
+			dataType="Marker";
+			position[]={6171.6953,41.391521,5868.4077};
+			name="marker_47";
+			text="FAP AQ";
+			type="mil_start";
+			colorName="ColorBlue";
+			id=4314;
+		};
+		class Item260
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={6255.3809,42.494343,6235.0391};
+				angles[]={0.089762285,0,6.2382083};
+			};
+			id=4315;
+			type="ModuleCreateDiaryRecord_F";
+			atlOffset=-3.8146973e-006;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCreateDiaryRecord_F_PresetTitle";
+					expression="_this setVariable ['PresetTitle',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Situation";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCreateDiaryRecord_F_Title";
+					expression="_this setVariable ['Title',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Information";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCreateDiaryRecord_F_Description";
+					expression="_this setVariable ['Description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Respawn sker i grupp om 8 spelare, nyttjar Zluskens system. " \n "<br/> " \n "Det finns 7 vågor, alla döda respawnar i bakre läge. " \n "<br/> " \n "Vid respawn återgår du till din tidigare grupp i möjligaste mån - Plutonchefen avgör i sista hand. " \n "<br/> " \n "<br/> " \n "Tidsbegränsning" \n "<br/> " \n "Plutonen har 1 timme och 30 minuter på sig att genomföra uppgiften. " \n "<br/> " \n "Om styrkan utplånas utan att ha tagit anfallsmålet har uppdraget misslyckats. " \n "<br/> " \n "<br/> " \n "Husregler" \n "<br/> " \n "Rita eller markera inte på kartan under spel för t.ex. målangivning eller spaningsrapporter. " \n "<br/> " \n "Använd istället koordinater, UPK eller dylikt för målangivning och rapportering. " \n "<br/> " \n "Det är dock fullt tillåtet att rita på kartan under ordergivning, även under spel.";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCreateDiaryRecord_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCreateDiaryRecord_F_Subject";
+					expression="_this setVariable ['Subject',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=53;
+			nextID=54;
 		};
 		class Links
 		{
-			items=53;
+			items=54;
 			class Item0
 			{
 				linkID=0;
@@ -40263,6 +40500,16 @@ class Mission
 				class CustomData
 				{
 					type="WaypointActivation";
+				};
+			};
+			class Item53
+			{
+				linkID=53;
+				item0=4311;
+				item1=4310;
+				class CustomData
+				{
+					type="Sync";
 				};
 			};
 		};

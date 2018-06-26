@@ -1,4 +1,3 @@
-
 params [
 	"_trubb_start",	// marker where units will spawn
 	"_trubb_end",	// marker that units will head for
