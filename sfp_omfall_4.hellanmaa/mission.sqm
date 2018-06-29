@@ -5,21 +5,21 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1025;
+	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=4316;
+		nextID=4321;
 	};
 	class MarkerIDProvider
 	{
-		nextID=48;
+		nextID=49;
 	};
 	class Camera
 	{
-		pos[]={6228.5513,157.75269,5687.627};
-		dir[]={-0.10464881,-0.49106893,0.86481225};
-		up[]={-0.058992751,0.8711201,0.48751295};
-		aside[]={0.99275839,-9.1968104e-009,0.1201312};
+		pos[]={5207.959,67.679108,5870.7349};
+		dir[]={-0.43773657,-0.53816116,-0.72028702};
+		up[]={-0.27949417,0.84283888,-0.45990238};
+		aside[]={-0.85458714,-1.8952414e-007,0.5193556};
 	};
 };
 binarizationWanted=0;
@@ -35,10 +35,10 @@ addons[]=
 	"ace_realisticnames",
 	"sfp_weapons_grenades",
 	"sfp_ak4",
-	"tfar_handhelds",
-	"ace_maptools",
 	"CUP_Weapons_M72A6",
 	"CUP_Weapons_ACE_compat",
+	"tfar_handhelds",
+	"ace_maptools",
 	"sfp_ksp58",
 	"ace_overheating",
 	"A3_Modules_F_Curator_Misc",
@@ -137,27 +137,27 @@ class AddonsMetaData
 		};
 		class Item9
 		{
+			className="CUP_Weapons_M72A6";
+			name="CUP_Weapons_M72A6";
+		};
+		class Item10
+		{
+			className="CUP_Weapons_ACE_compat";
+			name="CUP_Weapons_ACE_compat";
+			author="Community Upgrade Project";
+		};
+		class Item11
+		{
 			className="tfar_handhelds";
 			name="tfar_handhelds";
 			url="https://github.com/michail-nikolaev/task-force-arma-3-radio";
 		};
-		class Item10
+		class Item12
 		{
 			className="ace_maptools";
 			name="ACE3 - Map Tools";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
-		};
-		class Item11
-		{
-			className="CUP_Weapons_M72A6";
-			name="CUP_Weapons_M72A6";
-		};
-		class Item12
-		{
-			className="CUP_Weapons_ACE_compat";
-			name="CUP_Weapons_ACE_compat";
-			author="Community Upgrade Project";
 		};
 		class Item13
 		{
@@ -364,7 +364,7 @@ class CustomAttributes
 		class Attribute0
 		{
 			property="Enh_introText";
-			expression="				if (!is3DEN && (_value select 0) > 0 && hasInterface) then				{					_value spawn					{						waitUntil {time > (_this select 0)};						if !(_this select 4) then						{							private _text = parseText format							[								""<t align='right' size='1.6'><t font='PuristaBold' size='1.8'>%1<br/></t>%2<br/>%3</t>"",								_this select 1,								_this select 2,								_this select 3							];							[_text,true] spawn BIS_fnc_textTiles;						}						else						{							[_this select 1,_this select 2,_this select 3] spawn BIS_fnc_EXP_camp_SITREP;						};					};				}";
+			expression="				if (!is3DEN && (_value # 0) > 0 && hasInterface) then				{					_value spawn					{						waitUntil {time > (_this # 0)};						if !(_this # 4) then						{							private _text = parseText format							[								""<t align='right' size='1.6'><t font='PuristaBold' size='1.8'>%1<br/></t>%2<br/>%3</t>"",								_this # 1,								_this # 2,								_this # 3							];							[_text,true] spawn BIS_fnc_textTiles;						}						else						{							[_this # 1,_this # 2,_this # 3] spawn BIS_fnc_EXP_camp_SITREP;						};					};				}";
 			class Value
 			{
 				class data
@@ -2459,7 +2459,7 @@ class Mission
 			class Attribute0
 			{
 				property="Enh_disableGrass";
-				expression="if (((parseNumber _value) > 0) && !is3DEN) then {setTerrainGrid (parseNumber _value)}";
+				expression="if (((parseNumber _value) > 0) && !is3DEN && hasInterface) then {setTerrainGrid (parseNumber _value)}";
 				class Value
 				{
 					class data
@@ -2493,7 +2493,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6181.8936,41.351437,5868.4814};
+						position[]={5201.9019,44.344078,5835.7354};
 						angles[]={0,5.0162277,0};
 					};
 					side="West";
@@ -2539,7 +2539,7 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=4;
+										count=6;
 									};
 									class Item1
 									{
@@ -2611,6 +2611,7 @@ class Mission
 					};
 					id=235;
 					type="sfp_m59w_platoonleader";
+					atlOffset=3.8146973e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2819,7 +2820,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6182.5786,41.361668,5866.6235};
+						position[]={5202.5869,44.453106,5833.8774};
 						angles[]={0,4.8631973,0};
 					};
 					side="West";
@@ -2851,7 +2852,7 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=4;
+										count=6;
 									};
 									class Item1
 									{
@@ -2936,7 +2937,6 @@ class Mission
 					};
 					id=2551;
 					type="sfp_m59w_medic";
-					atlOffset=0.0059928894;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3147,6 +3147,7 @@ class Mission
 				behaviour="SAFE";
 			};
 			id=234;
+			atlOffset=3.8146973e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3274,8 +3275,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6170.5327,41.389957,5880.2866};
-						angles[]={0,1.9634827,0};
+						position[]={5178.2983,44.592319,5847.8125};
+						angles[]={0,0.89900601,0};
 					};
 					side="West";
 					flags=7;
@@ -3295,6 +3296,15 @@ class Mission
 									ammoLeft=20;
 								};
 							};
+							class secondaryWeapon
+							{
+								name="CUP_launch_M72A6";
+								class primaryMuzzleMag
+								{
+									name="ACE_PreloadedMissileDummy_M72A6_CUP";
+									ammoLeft=1;
+								};
+							};
 							class binocular
 							{
 								name="Binocular";
@@ -3303,13 +3313,23 @@ class Mission
 							{
 								typeName="sfp_m59w_uniform";
 								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="sfp_20Rnd_762x51_ak4";
+										count=4;
+										ammoLeft=20;
+									};
+								};
 								class ItemCargo
 								{
 									items=3;
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=4;
+										count=6;
 									};
 									class Item1
 									{
@@ -3600,8 +3620,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6167.7666,41.405731,5880.4414};
-						angles[]={0,1.9634823,0};
+						position[]={5176.8213,44.630238,5845.4683};
+						angles[]={0,0.89900553,0};
 					};
 					side="West";
 					flags=5;
@@ -3655,7 +3675,7 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=4;
+										count=6;
 									};
 									class Item1
 									{
@@ -3929,8 +3949,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6165.1738,41.430241,5880.1582};
-						angles[]={0,2.1559401,0};
+						position[]={5175.812,44.647308,5843.0635};
+						angles[]={0,1.0914633,0};
 					};
 					side="West";
 					flags=5;
@@ -3960,7 +3980,7 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=4;
+										count=6;
 									};
 									class Item1
 									{
@@ -4239,8 +4259,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6166.9985,41.406796,5879.1182};
-						angles[]={0,2.1988201,0};
+						position[]={5177.6064,44.632881,5844.1553};
+						angles[]={0,1.1343434,0};
 					};
 					side="West";
 					flags=5;
@@ -4274,7 +4294,7 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=4;
+										count=6;
 									};
 									class Item1
 									{
@@ -4535,8 +4555,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6166.2383,41.426437,5881.5264};
-						angles[]={0,1.9491361,0};
+						position[]={5175.1313,44.639698,5844.6582};
+						angles[]={0,0.88465941,0};
 					};
 					side="West";
 					flags=5;
@@ -4585,7 +4605,7 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=4;
+										count=6;
 									};
 									class Item1
 									{
@@ -4831,8 +4851,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6170.8994,41.404591,5884.4785};
-						angles[]={0,2.1737766,0};
+						position[]={5174.8101,44.585644,5850.166};
+						angles[]={0,1.1092963,0};
 					};
 					side="West";
 					flags=5;
@@ -4840,7 +4860,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						init="call{[this, ""YELLOW""] remoteexec [""assignteam""];}";
-						description="Omgångschef - Gul@Erik Adam";
+						description="Stf Gruppchef - Gul@Erik Adam";
 						isPlayable=1;
 						class Inventory
 						{
@@ -4886,7 +4906,7 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=4;
+										count=6;
 									};
 									class Item1
 									{
@@ -4952,7 +4972,6 @@ class Mission
 					};
 					id=944;
 					type="sfp_m59w_squadleader";
-					atlOffset=3.8146973e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5161,8 +5180,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6168.478,41.419563,5884.1523};
-						angles[]={0,2.159431,0};
+						position[]={5173.9214,44.61343,5847.8901};
+						angles[]={0,1.0949543,0};
 					};
 					side="West";
 					flags=5;
@@ -5211,7 +5230,7 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=4;
+										count=6;
 									};
 									class Item1
 									{
@@ -5249,7 +5268,6 @@ class Mission
 					};
 					id=963;
 					type="sfp_m59w_at_specialist_pskott86";
-					atlOffset=3.8146973e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5458,8 +5476,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6169.9126,41.407627,5883.1992};
-						angles[]={0,2.159431,0};
+						position[]={5175.4502,44.597862,5848.6826};
+						angles[]={0,1.0949543,0};
 					};
 					side="West";
 					flags=5;
@@ -5508,7 +5526,7 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=4;
+										count=6;
 									};
 									class Item1
 									{
@@ -5755,8 +5773,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6169.3545,41.422619,5885.6406};
-						angles[]={0,2.159431,0};
+						position[]={5173.0449,44.602928,5849.3784};
+						angles[]={0,1.0949543,0};
 					};
 					side="West";
 					flags=5;
@@ -5805,7 +5823,7 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=4;
+										count=6;
 									};
 									class Item1
 									{
@@ -6174,7 +6192,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={4553.855,52.961758,5299.8721};
-				angles[]={0,1.25502,0};
+				angles[]={0,1.0430533,0};
 			};
 			areaSize[]={679.00403,0,1978.6019};
 			areaIsRectangle=1;
@@ -6297,11 +6315,13 @@ class Mission
 		class Item6
 		{
 			dataType="Marker";
-			position[]={6195.4097,41.28117,5856.9468};
+			position[]={5066.2231,43.195,5827.0889};
 			name="marker_16";
 			type="mil_pickup";
 			colorName="ColorBlue";
+			alpha=0.49576423;
 			id=846;
+			atlOffset=-1.500309;
 		};
 		class Item7
 		{
@@ -6451,8 +6471,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6166.2905,41.434738,5868.8081};
-						angles[]={0,1.3385987,0};
+						position[]={5183.5391,44.684925,5835.8135};
+						angles[]={0,0.86741871,0};
 					};
 					side="West";
 					flags=7;
@@ -6470,6 +6490,15 @@ class Mission
 								{
 									name="sfp_20Rnd_762x51_ak4";
 									ammoLeft=20;
+								};
+							};
+							class secondaryWeapon
+							{
+								name="CUP_launch_M72A6";
+								class primaryMuzzleMag
+								{
+									name="ACE_PreloadedMissileDummy_M72A6_CUP";
+									ammoLeft=1;
 								};
 							};
 							class binocular
@@ -6496,7 +6525,7 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=4;
+										count=6;
 									};
 									class Item1
 									{
@@ -6787,8 +6816,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6164.021,41.461227,5867.3218};
-						angles[]={0,1.3386004,0};
+						position[]={5182.1914,44.701439,5833.459};
+						angles[]={0,0.86742038,0};
 					};
 					side="West";
 					flags=5;
@@ -6842,7 +6871,7 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=4;
+										count=6;
 									};
 									class Item1
 									{
@@ -7116,8 +7145,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6162.1548,41.4795,5865.8169};
-						angles[]={0,1.5310578,0};
+						position[]={5181.2119,44.684189,5831.271};
+						angles[]={0,1.0598779,0};
 					};
 					side="West";
 					flags=5;
@@ -7147,7 +7176,7 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=4;
+										count=6;
 									};
 									class Item1
 									{
@@ -7426,8 +7455,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6164.2427,41.459007,5866.0405};
-						angles[]={0,1.5739405,0};
+						position[]={5182.9707,44.701439,5832.418};
+						angles[]={0,1.1027606,0};
 					};
 					side="West";
 					flags=5;
@@ -7461,7 +7490,7 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=4;
+										count=6;
 									};
 									class Item1
 									{
@@ -7514,7 +7543,6 @@ class Mission
 					};
 					id=1349;
 					type="sfp_m59w_rifleman_ak4";
-					atlOffset=-3.8146973e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7723,8 +7751,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6162.147,41.479969,5867.3091};
-						angles[]={0,1.3242538,0};
+						position[]={5180.5273,44.69746,5832.5967};
+						angles[]={0,0.85307378,0};
 					};
 					side="West";
 					flags=5;
@@ -7773,7 +7801,7 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=4;
+										count=6;
 									};
 									class Item1
 									{
@@ -8019,8 +8047,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6164.2651,41.439442,5871.9175};
-						angles[]={0,1.5488951,0};
+						position[]={5180.3232,44.675285,5837.665};
+						angles[]={0,1.0777234,0};
 					};
 					side="West";
 					flags=5;
@@ -8028,7 +8056,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						init="call{[this, ""YELLOW""] remoteexec [""assignteam""];}";
-						description="Omgångschef - Gul@Filip Adam";
+						description="Stf Gruppchef - Gul@Filip Adam";
 						isPlayable=1;
 						class Inventory
 						{
@@ -8074,7 +8102,7 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=4;
+										count=6;
 									};
 									class Item1
 									{
@@ -8140,7 +8168,6 @@ class Mission
 					};
 					id=968;
 					type="sfp_m59w_squadleader";
-					atlOffset=-3.8146973e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -8349,8 +8376,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6164.1123,41.449268,5870.2598};
-						angles[]={0,1.5345485,0};
+						position[]={5180.9395,44.690754,5836.1182};
+						angles[]={0,1.0633686,0};
 					};
 					side="West";
 					flags=5;
@@ -8399,7 +8426,7 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=4;
+										count=6;
 									};
 									class Item1
 									{
@@ -8645,8 +8672,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6162.3911,41.467529,5870.1943};
-						angles[]={0,1.5345485,0};
+						position[]={5179.4351,44.695293,5835.2783};
+						angles[]={0,1.0633686,0};
 					};
 					side="West";
 					flags=5;
@@ -8695,7 +8722,7 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=4;
+										count=6;
 									};
 									class Item1
 									{
@@ -8941,8 +8968,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6162.2383,41.46833,5871.9561};
-						angles[]={0,1.5345485,0};
+						position[]={5178.4995,44.684147,5836.7788};
+						angles[]={0,1.0633686,0};
 					};
 					side="West";
 					flags=5;
@@ -8991,7 +9018,7 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=4;
+										count=6;
 									};
 									class Item1
 									{
@@ -9029,7 +9056,6 @@ class Mission
 					};
 					id=974;
 					type="sfp_m59w_at_specialist_pskott86";
-					atlOffset=-3.8146973e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9747,8 +9773,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6180.7515,41.390419,5851.7568};
-						angles[]={0,0.089821987,0};
+						position[]={5198.9302,44.707066,5814.022};
+						angles[]={0,0.6115424,0};
 					};
 					side="West";
 					flags=7;
@@ -9766,6 +9792,15 @@ class Mission
 								{
 									name="sfp_20Rnd_762x51_ak4";
 									ammoLeft=20;
+								};
+							};
+							class secondaryWeapon
+							{
+								name="CUP_launch_M72A6";
+								class primaryMuzzleMag
+								{
+									name="ACE_PreloadedMissileDummy_M72A6_CUP";
+									ammoLeft=1;
 								};
 							};
 							class binocular
@@ -9792,7 +9827,7 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=4;
+										count=6;
 									};
 									class Item1
 									{
@@ -10083,8 +10118,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6180.8862,41.389252,5848.9536};
-						angles[]={0,0.089821987,0};
+						position[]={5197.6499,44.740192,5811.5244};
+						angles[]={0,0.6115424,0};
 					};
 					side="West";
 					flags=5;
@@ -10138,7 +10173,7 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=4;
+										count=6;
 									};
 									class Item1
 									{
@@ -10412,8 +10447,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6181.7246,41.466316,5846.707};
-						angles[]={0,0.28227946,0};
+						position[]={5197.2573,44.719933,5809.1592};
+						angles[]={0,0.8039999,0};
 					};
 					side="West";
 					flags=5;
@@ -10443,7 +10478,7 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=4;
+										count=6;
 									};
 									class Item1
 									{
@@ -10514,7 +10549,7 @@ class Mission
 					};
 					id=1987;
 					type="sfp_m59w_machinegunner_ksp58";
-					atlOffset=0.069007874;
+					atlOffset=3.8146973e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -10723,8 +10758,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6182.1724,41.408428,5848.7583};
-						angles[]={0,0.32516214,0};
+						position[]={5198.6675,44.738117,5810.7144};
+						angles[]={0,0.84688258,0};
 					};
 					side="West";
 					flags=5;
@@ -10758,7 +10793,7 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=4;
+										count=6;
 									};
 									class Item1
 									{
@@ -11019,8 +11054,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6180.3062,41.376034,5847.1709};
-						angles[]={0,0.075475268,0};
+						position[]={5196.2588,44.715488,5810.2681};
+						angles[]={0,0.59719568,0};
 					};
 					side="West";
 					flags=5;
@@ -11069,7 +11104,7 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=4;
+										count=6;
 									};
 									class Item1
 									{
@@ -11107,7 +11142,6 @@ class Mission
 					};
 					id=1983;
 					type="sfp_m59w_at_specialist_pskott86";
-					atlOffset=3.8146973e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11316,8 +11350,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6176.917,41.353241,5850.4106};
-						angles[]={0,0.30011663,0};
+						position[]={5194.9351,44.740253,5814.7656};
+						angles[]={0,0.82184064,0};
 					};
 					side="West";
 					flags=5;
@@ -11325,7 +11359,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						init="call{[this, ""YELLOW""] remoteexec [""assignteam""];}";
-						description="Omgångschef - Gul@Helge Adam";
+						description="Stf Gruppchef - Gul@Helge Adam";
 						isPlayable=1;
 						class Inventory
 						{
@@ -11371,7 +11405,7 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=4;
+										count=6;
 									};
 									class Item1
 									{
@@ -11645,8 +11679,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6178.4419,41.356525,5849.7412};
-						angles[]={0,0.28577003,0};
+						position[]={5195.9233,44.738827,5813.4253};
+						angles[]={0,0.80749047,0};
 					};
 					side="West";
 					flags=5;
@@ -11695,7 +11729,7 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=4;
+										count=6;
 									};
 									class Item1
 									{
@@ -11733,7 +11767,7 @@ class Mission
 					};
 					id=1981;
 					type="sfp_m59w_at_specialist_pskott86";
-					atlOffset=3.8146973e-006;
+					atlOffset=-3.8146973e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11942,8 +11976,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6177.9595,41.341629,5848.0879};
-						angles[]={0,0.28577003,0};
+						position[]={5194.6812,44.731216,5812.2324};
+						angles[]={0,0.80749047,0};
 					};
 					side="West";
 					flags=5;
@@ -11992,7 +12026,7 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=4;
+										count=6;
 									};
 									class Item1
 									{
@@ -12238,8 +12272,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6176.2393,41.355682,5848.4995};
-						angles[]={0,0.28577003,0};
+						position[]={5193.395,44.735954,5813.4468};
+						angles[]={0,0.80749047,0};
 					};
 					side="West";
 					flags=5;
@@ -12288,7 +12322,7 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=4;
+										count=6;
 									};
 									class Item1
 									{
@@ -12326,7 +12360,7 @@ class Mission
 					};
 					id=1985;
 					type="sfp_m59w_at_specialist_pskott86";
-					atlOffset=0.011997223;
+					atlOffset=3.8146973e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12664,8 +12698,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6171.625,41.403313,5858.0806};
-						angles[]={0,0.81437063,0};
+						position[]={5190.127,44.693974,5824.4629};
+						angles[]={0,0.69440836,0};
 					};
 					side="West";
 					flags=7;
@@ -12683,6 +12717,15 @@ class Mission
 								{
 									name="sfp_20Rnd_762x51_ak4";
 									ammoLeft=20;
+								};
+							};
+							class secondaryWeapon
+							{
+								name="CUP_launch_M72A6";
+								class primaryMuzzleMag
+								{
+									name="ACE_PreloadedMissileDummy_M72A6_CUP";
+									ammoLeft=1;
 								};
 							};
 							class binocular
@@ -12709,7 +12752,7 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=4;
+										count=6;
 									};
 									class Item1
 									{
@@ -13000,8 +13043,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6170.1763,41.399807,5855.9004};
-						angles[]={0,0.81437427,0};
+						position[]={5188.9497,44.730812,5822.125};
+						angles[]={0,0.69441199,0};
 					};
 					side="West";
 					flags=5;
@@ -13055,7 +13098,7 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=4;
+										count=6;
 									};
 									class Item1
 									{
@@ -13121,7 +13164,6 @@ class Mission
 					};
 					id=978;
 					type="sfp_m59w_squadleader";
-					atlOffset=-3.8146973e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -13330,8 +13372,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6170.9111,41.387146,5854.6206};
-						angles[]={0,0.75156003,0};
+						position[]={5189.8325,44.739727,5820.9424};
+						angles[]={0,0.63159776,0};
 					};
 					side="West";
 					flags=5;
@@ -13402,24 +13444,8 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="sfp_stridssele_backpack_grg";
+								typeName="sfp_stridssele_backpack";
 								isBackpack=1;
-								class MagazineCargo
-								{
-									items=2;
-									class Item0
-									{
-										name="sfp_grg_he_mag";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="sfp_grg_heat_mag";
-										count=1;
-										ammoLeft=1;
-									};
-								};
 							};
 							map="ItemMap";
 							compass="ItemCompass";
@@ -13429,6 +13455,7 @@ class Mission
 					};
 					id=1352;
 					type="sfp_m59w_rifleman_ak4";
+					atlOffset=3.8146973e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -13637,8 +13664,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6169.71,41.379166,5853.3062};
-						angles[]={0,0.75156003,0};
+						position[]={5188.7969,44.732979,5819.4937};
+						angles[]={0,0.63159776,0};
 					};
 					side="West";
 					flags=5;
@@ -13727,7 +13754,7 @@ class Mission
 					};
 					id=1353;
 					type="sfp_m59w_rifleman_ak4";
-					atlOffset=-3.8146973e-006;
+					atlOffset=3.8146973e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -13936,8 +13963,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6168.5977,41.394356,5854.6401};
-						angles[]={0,0.80002767,0};
+						position[]={5187.5332,44.681091,5820.6851};
+						angles[]={0,0.68006539,0};
 					};
 					side="West";
 					flags=5;
@@ -13950,43 +13977,24 @@ class Mission
 						{
 							class primaryWeapon
 							{
-								name="sfp_ak4";
+								name="sfp_kpistm45";
 								class primaryMuzzleMag
 								{
-									name="sfp_20Rnd_762x51_ak4";
-									ammoLeft=20;
-								};
-							};
-							class secondaryWeapon
-							{
-								name="CUP_launch_M72A6";
-								class primaryMuzzleMag
-								{
-									name="ACE_PreloadedMissileDummy_M72A6_CUP";
-									ammoLeft=1;
+									name="sfp_36Rnd_9mm_kpistm45";
+									ammoLeft=36;
 								};
 							};
 							class uniform
 							{
 								typeName="sfp_m59w_uniform";
 								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="sfp_20Rnd_762x51_ak4";
-										count=4;
-										ammoLeft=20;
-									};
-								};
 								class ItemCargo
 								{
 									items=2;
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=4;
+										count=6;
 									};
 									class Item1
 									{
@@ -13997,42 +14005,42 @@ class Mission
 							};
 							class vest
 							{
-								typeName="sfp_stridssele_extrabag";
+								typeName="sfp_stridssele";
 								isBackpack=0;
 								class MagazineCargo
 								{
 									items=2;
 									class Item0
 									{
-										name="sfp_20Rnd_762x51_ak4";
-										count=8;
-										ammoLeft=20;
+										name="sfp_handgrenade_shgr56";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="sfp_handgrenade_shgr56";
-										count=2;
-										ammoLeft=1;
+										name="sfp_36Rnd_9mm_kpistm45";
+										count=10;
+										ammoLeft=36;
 									};
 								};
 							};
 							class backpack
 							{
-								typeName="sfp_stridssele_backpack_grg";
+								typeName="sfp_backpack_grg_loader";
 								isBackpack=1;
 								class MagazineCargo
 								{
 									items=2;
 									class Item0
 									{
-										name="sfp_grg_heat_mag";
-										count=1;
+										name="sfp_grg_he_mag";
+										count=2;
 										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="sfp_grg_he_mag";
-										count=1;
+										name="sfp_grg_smoke_mag";
+										count=2;
 										ammoLeft=1;
 									};
 								};
@@ -14045,6 +14053,7 @@ class Mission
 					};
 					id=982;
 					type="sfp_m59w_at_specialist_pskott86";
+					atlOffset=-3.8146973e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -14253,8 +14262,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6168.3062,41.421906,5859.8003};
-						angles[]={0,1.0246692,0};
+						position[]={5186.626,44.697086,5825.7729};
+						angles[]={0,0.90470886,0};
 					};
 					side="West";
 					flags=5;
@@ -14262,7 +14271,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						init="call{[this, ""YELLOW""] remoteexec [""assignteam""];}";
-						description="Omgångschef - Gul@Filip Adam";
+						description="Stf Gruppchef - Gul@Filip Adam";
 						isPlayable=1;
 						class Inventory
 						{
@@ -14308,7 +14317,7 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=4;
+										count=6;
 									};
 									class Item1
 									{
@@ -14374,7 +14383,6 @@ class Mission
 					};
 					id=979;
 					type="sfp_m59w_squadleader";
-					atlOffset=0.0019989014;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -14583,8 +14591,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6168.9834,41.416519,5858.3755};
-						angles[]={0,0.97675759,0};
+						position[]={5187.4692,44.707336,5824.4395};
+						angles[]={0,0.85679531,0};
 					};
 					side="West";
 					flags=5;
@@ -14655,24 +14663,8 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="sfp_stridssele_backpack_grg";
+								typeName="sfp_stridssele_backpack";
 								isBackpack=1;
-								class MagazineCargo
-								{
-									items=2;
-									class Item0
-									{
-										name="sfp_grg_he_mag";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="sfp_grg_heat_mag";
-										count=1;
-										ammoLeft=1;
-									};
-								};
 							};
 							map="ItemMap";
 							compass="ItemCompass";
@@ -14890,8 +14882,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6167.2222,41.421906,5857.3662};
-						angles[]={0,0.99178654,0};
+						position[]={5185.8413,44.616535,5823.2266};
+						angles[]={0,0.87182426,0};
 					};
 					side="West";
 					flags=5;
@@ -15189,8 +15181,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6166.5332,41.428772,5858.8184};
-						angles[]={0,1.0103221,0};
+						position[]={5184.9834,44.593601,5824.5859};
+						angles[]={0,0.89035982,0};
 					};
 					side="West";
 					flags=5;
@@ -15203,43 +15195,24 @@ class Mission
 						{
 							class primaryWeapon
 							{
-								name="sfp_ak4";
+								name="sfp_kpistm45";
 								class primaryMuzzleMag
 								{
-									name="sfp_20Rnd_762x51_ak4";
-									ammoLeft=20;
-								};
-							};
-							class secondaryWeapon
-							{
-								name="CUP_launch_M72A6";
-								class primaryMuzzleMag
-								{
-									name="ACE_PreloadedMissileDummy_M72A6_CUP";
-									ammoLeft=1;
+									name="sfp_36Rnd_9mm_kpistm45";
+									ammoLeft=36;
 								};
 							};
 							class uniform
 							{
 								typeName="sfp_m59w_uniform";
 								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="sfp_20Rnd_762x51_ak4";
-										count=4;
-										ammoLeft=20;
-									};
-								};
 								class ItemCargo
 								{
 									items=2;
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=4;
+										count=6;
 									};
 									class Item1
 									{
@@ -15250,42 +15223,42 @@ class Mission
 							};
 							class vest
 							{
-								typeName="sfp_stridssele_extrabag";
+								typeName="sfp_stridssele";
 								isBackpack=0;
 								class MagazineCargo
 								{
 									items=2;
 									class Item0
 									{
-										name="sfp_20Rnd_762x51_ak4";
-										count=8;
-										ammoLeft=20;
+										name="sfp_handgrenade_shgr56";
+										count=1;
+										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="sfp_handgrenade_shgr56";
-										count=2;
-										ammoLeft=1;
+										name="sfp_36Rnd_9mm_kpistm45";
+										count=10;
+										ammoLeft=36;
 									};
 								};
 							};
 							class backpack
 							{
-								typeName="sfp_stridssele_backpack_grg";
+								typeName="sfp_backpack_grg_loader";
 								isBackpack=1;
 								class MagazineCargo
 								{
 									items=2;
 									class Item0
 									{
-										name="sfp_grg_heat_mag";
-										count=1;
+										name="sfp_grg_he_mag";
+										count=2;
 										ammoLeft=1;
 									};
 									class Item1
 									{
-										name="sfp_grg_he_mag";
-										count=1;
+										name="sfp_grg_smoke_mag";
+										count=2;
 										ammoLeft=1;
 									};
 								};
@@ -15681,8 +15654,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6189.7603,41.354004,5857.8545};
-				angles[]={0,5.0265236,0};
+				position[]={5062.3784,44.703609,5822.9043};
+				angles[]={0,4.0403728,0};
 			};
 			side="Empty";
 			class Attributes
@@ -15691,18 +15664,18 @@ class Mission
 			};
 			id=2437;
 			type="Land_HelipadEmpty_F";
-			atlOffset=0.00015640259;
+			atlOffset=0.00024032593;
 		};
 		class Item25
 		{
 			dataType="Marker";
-			position[]={5867.3428,37.900002,6005.9492};
+			position[]={5151.1499,38.798584,5986.3462};
 			name="marker_31";
 			text="PLUTONSSAMBAND 70";
 			type="mil_triangle";
 			colorName="ColorBlue";
 			id=2438;
-			atlOffset=-8.8197632;
+			atlOffset=-5.8621101;
 		};
 		class Item26
 		{
@@ -38570,11 +38543,11 @@ class Mission
 		class Item226
 		{
 			dataType="Trigger";
-			position[]={6174.7622,41.37719,5864.0771};
+			position[]={5189.8809,44.653191,5834.6069};
 			class Attributes
 			{
 				condition="call{this}";
-				onActivation="call{[[4954.4,110.498,100], [6605.46,8187.64,0], 80, ""NORMAL"", ""ZSN_CUP_MSV_Mi8"", EAST] call BIS_fnc_ambientFlyBy; " \n "[[5088.92,31.6958,100], [6605.46,8187.64,0], 100, ""NORMAL"", ""ZSN_CUP_VDV_Mi24_P"", EAST] call BIS_fnc_ambientFlyBy; " \n "[[5191.6,139.153,100], [6605.46,8187.64,0], 90, ""NORMAL"", ""ZSN_CUP_MSV_Mi8"", EAST] call BIS_fnc_ambientFlyBy;}";
+				onActivation="call{[[4860.83,164.014,100], [5144.99,8188.62,0], 80, ""NORMAL"", ""ZSN_CUP_MSV_Mi8"", EAST] call BIS_fnc_ambientFlyBy;  " \n "[[5092.05,41.4512,100], [5144.99,8188.62,0], 100, ""NORMAL"", ""ZSN_CUP_VDV_Mi24_P"", EAST] call BIS_fnc_ambientFlyBy;  " \n "[[5239.34,184.613,100], [5144.99,8188.62,0], 90, ""NORMAL"", ""ZSN_CUP_MSV_Mi8"", EAST] call BIS_fnc_ambientFlyBy;}";
 				sizeA=31.811001;
 				sizeB=30.837999;
 				timeout[]={20,20,20};
@@ -38583,12 +38556,12 @@ class Mission
 			};
 			id=4141;
 			type="EmptyDetector";
-			atlOffset=-0.0089988708;
+			atlOffset=0.0019989014;
 		};
 		class Item227
 		{
 			dataType="Trigger";
-			position[]={5106.0571,52.066895,5364.3799};
+			position[]={4954.9844,46.715729,5457.6689};
 			angle=5.8846545;
 			class Attributes
 			{
@@ -38602,7 +38575,7 @@ class Mission
 			};
 			id=4218;
 			type="EmptyDetector";
-			atlOffset=0.91899872;
+			atlOffset=0.91921234;
 		};
 		class Item228
 		{
@@ -38626,7 +38599,7 @@ class Mission
 		class Item229
 		{
 			dataType="Trigger";
-			position[]={4025.595,70.72094,5156.292};
+			position[]={4097.8335,70.72094,4984.729};
 			angle=5.8846545;
 			class Attributes
 			{
@@ -38640,7 +38613,7 @@ class Mission
 			};
 			id=4226;
 			type="EmptyDetector";
-			atlOffset=0.90899658;
+			atlOffset=10.737961;
 		};
 		class Item230
 		{
@@ -39718,18 +39691,18 @@ class Mission
 		class Item254
 		{
 			dataType="Marker";
-			position[]={3884.0313,49.236084,4490.2852};
+			position[]={3949.7969,49.468262,4374.5757};
 			name="marker_42";
 			text="Anfallsmål CQ";
 			type="mil_objective";
 			colorName="ColorBlue";
 			id=4309;
-			atlOffset=-2.1724548;
+			atlOffset=-2.3824081;
 		};
 		class Item255
 		{
 			dataType="Trigger";
-			position[]={6176.1689,39.080002,5859.7681};
+			position[]={5191.2881,44.655205,5830.2983};
 			class Attributes
 			{
 				name="end_fail";
@@ -39742,7 +39715,7 @@ class Mission
 			};
 			id=4310;
 			type="EmptyDetector";
-			atlOffset=-2.2999992;
+			atlOffset=0.0016441345;
 		};
 		class Item256
 		{
@@ -39844,12 +39817,13 @@ class Mission
 		class Item259
 		{
 			dataType="Marker";
-			position[]={6171.6953,41.391521,5868.4077};
+			position[]={5186.8145,42.794678,5838.938};
 			name="marker_47";
 			text="FAP AQ";
 			type="mil_start";
 			colorName="ColorBlue";
 			id=4314;
+			atlOffset=-1.8571815;
 		};
 		class Item260
 		{
