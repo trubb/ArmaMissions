@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=5218;
+		nextID=5221;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7286.9883,81.722595,3802.4275};
-		dir[]={-0.12568556,-0.45056915,-0.88387918};
-		up[]={-0.063432366,0.89273703,-0.44608966};
-		aside[]={-0.99006152,2.1219603e-007,0.14078245};
+		pos[]={7257.0195,37.732857,3758.8794};
+		dir[]={0.50127167,-0.68742228,-0.52562195};
+		up[]={0.47442973,0.72624993,-0.4974739};
+		aside[]={-0.72370309,9.0803951e-009,-0.69017988};
 	};
 };
 binarizationWanted=0;
@@ -397,7 +397,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -420,7 +420,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category1
+	class Category2
 	{
 		name="Scenario";
 		class Attribute0
@@ -3391,7 +3391,7 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=6;
+				items=7;
 				class Item0
 				{
 					dataType="Object";
@@ -3405,7 +3405,6 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{[this, ""BLUE""] remoteexec [""assignteam""];}";
 						description="Gruppchef@Erik Kalle";
 						isPlayable=1;
 						class Inventory
@@ -3670,7 +3669,6 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{[this, ""BLUE""] remoteexec [""assignteam""];}";
 						description="Sjvman";
 						isPlayable=1;
 						class Inventory
@@ -3956,7 +3954,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{[this, ""BLUE""] remoteexec [""assignteam""];}";
 						description="Ksp-skytt";
 						isPlayable=1;
 						class Inventory
@@ -4193,7 +4190,6 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="call{[this, ""YELLOW""] remoteexec [""assignteam""];}";
 						description="Stf Gruppchef | Farb-man";
 						isPlayable=1;
 						class Inventory
@@ -4491,7 +4487,6 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="call{[this, ""YELLOW""] remoteexec [""assignteam""];}";
 						description="Grg-skytt";
 						isPlayable=1;
 						class Inventory
@@ -4732,7 +4727,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{[this, ""YELLOW""] remoteexec [""assignteam""];}";
 						description="Grg-ladd";
 						isPlayable=1;
 						class Inventory
@@ -4983,6 +4977,198 @@ class Mission
 						nAttributes=5;
 					};
 				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7276.4263,24.196001,3749.3503};
+						angles[]={0,2.07447,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						description="Skyttesoldat";
+						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="sfp_ak5";
+								class primaryMuzzleMag
+								{
+									name="sfp_30Rnd_556x45_Stanag";
+									ammoLeft=30;
+								};
+							};
+							class secondaryWeapon
+							{
+								name="CUP_launch_M136";
+								class primaryMuzzleMag
+								{
+									name="ACE_PreloadedMissileDummy_CUP";
+									ammoLeft=1;
+								};
+							};
+							class uniform
+							{
+								typeName="sfp_m90w_uniform";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=4;
+									class Item0
+									{
+										name="ACE_fieldDressing";
+										count=6;
+									};
+									class Item1
+									{
+										name="ACE_morphine";
+										count=2;
+									};
+									class Item2
+									{
+										name="ACE_DAGR";
+										count=1;
+									};
+									class Item3
+									{
+										name="ACE_MapTools";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="sfp_stridsbalte_304k";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="sfp_handgrenade_shgr56";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="sfp_30Rnd_556x45_Stanag";
+										count=8;
+										ammoLeft=30;
+									};
+									class Item2
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="TFAR_microdagr";
+							headgear="sfp_m90w_helmet";
+						};
+					};
+					id=5218;
+					type="sfp_1990_m90w_rifleman_ak5";
+					atlOffset=-1.9073486e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="Enh_featureType";
+							expression="_this setFeatureType parseNumber (_value)";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="Enh_ambientAnimParams";
+							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="ASIS";
+											};
+										};
+									};
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
 			};
 			class Attributes
 			{
@@ -5040,7 +5226,7 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=6;
+				items=7;
 				class Item0
 				{
 					dataType="Object";
@@ -5054,7 +5240,6 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{[this, ""BLUE""] remoteexec [""assignteam""];}";
 						description="Gruppchef@Filip Kalle";
 						isPlayable=1;
 						class Inventory
@@ -5319,7 +5504,6 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{[this, ""BLUE""] remoteexec [""assignteam""];}";
 						description="Sjvman";
 						isPlayable=1;
 						class Inventory
@@ -5605,7 +5789,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{[this, ""BLUE""] remoteexec [""assignteam""];}";
 						description="Ksp-skytt";
 						isPlayable=1;
 						class Inventory
@@ -5842,7 +6025,6 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="call{[this, ""YELLOW""] remoteexec [""assignteam""];}";
 						description="Stf Gruppchef | Farb-man";
 						isPlayable=1;
 						class Inventory
@@ -6140,7 +6322,6 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="call{[this, ""YELLOW""] remoteexec [""assignteam""];}";
 						description="Grg-skytt";
 						isPlayable=1;
 						class Inventory
@@ -6380,7 +6561,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{[this, ""YELLOW""] remoteexec [""assignteam""];}";
 						description="Grg-ladd";
 						isPlayable=1;
 						class Inventory
@@ -6631,6 +6811,198 @@ class Mission
 						nAttributes=5;
 					};
 				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7267.6782,23.835144,3739.8586};
+						angles[]={0,1.4202617,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						description="Skyttesoldat";
+						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="sfp_ak5";
+								class primaryMuzzleMag
+								{
+									name="sfp_30Rnd_556x45_Stanag";
+									ammoLeft=30;
+								};
+							};
+							class secondaryWeapon
+							{
+								name="CUP_launch_M136";
+								class primaryMuzzleMag
+								{
+									name="ACE_PreloadedMissileDummy_CUP";
+									ammoLeft=1;
+								};
+							};
+							class uniform
+							{
+								typeName="sfp_m90w_uniform";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=4;
+									class Item0
+									{
+										name="ACE_fieldDressing";
+										count=6;
+									};
+									class Item1
+									{
+										name="ACE_morphine";
+										count=2;
+									};
+									class Item2
+									{
+										name="ACE_DAGR";
+										count=1;
+									};
+									class Item3
+									{
+										name="ACE_MapTools";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="sfp_stridsbalte_304k";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="sfp_handgrenade_shgr56";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="sfp_30Rnd_556x45_Stanag";
+										count=8;
+										ammoLeft=30;
+									};
+									class Item2
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="TFAR_microdagr";
+							headgear="sfp_m90w_helmet";
+						};
+					};
+					id=5219;
+					type="sfp_1990_m90w_rifleman_ak5";
+					atlOffset=-4.5776367e-005;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="Enh_featureType";
+							expression="_this setFeatureType parseNumber (_value)";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="Enh_ambientAnimParams";
+							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="ASIS";
+											};
+										};
+									};
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
 			};
 			class Attributes
 			{
@@ -6686,7 +7058,7 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=6;
+				items=7;
 				class Item0
 				{
 					dataType="Object";
@@ -6700,7 +7072,6 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{[this, ""BLUE""] remoteexec [""assignteam""];}";
 						description="Gruppchef@Gustav Kalle";
 						isPlayable=1;
 						class Inventory
@@ -6952,7 +7323,6 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="call{[this, ""BLUE""] remoteexec [""assignteam""];}";
 						description="Pvrobotskytt";
 						isPlayable=1;
 						class Inventory
@@ -7194,7 +7564,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{[this, ""BLUE""] remoteexec [""assignteam""];}";
 						description="Pvrobotass";
 						isPlayable=1;
 						class Inventory
@@ -7437,7 +7806,6 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="call{[this, ""YELLOW""] remoteexec [""assignteam""];}";
 						description="Stf Gruppchef | Ksp-ass";
 						isPlayable=1;
 						class Inventory
@@ -7714,7 +8082,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{[this, ""YELLOW""] remoteexec [""assignteam""];}";
 						description="Ksp-skytt";
 						isPlayable=1;
 						class Inventory
@@ -7942,7 +8309,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7275.5664,24.218754,3720.1633};
+						position[]={7268.9214,23.912115,3727.1118};
 						angles[]={0,0.69918448,0};
 					};
 					side="West";
@@ -7950,7 +8317,6 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{[this, ""YELLOW""] remoteexec [""assignteam""];}";
 						description="Sjvman";
 						isPlayable=1;
 						class Inventory
@@ -8079,7 +8445,6 @@ class Mission
 					};
 					id=4365;
 					type="sfp_1990_m90w_medic";
-					atlOffset=1.9073486e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -8155,6 +8520,247 @@ class Mission
 										};
 									};
 									value=0.99000001;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="Enh_ambientAnimParams";
+							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="ASIS";
+											};
+										};
+									};
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7275.3291,24.219732,3720.7153};
+						angles[]={0,1.1807663,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						description="Ksp-ass";
+						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="sfp_ak5";
+								class primaryMuzzleMag
+								{
+									name="sfp_30Rnd_556x45_Stanag";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="sfp_m90w_uniform";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=4;
+									class Item0
+									{
+										name="ACE_fieldDressing";
+										count=6;
+									};
+									class Item1
+									{
+										name="ACE_morphine";
+										count=2;
+									};
+									class Item2
+									{
+										name="ACE_DAGR";
+										count=1;
+									};
+									class Item3
+									{
+										name="ACE_MapTools";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="sfp_stridsbalte_304k";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=4;
+									class Item0
+									{
+										name="sfp_handgrenade_shgr56";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="SmokeShell";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellBlue";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="sfp_30Rnd_556x45_Stanag";
+										count=8;
+										ammoLeft=30;
+									};
+								};
+							};
+							class backpack
+							{
+								typeName="sfp_stridssele_backpack";
+								isBackpack=1;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="sfp_249Rnd_762x51_ksp58";
+										count=3;
+										ammoLeft=249;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="TFAR_microdagr";
+							headgear="sfp_m90w_helmet";
+						};
+					};
+					id=5220;
+					type="sfp_1990_m90w_rifleman_ak5";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="Enh_featureType";
+							expression="_this setFeatureType parseNumber (_value)";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04ENG";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
 								};
 							};
 						};
