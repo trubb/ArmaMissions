@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=2852;
+		nextID=2857;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={10429.637,265.30243,9838.8818};
-		dir[]={0.86614662,-0.33081818,0.37464499};
-		up[]={0.30363312,0.94369346,0.13133428};
-		aside[]={0.3969976,-3.1664968e-008,-0.91782391};
+		pos[]={4351.376,369.08499,10761.517};
+		dir[]={0.85962969,-0.46457261,0.21281146};
+		up[]={0.45096213,0.88553232,0.11164069};
+		aside[]={0.24031466,6.7934161e-007,-0.97073245};
 	};
 };
 binarizationWanted=0;
@@ -242,7 +242,7 @@ class CustomAttributes
 		class Attribute0
 		{
 			property="Enh_introText";
-			expression="				if (!is3DEN && (_value select 0) > 0 && hasInterface) then				{					_value spawn					{						waitUntil {time > (_this select 0)};						if !(_this select 4) then						{							private _text = parseText format							[								""<t align='right' size='1.6'><t font='PuristaBold' size='1.8'>%1<br/></t>%2<br/>%3</t>"",								_this select 1,								_this select 2,								_this select 3							];							[_text,true] spawn BIS_fnc_textTiles;						}						else						{							[_this select 1,_this select 2,_this select 3] spawn BIS_fnc_EXP_camp_SITREP;						};					};				}";
+			expression="				if (!is3DEN && (_value # 0) > 0 && hasInterface) then				{					_value spawn					{						waitUntil {time > (_this # 0)};						if !(_this # 4) then						{							private _text = parseText format							[								""<t align='right' size='1.6'><t font='PuristaBold' size='1.8'>%1<br/></t>%2<br/>%3</t>"",								_this # 1,								_this # 2,								_this # 3							];							[_text,true] spawn BIS_fnc_textTiles;						}						else						{							[_this # 1,_this # 2,_this # 3] spawn BIS_fnc_EXP_camp_SITREP;						};					};				}";
 			class Value
 			{
 				class data
@@ -2142,7 +2142,7 @@ class Mission
 			class Attribute0
 			{
 				property="Enh_disableGrass";
-				expression="if (((parseNumber _value) > 0) && !is3DEN) then {setTerrainGrid (parseNumber _value)}";
+				expression="if (((parseNumber _value) > 0) && !is3DEN && hasInterface) then {setTerrainGrid (parseNumber _value)}";
 				class Value
 				{
 					class data
@@ -10449,8 +10449,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4566.2002,339.17465,10675.556};
-				angles[]={0,4.314187,0};
+				position[]={4566.1997,339.17456,10675.556};
+				angles[]={0,4.3141918,0};
 			};
 			side="Empty";
 			flags=4;
@@ -10459,6 +10459,49 @@ class Mission
 			};
 			id=2704;
 			type="sfp_tgb40_ammo";
+			atlOffset=0.071014404;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Enh_featureType";
+					expression="_this setFeatureType parseNumber (_value)";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[10]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item65
 		{
@@ -11008,7 +11051,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={4516.7119,341.79715,10803.121};
-				angles[]={-0,5.6950788,0};
+				angles[]={0,5.6950788,0};
 			};
 			side="Empty";
 			flags=4;
