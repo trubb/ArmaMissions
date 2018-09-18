@@ -2,7 +2,7 @@
 [] execVM "f\safeStart\f_safeStart.sqf";
 
 // Define groups for spawning ai via trubb_spawngroup
-ru_squad = [
+nato_squad = [
 	"ZSN_SoldierENCO",
 	"ZSN_SoldierEMedic",
 	"ZSN_SoldierELeader",
