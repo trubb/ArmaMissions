@@ -7,6 +7,11 @@ params [
 
 private _group = [getMarkerPos _trubb_start, _trubb_side, _units ] call BIS_fnc_spawnGroup;
 
+{
+	_x disableAI "COVER";
+	_x disableAI "SUPPRESSION";
+} forEach units _group;
+
 _group setFormation "LINE";
 _group setCombatMode "RED";
 _group deleteGroupWhenEmpty true;
