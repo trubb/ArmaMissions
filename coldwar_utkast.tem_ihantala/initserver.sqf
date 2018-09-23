@@ -2,40 +2,16 @@
 [] execVM "f\safeStart\f_safeStart.sqf";
 
 // Define groups for spawning ai via trubb_spawngroup
-army_squad = [
-	"ZSN_SoldierWNCO",
-	"ZSN_SoldierWLeader",
-	"ZSN_SoldierWLeader",
-	"ZSN_SoldierWAR",
-	"ZSN_SoldierWAR",
-	"ZSN_SoldierWLAW",
-	"ZSN_SoldierWB",
-	"ZSN_SoldierWB",
-	"ZSN_SoldierWB",
-	"ZSN_SoldierWMedic"];
-ranger_squad = [
-	"ZSN_RangerWNCO",
-	"ZSN_RangerWLeader",
-	"ZSN_RangerWMG",
-	"ZSN_RangerWAR",
-	"ZSN_RangerWMGAss",
-	"ZSN_RangerWLAW",
-	"ZSN_RangerWLeader",
-	"ZSN_RangerWB",
-	"ZSN_RangerWB",
-	"ZSN_RangerWMedic"];
 marine_squad = [
 	"ZSN_MarineWNCO",
 	"ZSN_MarineWLeader",
 	"ZSN_MarineWLeader",
-	"ZSN_MarineWLeader",
 	"ZSN_MarineWMG",
 	"ZSN_MarineWMG",
-	"ZSN_MarineWMG",
-	"ZSN_MarineWMGAss",
 	"ZSN_MarineWMGAss",
 	"ZSN_MarineWMGAss",
 	"ZSN_MarineWLAW",
+	"ZSN_MarineWB",
 	"ZSN_MarineWMedic"];
 
 // Initial init for wave respawn, run for the side or sides you want to use wave respawn for, this example is for all sides, resistance uses custom mission parameters that can be set in the lobby
