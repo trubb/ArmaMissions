@@ -1,5 +1,5 @@
 
-[] execVM "f\safeStart\f_safeStart.sqf";
+//[] execVM "f\safeStart\f_safeStart.sqf";
 
 params ["_unit"];
 _unit addEventHandler ["InventoryClosed", {

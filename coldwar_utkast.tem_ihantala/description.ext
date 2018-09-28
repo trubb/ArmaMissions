@@ -1,5 +1,5 @@
 
-DisabledAi = 1;
+//DisabledAi = 1;
 respawn = 3;
 respawnDelay = 2;
 respawnButton = 0;
@@ -122,7 +122,7 @@ class Params
             title = "Safe Start";
             values[] = {0,3,5,7,10,15};
             texts[] = {"Safe Start Off","3","5","7","10","15"};
-            default = 0;
+            default = 5;
             code = "f_param_mission_timer = %1";
     };
 };
