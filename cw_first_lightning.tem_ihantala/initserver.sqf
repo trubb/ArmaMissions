@@ -1,5 +1,5 @@
 
-//[] execVM "f\safeStart\f_safeStart.sqf";
+[] execVM "f\safeStart\f_safeStart.sqf";
 
 // Define groups for spawning ai via trubb_spawngroup
 marine_squad = [

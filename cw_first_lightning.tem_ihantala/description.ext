@@ -1,3 +1,7 @@
+author = "Trubb | Anrop.se";
+onLoadName = "Operation First Lightning: Stop the Pershings";
+loadScreen = "loadscreen.jpg";
+onLoadMission = "NATO's utplacerande av Pershing II-missiler visade sig vara droppen för en allt mer paranoid Sovjetisk ledning. Invasionen av Västtyskland är ett faktum.";
 
 //DisabledAi = 1;
 respawn = 3;
@@ -120,9 +124,9 @@ class Params
 	    class f_param_mission_timer
     {
             title = "Safe Start";
-            values[] = {0,3,5,7,10,15};
+            values[] = {0,2,4,6,9,14};
             texts[] = {"Safe Start Off","3","5","7","10","15"};
-            default = 5;
+            default = 9;
             code = "f_param_mission_timer = %1";
     };
 };
