@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2117.7637,92.43499,69.73822};
-		dir[]={-0.3525008,-0.53857911,0.76531595};
-		up[]={-0.22531669,0.84257555,0.48918545};
-		aside[]={0.90829748,2.7474016e-008,0.41835597};
+		pos[]={1995.4114,81.206642,89.297272};
+		dir[]={0.41173157,-0.42370963,0.80681407};
+		up[]={0.19259763,0.90579766,0.37740725};
+		aside[]={0.89072216,-4.8894435e-008,-0.45455113};
 	};
 };
 binarizationWanted=0;
@@ -33,6 +33,7 @@ addons[]=
 	"ZSN_ColdWarEast",
 	"ZSN_ColdWar_NIAK",
 	"hlcweapons_aks",
+	"hlcweapons_core",
 	"A3_Weapons_F",
 	"ace_optics",
 	"tfar_handhelds",
@@ -83,7 +84,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=48;
+		items=49;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -137,241 +138,247 @@ class AddonsMetaData
 		};
 		class Item8
 		{
+			className="hlcweapons_core";
+			name="hlcweapons_core";
+			author="toadie";
+		};
+		class Item9
+		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item9
+		class Item10
 		{
 			className="ace_optics";
 			name="ACE3 - Optics";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item10
+		class Item11
 		{
 			className="tfar_handhelds";
 			name="tfar_handhelds";
 			url="https://github.com/michail-nikolaev/task-force-arma-3-radio";
 		};
-		class Item11
+		class Item12
 		{
 			className="CUP_Creatures_Military_SLA";
 			name="CUP_Creatures_Military_SLA";
 		};
-		class Item12
+		class Item13
 		{
 			className="ace_medical";
 			name="ACE3 - Medical";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item13
+		class Item14
 		{
 			className="ace_maptools";
 			name="ACE3 - Map Tools";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item14
+		class Item15
 		{
 			className="CUP_Creatures_Military_CDF";
 			name="CUP_Creatures_Military_CDF";
 		};
-		class Item15
+		class Item16
 		{
 			className="CUP_Weapons_Grenades";
 			name="CUP_Weapons_Grenades";
 		};
-		class Item16
+		class Item17
 		{
 			className="CUP_Weapons_RPG18";
 			name="CUP_Weapons_RPG18";
 		};
-		class Item17
+		class Item18
 		{
 			className="CUP_Weapons_ACE_compat";
 			name="CUP_Weapons_ACE_compat";
 			author="Community Upgrade Project";
 		};
-		class Item18
+		class Item19
 		{
 			className="CUP_Weapons_RPG7";
 			name="CUP_Weapons_RPG7";
 		};
-		class Item19
+		class Item20
 		{
 			className="CUP_Weapons_Ammunition";
 			name="CUP_Weapons_Ammunition";
 		};
-		class Item20
+		class Item21
 		{
 			className="CUP_Creatures_Military_Russia";
 			name="CUP_Creatures_Military_Russia";
 		};
-		class Item21
+		class Item22
 		{
 			className="ZSN_ColdWarVehicles";
 			name="ZSN_ColdWarVehicles";
 			author="ZluskeN";
 		};
-		class Item22
+		class Item23
 		{
 			className="A3_Structures_F_Exp";
 			name="Arma 3 Apex - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item23
+		class Item24
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item24
+		class Item25
 		{
 			className="CUP_Misc3_Config";
 			name="CUP_Misc3_Config";
 		};
-		class Item25
+		class Item26
 		{
 			className="CUP_Weapons_AmmoBoxes";
 			name="CUP_Weapons_AmmoBoxes";
 		};
-		class Item26
+		class Item27
 		{
 			className="A3_Static_F";
 			name="Arma 3 Alpha - Turrets";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item27
+		class Item28
 		{
 			className="ace_mk6mortar";
 			name="ACE3 - Mk6 Mortar";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item28
+		class Item29
 		{
 			className="ace_dagr";
 			name="ACE3 - DAGR";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item29
+		class Item30
 		{
 			className="CUP_WheeledVehicles_Ural";
 			name="CUP_WheeledVehicles_Ural";
 		};
-		class Item30
+		class Item31
 		{
 			className="ZSN_ColdWarWest";
 			name="ZSN_ColdWarWest";
 			author="ZluskeN";
 		};
-		class Item31
+		class Item32
 		{
 			className="CUP_Weapons_M16";
 			name="CUP_Weapons_M16";
 		};
-		class Item32
+		class Item33
 		{
 			className="ace_ballistics";
 			name="ACE3 - Ballistics";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item33
+		class Item34
 		{
 			className="CUP_Weapons_M47";
 			name="CUP_Weapons_M47";
 		};
-		class Item34
+		class Item35
 		{
 			className="CUP_Creatures_Military_USArmy";
 			name="CUP_Creatures_Military_USArmy";
 		};
-		class Item35
+		class Item36
 		{
 			className="us_military_units";
 			name="us_military_units";
 		};
-		class Item36
+		class Item37
 		{
 			className="ZSN_ColdWarUnits";
 			name="ZSN_ColdWarUnits";
 			author="ZluskeN";
 		};
-		class Item37
+		class Item38
 		{
 			className="ace_flashlights";
 			name="ACE3 - Flashlights";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item38
+		class Item39
 		{
 			className="ace_hearing";
 			name="ACE3 - Hearing";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item39
+		class Item40
 		{
 			className="CUP_Weapons_SMAW";
 			name="CUP_Weapons_SMAW";
 		};
-		class Item40
+		class Item41
 		{
 			className="ace_trenches";
 			name="ACE3 - Trenches";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item41
+		class Item42
 		{
 			className="CUP_StandaloneTerrains_Core_Faction";
 			name="CUP_StandaloneTerrains_Core_Faction";
 		};
-		class Item42
+		class Item43
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item43
+		class Item44
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item44
+		class Item45
 		{
 			className="A3_Signs_F";
 			name="Arma 3 - Signs";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item45
+		class Item46
 		{
 			className="ace_interaction";
 			name="ACE3 - Interaction";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item46
+		class Item47
 		{
 			className="ace_cargo";
 			name="ACE3 - Cargo";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item47
+		class Item48
 		{
 			className="ace_dragging";
 			name="ACE3 - Dragging";
@@ -384,6 +391,8 @@ randomSeed=6682129;
 class ScenarioData
 {
 	author="Trubb | Anrop.se";
+	overviewText="NATO's utplacerande av Pershing II-missiler visade sig vara droppen för en allt mer paranoid Sovjetisk ledning. Invasionen av Västtyskland är ett faktum.";
+	overviewTextLocked="NATO's utplacerande av Pershing II-missiler visade sig vara droppen för en allt mer paranoid Sovjetisk ledning. Invasionen av Västtyskland är ett faktum.";
 	class Header
 	{
 		gameType="Coop";
@@ -480,7 +489,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=33;
+									items=34;
 									class Item0
 									{
 										class data
@@ -943,6 +952,20 @@ class CustomAttributes
 											value="ace_medical_littercleanupdelay";
 										};
 									};
+									class Item33
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_medical_paineffecttype";
+										};
+									};
 								};
 							};
 						};
@@ -959,7 +982,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=33;
+									items=34;
 									class Item0
 									{
 										class data
@@ -1075,7 +1098,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=2;
+														value=1.5;
 													};
 												};
 												class Item1
@@ -2426,6 +2449,51 @@ class CustomAttributes
 															};
 														};
 														value=180;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item33
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
 													};
 												};
 												class Item1
@@ -75570,7 +75638,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				name="zsn_respawn_west";
+				name="zsn_respawn_east";
 			};
 			id=2247;
 			type="Land_HelipadEmpty_F";
