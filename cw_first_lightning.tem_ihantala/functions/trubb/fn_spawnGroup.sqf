@@ -14,6 +14,8 @@ private _group = [getMarkerPos _trubb_start, _trubb_side, _units ] call BIS_fnc_
 
 _group setFormation "LINE";
 _group setCombatMode "RED";
+_group setBehaviour "AWARE";
+_group setSpeedMode "NORMAL";
 _group deleteGroupWhenEmpty true;
 
 _wp = _group addWaypoint [getMarkerPos _trubb_end, 0];

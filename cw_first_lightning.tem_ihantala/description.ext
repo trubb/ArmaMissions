@@ -89,6 +89,16 @@ class CfgFunctions
 			};
 		};
 	};
+	
+	// diwako punish use of unknown weapons
+    createShortcuts = 1;
+    #include "scripts\diw_unknownwp\cfgFunctions.hpp"
+    
+};
+
+// diwako punish use of unknown weapons
+class Extended_PreInit_EventHandlers {
+	#include "scripts\diw_unknownwp\Extended_PreInit_EventHandlers.hpp"
 };
 
 class cfgNotifications
@@ -130,7 +140,7 @@ class Params
             title = "Safe Start";
             values[] = {0,2,4,6,9,14};
             texts[] = {"Safe Start Off","3","5","7","10","15"};
-            default = 9;
+            default = 4;
             code = "f_param_mission_timer = %1";
     };
 };
