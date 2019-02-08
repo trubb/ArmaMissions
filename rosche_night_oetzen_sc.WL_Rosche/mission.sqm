@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7396.5532,146.02919,10920.127};
-		dir[]={0.27784953,-0.66795266,0.69039381};
-		up[]={0.24938011,0.74420381,0.6196534};
-		aside[]={0.92769229,-3.608875e-009,-0.37335059};
+		pos[]={7388.7896,76.473518,11020.491};
+		dir[]={0.76222652,-0.61753887,-0.19407205};
+		up[]={0.59844637,0.78653914,-0.15237153};
+		aside[]={-0.246741,-5.9837475e-008,-0.96908474};
 	};
 };
 binarizationWanted=0;
@@ -216,6 +216,7 @@ class ScenarioData
 {
 	author="Trubb | Anrop.se";
 	disabledAI=1;
+	joinUnassigned=0;
 	respawn=3;
 	respawnDelay=30.000002;
 	respawnVehicleDelay=60.000004;
@@ -2452,6 +2453,7 @@ class Mission
 	assetType="Free";
 	class Intel
 	{
+		briefingName="TvT 38 | Oetzen Sector Control";
 		overviewText="Ta byn!";
 		timeOfChanges=2700;
 		startWeather=0.40257543;

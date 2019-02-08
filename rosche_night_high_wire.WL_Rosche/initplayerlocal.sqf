@@ -1,9 +1,14 @@
 
 [] execVM "f\safeStart\f_safeStart.sqf";
 
-waitUntil {!isNull player};
+// ADD ITEMS THAT SHOULD NOT FALL INTO PLAYER HANDS HERE
+params ["_unit", "_didJIP"];
 
-params ["_player", "_didJIP"];
-if (_didJIP) exitWith {	// kill JIPers, remove if they are allowed in
-    this setDamage 1;
+if (_didJIP) exitwith {
+    _unit setDamage 1;
 };
+
+_unit addEventHandler ["InventoryClosed", {
+    params ["_unit"];
+    _unit removeItem "ACE_EntrenchingTool";
+}];

@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=3733;
+		nextID=3756;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3282.989,62.522842,12241.276};
-		dir[]={0.88531643,-0.46307221,0.044353247};
-		up[]={0.4625158,0.88632298,0.02317082};
-		aside[]={0.050042912,-1.0832446e-007,-0.99883765};
+		pos[]={2533.2505,33.041546,13364.607};
+		dir[]={0.55291355,-0.45197394,-0.70007223};
+		up[]={0.28014532,0.89202857,-0.35470578};
+		aside[]={-0.7847991,-3.9907172e-007,-0.61983037};
 	};
 };
 binarizationWanted=0;
@@ -240,6 +240,7 @@ class ScenarioData
 	author="Trubb | Anrop.se";
 	respawnDialog=0;
 	disabledAI=1;
+	joinUnassigned=0;
 	respawn=1;
 	respawnDelay=30.000002;
 	respawnVehicleDelay=60.000004;
@@ -251,7 +252,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -359,7 +360,7 @@ class CustomAttributes
 										"STRING"
 									};
 								};
-								value="Spectator";
+								value="ace_spectator";
 							};
 						};
 					};
@@ -387,7 +388,7 @@ class CustomAttributes
 		};
 		nAttributes=6;
 	};
-	class Category2
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -2467,6 +2468,7 @@ class Mission
 	assetType="Free";
 	class Intel
 	{
+		briefingName="TvT 43 | High Wire";
 		startWeather=0.2;
 		startWind=0.2;
 		startWindDir=250;
@@ -2513,7 +2515,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=91;
+		items=114;
 		class Item0
 		{
 			dataType="Group";
@@ -17830,7 +17832,7 @@ class Mission
 						class Attribute2
 						{
 							property="ace_isEngineer";
-							expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -18083,7 +18085,7 @@ class Mission
 						class Attribute2
 						{
 							property="ace_isEngineer";
-							expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -18237,6 +18239,392 @@ class Mission
 				};
 				nAttributes=2;
 			};
+		};
+		class Item91
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2014.4165,8.6657543,13300.507};
+				angles[]={0,5.6706476,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=3733;
+			type="VR_3DSelector_01_exit_F";
+			atlOffset=0.29392385;
+		};
+		class Item92
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2055.3259,14.084244,13329.253};
+				angles[]={0,5.6706476,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=3734;
+			type="VR_3DSelector_01_exit_F";
+			atlOffset=1.7320127;
+		};
+		class Item93
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2096.2349,16.654177,13358.001};
+				angles[]={0,5.6706476,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=3735;
+			type="VR_3DSelector_01_exit_F";
+			atlOffset=2.5914831;
+		};
+		class Item94
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2137.1445,17.37397,13386.75};
+				angles[]={0,5.6706476,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=3736;
+			type="VR_3DSelector_01_exit_F";
+			atlOffset=3.097909;
+		};
+		class Item95
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2178.0544,15.114642,13415.497};
+				angles[]={0,5.6706476,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=3737;
+			type="VR_3DSelector_01_exit_F";
+			atlOffset=1.7790375;
+		};
+		class Item96
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2218.9641,11.825558,13444.242};
+				angles[]={0,5.6706476,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=3738;
+			type="VR_3DSelector_01_exit_F";
+		};
+		class Item97
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2259.8735,10.514572,13472.991};
+				angles[]={0,5.6706476,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=3739;
+			type="VR_3DSelector_01_exit_F";
+		};
+		class Item98
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2300.7827,9.7494402,13501.737};
+				angles[]={0,5.6706476,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=3740;
+			type="VR_3DSelector_01_exit_F";
+		};
+		class Item99
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2341.6926,9.2688007,13530.484};
+				angles[]={0,5.6706476,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=3741;
+			type="VR_3DSelector_01_exit_F";
+			atlOffset=0.70494509;
+		};
+		class Item100
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2389.2417,10.519458,13563.899};
+				angles[]={0,5.6706476,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=3742;
+			type="VR_3DSelector_01_exit_F";
+			atlOffset=2.096735;
+		};
+		class Item101
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2428.2395,8.6436892,13588.357};
+				angles[]={0,5.6706476,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=3743;
+			type="VR_3DSelector_01_exit_F";
+		};
+		class Item102
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2469.1494,10.162002,13617.104};
+				angles[]={0,5.6706476,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=3744;
+			type="VR_3DSelector_01_exit_F";
+		};
+		class Item103
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2510.0588,8.992034,13645.853};
+				angles[]={0,5.6706476,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=3745;
+			type="VR_3DSelector_01_exit_F";
+			atlOffset=0.29401493;
+		};
+		class Item104
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2591.8772,10.428996,13703.347};
+				angles[]={0,5.6706476,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=3746;
+			type="VR_3DSelector_01_exit_F";
+			atlOffset=2.5915747;
+		};
+		class Item105
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2632.7869,10.616752,13732.096};
+				angles[]={0,5.6706476,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=3747;
+			type="VR_3DSelector_01_exit_F";
+			atlOffset=3.0980029;
+		};
+		class Item106
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2673.6968,9.3717108,13760.843};
+				angles[]={0,5.6706476,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=3748;
+			type="VR_3DSelector_01_exit_F";
+			atlOffset=1.7791286;
+		};
+		class Item107
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2714.6064,7.7048187,13789.587};
+				angles[]={0,5.6706476,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=3749;
+			type="VR_3DSelector_01_exit_F";
+			atlOffset=4.7683716e-007;
+		};
+		class Item108
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2755.5159,7.9114943,13818.337};
+				angles[]={0,5.6706476,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=3750;
+			type="VR_3DSelector_01_exit_F";
+			atlOffset=9.5367432e-007;
+		};
+		class Item109
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2796.425,10.549568,13847.083};
+				angles[]={0,5.6706476,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=3751;
+			type="VR_3DSelector_01_exit_F";
+			atlOffset=2.8610229e-006;
+		};
+		class Item110
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2837.335,10.146873,13875.83};
+				angles[]={0,5.6706476,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=3752;
+			type="VR_3DSelector_01_exit_F";
+			atlOffset=0.70503712;
+		};
+		class Item111
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2878.2441,10.820485,13904.579};
+				angles[]={0,5.6706476,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=3753;
+			type="VR_3DSelector_01_exit_F";
+			atlOffset=2.0528574;
+		};
+		class Item112
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2550.0493,8.6918907,13674.029};
+				angles[]={0,5.6706476,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=3754;
+			type="VR_3DSelector_01_exit_F";
+			atlOffset=0.29401493;
+		};
+		class Item113
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2798.6707,12.412857,12119.495};
+				angles[]={0,5.6706476,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=3755;
+			type="VR_3DSelector_01_exit_F";
+			atlOffset=0.29379368;
 		};
 	};
 	class Connections

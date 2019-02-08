@@ -2,9 +2,9 @@
 
 player createDiaryRecord ["Diary", ["Victory Conditions & Credits", "
 Victory Conditions:<br/>
-Destroy a majority of the Patriot launchers and other system components to complete the mission!<br/>
+Destroy a majority of the Patriot launchers to complete the mission!<br/>
 <br/>
-If you take 50% casualties you will be forced to retreat.
+If you take 80% casualties you will be forced to retreat.
 
 <br/>
 <br/>
@@ -16,18 +16,19 @@ player createDiaryRecord ["Diary",["PGO7V3 Sight","
 "]];
 
 player createDiaryRecord ["Diary",["V. Command & Signal","
-ALL FREQUENCIES ARE PREDEFINED, YOU SHOULD ONLY NEED TO CHANGE CHANNEL
+ALL FREQUENCIES ARE PREDEFINED, YOU ONLY NEED TO CHANGE CHANNEL!
 <br/>
 <br/>Long Range:
-<br/>Platoon Net - Channel 1: 70
+<br/>Platoon Net - Channel 1
 <br/>
 <br/>Short Range:
-<br/>Alpha 10 - 100
-<br/>Alpha 1 - 110
-<br/>Alpha 2 - 120
-<br/>Alpha 3 - 130
-<br/>Alpha 4 - 140
-<br/>Victor 1 - 150
+<br/>[Unit - Channel]
+<br/>Alpha 10 - 6
+<br/>Alpha 1 - 1
+<br/>Alpha 2 - 2
+<br/>Alpha 3 - 3
+<br/>Alpha 4 - 4
+<br/>Victor 1 - 5
 "]];
 
 player createDiaryRecord ["Diary",["IV. Service & Support","
@@ -44,7 +45,8 @@ No other help, you're on your own!
 
 player createDiaryRecord ["Diary",["III. Mission","
 Our task is to destroy any Patriot system components that we come across in our assigned sector.
-The battery is assumed to be located within <marker name = 'p_zone'>this area</marker>
+<br/>
+<br/>The battery is assumed to be located within <marker name = 'p_zone'>this area</marker>
 "]];
 
 player createDiaryRecord ["Diary",["IIB. Friendly Forces","
