@@ -1,46 +1,79 @@
 ﻿waitUntil {!isNull player};
 
-player createDiaryRecord ["Diary", ["Victory Conditions & Credits", "
-Victory Conditions:<br/>
-Destroy a majority of the Patriot launchers and other system components to complete the mission!<br/>
+player createDiaryRecord ["Diary", ["Victory Conditions & Credits","
+Victory Conditions:
+<br/>Root out the taliban insurgents from the marked areas.
 <br/>
-If you take 50% casualties you will be forced to retreat.
+<br/>If at any point the ANA troop or the SF ODA team take 75% casualties you will be forced to retreat.
 
 <br/>
+<br/>Mission by Trubb for Anrop.se
+"]];
+
+player createDiaryRecord ["Diary",["V. Command & Signal","
+ALL FREQUENCIES ARE PREDEFINED, NON-LEADERS ONLY NEED TO CHANGE CHANNEL
 <br/>
-Mission by Trubb for Anrop.se
+<br/>Squad Leaders will need to manually set their additional channel!
+<br/>
+<br/>Long Range:
+<br/>Tactical Air Control Net - Channel 1
+<br/>
+<br/>Short Range:
+<br/>Alpha Platoon Net - Channel 5
+<br/>Alpha - Channel 1
+<br/>Alpha 1 - Channel 2
+<br/>Alpha 2 - Channel 3
+<br/>Oscar - Channel 4
+<br/>
+<br/>CALLSIGNS
+<br/>ALPHA - ANA Commando troop commander
+<br/>-   Alpha 1 - First Commando squad
+<br/>-   Alpha 2 - Second Commando squad
+<br/>
+<br/>OSCAR - ODA 0535 team commander
+<br/>
+<br/>HOTEL - AH-6M
 "]];
 
 player createDiaryRecord ["Diary",["IV. Service & Support","
-a. Equipment<br/>
-Standard combat load of ammunition.<br/>
+a. Equipment
+<br/>Standard combat load of ammunition.
+<br/>Utility equipment and more ammunition is carried in your trucks.
 <br/>
-b. Medical resources<br/>
-Advanced medical system. Your platoon medic can help you!<br/>
+<br/>Reinforcements and resupply are staged at FOB OBEH.
+<br/>Use HOTEL or your trucks to ferry them back into the fight.
 <br/>
-
-No other help, you're on your own!
+<br/>b. Medical resources
+<br/>Advanced medical system. Your platoon medic can help you!
+<br/>
+<br/>No other help, you're on your own!
 "]];
 
 player createDiaryRecord ["Diary",["III. Mission","
-Our task is to destroy any Patriot system components that we come across in our assigned sector.
+ You are to conduct a clearance operation in the ANIZAY area in order to root out the taliban, and to find and destroy the weapon caches and IED workshops that are supposedly found in the marked areas of interest.
 "]];
 
 player createDiaryRecord ["Diary",["IIB. Friendly Forces","
-We are one rifle VDV rifle platoon that has been reinforced with a 2S25 Sprut light tank.
+4-man ODA team from ODA 535.
+<br/>20-man troop Afghan National Army Commandos.
+<br/>
+<br/>Your split ODA-team are, alongside the ANA Commandos, the only forces that operate outside the FOBs in the area this morning.
 "]];
 
 player createDiaryRecord ["Diary",["IIA. Enemy Forces","
-The NATO forces in the area consist of mechanized US Army units. They have likely prepared defensive positions and are well trained and equipped.
+Taliban fighters - lightly armed and equipped but have historically shown themselves to be fierce and cunning guerilla fighters.
+<br/>You have them cornered here though, so expect them to stand their ground.
 "]];
 
 player createDiaryRecord ["Diary",["I. Situation","
-Our platoon has been tasked with finding a Patriot battery and destroying as many of it's components as possible.
+The Afghan National Army Commando School has turned out another batch of Commandos. You are to take them out for their first proper dawn raid.
+<br/>
+<br/>The Taliban have recently reestablished a fleeting presence in this area.
+<br/>The fighters you can expect to face are a ragtag group of older Mujahideen hailing from the Soviet occupation and younger extremists.
 "]];
 
 player createDiaryRecord ["Diary",["IMPORTANT NOTES","
-A setup timer is present in the mission.<br/>
+A setup timer is present in the mission.
 <br/>
-
-You should probably not cross into the combat zone while it is active.
+<br/>You should probably not try to engage the enemy while it is active.
 "]];

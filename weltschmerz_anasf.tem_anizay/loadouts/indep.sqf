@@ -128,6 +128,7 @@ private ["_type", "_unit"];
         for "_i" from 1 to 8 do {_unit addItemToBackpack _epine;};
         for "_i" from 1 to 8 do {_unit addItemToBackpack _morphine;};
         for "_i" from 1 to 8 do {_unit addItemToBackpack _splint;};
+        for "_i" from 1 to 8 do {_unit addItemToBackpack _tourniquet;};
         for "_i" from 1 to 20 do {_unit addItemToBackpack _bandage;};
         for "_i" from 1 to 2 do {_unit addItemToBackpack _smoker;};
         for "_i" from 1 to 2 do {_unit addItemToBackpack _smokeg;};
