@@ -1,73 +1,79 @@
-﻿waitUntil {!isNull player};
+waitUntil {!isNull player};
 
-player createDiaryRecord ["Diary", ["Segervillkor","
-Uppgiften är slutförd när:
-<br/>Plutonen lokaliserat och återtagit lastbilarna, och fienden fördröjts minst intill 18:40.
+player createDiaryRecord ["Diary", ["Victory Conditions & Credits","
+Victory Conditions:
+<br/>The task is accompllished when:
+<br/>The platoon has located and retaken the lorries, and the enemy's counter-attack has been delayed at least until 18:40.
 <br/>
-<br/>Om ni tar 80% förluster tvingas ni retirera.
+<br/>If you take casualties exceeding 80% of your original force you are forced to retreat.
 <br/>
-<br/>Uppdrag skapat av Trubb för Anrop.se
+<br/>This mission was created for Anrop.se by Trubb
 "]];
 
-player createDiaryRecord ["Diary",["V. Ledning","
-ALLA FREKVENSER ÄR FÖRDEFINIERADE, ICKE-CHEFER BEHÖVER ENDAST BYTA KANAL.
+player createDiaryRecord ["Diary",["V. Command & Signal","
+ALL FREQUENCIES ARE PREDEFINED, YOU ONLY NEED TO CHANGE CHANNEL!
 <br/>
-<br/>Komp/Plutradio:
-<br/>Plutonsnät - Kanal 1
+<br/>Company/Platoon net:
+<br/>Platoon net - Channel 1
 <br/>
-<br/>Gruppradio:
-<br/>ERIK ADAM - Kanal 1
-<br/>FILIP ADAM - Kanal 2
-<br/>GUSTAV ADAM - Kanal 3
-<br/>KALLE ADAM - Kanal 4
+<br/>Squad Channels:
+<br/>ERIK ADAM - Channel 1
+<br/>FILIP ADAM - Channel 2
+<br/>GUSTAV ADAM - Channel 3
+<br/>KALLE ADAM - Channel 4
 <br/>
-<br/>Anropssignaler
-<br/>ADAM QVINTUS
-<br/>-   ERIK ADAM - 1a grupp
-<br/>-   FILIP ADAM - 2a grupp
-<br/>-   GUSTAV ADAM - 3e grupp
-<br/>-   KALLE ADAM - Pvomgång
+<br/>Callsigns
+<br/>ADAM QVINTUS - Platoon lead
+<br/>-   ERIK ADAM - 1st squad
+<br/>-   FILIP ADAM - 2nd squad
+<br/>-   GUSTAV ADAM - 3rd squad
+<br/>-   KALLE ADAM - AT team
 "]];
 
-player createDiaryRecord ["Diary",["IV. Uthållighet","
-a. Utrustning
-<br/>Grundläggande stridsutrustning.
-<br/>Stf gruppchefer har tilldelats kikarsikte.
+player createDiaryRecord ["Diary",["IV. Service & Support","
+a. Equipment
+<br/>Basic combat equipment.
+<br/>Squad leaders have been allocated sights for their Ak4 rifles.
 <br/>
-<br/>Förstärkningar
-<br/>Inga
+<br/>Reinforcements:
+<br/>None
 <br/>
-<br/>TOLO
-<br/>Ammunition, pskott, och sjukvårdsmateriel finns i de kvarlämnade lastbilarna.
+<br/>Resupply:
+<br/>Ammunition, AT weapons, and medical equipment can be found in the lorries that you managed to leave behind when fleeing the village.
 <br/>
-<br/>b. Sjukvårdssystem
-<br/>Advanced ACE medical.
-"]];
-
-player createDiaryRecord ["Diary",["III. Uppgift","
-Ta SUMMA, därefter lokalisera de kvarlämnade lastbilarna och fördröj fienden minst intill klockan 18:40.
-<br/>Slutligen framryck med lastbilarna till <marker name = 'asa'>ÅSA</marker>.
-"]];
-
-player createDiaryRecord ["Diary",["IIB. Egna styrkor","
-En svensk skyttepluton, ungefär motsvarande modell IB77.
-<br/>Inga andra egna trupper befinner sig i området.
-"]];
-
-player createDiaryRecord ["Diary",["IIA. Motståndaren","
-Sovjetryskt motoriserat infanteri.
-<br/>En spaningsomgång har sett uppskattningsvis en pluton samt en pansarterrängbil i byn.
-<br/>Bedömt kapabla att inom 20 minuter påbörja motanfall för att återta byn.
-"]];
-
-player createDiaryRecord ["Diary",["I. Orientering","
-Ett motanfall tvingade tillbaka vår pluton från byn SUMMA för några timmar sedan.
-<br/>Nu måste fienden fördröjas kring just SUMMA för att bataljonen ska kunna omgruppera.
-<br/>I byn, som nu är i fiendens händer, kvarlämnades dessutom plutonens fordon.
-"]];
-
-player createDiaryRecord ["Diary",["VIKTIGT!","
-Uppdraget har en starttimer.
+<br/>b. Medical resources
+<br/>Advanced ACE medical. Your platoon medic can help you!
 <br/>
-<br/>Ni bör nog inte hamna i strid innan timern tagit slut.
+<br/>No other help, you're on your own!
+"]];
+
+player createDiaryRecord ["Diary",["III. Mission","
+Seize the village SUMMA, then locate the left-behind lorries and delay the enemy at least until 18:40.
+<br/>Thereafter withdraw with the lorries to the <marker name = 'asa'>predesignated regrouping area</marker>.
+"]];
+
+player createDiaryRecord ["Diary",["IIB. Friendly Forces","
+You are one Swedish rifle platoon, roughly corresponding to the IB77 organisational model.
+<br/>No other friendly forces are present in the area.
+"]];
+
+player createDiaryRecord ["Diary",["IIA. Enemy Forces","
+Soviet motorised infantry.
+<br/>One of our patrols has seen roughly one platoon as well as one wheeled APC in the village.
+<br/>Assumed to be capable to within 20 minutes initialise a counter-attack to retake the village.
+"]];
+
+player createDiaryRecord ["Diary",["I. Situation","
+A counter-attack forced our platoon to withdraw from the village SUMMA a few hours ago.
+<br/>Now the enemy needs to be delayed from moving through SUMMA in order for our batallion to be able to safely regroup.
+<br/>Additionally, the platoons vehicles were left behind in the village, which now is in the hands of the enemy.
+"]];
+
+player createDiaryRecord ["Diary",["IMPORTANT NOTES!","
+A setup timer is present in the mission.
+<br/>
+<br/>You should probably not cross into the combat zone while it is active.
+<br/>
+<br/>As this mission requires a fair amount of coordination among the squads all soldiers have been provided with radios, despite this being unrealistic for the time period.
+<br/>Feel free to shout commands within your squad instead.
 "]];
