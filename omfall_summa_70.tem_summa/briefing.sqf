@@ -2,7 +2,7 @@ waitUntil {!isNull player};
 
 player createDiaryRecord ["Diary", ["Victory Conditions & Credits","
 Victory Conditions:
-<br/>The task is accompllished when:
+<br/>The task is accomplished when:
 <br/>The five fighting positions are cleared out.
 <br/>
 <br/>If you take casualties exceeding 80% of your original force you are forced to retreat.
@@ -24,6 +24,7 @@ ALL FREQUENCIES ARE PREDEFINED, YOU ONLY NEED TO CHANGE CHANNEL!
 <br/>-   ERIK ADAM - 1st squad
 <br/>-   FILIP ADAM - 2nd squad
 <br/>-   GUSTAV ADAM - 3rd squad
+<br/>-   HELGE ADAM - 4th squad
 <br/>-   KALLE ADAM - Mortar team
 "]];
 
@@ -39,13 +40,13 @@ a. Equipment
 "]];
 
 player createDiaryRecord ["Diary",["III. Mission","
-Seize the five fighting positions, and defeat the enemy's attempts at retaking them.
+Seize the five fighting positions in any order, and defeat the enemy's attempts at retaking them.
 <br/>
-<br/>Fighting position one
-<br/>Fighting position two
-<br/>Fighting position three
-<br/>Fighting position four
-<br/>Fighting position five
+<br/><marker name = '1'>Fighting position one</marker>
+<br/><marker name = '2'>Fighting position two</marker>
+<br/><marker name = '3'>Fighting position three</marker>
+<br/><marker name = '4'>Fighting position four</marker>
+<br/><marker name = '5'>Fighting position five</marker>
 "]];
 
 player createDiaryRecord ["Diary",["IIB. Friendly Forces","

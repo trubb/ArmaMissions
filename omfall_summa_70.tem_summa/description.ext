@@ -1,8 +1,8 @@
 class Header{gameType =  Coop;};
 
 author = "Trubb | Anrop.se";
-onLoadName = "Omfall: Summa 70";
-briefingName = "Omfall: Summa 70";
+onLoadName = "Coop 30 | Omfall - Kpist m/45";
+briefingName = "Coop 30 | Omfall - Kpist m/45";
 loadScreen = "loadscreen.jpg";
 overviewPicture = "loadscreen.jpg";
 onLoadMission = "";
