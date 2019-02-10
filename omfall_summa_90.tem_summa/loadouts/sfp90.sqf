@@ -175,7 +175,7 @@ switch (_type) do {
         _unit addWeapon _binocular;
         _unit addItemToUniform _maptools;
         _unit addItemToUniform _dagr;
-        addItemCountToBackpack(_flaremag, 16);
+        addItemCountToBackpack(_flaremag, 4);
         _unit addWeapon _flaregun;
     };
     
@@ -187,13 +187,11 @@ switch (_type) do {
         addItemCountToBackpack(_glhe, 12);
         addItemCountToBackpack(_glsmokew, 4);
         addItemCountToBackpack(_glsmoker, 4);
-        addItemCountToBackpack(_glflareg, 6);
+        addItemCountToBackpack(_glflareg, 4);
         _unit addItemToUniform _maptools;
         _unit addItemToUniform _dagr;
         _unit addWeapon _rifleGL;
         _unit addWeapon _binocular;
-        addItemCountToBackpack(_flaremag, 6);
-        _unit addWeapon _flaregun;
     };
 
     case "CLS": {
