@@ -2,7 +2,7 @@ waitUntil {!isNull player};
 
 player createDiaryRecord ["Diary", ["Victory Conditions & Credits","
 Victory Conditions:
-<br/>The task is accompllished when:
+<br/>The task is accomplished when:
 <br/>The platoon has located and retaken the lorries, and the enemy's counter-attack has been delayed at least until 18:40.
 <br/>
 <br/>If you take casualties exceeding 80% of your original force you are forced to retreat.
@@ -33,7 +33,7 @@ ALL FREQUENCIES ARE PREDEFINED, YOU ONLY NEED TO CHANGE CHANNEL!
 player createDiaryRecord ["Diary",["IV. Service & Support","
 a. Equipment
 <br/>Basic combat equipment.
-<br/>Squad leaders have been allocated sights for their Ak4 rifles.
+<br/>Assistant squad leaders have been allocated sights for their Ak4 rifles.
 <br/>
 <br/>Reinforcements:
 <br/>None

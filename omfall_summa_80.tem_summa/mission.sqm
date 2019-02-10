@@ -8,7 +8,7 @@ class EditorData
 	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=516;
+		nextID=555;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1438.3282,282.59595,4263.2939};
-		dir[]={0.74954343,-0.66189969,-0.0087871654};
-		up[]={0.66185468,0.74959224,-0.0077591091};
-		aside[]={-0.011722569,-2.7379429e-008,-0.99993169};
+		pos[]={1486.8291,53.359512,4688.6304};
+		dir[]={0.10470249,-0.68307537,-0.72289729};
+		up[]={0.097916044,0.73034167,-0.67603683};
+		aside[]={-0.98974252,-1.7904676e-007,-0.14335231};
 	};
 };
 binarizationWanted=0;
@@ -174,8 +174,12 @@ class AddonsMetaData
 randomSeed=9986839;
 class ScenarioData
 {
-	author="Trubb";
+	author="Trubb | Anrop.se";
 	respawn=1;
+	class Header
+	{
+		gameType="Coop";
+	};
 };
 class CustomAttributes
 {
@@ -199,7 +203,7 @@ class CustomAttributes
 					};
 					class value
 					{
-						items=1;
+						items=2;
 						class Item0
 						{
 							class data
@@ -212,6 +216,20 @@ class CustomAttributes
 									};
 								};
 								value="ace_spectator";
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Spectator";
 							};
 						};
 					};
@@ -486,6 +504,25 @@ class CustomAttributes
 		};
 		class Attribute1
 		{
+			property="Enh_ambientFlyby_speed";
+			expression="missionNamespace setVariable ['Enh_ambientFlyby_speed',_value]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="LIMITED";
+				};
+			};
+		};
+		class Attribute2
+		{
 			property="cba_settings_hasSettingsFile";
 			expression="false";
 			class Value
@@ -503,13 +540,14 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=2;
+		nAttributes=3;
 	};
 };
 class Mission
 {
 	class Intel
 	{
+		briefingName="Coop 30 | Omfall - Ak4";
 		timeOfChanges=1800.0002;
 		startWeather=0.2;
 		startWind=0.25;
@@ -558,20 +596,20 @@ class Mission
 	};
 	class Entities
 	{
-		items=194;
+		items=196;
 		class Item0
 		{
 			dataType="Group";
 			side="West";
 			class Entities
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1495.5822,23.670528,4654.7827};
+						position[]={1493,23.898108,4655.0498};
 						angles[]={0,3.1415927,0};
 					};
 					side="West";
@@ -580,7 +618,7 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						init="call{this disableAI ""PATH"";" \n "group this setGroupId [""ADAM QVINTUS""];" \n "id = [""PL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
-						description="Plutonchef@Adam Qvintus";
+						description="Platoon Leader@Adam Qvintus";
 						isPlayer=1;
 					};
 					id=8;
@@ -702,7 +740,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1497.5822,23.690437,4654.7827};
+						position[]={1496,23.688128,4655.0498};
 						angles[]={0,3.1415927,0};
 					};
 					side="West";
@@ -711,10 +749,142 @@ class Mission
 					{
 						rank="CORPORAL";
 						init="call{this disableAI ""PATH"";" \n "id = [""CLS"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
-						description="Plutonsjukvårdare";
+						description="Platoon Medic";
 						isPlayable=1;
 					};
 					id=9;
+					type="sfp_m59w_medic";
+					atlOffset=1.9073486e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="Enh_featureType";
+							expression="_this setFeatureType parseNumber (_value)";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male09ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="Enh_ambientAnimParams";
+							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="ASIS";
+											};
+										};
+									};
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1499,23.794794,4655.0498};
+						angles[]={0,3.1415927,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						rank="CORPORAL";
+						init="call{this disableAI ""PATH"";" \n "id = [""CLS"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
+						description="Platoon Medic";
+						isPlayable=1;
+					};
+					id=553;
 					type="sfp_m59w_medic";
 					class CustomAttributes
 					{
@@ -869,7 +1039,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1506.5822,24.739607,4659.7827};
+						position[]={1506.582,24.739603,4659.7827};
 						angles[]={0,3.1415927,0};
 					};
 					side="West";
@@ -878,7 +1048,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						init="call{this disableAI ""PATH"";" \n "group this setGroupId [""ERIK ADAM""];" \n "id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
-						description="Gruppchef@Erik Adam";
+						description="Squad Leader@Erik Adam";
 						isPlayable=1;
 					};
 					id=11;
@@ -1008,7 +1178,7 @@ class Mission
 					class Attributes
 					{
 						init="call{this disableAI ""PATH"";" \n "id = [""RIFLE"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
-						description="Skyttesoldat";
+						description="Rifleman";
 						isPlayable=1;
 					};
 					id=18;
@@ -1138,7 +1308,7 @@ class Mission
 					class Attributes
 					{
 						init="call{this disableAI ""PATH"";" \n "id = [""LAT"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
-						description="Skyttesoldat | Pskott";
+						description="Rifleman | AT4";
 						isPlayable=1;
 					};
 					id=19;
@@ -1231,7 +1401,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						init="call{this disableAI ""PATH"";" \n "id = [""TL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
-						description="Stf Gruppchef";
+						description="Assistant Squad Leader";
 						isPlayable=1;
 					};
 					id=20;
@@ -1361,7 +1531,7 @@ class Mission
 					class Attributes
 					{
 						init="call{this disableAI ""PATH"";" \n "id = [""RIFLE"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
-						description="Skyttesoldat";
+						description="Rifleman";
 						isPlayable=1;
 					};
 					id=21;
@@ -1380,7 +1550,7 @@ class Mission
 					class Attributes
 					{
 						init="call{this disableAI ""PATH"";" \n "id = [""LAT"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
-						description="Skyttesoldat | Pskott";
+						description="Rifleman | AT4";
 						isPlayable=1;
 					};
 					id=22;
@@ -1500,7 +1670,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1498.5822,24.360962,4659.7827};
+						position[]={1498.582,24.36096,4659.7827};
 						angles[]={0,3.1415927,0};
 					};
 					side="West";
@@ -1509,7 +1679,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						init="call{this disableAI ""PATH"";" \n "group this setGroupId [""FILIP ADAM""];" \n "id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
-						description="Gruppchef@Filip Adam";
+						description="Squad Leader@Filip Adam";
 						isPlayable=1;
 					};
 					id=24;
@@ -1639,7 +1809,7 @@ class Mission
 					class Attributes
 					{
 						init="call{this disableAI ""PATH"";" \n "id = [""RIFLE"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
-						description="Skyttesoldat";
+						description="Rifleman";
 						isPlayable=1;
 					};
 					id=25;
@@ -1769,7 +1939,7 @@ class Mission
 					class Attributes
 					{
 						init="call{this disableAI ""PATH"";" \n "id = [""LAT"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
-						description="Skyttesoldat | Pskott";
+						description="Rifleman | AT4";
 						isPlayable=1;
 					};
 					id=26;
@@ -1862,7 +2032,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						init="call{this disableAI ""PATH"";" \n "id = [""TL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
-						description="Stf Gruppchef";
+						description="Assistant Squad Leader";
 						isPlayable=1;
 					};
 					id=27;
@@ -1992,7 +2162,7 @@ class Mission
 					class Attributes
 					{
 						init="call{this disableAI ""PATH"";" \n "id = [""RIFLE"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
-						description="Skyttesoldat";
+						description="Rifleman";
 						isPlayable=1;
 					};
 					id=28;
@@ -2011,7 +2181,7 @@ class Mission
 					class Attributes
 					{
 						init="call{this disableAI ""PATH"";" \n "id = [""LAT"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
-						description="Skyttesoldat | Pskott";
+						description="Rifleman | AT4";
 						isPlayable=1;
 					};
 					id=29;
@@ -2121,827 +2291,6 @@ class Mission
 		};
 		class Item3
 		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=6;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={1490.5822,24.498291,4659.7827};
-						angles[]={0,3.1415927,0};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						rank="SERGEANT";
-						init="call{this disableAI ""PATH"";" \n "group this setGroupId [""GUSTAV ADAM""];" \n "id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
-						description="Gruppchef@Gustav Adam";
-						isPlayable=1;
-					};
-					id=31;
-					type="sfp_m59w_squadleader";
-					atlOffset=1.9073486e-006;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="Enh_featureType";
-							expression="_this setFeatureType parseNumber (_value)";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male11ENG";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.95999998;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="Enh_ambientAnimParams";
-							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"ARRAY"
-										};
-									};
-									class value
-									{
-										items=2;
-										class Item0
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="";
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="ASIS";
-											};
-										};
-									};
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={1490.5822,24.757061,4662.7827};
-						angles[]={0,3.1415927,0};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						init="call{this disableAI ""PATH"";" \n "id = [""MMG"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
-						description="Kspskytt";
-						isPlayable=1;
-					};
-					id=32;
-					type="sfp_m59w_machinegunner_ksp58";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="Enh_featureType";
-							expression="_this setFeatureType parseNumber (_value)";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male12ENG";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.05;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="Enh_ambientAnimParams";
-							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"ARRAY"
-										};
-									};
-									class value
-									{
-										items=2;
-										class Item0
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="";
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="ASIS";
-											};
-										};
-									};
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={1490.5822,24.82037,4665.7827};
-						angles[]={0,3.1415927,0};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						init="call{this disableAI ""PATH"";" \n "id = [""MMGASS"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
-						description="Kspass";
-						isPlayable=1;
-					};
-					id=33;
-					type="sfp_m59w_rifleman_ak4";
-					atlOffset=-1.9073486e-006;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="Enh_featureType";
-							expression="_this setFeatureType parseNumber (_value)";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male02ENG";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="Enh_ambientAnimParams";
-							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"ARRAY"
-										};
-									};
-									class value
-									{
-										items=2;
-										class Item0
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="";
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="ASIS";
-											};
-										};
-									};
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={1493.5822,24.414963,4659.7827};
-						angles[]={0,3.1415927,0};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						rank="CORPORAL";
-						init="call{this disableAI ""PATH"";" \n "id = [""TL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
-						description="Stf Gruppchef";
-						isPlayable=1;
-					};
-					id=37;
-					type="sfp_m59w_teamleader";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="Enh_featureType";
-							expression="_this setFeatureType parseNumber (_value)";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male02ENG";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.97000003;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="Enh_ambientAnimParams";
-							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"ARRAY"
-										};
-									};
-									class value
-									{
-										items=2;
-										class Item0
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="";
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="ASIS";
-											};
-										};
-									};
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={1493.5822,24.700483,4662.7827};
-						angles[]={0,3.1415927,0};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						init="call{this disableAI ""PATH"";" \n "id = [""MMG"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
-						description="Kspskytt";
-						isPlayable=1;
-					};
-					id=48;
-					type="sfp_m59w_machinegunner_ksp58";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="Enh_featureType";
-							expression="_this setFeatureType parseNumber (_value)";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male12ENG";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.05;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="Enh_ambientAnimParams";
-							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"ARRAY"
-										};
-									};
-									class value
-									{
-										items=2;
-										class Item0
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="";
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="ASIS";
-											};
-										};
-									};
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={1493.5822,24.962999,4665.7827};
-						angles[]={0,3.1415927,0};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						init="call{this disableAI ""PATH"";" \n "id = [""MMGASS"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
-						description="Kspass";
-						isPlayable=1;
-					};
-					id=49;
-					type="sfp_m59w_rifleman_ak4";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="Enh_featureType";
-							expression="_this setFeatureType parseNumber (_value)";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male02ENG";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="Enh_ambientAnimParams";
-							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"ARRAY"
-										};
-									};
-									class value
-									{
-										items=2;
-										class Item0
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="";
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="ASIS";
-											};
-										};
-									};
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=30;
-			atlOffset=1.9073486e-006;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="groupID";
-					expression="[_this, _value] call CBA_fnc_setCallsign";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Gustav Adam";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item4
-		{
 			dataType="Logic";
 			class PositionInfo
 			{
@@ -3033,7 +2382,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item5
+		class Item4
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3106,7 +2455,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item6
+		class Item5
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3160,7 +2509,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item7
+		class Item6
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3174,7 +2523,7 @@ class Mission
 			id=68;
 			type="HeadlessClient_F";
 		};
-		class Item8
+		class Item7
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3188,7 +2537,7 @@ class Mission
 			id=69;
 			type="HeadlessClient_F";
 		};
-		class Item9
+		class Item8
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3203,7 +2552,7 @@ class Mission
 			type="HeadlessClient_F";
 			atlOffset=1.9073486e-006;
 		};
-		class Item10
+		class Item9
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3314,7 +2663,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item11
+		class Item10
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3424,493 +2773,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item12
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=3;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={1484.5822,24.145578,4659.7827};
-						angles[]={6.2531939,3.1415927,0.06656827};
-					};
-					side="West";
-					flags=6;
-					class Attributes
-					{
-						rank="SERGEANT";
-						init="call{this disableAI ""PATH"";" \n "group this setGroupId [""KALLE ADAM""];" \n "id = [""MATTL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
-						description="Gruppchef@Kalle Adam";
-						isPlayable=1;
-					};
-					id=423;
-					type="sfp_m59w_squadleader";
-					atlOffset=1.9073486e-006;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="Enh_featureType";
-							expression="_this setFeatureType parseNumber (_value)";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=-1;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male12ENG";
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.99000001;
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="Enh_ambientAnimParams";
-							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"ARRAY"
-										};
-									};
-									class value
-									{
-										items=2;
-										class Item0
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="";
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="ASIS";
-											};
-										};
-									};
-								};
-							};
-						};
-						nAttributes=5;
-					};
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={1483.5822,24.156694,4662.7827};
-						angles[]={6.2698536,3.1415927,0.066567369};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						init="call{this disableAI ""PATH"";" \n "id = [""MAT"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
-						description="Grg-skytt";
-						isPlayable=1;
-					};
-					id=418;
-					type="sfp_m59w_rifleman_ak4";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="Enh_featureType";
-							expression="_this setFeatureType parseNumber (_value)";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=-1;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male12ENG";
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.99000001;
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="Enh_ambientAnimParams";
-							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"ARRAY"
-										};
-									};
-									class value
-									{
-										items=2;
-										class Item0
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="";
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="ASIS";
-											};
-										};
-									};
-								};
-							};
-						};
-						nAttributes=5;
-					};
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={1485.5822,24.359745,4662.7827};
-						angles[]={6.2066684,3.1415927,0.10626491};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						init="call{this disableAI ""PATH"";" \n "id = [""MATASS"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
-						description="Grg-ladd";
-						isPlayable=1;
-					};
-					id=416;
-					type="sfp_m59w_rifleman_ak4";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="Enh_featureType";
-							expression="_this setFeatureType parseNumber (_value)";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=-1;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male12ENG";
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.99000001;
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="Enh_ambientAnimParams";
-							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"ARRAY"
-										};
-									};
-									class value
-									{
-										items=2;
-										class Item0
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="";
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="ASIS";
-											};
-										};
-									};
-								};
-							};
-						};
-						nAttributes=5;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=73;
-			atlOffset=1.9073486e-006;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="groupID";
-					expression="[_this, _value] call CBA_fnc_setCallsign";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Kalle Adam";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item13
+		class Item11
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3925,7 +2788,7 @@ class Mission
 			type="ModuleCoverMap_F";
 			atlOffset=-2.2011986;
 		};
-		class Item14
+		class Item12
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3982,7 +2845,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item15
+		class Item13
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4039,7 +2902,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item16
+		class Item14
 		{
 			dataType="Marker";
 			position[]={2567.116,8.0369997,3537.1111};
@@ -4051,7 +2914,7 @@ class Mission
 			id=91;
 			atlOffset=-0.00051212311;
 		};
-		class Item17
+		class Item15
 		{
 			dataType="Marker";
 			position[]={1837.3656,6.5636854,3367.1787};
@@ -4062,7 +2925,7 @@ class Mission
 			angle=359.94632;
 			id=92;
 		};
-		class Item18
+		class Item16
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4123,7 +2986,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item19
+		class Item17
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4183,7 +3046,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item20
+		class Item18
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4243,7 +3106,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item21
+		class Item19
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4436,7 +3299,7 @@ class Mission
 				nAttributes=7;
 			};
 		};
-		class Item22
+		class Item20
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4453,7 +3316,7 @@ class Mission
 			type="Land_ConcreteHedgehog_01_palette_F";
 			atlOffset=1.335144e-005;
 		};
-		class Item23
+		class Item21
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4470,7 +3333,7 @@ class Mission
 			type="Misc_palletsfoiled_heap";
 			atlOffset=1.335144e-005;
 		};
-		class Item24
+		class Item22
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4487,7 +3350,7 @@ class Mission
 			type="Misc_palletsfoiled_heap";
 			atlOffset=1.335144e-005;
 		};
-		class Item25
+		class Item23
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4504,7 +3367,7 @@ class Mission
 			type="Misc_palletsfoiled_heap";
 			atlOffset=1.335144e-005;
 		};
-		class Item26
+		class Item24
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4521,7 +3384,7 @@ class Mission
 			type="Misc_palletsfoiled_heap";
 			atlOffset=1.335144e-005;
 		};
-		class Item27
+		class Item25
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4538,7 +3401,7 @@ class Mission
 			type="Misc_palletsfoiled_heap";
 			atlOffset=1.335144e-005;
 		};
-		class Item28
+		class Item26
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4555,7 +3418,7 @@ class Mission
 			type="Land_WoodenCrate_01_stack_x5_F";
 			atlOffset=1.4305115e-005;
 		};
-		class Item29
+		class Item27
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4572,7 +3435,7 @@ class Mission
 			type="Land_WoodenCrate_01_stack_x5_F";
 			atlOffset=1.335144e-005;
 		};
-		class Item30
+		class Item28
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4589,7 +3452,7 @@ class Mission
 			type="Land_WoodenCrate_01_stack_x5_F";
 			atlOffset=1.335144e-005;
 		};
-		class Item31
+		class Item29
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4605,7 +3468,7 @@ class Mission
 			type="Land_WoodenCrate_01_stack_x5_F";
 			atlOffset=0.32408714;
 		};
-		class Item32
+		class Item30
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4622,7 +3485,7 @@ class Mission
 			type="Land_WoodenCrate_01_stack_x5_F";
 			atlOffset=1.335144e-005;
 		};
-		class Item33
+		class Item31
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4639,7 +3502,7 @@ class Mission
 			type="Land_WoodenCrate_01_stack_x5_F";
 			atlOffset=1.335144e-005;
 		};
-		class Item34
+		class Item32
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4656,7 +3519,7 @@ class Mission
 			type="Land_WoodenCrate_01_stack_x5_F";
 			atlOffset=1.2397766e-005;
 		};
-		class Item35
+		class Item33
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4672,7 +3535,7 @@ class Mission
 			type="Land_WoodenCrate_01_stack_x5_F";
 			atlOffset=0.31705666;
 		};
-		class Item36
+		class Item34
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4689,7 +3552,7 @@ class Mission
 			type="Land_WoodenCrate_01_stack_x5_F";
 			atlOffset=1.335144e-005;
 		};
-		class Item37
+		class Item35
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4706,7 +3569,7 @@ class Mission
 			type="Land_WoodenCrate_01_stack_x5_F";
 			atlOffset=1.5258789e-005;
 		};
-		class Item38
+		class Item36
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4723,7 +3586,7 @@ class Mission
 			type="Land_WoodenCrate_01_stack_x5_F";
 			atlOffset=1.335144e-005;
 		};
-		class Item39
+		class Item37
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4740,7 +3603,7 @@ class Mission
 			type="CargoNet_01_barrels_F";
 			atlOffset=1.335144e-005;
 		};
-		class Item40
+		class Item38
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4757,7 +3620,7 @@ class Mission
 			type="CargoNet_01_barrels_F";
 			atlOffset=1.335144e-005;
 		};
-		class Item41
+		class Item39
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4774,7 +3637,7 @@ class Mission
 			type="CargoNet_01_barrels_F";
 			atlOffset=1.335144e-005;
 		};
-		class Item42
+		class Item40
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4791,7 +3654,7 @@ class Mission
 			type="CargoNet_01_barrels_F";
 			atlOffset=1.2397766e-005;
 		};
-		class Item43
+		class Item41
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4807,7 +3670,7 @@ class Mission
 			type="Land_WoodenCrate_01_stack_x3_F";
 			atlOffset=1.335144e-005;
 		};
-		class Item44
+		class Item42
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4824,7 +3687,7 @@ class Mission
 			type="Land_WoodenCrate_01_stack_x3_F";
 			atlOffset=1.335144e-005;
 		};
-		class Item45
+		class Item43
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4840,7 +3703,7 @@ class Mission
 			type="Land_WoodenCrate_01_stack_x3_F";
 			atlOffset=1.335144e-005;
 		};
-		class Item46
+		class Item44
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4857,7 +3720,7 @@ class Mission
 			type="Land_WoodenCrate_01_stack_x3_F";
 			atlOffset=1.335144e-005;
 		};
-		class Item47
+		class Item45
 		{
 			dataType="Group";
 			side="East";
@@ -5184,7 +4047,7 @@ class Mission
 			id=159;
 			atlOffset=-0.0057563782;
 		};
-		class Item48
+		class Item46
 		{
 			dataType="Object";
 			class PositionInfo
@@ -5201,13 +4064,13 @@ class Mission
 			type="ZSN_CUP_MSV_BTR60";
 			atlOffset=-0.0057563782;
 		};
-		class Item49
+		class Item47
 		{
 			dataType="Group";
 			side="East";
 			class Entities
 			{
-				items=8;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
@@ -5342,134 +4205,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1854.838,20.753868,4453.2139};
-					};
-					side="East";
-					flags=5;
-					class Attributes
-					{
-						init="call{this disableAI ""COVER"";" \n "this disableAI ""SUPPRESSION"";" \n "this disableAI ""PATH"";}";
-						stance="Middle";
-					};
-					id=188;
-					type="ZSN_SoldierELeader";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="Enh_featureType";
-							expression="_this setFeatureType parseNumber (_value)";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="CUP_D_Male04_RU";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.95999998;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="Enh_ambientAnimParams";
-							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"ARRAY"
-										};
-									};
-									class value
-									{
-										items=2;
-										class Item0
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="";
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="ASIS";
-											};
-										};
-									};
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={1847.0319,20.880671,4458.7363};
 					};
 					side="East";
@@ -5593,7 +4328,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item3
+				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
@@ -5722,135 +4457,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={1868.4141,21.737253,4439.9653};
-					};
-					side="East";
-					flags=5;
-					class Attributes
-					{
-						init="call{this disableAI ""COVER"";" \n "this disableAI ""SUPPRESSION"";" \n "this disableAI ""PATH"";}";
-						stance="Middle";
-					};
-					id=193;
-					type="ZSN_SoldierEB";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="Enh_featureType";
-							expression="_this setFeatureType parseNumber (_value)";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="CUP_D_Male01_RU";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.95999998;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="Enh_ambientAnimParams";
-							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"ARRAY"
-										};
-									};
-									class value
-									{
-										items=2;
-										class Item0
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="";
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="ASIS";
-											};
-										};
-									};
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item5
+				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
@@ -5980,7 +4587,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item6
+				class Item4
 				{
 					dataType="Object";
 					class PositionInfo
@@ -6109,7 +4716,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item7
+				class Item5
 				{
 					dataType="Object";
 					class PositionInfo
@@ -6205,7 +4812,7 @@ class Mission
 			};
 			id=186;
 		};
-		class Item50
+		class Item48
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -6260,13 +4867,13 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item51
+		class Item49
 		{
 			dataType="Group";
 			side="East";
 			class Entities
 			{
-				items=8;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
@@ -6659,7 +5266,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1983.7035,16.739285,4337.8696};
+						position[]={1988.1987,16.97554,4337.376};
 						angles[]={0,6.0068321,0};
 					};
 					side="East";
@@ -6671,7 +5278,6 @@ class Mission
 					};
 					id=200;
 					type="ZSN_SoldierEMG";
-					atlOffset=1.9073486e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -6789,136 +5395,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1989.5624,17.019413,4337.459};
-						angles[]={0,5.9961882,0};
-					};
-					side="East";
-					flags=5;
-					class Attributes
-					{
-						init="call{this disableAI ""COVER"";" \n "this disableAI ""SUPPRESSION"";" \n "this disableAI ""PATH"";}";
-						stance="Middle";
-					};
-					id=203;
-					type="ZSN_SoldierEB";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="Enh_featureType";
-							expression="_this setFeatureType parseNumber (_value)";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="CUP_D_Male01_RU";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.95999998;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="Enh_ambientAnimParams";
-							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"ARRAY"
-										};
-									};
-									class value
-									{
-										items=2;
-										class Item0
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="";
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="ASIS";
-											};
-										};
-									};
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={1974.3322,17.087017,4335.5776};
+						position[]={1972.0198,17.438986,4334.123};
 						angles[]={0,5.7902379,0};
 					};
 					side="East";
@@ -7042,137 +5519,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item6
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={1969.5464,17.859097,4333.1938};
-						angles[]={0,5.8183527,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						init="call{this disableAI ""COVER"";" \n "this disableAI ""SUPPRESSION"";" \n "this disableAI ""PATH"";}";
-						stance="Middle";
-					};
-					id=483;
-					type="ZSN_SoldierEB";
-					atlOffset=1.9073486e-006;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="Enh_featureType";
-							expression="_this setFeatureType parseNumber (_value)";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="CUP_D_Male02_RU";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.05;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="Enh_ambientAnimParams";
-							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"ARRAY"
-										};
-									};
-									class value
-									{
-										items=2;
-										class Item0
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="";
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="ASIS";
-											};
-										};
-									};
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item7
+				class Item5
 				{
 					dataType="Object";
 					class PositionInfo
@@ -7307,13 +5654,13 @@ class Mission
 			};
 			id=196;
 		};
-		class Item52
+		class Item50
 		{
 			dataType="Group";
 			side="East";
 			class Entities
 			{
-				items=4;
+				items=3;
 				class Item0
 				{
 					dataType="Object";
@@ -7499,95 +5846,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1929.3495,19.775312,4279.7866};
-					};
-					side="East";
-					flags=5;
-					class Attributes
-					{
-						init="call{this disableAI ""COVER"";" \n "this disableAI ""SUPPRESSION"";" \n "this disableAI ""PATH"";}";
-					};
-					id=218;
-					type="ZSN_SoldierEB";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="Enh_featureType";
-							expression="_this setFeatureType parseNumber (_value)";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="Enh_ambientAnimParams";
-							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"ARRAY"
-										};
-									};
-									class value
-									{
-										items=2;
-										class Item0
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="";
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="ASIS";
-											};
-										};
-									};
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={1921.2622,19.741838,4273.4312};
 						angles[]={0,0.68609953,0};
 					};
@@ -7679,7 +5937,7 @@ class Mission
 			};
 			id=214;
 		};
-		class Item53
+		class Item51
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7696,7 +5954,7 @@ class Mission
 			type="Land_Timbers_F";
 			atlOffset=-0.17826653;
 		};
-		class Item54
+		class Item52
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7713,7 +5971,7 @@ class Mission
 			type="Land_Timbers_F";
 			atlOffset=-0.14635086;
 		};
-		class Item55
+		class Item53
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7730,19 +5988,19 @@ class Mission
 			type="Land_Timbers_F";
 			atlOffset=-0.13886261;
 		};
-		class Item56
+		class Item54
 		{
 			dataType="Group";
 			side="East";
 			class Entities
 			{
-				items=8;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1821.2512,24.817316,4352.499};
+						position[]={1819.9779,24.812611,4350.9175};
 						angles[]={0,5.5593886,0};
 					};
 					side="East";
@@ -8000,7 +6258,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1820.3452,24.700745,4336.9512};
+						position[]={1820.2255,24.736517,4338.1006};
 						angles[]={0,4.8241186,0};
 					};
 					side="East";
@@ -8258,7 +6516,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1829.5565,24.815845,4357.8843};
+						position[]={1832.0829,24.803732,4359.0098};
 						angles[]={0,5.7402883,0};
 					};
 					side="East";
@@ -8387,7 +6645,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1818.8403,24.809368,4347.916};
+						position[]={1818.8223,24.798983,4344.6924};
 						angles[]={0,4.9718742,0};
 					};
 					side="East";
@@ -8511,271 +6769,13 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item6
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={1818.9189,24.789068,4343.2178};
-						angles[]={0,4.8874846,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						init="call{this disableAI ""COVER"";" \n "this disableAI ""SUPPRESSION"";" \n "this disableAI ""PATH"";}";
-						stance="Middle";
-					};
-					id=486;
-					type="ZSN_SoldierEB";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="Enh_featureType";
-							expression="_this setFeatureType parseNumber (_value)";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="CUP_D_Male02_RU";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.05;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="Enh_ambientAnimParams";
-							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"ARRAY"
-										};
-									};
-									class value
-									{
-										items=2;
-										class Item0
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="";
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="ASIS";
-											};
-										};
-									};
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item7
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={1834.3695,24.753412,4359.6953};
-						angles[]={0,5.4211364,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						init="call{this disableAI ""COVER"";" \n "this disableAI ""SUPPRESSION"";" \n "this disableAI ""PATH"";}";
-						stance="Middle";
-					};
-					id=487;
-					type="ZSN_SoldierEB";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="Enh_featureType";
-							expression="_this setFeatureType parseNumber (_value)";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="CUP_D_Male05_RU";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.03;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="Enh_ambientAnimParams";
-							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"ARRAY"
-										};
-									};
-									class value
-									{
-										items=2;
-										class Item0
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="";
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="ASIS";
-											};
-										};
-									};
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
 			};
 			class Attributes
 			{
 			};
 			id=222;
 		};
-		class Item57
+		class Item55
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8792,7 +6792,7 @@ class Mission
 			type="Land_Timbers_F";
 			atlOffset=-0.087062836;
 		};
-		class Item58
+		class Item56
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8809,105 +6809,14 @@ class Mission
 			type="Land_Timbers_F";
 			atlOffset=-0.066999435;
 		};
-		class Item59
+		class Item57
 		{
 			dataType="Group";
 			side="East";
 			class Entities
 			{
-				items=4;
+				items=3;
 				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={1801.4932,14.617724,4075.4717};
-						angles[]={0,3.0154614,0};
-					};
-					side="East";
-					flags=7;
-					class Attributes
-					{
-						init="call{this disableAI ""COVER"";" \n "this disableAI ""SUPPRESSION"";" \n "this disableAI ""PATH"";}";
-					};
-					id=235;
-					type="ZSN_SoldierELeader";
-					atlOffset=1.335144e-005;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="Enh_featureType";
-							expression="_this setFeatureType parseNumber (_value)";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="Enh_ambientAnimParams";
-							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"ARRAY"
-										};
-									};
-									class value
-									{
-										items=2;
-										class Item0
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="";
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="ASIS";
-											};
-										};
-									};
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
@@ -8998,7 +6907,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item2
+				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9006,7 +6915,7 @@ class Mission
 						position[]={1806.6182,14.616521,4083.0044};
 					};
 					side="East";
-					flags=5;
+					flags=7;
 					class Attributes
 					{
 						init="call{this disableAI ""COVER"";" \n "this disableAI ""SUPPRESSION"";" \n "this disableAI ""PATH"";}";
@@ -9088,7 +6997,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item3
+				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9186,7 +7095,7 @@ class Mission
 			id=234;
 			atlOffset=1.335144e-005;
 		};
-		class Item60
+		class Item58
 		{
 			dataType="Object";
 			class PositionInfo
@@ -9203,7 +7112,7 @@ class Mission
 			type="Land_Timbers_F";
 			atlOffset=-0.11626434;
 		};
-		class Item61
+		class Item59
 		{
 			dataType="Object";
 			class PositionInfo
@@ -9220,7 +7129,7 @@ class Mission
 			type="Land_Timbers_F";
 			atlOffset=-0.10409927;
 		};
-		class Item62
+		class Item60
 		{
 			dataType="Object";
 			class PositionInfo
@@ -9237,20 +7146,20 @@ class Mission
 			type="Land_Timbers_F";
 			atlOffset=-0.10407448;
 		};
-		class Item63
+		class Item61
 		{
 			dataType="Group";
 			side="East";
 			class Entities
 			{
-				items=8;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2129.5913,28.797012,4405.1108};
-						angles[]={0,5.8040648,0};
+						position[]={2126.988,28.929321,4402.1621};
+						angles[]={0,5.4898314,0};
 					};
 					side="East";
 					flags=7;
@@ -9374,135 +7283,6 @@ class Mission
 					};
 				};
 				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={2148.7415,28.094515,4407.7476};
-						angles[]={0,6.1465845,0};
-					};
-					side="East";
-					flags=5;
-					class Attributes
-					{
-						init="call{this disableAI ""COVER"";" \n "this disableAI ""SUPPRESSION"";" \n "this disableAI ""PATH"";}";
-						stance="Middle";
-					};
-					id=244;
-					type="ZSN_SoldierELeader";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="Enh_featureType";
-							expression="_this setFeatureType parseNumber (_value)";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="CUP_D_Male04_RU";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.95999998;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="Enh_ambientAnimParams";
-							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"ARRAY"
-										};
-									};
-									class value
-									{
-										items=2;
-										class Item0
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="";
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="ASIS";
-											};
-										};
-									};
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9631,7 +7411,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item3
+				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9760,142 +7540,13 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item4
+				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2138.9536,28.484879,4408.3237};
-						angles[]={0,5.9849644,0};
-					};
-					side="East";
-					flags=5;
-					class Attributes
-					{
-						init="call{this disableAI ""COVER"";" \n "this disableAI ""SUPPRESSION"";" \n "this disableAI ""PATH"";}";
-						stance="Middle";
-					};
-					id=249;
-					type="ZSN_SoldierEB";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="Enh_featureType";
-							expression="_this setFeatureType parseNumber (_value)";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="CUP_D_Male01_RU";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.95999998;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="Enh_ambientAnimParams";
-							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"ARRAY"
-										};
-									};
-									class value
-									{
-										items=2;
-										class Item0
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="";
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												class type
-												{
-													type[]=
-													{
-														"STRING"
-													};
-												};
-												value="ASIS";
-											};
-										};
-									};
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={2126.1421,28.960056,4401.2485};
-						angles[]={0,5.2165508,0};
+						position[]={2139,28.498098,4408.0498};
+						angles[]={0,5.7168212,0};
 					};
 					side="East";
 					flags=5;
@@ -10018,7 +7669,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item6
+				class Item4
 				{
 					dataType="Object";
 					class PositionInfo
@@ -10147,7 +7798,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item7
+				class Item5
 				{
 					dataType="Object";
 					class PositionInfo
@@ -10282,7 +7933,7 @@ class Mission
 			};
 			id=242;
 		};
-		class Item64
+		class Item62
 		{
 			dataType="Object";
 			class PositionInfo
@@ -10299,7 +7950,7 @@ class Mission
 			type="Land_Timbers_F";
 			atlOffset=-0.17311859;
 		};
-		class Item65
+		class Item63
 		{
 			dataType="Object";
 			class PositionInfo
@@ -10316,7 +7967,7 @@ class Mission
 			type="Land_Timbers_F";
 			atlOffset=-0.16182518;
 		};
-		class Item66
+		class Item64
 		{
 			dataType="Object";
 			class PositionInfo
@@ -10375,7 +8026,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item67
+		class Item65
 		{
 			dataType="Group";
 			side="East";
@@ -10736,7 +8387,7 @@ class Mission
 			id=259;
 			atlOffset=-0.0041599274;
 		};
-		class Item68
+		class Item66
 		{
 			dataType="Object";
 			class PositionInfo
@@ -10753,7 +8404,7 @@ class Mission
 			type="ZSN_CUP_MSV_BTR60";
 			atlOffset=-0.0041599274;
 		};
-		class Item69
+		class Item67
 		{
 			dataType="Group";
 			side="East";
@@ -11117,7 +8768,7 @@ class Mission
 			id=264;
 			atlOffset=-0.0051374435;
 		};
-		class Item70
+		class Item68
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11134,7 +8785,7 @@ class Mission
 			type="ZSN_CUP_CSLA_BMP1";
 			atlOffset=-0.0051374435;
 		};
-		class Item71
+		class Item69
 		{
 			dataType="Trigger";
 			position[]={1919.2516,19.815292,4282.5879};
@@ -11150,7 +8801,7 @@ class Mission
 			id=285;
 			type="EmptyDetector";
 		};
-		class Item72
+		class Item70
 		{
 			dataType="Trigger";
 			position[]={1803.28,21.468803,4082.5635};
@@ -11167,7 +8818,7 @@ class Mission
 			type="EmptyDetector";
 			atlOffset=0.13478851;
 		};
-		class Item73
+		class Item71
 		{
 			dataType="Trigger";
 			position[]={1473.302,25.554911,4395.8662};
@@ -11185,7 +8836,7 @@ class Mission
 			id=287;
 			type="EmptyDetector";
 		};
-		class Item74
+		class Item72
 		{
 			dataType="Trigger";
 			position[]={1915.366,16.344105,4218.1011};
@@ -11200,7 +8851,7 @@ class Mission
 			id=297;
 			type="EmptyDetectorAreaR250";
 		};
-		class Item75
+		class Item73
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -11211,7 +8862,7 @@ class Mission
 			title="starta timer först när AI korsar en linje";
 			id=303;
 		};
-		class Item76
+		class Item74
 		{
 			dataType="Marker";
 			position[]={1852.2469,21.327999,4343.9731};
@@ -11222,7 +8873,7 @@ class Mission
 			id=305;
 			atlOffset=-2.9214554;
 		};
-		class Item77
+		class Item75
 		{
 			dataType="Marker";
 			position[]={1692.7925,4.1428809,3425.9587};
@@ -11233,7 +8884,7 @@ class Mission
 			alpha=0.017112894;
 			id=306;
 		};
-		class Item78
+		class Item76
 		{
 			dataType="Marker";
 			position[]={1777.3656,17.187859,3379.9817};
@@ -11245,7 +8896,7 @@ class Mission
 			id=307;
 			atlOffset=8.9599657;
 		};
-		class Item79
+		class Item77
 		{
 			dataType="Marker";
 			position[]={2039.4672,12.152954,3310.667};
@@ -11257,7 +8908,7 @@ class Mission
 			id=308;
 			atlOffset=6.1229787;
 		};
-		class Item80
+		class Item78
 		{
 			dataType="Marker";
 			position[]={1938.0385,16.73999,4346.8745};
@@ -11268,7 +8919,7 @@ class Mission
 			id=309;
 			atlOffset=-2.4412937;
 		};
-		class Item81
+		class Item79
 		{
 			dataType="Marker";
 			position[]={1954.809,16.263,4309.5781};
@@ -11279,7 +8930,7 @@ class Mission
 			id=310;
 			atlOffset=-2.9214478;
 		};
-		class Item82
+		class Item80
 		{
 			dataType="Marker";
 			position[]={2278.9438,23.875809,3318.8816};
@@ -11291,7 +8942,7 @@ class Mission
 			id=311;
 			atlOffset=7.0170193;
 		};
-		class Item83
+		class Item81
 		{
 			dataType="Marker";
 			position[]={2557.1245,18.883829,3393.7424};
@@ -11303,7 +8954,7 @@ class Mission
 			id=312;
 			atlOffset=11.47846;
 		};
-		class Item84
+		class Item82
 		{
 			dataType="Marker";
 			position[]={2688.3843,24.518311,3476.6377};
@@ -11315,7 +8966,7 @@ class Mission
 			id=313;
 			atlOffset=7.0169601;
 		};
-		class Item85
+		class Item83
 		{
 			dataType="Marker";
 			position[]={2464.0337,23.406395,3360.0425};
@@ -11327,7 +8978,7 @@ class Mission
 			id=314;
 			atlOffset=13.284987;
 		};
-		class Item86
+		class Item84
 		{
 			dataType="Marker";
 			position[]={2111.9341,26.167,4382.75};
@@ -11338,7 +8989,7 @@ class Mission
 			id=315;
 			atlOffset=-3.0759258;
 		};
-		class Item87
+		class Item85
 		{
 			dataType="Marker";
 			position[]={1830.608,18.427999,4391.1899};
@@ -11349,7 +9000,7 @@ class Mission
 			id=316;
 			atlOffset=-1.5776157;
 		};
-		class Item88
+		class Item86
 		{
 			dataType="Marker";
 			position[]={1758.012,13.271,4320.1621};
@@ -11360,7 +9011,7 @@ class Mission
 			id=317;
 			atlOffset=-8.7158432;
 		};
-		class Item89
+		class Item87
 		{
 			dataType="Marker";
 			position[]={1582.2219,20.743896,4598.8101};
@@ -11371,7 +9022,7 @@ class Mission
 			id=318;
 			atlOffset=-4.5082169;
 		};
-		class Item90
+		class Item88
 		{
 			dataType="Marker";
 			position[]={2631.4036,14.835999,3464.4111};
@@ -11383,7 +9034,7 @@ class Mission
 			id=320;
 			atlOffset=9.5209446;
 		};
-		class Item91
+		class Item89
 		{
 			dataType="Marker";
 			position[]={1413.873,17.790001,4591.0952};
@@ -11394,7 +9045,7 @@ class Mission
 			id=321;
 			atlOffset=-0.00044822693;
 		};
-		class Item92
+		class Item90
 		{
 			dataType="Marker";
 			position[]={2201.064,17.806059,3307.5837};
@@ -11407,7 +9058,7 @@ class Mission
 			id=322;
 			atlOffset=4.1234999;
 		};
-		class Item93
+		class Item91
 		{
 			dataType="Marker";
 			position[]={2142.168,15.778,4393.999};
@@ -11419,7 +9070,7 @@ class Mission
 			id=323;
 			atlOffset=-13.117508;
 		};
-		class Item94
+		class Item92
 		{
 			dataType="Marker";
 			position[]={1701.337,3.6847668,3390.0454};
@@ -11430,7 +9081,7 @@ class Mission
 			alpha=0.017112894;
 			id=326;
 		};
-		class Item95
+		class Item93
 		{
 			dataType="Marker";
 			position[]={1790.256,-1.669,4512.9238};
@@ -11441,7 +9092,7 @@ class Mission
 			id=327;
 			atlOffset=-20.699322;
 		};
-		class Item96
+		class Item94
 		{
 			dataType="Marker";
 			position[]={1899.8979,20.34198,3314.7021};
@@ -11453,7 +9104,7 @@ class Mission
 			id=328;
 			atlOffset=14.65708;
 		};
-		class Item97
+		class Item95
 		{
 			dataType="Marker";
 			position[]={1842.1541,13.34,4458.4209};
@@ -11464,7 +9115,7 @@ class Mission
 			id=329;
 			atlOffset=-7.7163448;
 		};
-		class Item98
+		class Item96
 		{
 			dataType="Marker";
 			position[]={2066.4641,4.3920703,3290.334};
@@ -11475,7 +9126,7 @@ class Mission
 			alpha=0.017112894;
 			id=330;
 		};
-		class Item99
+		class Item97
 		{
 			dataType="Marker";
 			position[]={1672.4091,14.68,4604.9072};
@@ -11486,7 +9137,7 @@ class Mission
 			id=331;
 			atlOffset=-2.5570908;
 		};
-		class Item100
+		class Item98
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -11498,7 +9149,7 @@ class Mission
 			id=333;
 			atlOffset=1.9073486e-006;
 		};
-		class Item101
+		class Item99
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -11510,7 +9161,7 @@ class Mission
 			id=334;
 			atlOffset=1.9073486e-006;
 		};
-		class Item102
+		class Item100
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -11522,7 +9173,7 @@ class Mission
 			id=336;
 			atlOffset=1.9073486e-006;
 		};
-		class Item103
+		class Item101
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -11534,7 +9185,7 @@ class Mission
 			id=337;
 			atlOffset=1.9073486e-006;
 		};
-		class Item104
+		class Item102
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -11638,7 +9289,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Återta SUMMA";
+							value="Seize SUMMA";
 						};
 					};
 				};
@@ -11657,7 +9308,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Ta SUMMA och genomsök byn för att lokalisera de lastbilar som kvarlämnats där." \n "<br/>" \n "<marker name = 'truck_0'>Område 1</marker>" \n "<br/>" \n "<marker name = 'truck_1'>Område 2</marker>";
+							value="Seize SUMMA and search the village to locate the lorries that you previously left behind. " \n "<br/> " \n "<marker name = 'truck_0'>Area 1</marker> " \n "<br/> " \n "<marker name = 'truck_1'>Area 2</marker>";
 						};
 					};
 				};
@@ -11759,7 +9410,7 @@ class Mission
 				nAttributes=11;
 			};
 		};
-		class Item105
+		class Item103
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -11812,7 +9463,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item106
+		class Item104
 		{
 			dataType="Trigger";
 			position[]={1500.11,4.69592,2961.5259};
@@ -11829,7 +9480,7 @@ class Mission
 			id=345;
 			type="EmptyDetector";
 		};
-		class Item107
+		class Item105
 		{
 			dataType="Trigger";
 			position[]={1558.973,4.5991783,2962.498};
@@ -11846,7 +9497,7 @@ class Mission
 			id=346;
 			type="EmptyDetector";
 		};
-		class Item108
+		class Item106
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -11903,7 +9554,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item109
+		class Item107
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -12006,7 +9657,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Fördröj fienden";
+							value="Delay the enemy";
 						};
 					};
 				};
@@ -12025,7 +9676,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Ta stridsställningar i byns <marker name = 'strs_0'>södra</marker> <marker name = 'strs_1'>ände</marker> och fördröj fienden minst intill klockan 18:40" \n "<br/>" \n "Beredd att framrycka MED lastbilarna till ÅSA:n.";
+							value="Take up fighting positions in the village's <marker name = 'strs_0'>souther</marker> <marker name = 'strs_1'>end</marker> and delay the enemy's advance at least until 18:40. " \n "<br/> " \n "Be prepared to withdraw WITH the lorries to the <marker name = 'asa'>predesignated regrouping area</marker>.";
 						};
 					};
 				};
@@ -12127,7 +9778,7 @@ class Mission
 				nAttributes=11;
 			};
 		};
-		class Item110
+		class Item108
 		{
 			dataType="Trigger";
 			position[]={1498.793,3.218092,2885.958};
@@ -12144,7 +9795,7 @@ class Mission
 			id=352;
 			type="EmptyDetector";
 		};
-		class Item111
+		class Item109
 		{
 			dataType="Trigger";
 			position[]={1557.656,3.3685467,2886.9299};
@@ -12161,7 +9812,7 @@ class Mission
 			id=353;
 			type="EmptyDetector";
 		};
-		class Item112
+		class Item110
 		{
 			dataType="Trigger";
 			position[]={1467.1331,7.373322,4108.4141};
@@ -12179,7 +9830,7 @@ class Mission
 			id=354;
 			type="EmptyDetector";
 		};
-		class Item113
+		class Item111
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -12232,7 +9883,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item114
+		class Item112
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -12336,7 +9987,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Ändrade planer, framryck till ÅSA";
+							value="Change of plans, withdraw now!";
 						};
 					};
 				};
@@ -12355,7 +10006,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Ändrade planer, ni framrycker till ÅSA:n NU." \n "<br/>" \n "Framryck MED lastbilarna till den utmarkerade <marker name = 'asa'>ÅSA:n</marker>";
+							value="The situation has changed, you withdraw NOW! " \n "<br/> " \n "Withdraw WITH the lorries to the <marker name = 'asa'>predesignated regrouping area</marker>.";
 						};
 					};
 				};
@@ -12457,7 +10108,7 @@ class Mission
 				nAttributes=11;
 			};
 		};
-		class Item115
+		class Item113
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -12509,7 +10160,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item116
+		class Item114
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -12561,7 +10212,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item117
+		class Item115
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -12613,7 +10264,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item118
+		class Item116
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -12665,7 +10316,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item119
+		class Item117
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -12717,7 +10368,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item120
+		class Item118
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -12769,7 +10420,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item121
+		class Item119
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -12822,7 +10473,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item122
+		class Item120
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -12875,7 +10526,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item123
+		class Item121
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -12928,7 +10579,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item124
+		class Item122
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -12980,7 +10631,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item125
+		class Item123
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -13032,7 +10683,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item126
+		class Item124
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -13085,7 +10736,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item127
+		class Item125
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -13137,7 +10788,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item128
+		class Item126
 		{
 			dataType="Marker";
 			position[]={2583.8264,44.466888,3961.1133};
@@ -13150,7 +10801,7 @@ class Mission
 			id=404;
 			atlOffset=23.286764;
 		};
-		class Item129
+		class Item127
 		{
 			dataType="Marker";
 			position[]={1837.394,12.191162,4266.3906};
@@ -13162,7 +10813,7 @@ class Mission
 			id=405;
 			atlOffset=-4.0318336;
 		};
-		class Item130
+		class Item128
 		{
 			dataType="Trigger";
 			position[]={1487.748,1.4342169,2785.696};
@@ -13179,7 +10830,7 @@ class Mission
 			id=406;
 			type="EmptyDetector";
 		};
-		class Item131
+		class Item129
 		{
 			dataType="Marker";
 			position[]={1851.2139,17.580999,4430.0737};
@@ -13191,7 +10842,7 @@ class Mission
 			id=407;
 			atlOffset=-3.9769459;
 		};
-		class Item132
+		class Item130
 		{
 			dataType="Marker";
 			position[]={2518.709,51.022583,4102.1147};
@@ -13204,7 +10855,7 @@ class Mission
 			id=408;
 			atlOffset=30.663149;
 		};
-		class Item133
+		class Item131
 		{
 			dataType="Marker";
 			position[]={1064.74,16.422001,5051.4951};
@@ -13215,7 +10866,7 @@ class Mission
 			id=409;
 			atlOffset=-0.00045394897;
 		};
-		class Item134
+		class Item132
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -13268,7 +10919,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item135
+		class Item133
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -13321,7 +10972,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item136
+		class Item134
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -13378,7 +11029,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item137
+		class Item135
 		{
 			dataType="Trigger";
 			position[]={1719.5144,10.980589,3596.3269};
@@ -13394,7 +11045,7 @@ class Mission
 			type="EmptyDetector";
 			atlOffset=3.5633993;
 		};
-		class Item138
+		class Item136
 		{
 			dataType="Trigger";
 			position[]={2351.8936,12.483452,3609.7957};
@@ -13410,7 +11061,7 @@ class Mission
 			type="EmptyDetector";
 			atlOffset=-6.1912975;
 		};
-		class Item139
+		class Item137
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -13467,7 +11118,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item140
+		class Item138
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -13524,7 +11175,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item141
+		class Item139
 		{
 			dataType="Marker";
 			position[]={1851.777,11.553,3932.29};
@@ -13536,7 +11187,7 @@ class Mission
 			id=427;
 			atlOffset=-2.3440619;
 		};
-		class Item142
+		class Item140
 		{
 			dataType="Object";
 			class PositionInfo
@@ -13552,7 +11203,7 @@ class Mission
 			id=429;
 			type="Land_Timbers_F";
 		};
-		class Item143
+		class Item141
 		{
 			dataType="Object";
 			class PositionInfo
@@ -13568,7 +11219,7 @@ class Mission
 			id=430;
 			type="Land_Timbers_F";
 		};
-		class Item144
+		class Item142
 		{
 			dataType="Object";
 			class PositionInfo
@@ -13584,7 +11235,7 @@ class Mission
 			id=431;
 			type="Land_Timbers_F";
 		};
-		class Item145
+		class Item143
 		{
 			dataType="Object";
 			class PositionInfo
@@ -13600,7 +11251,7 @@ class Mission
 			id=432;
 			type="Land_Timbers_F";
 		};
-		class Item146
+		class Item144
 		{
 			dataType="Object";
 			class PositionInfo
@@ -13616,7 +11267,7 @@ class Mission
 			id=433;
 			type="Land_Timbers_F";
 		};
-		class Item147
+		class Item145
 		{
 			dataType="Object";
 			class PositionInfo
@@ -13632,7 +11283,7 @@ class Mission
 			id=434;
 			type="Land_Timbers_F";
 		};
-		class Item148
+		class Item146
 		{
 			dataType="Object";
 			class PositionInfo
@@ -13648,7 +11299,7 @@ class Mission
 			id=435;
 			type="Land_Timbers_F";
 		};
-		class Item149
+		class Item147
 		{
 			dataType="Object";
 			class PositionInfo
@@ -13664,7 +11315,7 @@ class Mission
 			id=436;
 			type="Land_Timbers_F";
 		};
-		class Item150
+		class Item148
 		{
 			dataType="Object";
 			class PositionInfo
@@ -13680,7 +11331,7 @@ class Mission
 			id=437;
 			type="Land_Timbers_F";
 		};
-		class Item151
+		class Item149
 		{
 			dataType="Object";
 			class PositionInfo
@@ -13696,7 +11347,7 @@ class Mission
 			id=438;
 			type="Land_Timbers_F";
 		};
-		class Item152
+		class Item150
 		{
 			dataType="Object";
 			class PositionInfo
@@ -13712,7 +11363,7 @@ class Mission
 			id=439;
 			type="Land_Timbers_F";
 		};
-		class Item153
+		class Item151
 		{
 			dataType="Object";
 			class PositionInfo
@@ -13728,7 +11379,7 @@ class Mission
 			id=440;
 			type="Land_Timbers_F";
 		};
-		class Item154
+		class Item152
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -13785,7 +11436,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item155
+		class Item153
 		{
 			dataType="Object";
 			class PositionInfo
@@ -13802,7 +11453,7 @@ class Mission
 			type="Land_PillboxBunker_01_hex_F";
 			atlOffset=9.5367432e-007;
 		};
-		class Item156
+		class Item154
 		{
 			dataType="Marker";
 			position[]={2184.0071,10.682,3872.9299};
@@ -13814,7 +11465,7 @@ class Mission
 			id=443;
 			atlOffset=-0.61933994;
 		};
-		class Item157
+		class Item155
 		{
 			dataType="Object";
 			class PositionInfo
@@ -13830,7 +11481,7 @@ class Mission
 			id=444;
 			type="Land_Timbers_F";
 		};
-		class Item158
+		class Item156
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -13886,7 +11537,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item159
+		class Item157
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -13942,7 +11593,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item160
+		class Item158
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -13998,7 +11649,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item161
+		class Item159
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -14055,7 +11706,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item162
+		class Item160
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -14111,7 +11762,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item163
+		class Item161
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -14168,7 +11819,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item164
+		class Item162
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -14224,7 +11875,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item165
+		class Item163
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -14280,7 +11931,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item166
+		class Item164
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -14336,7 +11987,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item167
+		class Item165
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -14392,7 +12043,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item168
+		class Item166
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -14448,7 +12099,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item169
+		class Item167
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -14504,7 +12155,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item170
+		class Item168
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -14561,7 +12212,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item171
+		class Item169
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -14618,7 +12269,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item172
+		class Item170
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -14674,7 +12325,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item173
+		class Item171
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -14730,7 +12381,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item174
+		class Item172
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -14786,7 +12437,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item175
+		class Item173
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -14843,7 +12494,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item176
+		class Item174
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -14900,7 +12551,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item177
+		class Item175
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -14956,7 +12607,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item178
+		class Item176
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -15012,7 +12663,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item179
+		class Item177
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -15068,7 +12719,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item180
+		class Item178
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -15124,7 +12775,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item181
+		class Item179
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -15180,7 +12831,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item182
+		class Item180
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -15237,38 +12888,37 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item183
+		class Item181
 		{
 			dataType="Marker";
-			position[]={1894.4508,15.929199,4286.5283};
+			position[]={1894.451,15.929,4286.5278};
 			name="truck_0";
 			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorBlue";
 			alpha=0.7499153;
-			fillName="FDiagonal";
-			a=77.944687;
-			b=80.516914;
-			angle=355.67191;
+			fillName="Grid";
+			a=77.945;
+			b=80.516998;
 			id=470;
-			atlOffset=-4.6287804;
+			atlOffset=-4.6289186;
 		};
-		class Item184
+		class Item182
 		{
 			dataType="Marker";
-			position[]={1836.2762,13.563655,4118.0972};
+			position[]={1836.276,13.564,4118.0972};
 			name="truck_1";
 			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorBlue";
 			alpha=0.7499153;
-			fillName="FDiagonal";
-			a=77.944687;
-			b=80.516914;
-			angle=32.195408;
+			fillName="Grid";
+			a=77.945;
+			b=80.516998;
 			id=471;
+			atlOffset=0.00036144257;
 		};
-		class Item185
+		class Item183
 		{
 			dataType="Object";
 			class PositionInfo
@@ -15284,7 +12934,7 @@ class Mission
 			id=473;
 			type="Land_Timbers_F";
 		};
-		class Item186
+		class Item184
 		{
 			dataType="Trigger";
 			position[]={1069,16.33334,5048};
@@ -15297,7 +12947,7 @@ class Mission
 			id=478;
 			type="EmptyDetector";
 		};
-		class Item187
+		class Item185
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -15368,7 +13018,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item188
+		class Item186
 		{
 			dataType="Marker";
 			position[]={1495.2585,24.533443,4670.6362};
@@ -15377,7 +13027,7 @@ class Mission
 			colorName="ColorWEST";
 			id=480;
 		};
-		class Item189
+		class Item187
 		{
 			dataType="Group";
 			side="East";
@@ -15740,7 +13390,7 @@ class Mission
 			id=499;
 			atlOffset=-0.025048256;
 		};
-		class Item190
+		class Item188
 		{
 			dataType="Object";
 			class PositionInfo
@@ -15757,7 +13407,7 @@ class Mission
 			type="ZSN_CUP_MSV_BTR60";
 			atlOffset=-0.025048256;
 		};
-		class Item191
+		class Item189
 		{
 			dataType="Group";
 			side="East";
@@ -16124,7 +13774,7 @@ class Mission
 			id=507;
 			atlOffset=-0.00038051605;
 		};
-		class Item192
+		class Item190
 		{
 			dataType="Object";
 			class PositionInfo
@@ -16141,32 +13791,2022 @@ class Mission
 			type="ZSN_CUP_CSLA_BMP1";
 			atlOffset=-0.00038051605;
 		};
-		class Item193
+		class Item191
 		{
 			dataType="Marker";
-			position[]={1937.3213,16.849001,4348.9863};
+			position[]={1937.321,16.849001,4348.9858};
 			name="marker_0";
 			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorEAST";
 			alpha=0.7499153;
-			fillName="FDiagonal";
-			a=291.92477;
-			b=151.40089;
+			fillName="BDiagonal";
+			a=291.92499;
+			b=151.401;
 			angle=355.67191;
 			id=515;
-			atlOffset=-2.267498;
+			atlOffset=-2.2674599;
+		};
+		class Item192
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=6;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1491,24.551453,4660.0498};
+						angles[]={0,3.1415927,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						rank="SERGEANT";
+						init="call{this disableAI ""PATH"";" \n "group this setGroupId [""GUSTAV ADAM""];" \n "id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
+						description="Squad Leader@Gustav Adam";
+						isPlayable=1;
+					};
+					id=531;
+					type="sfp_m59w_squadleader";
+					atlOffset=1.9073486e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="Enh_featureType";
+							expression="_this setFeatureType parseNumber (_value)";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male11ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="Enh_ambientAnimParams";
+							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="ASIS";
+											};
+										};
+									};
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1490.9996,24.778097,4663.0498};
+						angles[]={0,3.1415927,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						init="call{this disableAI ""PATH"";" \n "id = [""RIFLE"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
+						description="Rifleman";
+						isPlayable=1;
+					};
+					id=532;
+					type="sfp_m59w_rifleman_ak4";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="Enh_featureType";
+							expression="_this setFeatureType parseNumber (_value)";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male05ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="Enh_ambientAnimParams";
+							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="ASIS";
+											};
+										};
+									};
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1490.9996,24.871405,4666.0498};
+						angles[]={0,3.1415927,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						init="call{this disableAI ""PATH"";" \n "id = [""LAT"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
+						description="Rifleman | AT4";
+						isPlayable=1;
+					};
+					id=533;
+					type="sfp_m59w_rifleman_ak4";
+					atlOffset=-1.9073486e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="Enh_featureType";
+							expression="_this setFeatureType parseNumber (_value)";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="Enh_ambientAnimParams";
+							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="ASIS";
+											};
+										};
+									};
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1493.9996,24.428131,4660.0498};
+						angles[]={0,3.1415927,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						rank="CORPORAL";
+						init="call{this disableAI ""PATH"";" \n "id = [""TL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
+						description="Assistant Squad Leader";
+						isPlayable=1;
+					};
+					id=534;
+					type="sfp_m59w_teamleader";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="Enh_featureType";
+							expression="_this setFeatureType parseNumber (_value)";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="Enh_ambientAnimParams";
+							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="ASIS";
+											};
+										};
+									};
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1493.9996,24.74477,4663.0498};
+						angles[]={0,3.1415927,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						init="call{this disableAI ""PATH"";" \n "id = [""RIFLE"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
+						description="Rifleman";
+						isPlayable=1;
+					};
+					id=535;
+					type="sfp_m59w_rifleman_ak4";
+					atlOffset=1.9073486e-006;
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1493.9996,24.988096,4666.0498};
+						angles[]={0,3.1415927,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						init="call{this disableAI ""PATH"";" \n "id = [""LAT"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
+						description="Rifleman | AT4";
+						isPlayable=1;
+					};
+					id=536;
+					type="sfp_m59w_rifleman_ak4";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="Enh_featureType";
+							expression="_this setFeatureType parseNumber (_value)";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="Enh_ambientAnimParams";
+							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="ASIS";
+											};
+										};
+									};
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=530;
+			atlOffset=1.9073486e-006;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Gustav Adam";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item193
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=6;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1483,24.074774,4660.0498};
+						angles[]={0,3.1415927,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						rank="SERGEANT";
+						init="call{this disableAI ""PATH"";" \n "group this setGroupId [""HELGE ADAM""];" \n "id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
+						description="Squad Leader@Helge Adam";
+						isPlayable=1;
+					};
+					id=542;
+					type="sfp_m59w_squadleader";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="Enh_featureType";
+							expression="_this setFeatureType parseNumber (_value)";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male11ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="Enh_ambientAnimParams";
+							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="ASIS";
+											};
+										};
+									};
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1482.9998,24.121424,4663.0498};
+						angles[]={0,3.1415927,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						init="call{this disableAI ""PATH"";" \n "id = [""MMG"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
+						description="Machine Gunner";
+						isPlayable=1;
+					};
+					id=543;
+					type="sfp_m59w_machinegunner_ksp58";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="Enh_featureType";
+							expression="_this setFeatureType parseNumber (_value)";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male12ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="Enh_ambientAnimParams";
+							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="ASIS";
+											};
+										};
+									};
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1482.9998,24.288082,4666.0498};
+						angles[]={0,3.1415927,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						init="call{this disableAI ""PATH"";" \n "id = [""MMGASS"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
+						description="MG Assistant";
+						isPlayable=1;
+					};
+					id=544;
+					type="sfp_m59w_rifleman_ak4";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="Enh_featureType";
+							expression="_this setFeatureType parseNumber (_value)";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="Enh_ambientAnimParams";
+							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="ASIS";
+											};
+										};
+									};
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1485.9998,24.28475,4660.0498};
+						angles[]={0,3.1415927,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						rank="CORPORAL";
+						init="call{this disableAI ""PATH"";" \n "id = [""TL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
+						description="Assistant Squad Leader";
+						isPlayable=1;
+					};
+					id=545;
+					type="sfp_m59w_teamleader";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="Enh_featureType";
+							expression="_this setFeatureType parseNumber (_value)";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="Enh_ambientAnimParams";
+							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="ASIS";
+											};
+										};
+									};
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1485.9998,24.424753,4663.0498};
+						angles[]={0,3.1415927,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						init="call{this disableAI ""PATH"";" \n "id = [""MMG"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
+						description="Machine Gunner";
+						isPlayable=1;
+					};
+					id=546;
+					type="sfp_m59w_machinegunner_ksp58";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="Enh_featureType";
+							expression="_this setFeatureType parseNumber (_value)";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male12ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="Enh_ambientAnimParams";
+							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="ASIS";
+											};
+										};
+									};
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1485.9998,24.611422,4666.0498};
+						angles[]={0,3.1415927,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						init="call{this disableAI ""PATH"";" \n "id = [""MMGASS"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
+						description="MG Assistant";
+						isPlayable=1;
+					};
+					id=547;
+					type="sfp_m59w_rifleman_ak4";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="Enh_featureType";
+							expression="_this setFeatureType parseNumber (_value)";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="Enh_ambientAnimParams";
+							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="ASIS";
+											};
+										};
+									};
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=541;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Helge Adam";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item194
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1477,23.481441,4660.0498};
+						angles[]={6.2565341,3.1415927,6.2565341};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						rank="SERGEANT";
+						init="call{this disableAI ""PATH"";" \n "group this setGroupId [""KALLE ADAM""];" \n "id = [""MATTL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
+						description="Squad Leader@Kalle Adam";
+						isPlayable=1;
+					};
+					id=549;
+					type="sfp_m59w_squadleader";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="Enh_featureType";
+							expression="_this setFeatureType parseNumber (_value)";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=-1;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male12ENG";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="Enh_ambientAnimParams";
+							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="ASIS";
+											};
+										};
+									};
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1476,23.60811,4663.0498};
+						angles[]={6.2365503,3.1415927,6.2698507};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						init="call{this disableAI ""PATH"";" \n "id = [""MAT"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
+						description="Grg-gunner";
+						isPlayable=1;
+					};
+					id=550;
+					type="sfp_m59w_rifleman_ak4";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="Enh_featureType";
+							expression="_this setFeatureType parseNumber (_value)";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=-1;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male12ENG";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="Enh_ambientAnimParams";
+							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="ASIS";
+											};
+										};
+									};
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1478,23.581465,4663.0498};
+						angles[]={6.1212883,3.1415927,0.10297443};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						init="call{this disableAI ""PATH"";" \n "id = [""MATASS"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
+						description="Grg-loader";
+						isPlayable=1;
+					};
+					id=551;
+					type="sfp_m59w_rifleman_ak4";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="Enh_featureType";
+							expression="_this setFeatureType parseNumber (_value)";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=-1;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male12ENG";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="Enh_ambientAnimParams";
+							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="ASIS";
+											};
+										};
+									};
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=548;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Kalle Adam";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item195
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1069,18.593464,4877};
+				angles[]={5.82757,0,0.3573091};
+			};
+			id=554;
+			type="ModuleTaskSetState_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleTaskSetState_F_ShowNotification";
+					expression="_this setVariable ['ShowNotification',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleTaskSetState_F_State";
+					expression="_this setVariable ['State',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="SUCCEEDED";
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=51;
+			nextID=59;
 		};
 		class Links
 		{
-			items=51;
+			items=59;
 			class Item0
 			{
 				linkID=0;
@@ -16330,8 +15970,8 @@ class Mission
 			class Item16
 			{
 				linkID=16;
-				item0=31;
-				item1=67;
+				item0=340;
+				item1=287;
 				class CustomData
 				{
 					type="Sync";
@@ -16340,8 +15980,8 @@ class Mission
 			class Item17
 			{
 				linkID=17;
-				item0=32;
-				item1=67;
+				item0=340;
+				item1=339;
 				class CustomData
 				{
 					type="Sync";
@@ -16350,8 +15990,8 @@ class Mission
 			class Item18
 			{
 				linkID=18;
-				item0=33;
-				item1=67;
+				item0=355;
+				item1=350;
 				class CustomData
 				{
 					type="Sync";
@@ -16360,8 +16000,8 @@ class Mission
 			class Item19
 			{
 				linkID=19;
-				item0=37;
-				item1=67;
+				item0=355;
+				item1=354;
 				class CustomData
 				{
 					type="Sync";
@@ -16370,18 +16010,18 @@ class Mission
 			class Item20
 			{
 				linkID=20;
-				item0=48;
-				item1=67;
+				item0=358;
+				item1=345;
 				class CustomData
 				{
-					type="Sync";
+					type="WaypointActivation";
 				};
 			};
 			class Item21
 			{
 				linkID=21;
-				item0=49;
-				item1=67;
+				item0=396;
+				item1=413;
 				class CustomData
 				{
 					type="Sync";
@@ -16390,8 +16030,8 @@ class Mission
 			class Item22
 			{
 				linkID=22;
-				item0=423;
-				item1=67;
+				item0=397;
+				item1=413;
 				class CustomData
 				{
 					type="Sync";
@@ -16400,8 +16040,8 @@ class Mission
 			class Item23
 			{
 				linkID=23;
-				item0=416;
-				item1=67;
+				item0=398;
+				item1=413;
 				class CustomData
 				{
 					type="Sync";
@@ -16410,8 +16050,8 @@ class Mission
 			class Item24
 			{
 				linkID=24;
-				item0=418;
-				item1=67;
+				item0=399;
+				item1=413;
 				class CustomData
 				{
 					type="Sync";
@@ -16420,8 +16060,8 @@ class Mission
 			class Item25
 			{
 				linkID=25;
-				item0=340;
-				item1=287;
+				item0=400;
+				item1=413;
 				class CustomData
 				{
 					type="Sync";
@@ -16430,8 +16070,8 @@ class Mission
 			class Item26
 			{
 				linkID=26;
-				item0=340;
-				item1=339;
+				item0=401;
+				item1=413;
 				class CustomData
 				{
 					type="Sync";
@@ -16440,8 +16080,8 @@ class Mission
 			class Item27
 			{
 				linkID=27;
-				item0=355;
-				item1=350;
+				item0=402;
+				item1=413;
 				class CustomData
 				{
 					type="Sync";
@@ -16450,8 +16090,8 @@ class Mission
 			class Item28
 			{
 				linkID=28;
-				item0=355;
-				item1=354;
+				item0=410;
+				item1=413;
 				class CustomData
 				{
 					type="Sync";
@@ -16460,18 +16100,18 @@ class Mission
 			class Item29
 			{
 				linkID=29;
-				item0=358;
-				item1=345;
+				item0=411;
+				item1=413;
 				class CustomData
 				{
-					type="WaypointActivation";
+					type="Sync";
 				};
 			};
 			class Item30
 			{
 				linkID=30;
-				item0=396;
-				item1=413;
+				item0=391;
+				item1=414;
 				class CustomData
 				{
 					type="Sync";
@@ -16480,8 +16120,8 @@ class Mission
 			class Item31
 			{
 				linkID=31;
-				item0=397;
-				item1=413;
+				item0=392;
+				item1=414;
 				class CustomData
 				{
 					type="Sync";
@@ -16490,8 +16130,8 @@ class Mission
 			class Item32
 			{
 				linkID=32;
-				item0=398;
-				item1=413;
+				item0=393;
+				item1=414;
 				class CustomData
 				{
 					type="Sync";
@@ -16500,8 +16140,8 @@ class Mission
 			class Item33
 			{
 				linkID=33;
-				item0=399;
-				item1=413;
+				item0=394;
+				item1=414;
 				class CustomData
 				{
 					type="Sync";
@@ -16510,8 +16150,8 @@ class Mission
 			class Item34
 			{
 				linkID=34;
-				item0=400;
-				item1=413;
+				item0=395;
+				item1=414;
 				class CustomData
 				{
 					type="Sync";
@@ -16520,8 +16160,8 @@ class Mission
 			class Item35
 			{
 				linkID=35;
-				item0=401;
-				item1=413;
+				item0=403;
+				item1=414;
 				class CustomData
 				{
 					type="Sync";
@@ -16530,8 +16170,8 @@ class Mission
 			class Item36
 			{
 				linkID=36;
-				item0=402;
-				item1=413;
+				item0=350;
+				item1=287;
 				class CustomData
 				{
 					type="Sync";
@@ -16540,8 +16180,8 @@ class Mission
 			class Item37
 			{
 				linkID=37;
-				item0=410;
-				item1=413;
+				item0=356;
+				item1=354;
 				class CustomData
 				{
 					type="Sync";
@@ -16550,8 +16190,8 @@ class Mission
 			class Item38
 			{
 				linkID=38;
-				item0=411;
-				item1=413;
+				item0=478;
+				item1=479;
 				class CustomData
 				{
 					type="Sync";
@@ -16560,38 +16200,38 @@ class Mission
 			class Item39
 			{
 				linkID=39;
-				item0=391;
-				item1=414;
+				item0=503;
+				item1=346;
 				class CustomData
 				{
-					type="Sync";
+					type="WaypointActivation";
 				};
 			};
 			class Item40
 			{
 				linkID=40;
-				item0=392;
-				item1=414;
+				item0=352;
+				item1=361;
 				class CustomData
 				{
-					type="Sync";
+					type="WaypointActivation";
 				};
 			};
 			class Item41
 			{
 				linkID=41;
-				item0=393;
-				item1=414;
+				item0=353;
+				item1=511;
 				class CustomData
 				{
-					type="Sync";
+					type="WaypointActivation";
 				};
 			};
 			class Item42
 			{
 				linkID=42;
-				item0=394;
-				item1=414;
+				item0=531;
+				item1=67;
 				class CustomData
 				{
 					type="Sync";
@@ -16600,8 +16240,8 @@ class Mission
 			class Item43
 			{
 				linkID=43;
-				item0=395;
-				item1=414;
+				item0=532;
+				item1=67;
 				class CustomData
 				{
 					type="Sync";
@@ -16610,8 +16250,8 @@ class Mission
 			class Item44
 			{
 				linkID=44;
-				item0=403;
-				item1=414;
+				item0=533;
+				item1=67;
 				class CustomData
 				{
 					type="Sync";
@@ -16620,8 +16260,8 @@ class Mission
 			class Item45
 			{
 				linkID=45;
-				item0=350;
-				item1=287;
+				item0=534;
+				item1=67;
 				class CustomData
 				{
 					type="Sync";
@@ -16630,8 +16270,8 @@ class Mission
 			class Item46
 			{
 				linkID=46;
-				item0=356;
-				item1=354;
+				item0=535;
+				item1=67;
 				class CustomData
 				{
 					type="Sync";
@@ -16640,8 +16280,8 @@ class Mission
 			class Item47
 			{
 				linkID=47;
-				item0=478;
-				item1=479;
+				item0=536;
+				item1=67;
 				class CustomData
 				{
 					type="Sync";
@@ -16650,31 +16290,111 @@ class Mission
 			class Item48
 			{
 				linkID=48;
-				item0=503;
-				item1=346;
+				item0=542;
+				item1=67;
 				class CustomData
 				{
-					type="WaypointActivation";
+					type="Sync";
 				};
 			};
 			class Item49
 			{
 				linkID=49;
-				item0=352;
-				item1=361;
+				item0=543;
+				item1=67;
 				class CustomData
 				{
-					type="WaypointActivation";
+					type="Sync";
 				};
 			};
 			class Item50
 			{
 				linkID=50;
-				item0=353;
-				item1=511;
+				item0=544;
+				item1=67;
 				class CustomData
 				{
-					type="WaypointActivation";
+					type="Sync";
+				};
+			};
+			class Item51
+			{
+				linkID=51;
+				item0=545;
+				item1=67;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item52
+			{
+				linkID=52;
+				item0=546;
+				item1=67;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item53
+			{
+				linkID=53;
+				item0=547;
+				item1=67;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item54
+			{
+				linkID=54;
+				item0=549;
+				item1=67;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item55
+			{
+				linkID=55;
+				item0=550;
+				item1=67;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item56
+			{
+				linkID=56;
+				item0=551;
+				item1=67;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item57
+			{
+				linkID=57;
+				item0=478;
+				item1=554;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item58
+			{
+				linkID=58;
+				item0=554;
+				item1=356;
+				class CustomData
+				{
+					type="Sync";
 				};
 			};
 		};
