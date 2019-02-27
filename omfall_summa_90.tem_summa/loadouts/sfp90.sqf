@@ -129,6 +129,7 @@ params ["_type", "_unit"];
     _rtable = "ACE_RangeTable_82mm";
     _maptools = "ACE_MapTools";
     _whistle = "ZSN_Whistle";
+    _flashlight = "ACE_Flashlight_MX991";
 
     #define ATTACHMENTS \
         _unit addPrimaryWeaponItem _sightholo; \
@@ -145,6 +146,7 @@ params ["_type", "_unit"];
         addItemCountToUniform(_bandage, 6); \
         addItemCountToUniform(_morphine, 2); \
         addItemCountToUniform(_tourniquet, 2); \
+        addItemCountToUniform(_flashlight, 1); \
         _unit addVest _vest; \
         _unit addHeadgear _headGear;
 
@@ -273,8 +275,8 @@ switch (_type) do {
         _unit addBackpack _atpack;
         clearAllItemsFromBackpack _unit;
         addItemCountToBackpack(_matHEAT, 2);
-        addItemCountToBackpack(_matHE, 0);
-        addItemCountToBackpack(_matFlare, 2);
+        addItemCountToBackpack(_matHE, 1);
+        addItemCountToBackpack(_matFlare, 1);
         _unit addWeapon _vector;
     };
     
