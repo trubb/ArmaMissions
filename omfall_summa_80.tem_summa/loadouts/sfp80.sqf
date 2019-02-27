@@ -239,6 +239,25 @@ private ["_type", "_unit"];
         _unit addWeapon _binocular;
     };
 
+    case "MMGAM": {
+        _unit forceAddUniform _uniform;
+        for "_i" from 1 to 6 do {_unit addItemToUniform _bandage;};
+        for "_i" from 1 to 2 do {_unit addItemToUniform _morphine;};
+        for "_i" from 1 to 2 do {_unit addItemToUniform _tourniquet;};
+        for "_i" from 1 to 3 do {_unit addItemToUniform _rifleMag;};
+        _unit addVest _vest;
+        for "_i" from 1 to 2 do {_unit addItemToVest _grenade;};
+        for "_i" from 1 to 1 do {_unit addItemToVest _smoke;};
+        for "_i" from 1 to 1 do {_unit addItemToVest _smokeinsta;};
+        for "_i" from 1 to 2 do {_unit addItemToVest _rifleTMag;};
+        for "_i" from 1 to 8 do {_unit addItemToVest _rifleMag;};
+        _unit addBackpack _mgpack;
+        clearAllItemsFromBackpack _unit;
+        for "_i" from 1 to 7 do {_unit addItemToBackpack _mmgMag;};
+        _unit addHeadgear _headGear;
+        _unit addWeapon _rifle;
+    };
+
     case "LAT": {
         _unit forceAddUniform _uniform;
         for "_i" from 1 to 6 do {_unit addItemToUniform _bandage;};

@@ -8,7 +8,7 @@ overviewPicture = "loadscreen.jpg";
 onLoadMission = "";
 overviewText = "";
 
-//DisabledAi = 1;
+DisabledAi = 1;
 //respawn = 1;
 //respawnDelay = 2;
 respawnButton = 1;
