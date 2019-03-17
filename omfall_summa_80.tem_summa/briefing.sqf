@@ -15,6 +15,7 @@ ALL FREQUENCIES ARE PREDEFINED, YOU ONLY NEED TO CHANGE CHANNEL!
 <br/>
 <br/>Company/Platoon net:
 <br/>Platoon net - Channel 1
+<br/>FO/Mortar net - Channel 2
 <br/>
 <br/>Squad Channels:
 <br/>ERIK ADAM - Channel 1
@@ -27,13 +28,12 @@ ALL FREQUENCIES ARE PREDEFINED, YOU ONLY NEED TO CHANGE CHANNEL!
 <br/>-   ERIK ADAM - 1st squad
 <br/>-   FILIP ADAM - 2nd squad
 <br/>-   GUSTAV ADAM - 3rd squad
-<br/>-   KALLE ADAM - AT team
+<br/>-   KALLE ADAM - Mortar team
 "]];
 
 player createDiaryRecord ["Diary",["IV. Service & Support","
 a. Equipment
 <br/>Basic combat equipment.
-<br/>Assistant squad leaders have been allocated sights for their Ak4 rifles.
 <br/>
 <br/>Reinforcements:
 <br/>None
@@ -74,6 +74,10 @@ A setup timer is present in the mission.
 <br/>
 <br/>You should probably not cross into the combat zone while it is active.
 <br/>
+<br/>The center point of the mortar squad is the mortar marker.
+<br/>
 <br/>As this mission requires a fair amount of coordination among the squads all soldiers have been provided with radios, despite this being unrealistic for the time period.
 <br/>Feel free to shout commands within your squad instead.
+<br/>
+<br/>The Forward Observer should together with the platoon leader place down a set of target reference markers on the map.
 "]];

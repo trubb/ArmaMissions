@@ -42,7 +42,7 @@ params ["_type", "_unit"];
     _parachute = "ACE_NonSteerableParachute";
 
     _backradio = "sfp_ra180";
-    _backradioLarge = "sfp_lk35_ra145";
+    _backradioLarge = "sfp_stridssack2000_ra_ksk90";
 
     _uniform = ["sfp_m90w_uniform",
                 "sfp_m90w_uniform_dirty"] call BIS_fnc_selectRandom;
@@ -170,7 +170,7 @@ switch (_type) do {
 
     case "PL": {
         RIFLEKIT;
-        _unit addBackpack _backpack;
+        _unit addBackpack _backradioLarge;
         for "_i" from 1 to 2 do {_unit addItemToBackpack _smoke;};
         for "_i" from 1 to 2 do {_unit addItemToBackpack _smoker;};
         for "_i" from 1 to 2 do {_unit addItemToBackpack _smokeg;};
@@ -180,23 +180,28 @@ switch (_type) do {
         addItemCountToBackpack(_flaremag, 4);
         _unit addWeapon _flaregun;
     };
-    
+
+    case "RTO": {
+        RIFLEKIT;
+        _unit addBackpack _backradio;
+    };
+
     case "SL": {
         CLOTHES;
         GRENADES;
         RIFLEMAGS;
         _unit addBackpack _backpack;
-        addItemCountToBackpack(_glhe, 12);
-        addItemCountToBackpack(_glsmokew, 4);
-        addItemCountToBackpack(_glsmoker, 4);
-        addItemCountToBackpack(_glflareg, 4);
+        addItemCountToBackpack(_glhe, 7);
+        addItemCountToBackpack(_glsmokew, 3);
+        addItemCountToBackpack(_glsmoker, 3);
+        addItemCountToBackpack(_glflareg, 3);
         _unit addItemToUniform _maptools;
         _unit addItemToUniform _dagr;
         _unit addWeapon _rifleGL;
         _unit addWeapon _binocular;
     };
 
-    case "CLS": {
+    case "MED": {
         RIFLEKIT;
         _unit addBackpack _medpack;
         clearAllItemsFromBackpack _unit;
@@ -208,6 +213,16 @@ switch (_type) do {
         addItemCountToBackpack(_bandage, 20);
         addItemCountToBackpack(_smoker, 2);
         addItemCountToBackpack(_smokeg, 2);
+    };
+
+    case "CLS": {
+        RIFLEKIT;
+        _unit addBackpack "sfp_stridssele_backpack";
+        clearAllItemsFromBackpack _unit;
+        addItemCountToBackpack(_morphine, 4);
+        addItemCountToBackpack(_splint, 4);
+        addItemCountToBackpack(_tourniquet, 4);
+        addItemCountToBackpack(_bandage, 10);
     };
 
     case "TL": {
@@ -253,7 +268,7 @@ switch (_type) do {
         RIFLEKIT;
         _unit addBackpack _backpack;
         clearAllItemsFromBackpack _unit;
-        addItemCountToBackpack(_mmgMag, 4);
+        addItemCountToBackpack(_mmgMag, 5);
         _unit addWeapon _binocular;
     };
 

@@ -14,7 +14,8 @@ player createDiaryRecord ["Diary",["V. Command & Signal","
 ALL FREQUENCIES ARE PREDEFINED, YOU ONLY NEED TO CHANGE CHANNEL!
 <br/>
 <br/>Company/Platoon net:
-<br/>Mortar fire control - Channel 1: 70MHz
+<br/>Platoon net - Channel 1
+<br/>Mortar fire control - Channel 2
 <br/>
 <br/>Squad Radios:
 <br/>Are not used in this mission.
@@ -69,10 +70,14 @@ A setup timer is present in the mission.
 <br/>
 <br/>You should probably not cross into the combat zone while it is active.
 <br/>
+<br/>The center point of the mortar squad is the mortar marker.
 <br/>
 <br/>Due to the era this mission is played in your force has no night vision devices or flashlights available.
 <br/>Instead you will have to rely on flares fired by the mortar team.
 <br/>
 <br>Additionally, due to an inadequate allocation of flare gun ammunition they are only to be used for signaling.
 <br/>The platoon leader should establish a protocol for their use, for example to signal when a position has been taken.
+<br/>
+<br/>Lastly, the Forward Observer should together with the platoon leader place down a set of target reference markers on the map.
+<br/>Alternatively the FO can make use of the preplaced markers denoting the fighting positions as reference when requesting indirect fire.
 "]];

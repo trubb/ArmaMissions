@@ -20,12 +20,14 @@ ALL FREQUENCIES ARE PREDEFINED, YOU ONLY NEED TO CHANGE CHANNEL!
 <br/>ERIK ADAM - Channel 1
 <br/>FILIP ADAM - Channel 2
 <br/>GUSTAV ADAM - Channel 3
+<br/>HELGE ADAM - Channel 3
 <br/>
 <br/>Callsigns
 <br/>ADAM QVINTUS - Platoon lead
 <br/>-   ERIK ADAM - 1st squad
 <br/>-   FILIP ADAM - 2nd squad
 <br/>-   GUSTAV ADAM - 3rd squad
+<br/>-   HELGE ADAM - MG team
 "]];
 
 player createDiaryRecord ["Diary",["IV. Service & Support","

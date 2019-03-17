@@ -134,6 +134,7 @@ params ["_type", "_unit"];
 
     #define BACKRADIO \
         _unit addBackpack _backradio; \
+        clearAllItemsFromBackpack _unit;
         addItemCountToBackpack(_smoke, 2); \
         addItemCountToBackpack(_smoker, 2); \
         addItemCountToBackpack(_smokeg, 2);
@@ -150,11 +151,14 @@ params ["_type", "_unit"];
         addItemCountToVest(_smoke, 2); \
         addItemCountToVest(_grenade, 2);
 
+    #define RIFLEMAGS \
+        addItemCountToVest(_rifleTMag, 2); \
+        addItemCountToVest(_rifleMag, 8);
+
     #define RIFLEKIT \
         CLOTHES; \
         GRENADES; \
-        addItemCountToVest(_rifleTMag, 2); \
-        addItemCountToVest(_rifleMag, 8); \
+        RIFLEMAGS; \
         _unit addWeapon _rifle; \
         ATTACHMENTS;
 
@@ -175,6 +179,7 @@ switch (_type) do {
     case "CLS": {
         RIFLEKIT;
         _unit addBackpack _medpack;
+        clearAllItemsFromBackpack _unit;
         addItemCountToBackpack(_blood, 4);
         addItemCountToBackpack(_epine, 8);
         addItemCountToBackpack(_morphine, 8);
@@ -187,15 +192,16 @@ switch (_type) do {
 
     case "TL": {
         CLOTHES;
-        _unit addWeapon _rifleGL;
         _unit addBackpack _backpack;
-        ATTACHMENTS;
+        clearAllItemsFromBackpack _unit;
         GRENADES;
         RIFLEMAGS;
         addItemCountToBackpack(_glhe, 7);
         addItemCountToBackpack(_glsmokew, 2);
         addItemCountToBackpack(_glsmoker, 2);
         addItemCountToBackpack(_glflareg, 2);
+        _unit addWeapon _rifleGL;
+        ATTACHMENTS;
     };
 
     case "RIFLE": {
@@ -204,47 +210,49 @@ switch (_type) do {
 
     case "DMR": {
         CLOTHES;
+        GRENADES;
+        addItemCountToVest(_dmrMag, 10);
         _unit addWeapon _dmr;
         _unit addPrimaryWeaponItem _sightscope;
         _unit addPrimaryWeaponItem _laser;
         _unit addPrimaryWeaponItem _bipod;
-        GRENADES;
-        addItemCountToVest(_dmrMag, 10);
     };
 
     case "AR": {
         CLOTHES;
-        _unit addWeapon _ar;
         _unit addBackpack _backpack;
-        ATTACHMENTS;
+        clearAllItemsFromBackpack _unit;
         GRENADES;
         addItemCountToVest(_arMag, 3);
         addItemCountToBackpack(_arMag, 2);
         addItemCountToBackpack(_arTMag, 2);
         addItemCountToBackpack(_sparebarrel, 1);
+        _unit addWeapon _ar;
+        ATTACHMENTS;
     };
 
     case "ARASS": {
         RIFLEKIT;
         _unit addBackpack _backpack;
+        clearAllItemsFromBackpack _unit;
         addItemCountToBackpack(_arMag, 2);
         addItemCountToBackpack(_arTMag, 2);
     };
 
     case "MMG": {
         CLOTHES;
-        _unit addWeapon _mmg;
-        _unit addPrimaryWeaponItem _bipod;
-        _unit addBackpack _backpack;
         GRENADES;
         addItemCountToVest(_mmgMag, 1);
         addItemCountToBackpack(_mmgMag, 2);
         addItemCountToBackpack(_sparebarrel, 1);
+        _unit addWeapon _mmg;
+        _unit addPrimaryWeaponItem _bipod;
     };
 
     case "MMGASS": {
         RIFLEKIT;
         _unit addBackpack _backpack;
+        clearAllItemsFromBackpack _unit;
         addItemCountToBackpack(_mmgMag, 4);
         _unit addWeapon _binocular;
     };
