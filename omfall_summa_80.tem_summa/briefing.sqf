@@ -18,16 +18,20 @@ ALL FREQUENCIES ARE PREDEFINED, YOU ONLY NEED TO CHANGE CHANNEL!
 <br/>FO/Mortar net - Channel 2
 <br/>
 <br/>Squad Channels:
+<br/>ADAM QVINTUS - Channel 6
 <br/>ERIK ADAM - Channel 1
 <br/>FILIP ADAM - Channel 2
 <br/>GUSTAV ADAM - Channel 3
-<br/>KALLE ADAM - Channel 4
+<br/>HELGE ADAM - Channel 4
+<br/>KALLE ADAM - Channel 5
 <br/>
 <br/>Callsigns
 <br/>ADAM QVINTUS - Platoon lead
+<br/>-   xX.MurderEyes99.Xx - Forward Observer
 <br/>-   ERIK ADAM - 1st squad
 <br/>-   FILIP ADAM - 2nd squad
 <br/>-   GUSTAV ADAM - 3rd squad
+<br/>-   HELGE ADAM - 4th squad
 <br/>-   KALLE ADAM - Mortar team
 "]];
 
@@ -75,9 +79,6 @@ A setup timer is present in the mission.
 <br/>You should probably not cross into the combat zone while it is active.
 <br/>
 <br/>The center point of the mortar squad is the mortar marker.
-<br/>
-<br/>As this mission requires a fair amount of coordination among the squads all soldiers have been provided with radios, despite this being unrealistic for the time period.
-<br/>Feel free to shout commands within your squad instead.
 <br/>
 <br/>The Forward Observer should together with the platoon leader place down a set of target reference markers on the map.
 "]];

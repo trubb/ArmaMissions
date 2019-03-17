@@ -24,7 +24,7 @@ private ["_type", "_unit"];
     removeGoggles _unit;
     _unit linkItem "ItemMap";
     _unit linkItem "ItemCompass";
-//    _unit linkItem "ItemRadio";     // Which radio will be given is defined via TFAR CBA Settings
+    _unit linkItem "TFAR_rf7800str";     // Which radio will be given is defined via TFAR CBA Settings
 //    _unit linkItem "ItemWatch";     // give watch or microDAGR
     _unit linkItem "TFAR_microdagr";
 //    _unit linkItem "rhsusf_ANPVS_14";

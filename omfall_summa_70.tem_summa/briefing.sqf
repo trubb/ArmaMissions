@@ -17,14 +17,21 @@ ALL FREQUENCIES ARE PREDEFINED, YOU ONLY NEED TO CHANGE CHANNEL!
 <br/>Platoon net - Channel 1
 <br/>Mortar fire control - Channel 2
 <br/>
-<br/>Squad Radios:
-<br/>Are not used in this mission.
+<br/>Squad Channels:
+<br/>ADAM QVINTUS - Channel 6
+<br/>ERIK ADAM - Channel 1
+<br/>FILIP ADAM - Channel 2
+<br/>GUSTAV ADAM - Channel 3
+<br/>HELGE ADAM - Channel 4
+<br/>KALLE ADAM - Channel 5
 <br/>
 <br/>Callsigns
 <br/>ADAM QVINTUS - Platoon lead
+<br/>-   xX.MurderEyes99.Xx - Forward Observer
 <br/>-   ERIK ADAM - 1st squad
 <br/>-   FILIP ADAM - 2nd squad
 <br/>-   GUSTAV ADAM - 3rd squad
+<br/>-   HELGE ADAM - 4th squad
 <br/>-   KALLE ADAM - Mortar team
 "]];
 
@@ -78,6 +85,6 @@ A setup timer is present in the mission.
 <br>Additionally, due to an inadequate allocation of flare gun ammunition they are only to be used for signaling.
 <br/>The platoon leader should establish a protocol for their use, for example to signal when a position has been taken.
 <br/>
-<br/>Lastly, the Forward Observer should together with the platoon leader place down a set of target reference markers on the map.
+<br/>Lastly, the Forward Observer should, together with the platoon leader, place down a set of target reference markers on the map.
 <br/>Alternatively the FO can make use of the preplaced markers denoting the fighting positions as reference when requesting indirect fire.
 "]];
