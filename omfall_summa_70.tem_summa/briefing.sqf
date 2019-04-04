@@ -5,7 +5,7 @@ Victory Conditions:
 <br/>The task is accomplished when:
 <br/>The five fighting positions are cleared out.
 <br/>
-<br/>If you take casualties exceeding 80% of your original force you are forced to retreat.
+<br/>If you take casualties exceeding 80% of your original force you are forced to retreat and the mission is deemed a failure.
 <br/>
 <br/>This mission was created for Anrop.se by Trubb
 "]];
@@ -39,6 +39,7 @@ player createDiaryRecord ["Diary",["IV. Service & Support","
 a. Equipment
 <br/>Basic combat equipment.
 <br/>Squad leaders have been assigned flare guns.
+<br/>Additional ammunition is loaded in the platoon's Tgb 11.
 <br/>
 <br/>b. Medical resources
 <br/>Advanced ACE medical. Your platoon medic can help you!
@@ -76,6 +77,10 @@ player createDiaryRecord ["Diary",["IMPORTANT NOTES!","
 A setup timer is present in the mission.
 <br/>
 <br/>You should probably not cross into the combat zone while it is active.
+<br/>
+<br/>A hard completion timer is also present.
+<br/>
+<br/>After crossing the red line you have 50 minutes to complete the mission.
 <br/>
 <br/>The center point of the mortar squad is the mortar marker.
 <br/>

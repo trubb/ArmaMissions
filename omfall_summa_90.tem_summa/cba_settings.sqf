@@ -65,10 +65,11 @@ force ace_medical_useLocation_basicEpi = 0;             // Epi can be used anywh
 force ace_medical_useLocation_PAK = 0;                  // PAK can be used anywhere
 force ace_medical_useLocation_SurgicalKit = 3;          // SK can only be used in medical vehicle/facility
 
-force ace_mk6mortar_airResistanceEnabled = true;        // Mortar rounds are affected by air and wind
-force ace_mk6mortar_allowComputerRangefinder = false;   // Can't use the artillery computer interface
+force ace_mk6mortar_airResistanceEnabled = false;        // Mortar rounds are affected by air and wind
+force ace_mk6mortar_allowComputerRangefinder = true;   // Can't use the artillery computer interface
 force ace_mk6mortar_allowCompass = true;                // CAN use the sight
-force ace_mk6mortar_useAmmohandling = true;             // Manual loading of mortars required - THIS AFFECTS AI TOO
+// WARNING THIS IS A TERRIBLE SETTING TO LEAVE OFF
+ace_mk6mortar_useAmmohandling = false;             // Manual loading of mortars required - THIS AFFECTS AI TOO
 
 force ace_nightvision_disableNVGsWithSights = false;    // Allow NVG in sights so there's a reason to have them on
 force ace_nightvision_shutterEffects = true;            // Turn on the autogating effects

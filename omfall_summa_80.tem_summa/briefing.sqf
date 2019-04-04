@@ -5,7 +5,7 @@ Victory Conditions:
 <br/>The task is accomplished when:
 <br/>The platoon has located and retaken the lorries, and the enemy's counter-attack has been delayed at least until 18:40.
 <br/>
-<br/>If you take casualties exceeding 80% of your original force you are forced to retreat.
+<br/>If you take casualties exceeding 80% of your original force you are forced to retreat and the mission is deemed a failure.
 <br/>
 <br/>This mission was created for Anrop.se by Trubb
 "]];

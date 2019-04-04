@@ -25,6 +25,7 @@ class CfgFunctions {
 			class endCondition {};
 			class initialize {};
 			class kneel {};
+			class moFire {};
 			class spawnGroup {};
 			class stand {};
 		};

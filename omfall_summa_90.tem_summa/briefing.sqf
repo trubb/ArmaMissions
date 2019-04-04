@@ -3,9 +3,9 @@
 player createDiaryRecord ["Diary", ["Victory Conditions & Credits","
 Victory Conditions:
 <br/>The task is accomplished when:
-<br/>The Russian forces have been forced to divert reinforcements to the 5-way junction, and the attack along ROAD 61 has been blunted.
+<br/>The Russian forces have been forced to divert reinforcements to the 5-way junction, and you have reached friendly lines.
 <br/>
-<br/>If you take casualties exceeding 90% of your original force you are forced to retreat.
+<br/>If you take casualties exceeding 90% of your original force you are forced to retreat and the mission is deemed a failure.
 <br/>
 <br/>This mission was created for Anrop.se by Trubb
 "]];
@@ -26,7 +26,6 @@ ALL FREQUENCIES ARE PREDEFINED, YOU ONLY NEED TO CHANGE CHANNEL!
 <br/>
 <br/>Callsigns
 <br/>ADAM QVINTUS - Platoon lead
-<br/>-   xX.MurderEyes99.Xx - Forward Observer
 <br/>-   ERIK ADAM - 1st squad
 <br/>-   FILIP ADAM - 2nd squad
 <br/>-   GUSTAV ADAM - 3rd squad
@@ -44,7 +43,7 @@ a. Equipment
 <br/>None
 <br/>
 <br/>Resupply:
-<br/>Ammunition and medical equipment is available in the fighting position that you shall withdraw to following your attack on the 5-way junction.
+<br/>None, what you are carrying is what you have.
 <br/>
 <br/>b. Medical resources
 <br/>Advanced ACE medical. Your platoon medic can help you!
@@ -55,7 +54,7 @@ a. Equipment
 player createDiaryRecord ["Diary",["III. Mission","
 Attack the <marker name = 'opfor_junc'>5-way junction south of SUMMAJARVI</marker> to draw reinforcements away from the suspected coming attack in the east near <marker name = 'r61'>ROAD 61</marker>.
 <br/>
-<br/>Then withdraw east to the <marker name = 'blu_def'>defensive position</marker> west of ROAD 61 and reinforce the friendly forces already there.
+<br/>Then withdraw northeast to the <marker name = 'blu_def'>defensive position</marker> west of ROAD 61 and reinforce the friendly forces already there.
 <br/>
 <br/>Lastly, delay the Russian assault for as long as possible. You may not withdraw unless explicitly ordered to do so.
 "]];
@@ -81,6 +80,9 @@ A setup timer is present in the mission.
 <br/>
 <br/>You should probably not cross into the combat zone while it is active.
 <br/>
+<br/>A hard completion timer is also present.
+<br/>
+<br/>After crossing the red line you have 50 minutes to complete the mission.
 <br/>
 <br/>Due to inadequate stores your platoon has not been equipped with night vision devices.
 <br/>Instead you have managed to scrounge together some 40mm flares for your squad leaders, and a flare gun for the platoon leader.

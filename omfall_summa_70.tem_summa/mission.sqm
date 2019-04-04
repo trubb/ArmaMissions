@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=729;
+		nextID=750;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3263.656,52.271152,3166.1465};
-		dir[]={-0.082937427,-0.55273896,0.82922268};
-		up[]={-0.055009726,0.83335507,0.54999757};
-		aside[]={0.99504215,-4.8807124e-008,0.09952151};
+		pos[]={2617.0117,44.787422,3837.2053};
+		dir[]={0.41789442,-0.40761137,0.81192487};
+		up[]={0.18653862,0.91315383,0.36242473};
+		aside[]={0.88914061,-3.5390258e-008,-0.45763692};
 	};
 };
 binarizationWanted=0;
@@ -43,13 +43,15 @@ addons[]=
 	"ace_spectator",
 	"sfp_static_weapons_grk84",
 	"ZSN_ColdWarWest",
-	"ZSN_ColdWarVehicles"
+	"ZSN_ColdWarVehicles",
+	"sfp_tgb11",
+	"ace_ballistics"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=14;
+		items=16;
 		class Item0
 		{
 			className="Swedish_Forces_Pack";
@@ -140,6 +142,18 @@ class AddonsMetaData
 			className="ZSN_ColdWarVehicles";
 			name="ZSN_ColdWarVehicles";
 			author="ZluskeN";
+		};
+		class Item14
+		{
+			className="sfp_tgb11";
+			name="sfp_tgb11";
+		};
+		class Item15
+		{
+			className="ace_ballistics";
+			name="ACE3 - Ballistics";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 	};
 };
@@ -491,7 +505,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=207;
+		items=212;
 		class Item0
 		{
 			dataType="Group";
@@ -767,7 +781,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3275,4.8981233,3211.05};
+						position[]={3275,4.8981237,3211.05};
 						angles[]={0,3.1477535,0};
 					};
 					side="West";
@@ -775,12 +789,13 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{this disableAI ""PATH"";" \n "id = [""RTO"", this] call compile preprocessFileLineNumbers ""loadouts\sfp70.sqf"";}";
-						description="RTO";
+						init="call{this disableAI ""PATH"";" \n "id = [""FO"", this] call compile preprocessFileLineNumbers ""loadouts\sfp70.sqf"";}";
+						description="Forward Observer";
 						isPlayable=1;
 					};
-					id=626;
+					id=364;
 					type="sfp_m59w_rifleman_ak4";
+					atlOffset=4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -899,19 +914,19 @@ class Mission
 					class PositionInfo
 					{
 						position[]={3273,4.7914424,3211.05};
-						angles[]={0,3.1477535,0};
+						angles[]={6.2531939,3.1477535,0.056606073};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{this disableAI ""PATH"";" \n "id = [""FO"", this] call compile preprocessFileLineNumbers ""loadouts\sfp70.sqf"";}";
-						description="Forward Observer";
+						init="call{this disableAI ""PATH"";" \n "id = [""RTO"", this] call compile preprocessFileLineNumbers ""loadouts\sfp70.sqf"";}";
+						description="RTO";
 						isPlayable=1;
 					};
-					id=364;
-					type="sfp_m59w_rifleman_ak4";
+					id=737;
+					type="sfp_m59w_rifleman_rto";
 					atlOffset=-4.7683716e-007;
 					class CustomAttributes
 					{
@@ -15333,7 +15348,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={2834.3618,7.1871567,3984.4409};
+				position[]={2834.3601,7.1870303,3984.4409};
 				angles[]={5.8686786,0,6.2498641};
 			};
 			areaSize[]={1,-1,1};
@@ -15527,7 +15542,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={2834.7344,9.7556438,3990.0847};
+				position[]={2834.7341,9.7548704,3990.083};
 				angles[]={0.0066592805,0,0.016662678};
 			};
 			areaSize[]={1,-1,1};
@@ -15721,7 +15736,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={2886.7317,9.5560102,3958.3142};
+				position[]={2886.7332,9.5559282,3958.3125};
 				angles[]={0.0066592805,0,0.016662678};
 			};
 			areaSize[]={1,-1,1};
@@ -15915,7 +15930,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={2899.343,7.0537891,3950.3071};
+				position[]={2899.3447,7.0543571,3950.3081};
 				angles[]={0.0066592805,0,0.016662678};
 			};
 			areaSize[]={1,-1,1};
@@ -16109,7 +16124,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={2915.0649,12.742369,3943.3767};
+				position[]={2915.0632,12.741971,3943.3733};
 				angles[]={0.0066592805,0,0.016662678};
 			};
 			areaSize[]={1,-1,1};
@@ -16304,7 +16319,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={2929.2903,13.083387,3923.1672};
+				position[]={2929.2898,13.083387,3923.1685};
 				angles[]={0.0066592805,0,0.016662678};
 			};
 			areaSize[]={1,-1,1};
@@ -16499,7 +16514,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={2933.3445,13.643579,3919.2769};
+				position[]={2933.3438,13.642569,3919.2742};
 				angles[]={0.0066592805,0,0.016662678};
 			};
 			areaSize[]={1,-1,1};
@@ -16694,7 +16709,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={2908.8235,7.6679997,3924.6328};
+				position[]={2908.8225,7.6679859,3924.6338};
 				angles[]={0.0066592805,0,0.016662678};
 			};
 			areaSize[]={1,-1,1};
@@ -17407,6 +17422,7 @@ class Mission
 			{
 				position[]={2524.9771,23.709846,4196.876};
 			};
+			name="Win";
 			id=441;
 			type="ModuleEndMission_F";
 			atlOffset=-1.9073486e-006;
@@ -25323,16 +25339,308 @@ class Mission
 			id=713;
 			type="Land_Timbers_F";
 		};
+		class Item207
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3277.8083,5.2012959,3215.2024};
+				angles[]={6.25985,1.7324836,0.053284902};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this setVariable [""AFI_vehicle_gear"",""west"",false];}";
+				name="tgb11";
+			};
+			id=729;
+			type="sfp_81_tgb11";
+			atlOffset=0.012000561;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Enh_featureType";
+					expression="_this setFeatureType parseNumber (_value)";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ace_cargo_space";
+					expression="[_this,_value] call ace_cargo_fnc_setSpace;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=20;
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item208
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3279.3513,5.579731,3218.366};
+				angles[]={6.2698536,1.7324827,0.043305151};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this setVariable [""AFI_vehicle_gear"",""west"",false];" \n "clearItemCargoGlobal this;" \n "this addItemCargoGlobal [""CUP_launch_M72A6"", 2];" \n "this addItemCargoGlobal [""sfp_100Rnd_762x51_ksp58"", 4];" \n "this addItemCargoGlobal [""SmokeShell"", 4];" \n "this addItemCargoGlobal [""sfp_handgrenade_shgr56"", 8];" \n "this addItemCargoGlobal [""ZSN_WPShell"", 8];" \n "this addItemCargoGlobal [""sfp_36Rnd_9mm_kpistm45"", 20];" \n "[this, tgb11] call ace_cargo_fnc_loadItem}";
+				name="am_0";
+			};
+			id=732;
+			type="ACE_Box_Ammo";
+			atlOffset=-0.0013866425;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Enh_featureType";
+					expression="_this setFeatureType parseNumber (_value)";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item209
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3278.0605,5.5200338,3218.5781};
+				angles[]={6.2698536,1.7324827,0.049958061};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this setVariable [""AFI_vehicle_gear"",""west"",false];" \n "clearItemCargoGlobal this;" \n "this addItemCargoGlobal [""CUP_launch_M72A6"", 2];" \n "this addItemCargoGlobal [""sfp_100Rnd_762x51_ksp58"", 4];" \n "this addItemCargoGlobal [""SmokeShell"", 4];" \n "this addItemCargoGlobal [""sfp_handgrenade_shgr56"", 8];" \n "this addItemCargoGlobal [""ZSN_WPShell"", 8];" \n "this addItemCargoGlobal [""sfp_36Rnd_9mm_kpistm45"", 20];" \n "[this, tgb11] call ace_cargo_fnc_loadItem}";
+				name="am_1";
+			};
+			id=734;
+			type="ACE_Box_Ammo";
+			atlOffset=-0.0018129349;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Enh_featureType";
+					expression="_this setFeatureType parseNumber (_value)";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item210
+		{
+			dataType="Trigger";
+			position[]={3138.645,10.47978,3407.4595};
+			angle=5.762989;
+			class Attributes
+			{
+				sizeA=700;
+				timeout[]={3000,3000,3000};
+				activationBy="WEST";
+				isRectangle=1;
+				isServerOnly=1;
+			};
+			id=748;
+			type="EmptyDetectorAreaR50";
+			atlOffset=-1.1891594;
+		};
+		class Item211
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={3229.3423,5.8692188,3272.6865};
+				angles[]={0.083140828,0,6.137557};
+			};
+			name="Fail";
+			id=749;
+			type="ModuleEndMission_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleEndMission_F_Win";
+					expression="_this setVariable ['Win',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleEndMission_F_TypeCustom";
+					expression="_this setVariable ['TypeCustom',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleEndMission_F_Type";
+					expression="_this setVariable ['Type',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="EveryoneLost";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=55;
+			nextID=59;
 		};
 		class Links
 		{
-			items=55;
+			items=59;
 			class Item0
 			{
 				linkID=0;
@@ -25776,7 +26084,7 @@ class Mission
 			class Item44
 			{
 				linkID=44;
-				item0=626;
+				item0=737;
 				item1=357;
 				class CustomData
 				{
@@ -25878,6 +26186,46 @@ class Mission
 				linkID=54;
 				item0=514;
 				item1=357;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item55
+			{
+				linkID=55;
+				item0=729;
+				item1=357;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item56
+			{
+				linkID=56;
+				item0=598;
+				item1=357;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item57
+			{
+				linkID=57;
+				item0=617;
+				item1=357;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item58
+			{
+				linkID=58;
+				item0=748;
+				item1=749;
 				class CustomData
 				{
 					type="Sync";

@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1025;
+	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=852;
+		nextID=858;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1442.4349,114.50459,4697.604};
-		dir[]={0.62849742,-0.4396587,-0.64181936};
-		up[]={0.30762461,0.89817172,-0.31414697};
-		aside[]={-0.71456462,-6.0070306e-008,-0.69972879};
+		pos[]={1410.319,171.92633,4493.5166};
+		dir[]={0.5658102,-0.55671161,0.60823268};
+		up[]={0.37918267,0.83070678,0.40761328};
+		aside[]={0.73218572,-5.6927092e-008,-0.68111742};
 	};
 };
 binarizationWanted=0;
@@ -634,7 +634,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=232;
+		items=235;
 		class Item0
 		{
 			dataType="Group";
@@ -1041,15 +1041,15 @@ class Mission
 						position[]={1508,24.171442,4653.0498};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						init="call{this disableAI ""PATH"";" \n "id = [""RTO"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
 						description="RTO";
 						isPlayable=1;
 					};
-					id=799;
-					type="sfp_m59w_rifleman_ak4";
+					id=852;
+					type="sfp_m59w_rifleman_rto";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9268,13 +9268,13 @@ class Mission
 		class Item84
 		{
 			dataType="Marker";
-			position[]={1582.2219,20.743896,4598.8101};
+			position[]={1554.5594,20.743896,4582.9644};
 			name="o_target_6";
 			text="6";
 			type="mil_destroy";
 			alpha=0.017112894;
 			id=318;
-			atlOffset=-4.5082169;
+			atlOffset=-5.0135784;
 		};
 		class Item85
 		{
@@ -22956,6 +22956,48 @@ class Mission
 				nAttributes=1;
 			};
 		};
+		class Item232
+		{
+			dataType="Marker";
+			position[]={1555.1555,28.551001,4581.2383};
+			name="marker_27";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorRed";
+			a=100;
+			b=5;
+			angle=330.19498;
+			id=855;
+			atlOffset=2.3641052;
+		};
+		class Item233
+		{
+			dataType="Marker";
+			position[]={1445.3867,24.208,4581.7471};
+			name="marker_28";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorRed";
+			a=5;
+			b=50;
+			angle=330.19498;
+			id=856;
+			atlOffset=2.1492405;
+		};
+		class Item234
+		{
+			dataType="Marker";
+			position[]={1610.245,22.344999,4676.1763};
+			name="marker_29";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorRed";
+			a=5;
+			b=50;
+			angle=330.19498;
+			id=857;
+			atlOffset=0.22403526;
+		};
 	};
 	class Connections
 	{
@@ -23549,7 +23591,7 @@ class Mission
 			class Item58
 			{
 				linkID=58;
-				item0=799;
+				item0=852;
 				item1=67;
 				class CustomData
 				{
