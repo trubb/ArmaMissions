@@ -1,8 +1,8 @@
 class Header{gameType =  Coop;};
 
 author = "Trubb | Anrop.se";
-onLoadName = "Coop 50 | Omfall - Ak5";
-briefingName = "Coop 50 | Omfall - Ak5";
+onLoadName = "Coop 50 | Omfall - Ak 5";
+briefingName = "Coop 50 | Omfall - Ak 5";
 loadScreen = "loadscreen.jpg";
 overviewPicture = "loadscreen.jpg";
 onLoadMission = "";
@@ -19,15 +19,16 @@ corpseLimit = 100;
 class CfgFunctions {
 	class trubb {
 		class trubb {
-			class calculatePercentage {};
-			class checkEndCondition {};
-			class countPlayers {};
-			class endCondition {};
-			class initialize {};
-			class kneel {};
-			class moFire {};
-			class spawnGroup {};
-			class stand {};
+            class calculatePercentage {};
+            class checkEndCondition {};
+            class countPlayers {};
+            class endCondition {};
+            class initialize {};
+            class kneel {};
+            class moFire {};
+            class spawnGroup {};
+            class stand {};
+            class targetOffset {};
 		};
 	};
 

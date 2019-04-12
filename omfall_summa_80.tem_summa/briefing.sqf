@@ -79,6 +79,4 @@ A setup timer is present in the mission.
 <br/>You should probably not cross into the combat zone while it is active.
 <br/>
 <br/>The center point of the mortar squad is the mortar marker.
-<br/>
-<br/>The Forward Observer should together with the platoon leader place down a set of target reference markers on the map.
 "]];

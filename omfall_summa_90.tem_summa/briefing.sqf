@@ -88,4 +88,7 @@ A setup timer is present in the mission.
 <br/>Instead you have managed to scrounge together some 40mm flares for your squad leaders, and a flare gun for the platoon leader.
 <br/>
 <br/>For obvious reasons you should be conservative with their use outside of combat lest the enemy finds out where you are.
+<br/>
+<br/>
+<br/>The platoon leader should add markers denoting a staging point(s) to the map during the briefing.
 "]];

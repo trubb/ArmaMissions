@@ -10,7 +10,6 @@ private _group = [getMarkerPos _trubb_start, _trubb_side, _trubb_units ] call BI
 {
 	_x disableAI "COVER";
 	_x disableAI "SUPPRESSION";
-    _x linkItem "CUP_NVG_PVS7";
 } forEach units _group;
 
 _group setFormation "LINE";
