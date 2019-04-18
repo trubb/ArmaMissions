@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2604.6565,65.17675,4105.6738};
-		dir[]={0.94147187,-0.26197055,-0.21215935};
-		up[]={0.25556326,0.96507543,-0.057590831};
-		aside[]={-0.2198368,-4.0919986e-008,-0.97553927};
+		pos[]={3276.2073,45.472046,3164.8972};
+		dir[]={0.03999804,-0.54400718,0.83812809};
+		up[]={0.025932236,0.83907908,0.54338902};
+		aside[]={0.99886388,7.6121069e-008,-0.047669124};
 	};
 };
 binarizationWanted=0;
@@ -519,15 +519,15 @@ class Mission
 					class PositionInfo
 					{
 						position[]={3279,5.1147766,3211.05};
-						angles[]={0,3.1477525,0};
+						angles[]={0,3.1477535,0};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						init="call{this disableAI ""PATH"";" \n "group this setGroupId [""ADAM QVINTUS""];" \n "id = [""PL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp70.sqf"";}";
-						description="Platoon Leader@Adam Qvintus";
+						init="call{this disableAI ""PATH"";" \n "group this setGroupId [""ALPHA QUEBEC""];" \n "id = [""PL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp70.sqf"";}";
+						description="Platoon Leader@ALPHA QUEBEC";
 						isPlayer=1;
 					};
 					id=8;
@@ -659,7 +659,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						init="call{this disableAI ""PATH"";" \n "id = [""PL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp70.sqf"";}";
-						description="XO";
+						description="Platoon XO";
 						isPlayable=1;
 					};
 					id=620;
@@ -790,7 +790,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						init="call{this disableAI ""PATH"";" \n "id = [""FO"", this] call compile preprocessFileLineNumbers ""loadouts\sfp70.sqf"";}";
-						description="Forward Observer";
+						description="Forward Observer (OA)";
 						isPlayable=1;
 					};
 					id=364;
@@ -1213,7 +1213,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Adam Qvintus";
+							value="ALPHA QUEBEC";
 						};
 					};
 				};
@@ -1232,20 +1232,20 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3247.7068,5.0521274,3206.3606};
+						position[]={3247.707,5.0520926,3206.3611};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{this disableAI ""PATH"";" \n "group this setGroupId [""ERIK ADAM""];" \n "id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp70.sqf"";}";
-						description="Squad Leader@Erik Adam";
+						init="call{this disableAI ""PATH"";" \n "group this setGroupId [""ECHO ALPHA""];" \n "id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp70.sqf"";}";
+						description="Squad Leader@ECHO ALPHA";
 						isPlayable=1;
 					};
 					id=11;
 					type="sfp_m59w_squadleader";
-					atlOffset=4.7683716e-007;
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2268,7 +2268,7 @@ class Mission
 			{
 			};
 			id=10;
-			atlOffset=4.7683716e-007;
+			atlOffset=-9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2286,7 +2286,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Erik Adam";
+							value="ECHO ALPHA";
 						};
 					};
 				};
@@ -2305,20 +2305,20 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3256.7068,4.1711073,3206.3606};
+						position[]={3256.707,4.1711001,3206.3611};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{this disableAI ""PATH"";" \n "group this setGroupId [""FILIP ADAM""];" \n "id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp70.sqf"";}";
-						description="Squad Leader@Filip Adam";
+						init="call{this disableAI ""PATH"";" \n "group this setGroupId [""FOXTROT ALPHA""];" \n "id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp70.sqf"";}";
+						description="Squad Leader@FOXTROT ALPHA";
 						isPlayable=1;
 					};
 					id=24;
 					type="sfp_m59w_squadleader";
-					atlOffset=4.7683716e-007;
+					atlOffset=-4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3341,7 +3341,7 @@ class Mission
 			{
 			};
 			id=23;
-			atlOffset=4.7683716e-007;
+			atlOffset=-4.7683716e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3359,7 +3359,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Filip Adam";
+							value="FOXTROT ALPHA";
 						};
 					};
 				};
@@ -12721,7 +12721,7 @@ class Mission
 			class Attributes
 			{
 				condition="call{this}";
-				onActivation="call{[""o_spawn"", ""target_0"", o_squad, EAST] call trubb_fnc_spawnGroup;}";
+				onActivation="call{[""o_spawn"", ""target_0"", o_squad, EAST] call trubb_fnc_spawnOnHeadless;}";
 				sizeA=69.60601;
 				sizeB=45.308006;
 				activationBy="WEST";
@@ -14960,7 +14960,7 @@ class Mission
 			class Attributes
 			{
 				condition="call{this}";
-				onActivation="call{[""o_spawn"", ""target_1"", o_squad, EAST] call trubb_fnc_spawnGroup;}";
+				onActivation="call{[""o_spawn"", ""target_1"", o_squad, EAST] call trubb_fnc_spawnOnHeadless;}";
 				sizeA=69.606003;
 				sizeB=45.307999;
 				activationBy="WEST";
@@ -14977,7 +14977,7 @@ class Mission
 			class Attributes
 			{
 				condition="call{this}";
-				onActivation="call{[""o_spawn"", ""target_2"", o_squad, EAST] call trubb_fnc_spawnGroup;}";
+				onActivation="call{[""o_spawn"", ""target_2"", o_squad, EAST] call trubb_fnc_spawnOnHeadless;}";
 				sizeA=69.606003;
 				sizeB=45.307999;
 				activationBy="WEST";
@@ -14994,7 +14994,7 @@ class Mission
 			class Attributes
 			{
 				condition="call{this}";
-				onActivation="call{[""o_spawn"", ""target_3"", o_squad, EAST] call trubb_fnc_spawnGroup;}";
+				onActivation="call{[""o_spawn"", ""target_3"", o_squad, EAST] call trubb_fnc_spawnOnHeadless;}";
 				sizeA=69.606003;
 				sizeB=45.307999;
 				activationBy="WEST";
@@ -15012,7 +15012,7 @@ class Mission
 			class Attributes
 			{
 				condition="call{this}";
-				onActivation="call{[""o_spawn"", ""target_4"", o_squad, EAST] call trubb_fnc_spawnGroup;}";
+				onActivation="call{[""o_spawn"", ""target_4"", o_squad, EAST] call trubb_fnc_spawnOnHeadless;}";
 				sizeA=69.606003;
 				sizeB=45.307999;
 				activationBy="WEST";
@@ -15292,7 +15292,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={2834.3579,7.1868615,3984.4409};
+				position[]={2834.3604,7.1870441,3984.4409};
 				angles[]={5.8686786,0,6.2498641};
 			};
 			areaSize[]={1,-1,1};
@@ -15486,7 +15486,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={2834.7324,9.7549362,3990.0842};
+				position[]={2834.7346,9.7559614,3990.0857};
 				angles[]={0.0066592805,0,0.016662678};
 			};
 			areaSize[]={1,-1,1};
@@ -15680,7 +15680,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={2886.7336,9.5561543,3958.3137};
+				position[]={2886.7346,9.5562401,3958.3137};
 				angles[]={0.0066592805,0,0.016662678};
 			};
 			areaSize[]={1,-1,1};
@@ -15874,7 +15874,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={2899.3447,7.0543571,3950.3081};
+				position[]={2899.344,7.0542383,3950.3086};
 				angles[]={0.0066592805,0,0.016662678};
 			};
 			areaSize[]={1,-1,1};
@@ -16068,7 +16068,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={2915.064,12.742159,3943.3762};
+				position[]={2915.0623,12.741824,3943.3738};
 				angles[]={0.0066592805,0,0.016662678};
 			};
 			areaSize[]={1,-1,1};
@@ -16263,7 +16263,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={2929.29,13.083927,3923.1707};
+				position[]={2929.2898,13.083636,3923.1699};
 				angles[]={0.0066592805,0,0.016662678};
 			};
 			areaSize[]={1,-1,1};
@@ -16458,7 +16458,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={2933.3442,13.642957,3919.2751};
+				position[]={2933.3445,13.642897,3919.2747};
 				angles[]={0.0066592805,0,0.016662678};
 			};
 			areaSize[]={1,-1,1};
@@ -16653,7 +16653,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={2908.821,7.6677346,3924.6345};
+				position[]={2908.8218,7.66786,3924.634};
 				angles[]={0.0066592805,0,0.016662678};
 			};
 			areaSize[]={1,-1,1};
@@ -17544,26 +17544,32 @@ class Mission
 		class Item155
 		{
 			dataType="Marker";
-			position[]={2564.7698,31.175743,4026.1626};
+			position[]={2564.77,31.176001,4026.1631};
 			name="marker_24";
 			markerType="RECTANGLE";
 			type="rectangle";
-			a=4.196095;
-			b=4.196095;
-			angle=217.93666;
+			colorName="ColorGrey";
+			fillName="SolidFull";
+			a=4.1960001;
+			b=4.1960001;
+			angle=217.93692;
 			id=476;
+			atlOffset=0.24479485;
 		};
 		class Item156
 		{
 			dataType="Marker";
-			position[]={2687.2627,32.474617,4111.9238};
+			position[]={2687.2629,32.474998,4111.9238};
 			name="marker_25";
 			markerType="RECTANGLE";
 			type="rectangle";
-			a=4.196095;
-			b=4.196095;
-			angle=217.93666;
+			colorName="ColorGrey";
+			fillName="SolidFull";
+			a=4.1960001;
+			b=4.1960001;
+			angle=217.93692;
 			id=477;
+			atlOffset=0.00024032593;
 		};
 		class Item157
 		{
@@ -19048,8 +19054,8 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{this disableAI ""PATH"";" \n "group this setGroupId [""GUSTAV ADAM""];" \n "id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp70.sqf"";}";
-						description="Squad Leader@Gustav Adam";
+						init="call{this disableAI ""PATH"";" \n "group this setGroupId [""GOLF ALPHA""];" \n "id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp70.sqf"";}";
+						description="Squad Leader@GOLF ALPHA";
 						isPlayable=1;
 					};
 					id=588;
@@ -20090,7 +20096,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Gustav Adam";
+							value="GOLF ALPHA";
 						};
 					};
 				};
@@ -20112,7 +20118,7 @@ class Mission
 			};
 			id=598;
 			type="sfp_grk84";
-			atlOffset=-2.3841858e-006;
+			atlOffset=-0.015151024;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -20149,7 +20155,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this setVariable [""AFI_vehicle_gear"",""west"",false];" \n "this addMagazineCargo [""ACE_1Rnd_82mm_Mo_HE"", 40]; " \n "this addMagazineCargo [""ACE_1Rnd_82mm_Mo_Smoke"", 20];" \n "this addMagazineCargo [""ACE_1Rnd_82mm_Mo_Illum"", 40]; }";
+				init="call{this setVariable [""AFI_vehicle_gear"",""west"",false];" \n "if (isServer) then {" \n "    this addMagazineCargoGlobal [""ACE_1Rnd_82mm_Mo_HE"", 40]; " \n "    this addMagazineCargoGlobal [""ACE_1Rnd_82mm_Mo_Smoke"", 20];" \n "    this addMagazineCargoGlobal [""ACE_1Rnd_82mm_Mo_Illum"", 40]; " \n "};}";
 			};
 			id=599;
 			type="ZSN_West_Ammocrate";
@@ -20209,20 +20215,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3280.353,4.9094577,3204.9561};
+						position[]={3280.353,4.9094572,3204.9561};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{this disableAI ""PATH"";" \n "group this setGroupId [""HELGE ADAM""];" \n "id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp70.sqf"";}";
-						description="Squad Leader@Helge Adam";
+						init="call{this disableAI ""PATH"";" \n "group this setGroupId [""HOTEL ALPHA""];" \n "id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp70.sqf"";}";
+						description="Squad Leader@HOTEL ALPHA";
 						isPlayable=1;
 					};
 					id=601;
 					type="sfp_m59w_squadleader";
-					atlOffset=4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -21507,7 +21512,6 @@ class Mission
 			{
 			};
 			id=600;
-			atlOffset=4.7683716e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -21525,7 +21529,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Helge Adam";
+							value="HOTEL ALPHA";
 						};
 					};
 				};
@@ -21544,7 +21548,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3302.3533,5.584374,3208.9561};
+						position[]={3302.353,5.584374,3208.9561};
 						angles[]={0,3.1415927,0};
 					};
 					side="West";
@@ -21553,8 +21557,8 @@ class Mission
 					{
 						skill=0.41023374;
 						rank="SERGEANT";
-						init="call{this disableAI ""PATH"";" \n "group this setGroupId [""KALLE ADAM""];" \n "id = [""MOSL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp70.sqf"";}";
-						description="Team Leader@Kalle Adam";
+						init="call{this disableAI ""PATH"";" \n "group this setGroupId [""KILO ALPHA""];" \n "id = [""MOSL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp70.sqf"";}";
+						description="Team Leader@TANGO";
 						isPlayable=1;
 					};
 					id=612;
@@ -22213,7 +22217,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Kalle Adam";
+							value="KILO ALPHA";
 						};
 					};
 				};
@@ -22235,7 +22239,7 @@ class Mission
 			};
 			id=617;
 			type="sfp_grk84";
-			atlOffset=-7.1048737e-005;
+			atlOffset=-0.015201092;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22272,7 +22276,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this setVariable [""AFI_vehicle_gear"",""west"",false];" \n "this addMagazineCargo [""ACE_1Rnd_82mm_Mo_HE"", 40]; " \n "this addMagazineCargo [""ACE_1Rnd_82mm_Mo_Smoke"", 20];" \n "this addMagazineCargo [""ACE_1Rnd_82mm_Mo_Illum"", 40]; }";
+				init="call{this setVariable [""AFI_vehicle_gear"",""west"",false];" \n "if (isServer) then {" \n "    this addMagazineCargoGlobal [""ACE_1Rnd_82mm_Mo_HE"", 40]; " \n "    this addMagazineCargoGlobal [""ACE_1Rnd_82mm_Mo_Smoke"", 20];" \n "    this addMagazineCargoGlobal [""ACE_1Rnd_82mm_Mo_Illum"", 40]; " \n "};}";
 			};
 			id=618;
 			type="ZSN_West_Ammocrate";
@@ -25629,13 +25633,13 @@ class Mission
 		class Item215
 		{
 			dataType="Marker";
-			position[]={2884.772,-8.0570002,3723.3401};
+			position[]={2833.4478,3.5075684,3779.8372};
 			name="marker_32";
 			text="A4";
 			type="mil_dot";
 			colorName="ColorOrange";
 			id=754;
-			atlOffset=-8.9092178;
+			atlOffset=-0.56188774;
 		};
 		class Item216
 		{

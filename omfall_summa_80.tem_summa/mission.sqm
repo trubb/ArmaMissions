@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2079.6045,130.90691,3619.6384};
-		dir[]={-0.30938464,-0.53735375,0.78456616};
-		up[]={-0.19712624,0.84335804,0.49989077};
-		aside[]={0.93028659,2.5192276e-007,0.36684719};
+		pos[]={1520.7881,55.314709,4706.4102};
+		dir[]={0.055069443,-0.53771275,-0.84135449};
+		up[]={0.035120174,0.84312427,-0.53656596};
+		aside[]={-0.99788225,-5.7902071e-008,-0.065315746};
 	};
 };
 binarizationWanted=0;
@@ -647,20 +647,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1502,23.781443,4653.0498};
+						position[]={1502,23.781441,4653.0498};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						init="call{this disableAI ""PATH"";" \n "group this setGroupId [""ADAM QVINTUS""];" \n "id = [""PL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
-						description="Platoon Leader@Adam Qvintus";
+						init="call{this disableAI ""PATH"";" \n "group this setGroupId [""ALPHA QUEBECE""];" \n "id = [""PL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
+						description="Platoon Leader@ALPHA QUEBEC";
 						isPlayer=1;
 					};
 					id=8;
 					type="sfp_m59w_platoonleader";
-					atlOffset=1.9073486e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -786,7 +785,7 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						init="call{this disableAI ""PATH"";" \n "id = [""PL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
-						description="XO";
+						description="Platoon XO";
 						isPlayable=1;
 					};
 					id=795;
@@ -916,7 +915,7 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						init="call{this disableAI ""PATH"";" \n "id = [""FO"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
-						description="Forward Observer";
+						description="Forward Observer (OA)";
 						isPlayable=1;
 					};
 					id=589;
@@ -1316,7 +1315,6 @@ class Mission
 			{
 			};
 			id=7;
-			atlOffset=1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1334,7 +1332,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Adam Qvintus";
+							value="ALPHA QUEBEC";
 						};
 					};
 				};
@@ -1353,7 +1351,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1512,24.651457,4657.0498};
+						position[]={1512,24.651455,4657.0498};
 						angles[]={0,3.1415927,0};
 					};
 					side="West";
@@ -1361,13 +1359,12 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{this disableAI ""PATH"";" \n "group this setGroupId [""ERIK ADAM""];" \n "id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
-						description="Squad Leader@Erik Adam";
+						init="call{this disableAI ""PATH"";" \n "group this setGroupId [""ECHO ALPHA""];" \n "id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
+						description="Squad Leader@ECHO ALPHA";
 						isPlayable=1;
 					};
 					id=11;
 					type="sfp_m59w_squadleader";
-					atlOffset=1.9073486e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2400,7 +2397,6 @@ class Mission
 			{
 			};
 			id=10;
-			atlOffset=1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2418,7 +2414,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Erik Adam";
+							value="ECHO ALPHA";
 						};
 					};
 				};
@@ -2437,7 +2433,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1503,24.291452,4657.0498};
+						position[]={1503,24.291451,4657.0498};
 						angles[]={0,3.1415927,0};
 					};
 					side="West";
@@ -2445,12 +2441,13 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{this disableAI ""PATH"";" \n "group this setGroupId [""FILIP ADAM""];" \n "id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
-						description="Squad Leader@Filip Adam";
+						init="call{this disableAI ""PATH"";" \n "group this setGroupId [""FOXTROT ALPHA""];" \n "id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
+						description="Squad Leader@FOXTROT ALPHA";
 						isPlayable=1;
 					};
 					id=24;
 					type="sfp_m59w_squadleader";
+					atlOffset=-1.9073486e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3483,6 +3480,7 @@ class Mission
 			{
 			};
 			id=23;
+			atlOffset=-1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3500,7 +3498,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Filip Adam";
+							value="FOXTROT ALPHA";
 						};
 					};
 				};
@@ -9725,7 +9723,7 @@ class Mission
 			{
 				name="wave_0";
 				condition="call{triggerActivated task_0;}";
-				onActivation="call{[""o_start_0"", ""o_target_0"", o_squad, EAST] call trubb_fnc_spawnGroup;" \n "[""o_start_1"", ""o_target_1"", o_squad, EAST] call trubb_fnc_spawnGroup;" \n "[""o_start_2"", ""o_target_2"", o_squad, EAST] call trubb_fnc_spawnGroup;}";
+				onActivation="call{[""o_start_0"", ""o_target_0"", o_squad, EAST] call trubb_fnc_spawnOnHeadless;" \n "[""o_start_1"", ""o_target_1"", o_squad, EAST] call trubb_fnc_spawnOnHeadless;" \n "[""o_start_2"", ""o_target_2"", o_squad, EAST] call trubb_fnc_spawnOnHeadless;}";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={300,300,300};
@@ -9742,7 +9740,7 @@ class Mission
 			{
 				name="wave_1";
 				condition="call{triggerActivated task_0;}";
-				onActivation="call{[""o_start_3"", ""o_target_3"", o_squad, EAST] call trubb_fnc_spawnGroup;" \n "[""o_start_4"", ""o_target_4"", o_squad, EAST] call trubb_fnc_spawnGroup;" \n "[""o_start_5"", ""o_target_5"", o_squad, EAST] call trubb_fnc_spawnGroup;}";
+				onActivation="call{[""o_start_3"", ""o_target_3"", o_squad, EAST] call trubb_fnc_spawnOnHeadless;" \n "[""o_start_4"", ""o_target_4"", o_squad, EAST] call trubb_fnc_spawnOnHeadless;" \n "[""o_start_5"", ""o_target_5"", o_squad, EAST] call trubb_fnc_spawnOnHeadless;}";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={307,307,307};
@@ -10040,7 +10038,7 @@ class Mission
 			{
 				name="wave_2";
 				condition="call{triggerActivated wave_0;}";
-				onActivation="call{[""o_start_6"", ""o_target_6"", o_squad, EAST] call trubb_fnc_spawnGroup;" \n "[""o_start_7"", ""o_target_7"", o_squad, EAST] call trubb_fnc_spawnGroup;" \n "[""o_start_8"", ""o_target_8"", o_squad, EAST] call trubb_fnc_spawnGroup;}";
+				onActivation="call{[""o_start_6"", ""o_target_6"", o_squad, EAST] call trubb_fnc_spawnOnHeadless;" \n "[""o_start_7"", ""o_target_7"", o_squad, EAST] call trubb_fnc_spawnOnHeadless;" \n "[""o_start_8"", ""o_target_8"", o_squad, EAST] call trubb_fnc_spawnOnHeadless;}";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={420,420,420};
@@ -10057,7 +10055,7 @@ class Mission
 			{
 				name="wave_3";
 				condition="call{triggerActivated wave_1;}";
-				onActivation="call{[""o_start_9"", ""o_target_9"", o_squad, EAST] call trubb_fnc_spawnGroup;" \n "[""o_start_10"", ""o_target_10"", o_squad, EAST] call trubb_fnc_spawnGroup;" \n "[""o_start_11"", ""o_target_11"", o_squad, EAST] call trubb_fnc_spawnGroup;}";
+				onActivation="call{[""o_start_9"", ""o_target_9"", o_squad, EAST] call trubb_fnc_spawnOnHeadless;" \n "[""o_start_10"", ""o_target_10"", o_squad, EAST] call trubb_fnc_spawnOnHeadless;" \n "[""o_start_11"", ""o_target_11"", o_squad, EAST] call trubb_fnc_spawnOnHeadless;}";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={425,425,425};
@@ -11075,7 +11073,7 @@ class Mission
 			{
 				name="wave_4";
 				condition="call{triggerActivated wave_0;}";
-				onActivation="call{[""o_start_12"", ""o_target_12"", o_squad, EAST] call trubb_fnc_spawnGroup;" \n "[""o_start_12"", ""o_target_12"", o_squad, EAST] call trubb_fnc_spawnGroup;" \n "[""o_start_13"", ""o_target_13"", o_squad, EAST] call trubb_fnc_spawnGroup;" \n "[""o_start_13"", ""o_target_13"", o_squad, EAST] call trubb_fnc_spawnGroup;}";
+				onActivation="call{[""o_start_12"", ""o_target_12"", o_squad, EAST] call trubb_fnc_spawnOnHeadless;" \n "[""o_start_12"", ""o_target_12"", o_squad, EAST] call trubb_fnc_spawnOnHeadless;" \n "[""o_start_13"", ""o_target_13"", o_squad, EAST] call trubb_fnc_spawnOnHeadless;" \n "[""o_start_13"", ""o_target_13"", o_squad, EAST] call trubb_fnc_spawnOnHeadless;}";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={750,750,750};
@@ -12934,7 +12932,7 @@ class Mission
 			};
 			id=630;
 			type="sfp_grk84";
-			atlOffset=-0.00061225891;
+			atlOffset=-0.01574707;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -12971,7 +12969,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this setVariable [""AFI_vehicle_gear"",""west"",false];" \n "this addMagazineCargo [""ACE_1Rnd_82mm_Mo_HE"", 30]; " \n "this addMagazineCargo [""ACE_1Rnd_82mm_Mo_Smoke"", 15]; }";
+				init="call{this setVariable [""AFI_vehicle_gear"",""west"",false];" \n "if (isServer) then {" \n "    this addMagazineCargoGlobal [""ACE_1Rnd_82mm_Mo_HE"", 30]; " \n "    this addMagazineCargoGlobal [""ACE_1Rnd_82mm_Mo_Smoke"", 15]; " \n "};}";
 			};
 			id=631;
 			type="ZSN_West_Ammocrate";
@@ -13034,7 +13032,7 @@ class Mission
 			};
 			id=638;
 			type="sfp_grk84";
-			atlOffset=-0.0081577301;
+			atlOffset=-0.023286819;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -13071,7 +13069,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this setVariable [""AFI_vehicle_gear"",""west"",false];" \n "this addMagazineCargo [""ACE_1Rnd_82mm_Mo_HE"", 30]; " \n "this addMagazineCargo [""ACE_1Rnd_82mm_Mo_Smoke"", 15]; }";
+				init="call{this setVariable [""AFI_vehicle_gear"",""west"",false];" \n "if (isServer) then {" \n "    this addMagazineCargoGlobal [""ACE_1Rnd_82mm_Mo_HE"", 30]; " \n "    this addMagazineCargoGlobal [""ACE_1Rnd_82mm_Mo_Smoke"", 15]; " \n "};}";
 			};
 			id=639;
 			type="ZSN_West_Ammocrate";
@@ -19131,8 +19129,8 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{this disableAI ""PATH"";" \n "group this setGroupId [""GUSTAV ADAM""];" \n "id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
-						description="Squad Leader@Gustav Adam";
+						init="call{this disableAI ""PATH"";" \n "group this setGroupId [""GOLF ALPHA""];" \n "id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
+						description="Squad Leader@GOLF ALPHA";
 						isPlayable=1;
 					};
 					id=773;
@@ -20185,7 +20183,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Gustav Adam";
+							value="GOLF ALPHA";
 						};
 					};
 				};
@@ -20212,8 +20210,8 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="call{this disableAI ""PATH"";" \n "group this setGroupId [""HELGE ADAM""];" \n "id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
-						description="Squad Leader@Helge Adam";
+						init="call{this disableAI ""PATH"";" \n "group this setGroupId [""HOTEL ALPHA""];" \n "id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
+						description="Squad Leader@HOTEL ALPHA";
 						isPlayable=1;
 					};
 					id=784;
@@ -21534,7 +21532,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Helge Adam";
+							value="HOTEL ALPHA";
 						};
 					};
 				};
@@ -22274,7 +22272,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1559.8177,24.026495,4655.9795};
+						position[]={1559.818,24.02648,4655.98};
 						angles[]={0,6.2606535,0};
 					};
 					side="West";
@@ -22283,12 +22281,13 @@ class Mission
 					{
 						skill=0.41023374;
 						rank="SERGEANT";
-						init="call{this disableAI ""PATH"";" \n "group this setGroupId [""KALLE ADAM""];" \n "id = [""MOSL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
-						description="Team Leader@Kalle Adam";
+						init="call{this disableAI ""PATH"";" \n "group this setGroupId [""KILO ALPHA""];" \n "id = [""MOSL"", this] call compile preprocessFileLineNumbers ""loadouts\sfp80.sqf"";}";
+						description="Team Leader@KILO ALPHA";
 						isPlayable=1;
 					};
 					id=847;
 					type="sfp_m59w_squadleader";
+					atlOffset=1.9073486e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -22927,6 +22926,7 @@ class Mission
 			{
 			};
 			id=846;
+			atlOffset=1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22944,7 +22944,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Kalle Adam";
+							value="KILO ALPHA";
 						};
 					};
 				};
@@ -23484,11 +23484,11 @@ class Mission
 	{
 		class LinkIDProvider
 		{
-			nextID=79;
+			nextID=85;
 		};
 		class Links
 		{
-			items=79;
+			items=85;
 			class Item0
 			{
 				linkID=0;
@@ -24273,6 +24273,66 @@ class Mission
 			{
 				linkID=78;
 				item0=793;
+				item1=67;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item79
+			{
+				linkID=79;
+				item0=847;
+				item1=67;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item80
+			{
+				linkID=80;
+				item0=848;
+				item1=67;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item81
+			{
+				linkID=81;
+				item0=849;
+				item1=67;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item82
+			{
+				linkID=82;
+				item0=850;
+				item1=67;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item83
+			{
+				linkID=83;
+				item0=851;
+				item1=67;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item84
+			{
+				linkID=84;
+				item0=648;
 				item1=67;
 				class CustomData
 				{

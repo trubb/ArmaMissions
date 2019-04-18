@@ -26,6 +26,7 @@ class CfgFunctions {
             class initialize {};
             class kneel {};
             class spawnGroup {};
+            class spawnOnHeadless {};
             class stand {};
         };
     };

@@ -40,6 +40,8 @@ params ["_type", "_unit"];
     _atpack = "sfp_backpack_grg_loader";
     _ladder = "ACE_TacticalLadder_Pack";
     _parachute = "ACE_NonSteerableParachute";
+    _grspg = "CUP_B_Mk19_Gun_Bag";
+    _grspb = "CUP_B_Mk19_Tripod_Bag";
 
     _backradio = "sfp_ra180";
     _backradioLarge = "sfp_stridssack2000_ra_ksk90";
@@ -295,6 +297,17 @@ switch (_type) do {
         _unit addWeapon _vector;
     };
     
+    case "GMGG": {
+        RIFLEKIT;
+        _unit addBackpack _grspg;
+    };
+
+    case "GMGL": {
+        RIFLEKIT;
+        _unit addBackpack _grspb;
+        _unit addWeapon _binocular;
+    };
+
     case "CREW": {
         _unit forceAddUniform _uniform;
         for "_i" from 1 to 6 do {_unit addItemToUniform _bandage;};
