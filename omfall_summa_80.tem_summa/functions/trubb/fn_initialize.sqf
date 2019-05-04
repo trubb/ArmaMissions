@@ -1,6 +1,7 @@
 /*
  * Author: Trubb
  * Helper for initializing the start count variables
+ *
  * Arguments:
  * none
  *

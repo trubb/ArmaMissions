@@ -66,9 +66,9 @@ You are one Swedish rifle platoon, roughly corresponding to the IB77 organisatio
 player createDiaryRecord ["Diary",["IIA. Enemy Forces","
 Soviet motorised infantry.
 <br/>
-<br/>One of our patrols has seen roughly one platoon as well as one wheeled APC in the village.
+<br/>A scouting patrol has seen at least one platoon of soviets as well as their armoured vehicles in the village.
 <br/>
-<br/>We assume that they are capable to within 20 minutes initialise a counter-attack with other units to the south in order to retake the village.
+<br/>We assume that the enemy is capable to within 20 minutes initialise a counter-attack in order to retake the village.
 "]];
 
 player createDiaryRecord ["Diary",["I. Situation","

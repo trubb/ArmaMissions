@@ -88,9 +88,5 @@ A setup timer is present in the mission.
 <br/>To make calculations easier the center point of the mortar squad is the mortar marker.
 <br/>
 <br/>Due to the era this mission is played in your force has no night vision devices or flashlights available.
-<br/>Instead you will have to rely on flares fired by the mortar team if you require additional lightning.
-<br/>
-<br/>
-<br>Additionally, due to an inadequate allocation of flare gun ammunition your flare guns should only to be used for signaling.
-<br/>The platoon leader should establish a protocol for their use, for example to signal when a position has been taken.
+<br/>Instead you will have to rely on your flare guns, or flares fired by the mortar team if you require additional lightning.
 "]];

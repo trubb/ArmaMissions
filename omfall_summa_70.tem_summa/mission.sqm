@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=787;
+		nextID=791;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3276.2073,45.472046,3164.8972};
-		dir[]={0.03999804,-0.54400718,0.83812809};
-		up[]={0.025932236,0.83907908,0.54338902};
-		aside[]={0.99886388,7.6121069e-008,-0.047669124};
+		pos[]={3294.0308,36.769814,3175.5535};
+		dir[]={-0.10355156,-0.58987337,0.80083054};
+		up[]={-0.075644188,0.80749476,0.58500379};
+		aside[]={0.99174476,-4.4703484e-008,0.12823786};
 	};
 };
 binarizationWanted=0;
@@ -505,7 +505,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=241;
+		items=242;
 		class Item0
 		{
 			dataType="Group";
@@ -15292,7 +15292,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={2834.3604,7.1870441,3984.4409};
+				position[]={2834.3594,7.186974,3984.4409};
 				angles[]={5.8686786,0,6.2498641};
 			};
 			areaSize[]={1,-1,1};
@@ -15486,7 +15486,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={2834.7346,9.7559614,3990.0857};
+				position[]={2834.7344,9.7557831,3990.0852};
 				angles[]={0.0066592805,0,0.016662678};
 			};
 			areaSize[]={1,-1,1};
@@ -15680,7 +15680,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={2886.7346,9.5562401,3958.3137};
+				position[]={2886.7344,9.5562668,3958.3142};
 				angles[]={0.0066592805,0,0.016662678};
 			};
 			areaSize[]={1,-1,1};
@@ -15874,7 +15874,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={2899.344,7.0542383,3950.3086};
+				position[]={2899.3438,7.0542517,3950.3088};
 				angles[]={0.0066592805,0,0.016662678};
 			};
 			areaSize[]={1,-1,1};
@@ -16068,7 +16068,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={2915.0623,12.741824,3943.3738};
+				position[]={2915.0625,12.741871,3943.3748};
 				angles[]={0.0066592805,0,0.016662678};
 			};
 			areaSize[]={1,-1,1};
@@ -16458,7 +16458,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={2933.3445,13.642897,3919.2747};
+				position[]={2933.3447,13.643004,3919.2747};
 				angles[]={0.0066592805,0,0.016662678};
 			};
 			areaSize[]={1,-1,1};
@@ -16653,7 +16653,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={2908.8218,7.66786,3924.634};
+				position[]={2908.821,7.6676526,3924.634};
 				angles[]={0.0066592805,0,0.016662678};
 			};
 			areaSize[]={1,-1,1};
@@ -25956,6 +25956,149 @@ class Mission
 			colorName="ColorBlue";
 			id=786;
 			atlOffset=0.00036430359;
+		};
+		class Item241
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4640.916,28.355612,25.257999};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						description="DO NOT SELECT THIS SLOT@DO NOT SELECT THIS SLOT";
+						isPlayable=1;
+					};
+					id=790;
+					type="C_man_1_1_F";
+					atlOffset=-1.9073486e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="Enh_featureType";
+							expression="_this setFeatureType parseNumber (_value)";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male05GRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="Enh_ambientAnimParams";
+							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="ASIS";
+											};
+										};
+									};
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=789;
+			atlOffset=-1.9073486e-006;
 		};
 	};
 	class Connections

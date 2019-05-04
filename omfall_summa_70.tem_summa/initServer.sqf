@@ -6,9 +6,7 @@ o_squad = [
 	"ZSN_EurosolEMG",
 	"ZSN_EurosolELAW",
 	"ZSN_EurosolELAWAss",
-	"ZSN_EurosolEMedic",
-	"ZSN_EurosolEB",
-	"ZSN_EurosolEB"
+	"ZSN_EurosolEMedic"
 ];
 
 // The maximum percentage of casualties a given side can take before automatically losing.

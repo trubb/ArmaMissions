@@ -5,7 +5,7 @@ Victory Conditions:
 <br/>The task is accomplished when:
 <br/>The Russian forces have been forced to divert reinforcements to the 5-way junction, and you have reached friendly lines.
 <br/>
-<br/>If you take casualties exceeding 90% of your original force you are forced to retreat and the mission is deemed a failure.
+<br/>If you take casualties exceeding 90% of your original force the mission is deemed a failure.
 <br/>
 <br/>This mission was created for Anrop.se by Trubb
 "]];
@@ -52,7 +52,7 @@ a. Equipment
 "]];
 
 player createDiaryRecord ["Diary",["III. Mission","
-Attack the <marker name = 'opfor_junc'>5-way junction south of SUMMAJARVI</marker> to draw reinforcements away from the suspected coming attack in the east near <marker name = 'ASD'>ROAD 61</marker>.
+Attack the <marker name = 'opfor_junc'>5-way junction south of SUMMAJARVI</marker> to draw reinforcements away from the suspected coming attack in the east near <marker name = 'r61'>ROAD 61</marker>.
 <br/>
 <br/>Then withdraw northeast to the <marker name = 'blu_def'>defensive position</marker> west of ROAD 61 and reinforce the friendly forces already there.
 <br/>
@@ -64,7 +64,7 @@ Attack the <marker name = 'opfor_junc'>5-way junction south of SUMMAJARVI</marke
 player createDiaryRecord ["Diary",["IIB. Friendly Forces","
 You are one Swedish rifle platoon, roughly corresponding to the IB77 organisational model anno 1991.
 <br/>
-<br/>Friendly forces defend several <marker name = 'blu_def'>defensive</marker> <marker name = 'asa'>positions</marker> near <marker name = 'ASD'>ROAD 61</marker>.
+<br/>Friendly forces defend several <marker name = 'blu_def'>defensive</marker> <marker name = 'asa'>positions</marker> near <marker name = 'r61'>ROAD 61</marker>.
 "]];
 
 player createDiaryRecord ["Diary",["IIA. Enemy Forces","
@@ -75,7 +75,7 @@ Russian motorised infantry.
 "]];
 
 player createDiaryRecord ["Diary",["I. Situation","
-Russian forces have seized the <marker name = 'opfor_junc'>5-way junction south of SUMMAJARVI</marker>, and are reportedly preparing an attack along <marker name = 'ASD'>ROAD 61</marker>.
+Russian forces have seized the <marker name = 'opfor_junc'>5-way junction south of SUMMAJARVI</marker>, and are reportedly preparing an attack along <marker name = 'r61'>ROAD 61</marker>.
 <br/>
 <br/>In order to blunt the attack you have been tasked with attacking the 5-way junction, and then reinforce the defenses near ROAD 61.
 "]];
