@@ -397,7 +397,7 @@ switch (_type) do {
     };
 
     case "MTVR": {
-        _unit addItemCountToCargo(_mohe, 60);
+        _unit addItemCountToCargo(_mohe, 20);
         _unit addItemCountToCargo(_mosmok, 20);
     };
 
