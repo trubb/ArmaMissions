@@ -96,8 +96,13 @@ A setup timer is present in the mission.
 <br/>A hard completion timer is also present.
 <br/>After leaving the LPD dock you have 120 minutes to complete the mission.
 <br/>
+<br/>The four RHIBs you are mounted in will respawn at the LPD if there are no players within 500m.
+<br/>The other four RHIBs will respawn at the LPD if there are no players within 50 meters, these are to be used by respawning players.
+<br/>
 <br/>Keep in mind that the LAV-25 is VERY slow in the water compared to the RHIBs.
 <br/>Also keep in mind that razorwire eats wheels.
+<br/>
+<br/>DO NOT TRY TO DRIVE THROUGH IT!
 <br/>
 <br/>The platoon leader should add markers denoting staging points, phases, and objectives to the map during the briefing.
 "]];

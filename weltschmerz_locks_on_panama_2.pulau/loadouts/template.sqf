@@ -124,9 +124,10 @@ _bandage = "ACE_elasticBandage";
 _tourniquet = "ACE_tourniquet";
 _morphine = "ACE_morphine";
 _adenosine = "ACE_adenosine";
-_splint = "adv_aceSplint_splint";
+_splint = "ACE_splint";
 _epine = "ACE_epinephrine";
 _blood = "ACE_bloodIV";
+_pak = "ACE_personalAidKit";
 
 _democharge = "DemoCharge_Remote_Mag";
 _clacker = "ACE_Clacker";
@@ -213,12 +214,14 @@ switch (_type) do {
         clearAllItemsFromBackpack _unit;
         addItemCountToBackpack(_blood, 4);
         addItemCountToBackpack(_epine, 8);
+        addItemCountToBackpack(_adenosine, 8);
         addItemCountToBackpack(_morphine, 8);
         addItemCountToBackpack(_splint, 8);
         addItemCountToBackpack(_tourniquet, 8);
         addItemCountToBackpack(_bandage, 20);
         addItemCountToBackpack(_smoker, 2);
         addItemCountToBackpack(_smokeg, 2);
+        addItemCountToBackpack(_pak, 1);
     };
 
     case "TL": {
@@ -387,6 +390,7 @@ switch (_type) do {
         _unit addItemCountToCargo(_smoke, 12);
         _unit addItemCountToCargo(_bandage, 40);
         _unit addItemCountToCargo(_epine, 8);
+        _unit addItemCountToCargo(_adenosine, 8);
         _unit addItemCountToCargo(_blood, 8);
         _unit addItemCountToCargo(_morphine, 8);
         _unit addItemCountToCargo(_splint, 20);
