@@ -240,6 +240,10 @@ switch (_type) do {
 
     case "RIFLE": {
         RIFLEKIT;
+    };
+
+    case "BEARER": {
+        RIFLEKIT;
         _unit addBackpack _backpack;
         addItemCountToBackpack(_rifleMag, 8);
         addItemCountToBackpack(_arMag, 2);

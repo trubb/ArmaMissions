@@ -1,8 +1,8 @@
 class Header{gameType =  Coop;};
 
 author = "Trubb | Anrop.se";
-onLoadName = "Coop 38 | Weltschmertz - Locks on the Panama Canal";
-briefingName = "Coop 38 | Weltschmertz - Locks on the Panama Canal";
+onLoadName = "Coop 47 | Weltschmerz - Locks on the Panama Canal";
+briefingName = "Coop 47 | Weltschmerz - Locks on the Panama Canal";
 loadScreen = "loadscreen.jpg";
 overviewPicture = "loadscreen.jpg";
 onLoadMission = "";

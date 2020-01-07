@@ -1,8 +1,8 @@
 class Header{gameType =  Coop;};
 
 author = "Trubb | Anrop.se";
-onLoadName = "Coop 38 | Weltschmertz - Smashing the Lock";
-briefingName = "Coop 38 | Weltschmertz - Smashing the Lock";
+onLoadName = "Coop 47 | Weltschmerz - Smashing the Lock";
+briefingName = "Coop 47 | Weltschmerz - Smashing the Lock";
 loadScreen = "loadscreen.jpg";
 overviewPicture = "loadscreen.jpg";
 onLoadMission = "";

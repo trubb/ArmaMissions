@@ -49,8 +49,9 @@ a. Equipment
 <br/>b. Medical resources
 <br/>Advanced ACE medical with splints. Your platoon medic can help you!
 <br/>
-<br/>The platoon leader is able to call in mortar fire missions.
+<br/>Alpha 10 and Alpha 15 are able to call in mortar fire missions.
 <br/>HE and SMOKE shells are available.
+<br/>A total of 6 fire missions can be called.
 "]];
 
 player createDiaryRecord ["Diary",["III. Mission","
@@ -94,7 +95,7 @@ A setup timer is present in the mission.
 <br/>You should probably not leave the safety of your LPD or try to engage the enemy while it is active.
 <br/>
 <br/>A hard completion timer is also present.
-<br/>After leaving the LPD dock you have 120 minutes to complete the mission.
+<br/>After leaving the LPD dock you have 70 minutes to complete the mission.
 <br/>
 <br/>The four RHIBs you are mounted in will respawn at the LPD if there are no players within 500m.
 <br/>The other four RHIBs will respawn at the LPD if there are no players within 50 meters, these are to be used by respawning players.

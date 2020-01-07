@@ -87,7 +87,7 @@ A setup timer is present in the mission.
 <br/>You should probably not leave the safety of the beach, or try to engage the enemy while it is active.
 <br/>
 <br/>A hard completion timer is also present.
-<br/>After crossing into the jungle you have 120 minutes to complete the mission.
+<br/>After crossing into the jungle you have 70 minutes to complete the mission.
 <br/>
 <br/>Keep in mind that razorwire can be removed by use of a wirecutter.
 <br/>

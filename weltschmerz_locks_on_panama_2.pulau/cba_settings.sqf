@@ -39,7 +39,7 @@
     force ace_medical_statemachine_fatalInjuriesPlayer = 0;     // Fatal damage can be received in any state
 
     /* Fatal damage */
-    force ace_medical_fatalDamageSource = 0;                    // Only hits to vital organs (chest/head) count as fatal
+    force ace_medical_fatalDamageSource = 1;                    // Sum of damage count as fatal
 
     /* Cardiac arrest / CPR */
     force ace_medical_statemachine_cardiacArrestTime = 60;      // How many seconds it takes a unit to die if it enters cardiac arrest
