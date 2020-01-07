@@ -29,7 +29,7 @@
 
     /*************** ACE Medical ***************/
     /* AI specific */
-    force ace_medical_ai_enabledFor = 2;                        // Medical system enabled for AI
+    force ace_medical_ai_enabledFor = 0;                        // Medical system not enabled for AI
     force ace_medical_AIDamageThreshold = 1.3;                  // AI can take x damage
     force ace_medical_statemachine_AIUnconsciousness = false;   // AI can go unconscious
     force ace_medical_statemachine_fatalInjuriesAI = 0;         // AI can receive fatal injuries in any state
