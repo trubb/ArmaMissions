@@ -40,7 +40,7 @@ a. Equipment
 <br/>Team leaders carry wirecutters.
 <br/>
 <br/>Respawn:
-<br/>30 replacement soldiers are allocated to the platoon in case the platoon takes any casualties.
+<br/>35 replacement soldiers are allocated to the platoon in case the platoon takes any casualties.
 <br/>They will be released from stasis in waves into the well deck of your LPD.
 <br/>
 <br/>Resupply:

@@ -184,6 +184,7 @@ switch (_type) do {
     case "PL": {
         RIFLEKIT;
         BACKRADIO;
+        addItemCountToUniform(_dagr, 1);
         addItemCountToUniform(_pistolMag, 3);
         _unit addWeapon _pistol;
         _unit addWeapon _binocular;
@@ -192,6 +193,7 @@ switch (_type) do {
     
     case "SL": {
         CLOTHES;
+        addItemCountToUniform(_dagr, 1);
         addItemCountToUniform(_pistolMag, 3);
         _unit addWeapon _pistol;
         _unit addBackpack _backpack;
@@ -226,6 +228,7 @@ switch (_type) do {
 
     case "TL": {
         CLOTHES;
+        addItemCountToUniform(_dagr, 1);
         _unit addBackpack _backpack;
         clearAllItemsFromBackpack _unit;
         GRENADES;
