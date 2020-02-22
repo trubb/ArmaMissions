@@ -14,6 +14,8 @@ if (!(local _unit)) exitwith {}; // to make the script not run in some bad way
 #define addItemCountToVest(item, count) addItemCountToInventory(item, count, addItemToVest);
 #define addItemCountToBackpack(item, count) addItemCountToInventory(item, count, addItemToBackpack);
 
+#define addItemCountToCargo(item, count) addItemCargoGlobal [item, count];
+
 removeAllWeapons _unit;
 removeAllItems _unit;
 removeAllAssignedItems _unit;
@@ -110,6 +112,8 @@ _glsmokey = "1Rnd_SmokeYellow_Grenade_shell";
 _chemuho = "ACE_Chemlight_UltraHiOrange";
 _chemhb = "ACE_Chemlight_HiBlue";
 _chemhg = "ACE_Chemlight_HiGreen";
+_chemir ="ACE_Chemlight_IR";
+_irstrobe ="ACE_IR_Strobe_Item";
 
 _flareg = "ACE_HandFlare_Green";
 _flarer = "ACE_HandFlare_Red";
@@ -144,6 +148,7 @@ _designatorBattery = "Laserbatteries";
 _spottingscope = "rhsusf_bino_leopold_mk4";
 _gps = "ItemGPS";
 _uavterm = "B_UavTerminal";
+_uavbattery ="ACE_UAVBattery";
 _dagr = "ACE_DAGR";
 _rtable = "ACE_RangeTable_82mm";
 _maptools = "ACE_MapTools";
@@ -168,6 +173,8 @@ _flashlight = "ACE_Flashlight_MX991";
     addItemCountToUniform(_chemuho, 2); \
     addItemCountToUniform(_chemhg, 2); \
     addItemCountToUniform(_chemhb, 2); \
+    addItemCountToUniform(_chemir, 2); \
+    addItemCountToUniform(_irstrobe, 2); \
     addItemCountToUniform(_flarer, 2); \
     _unit addVest _vest; \
     _unit addHeadgear _headGear; \
@@ -255,6 +262,14 @@ switch (_type) do {
         _unit addWeapon _spottingscope;
         _unit addBackpack _backpack;
         addItemCountToBackpack(_arMag, 1);
+    };
+
+    case "BASIC": {
+        RIFLEKIT;
+        _unit addBackpack _backpack;
+        addItemCountToBackpack(_arMag, 2);
+        addItemCountToBackpack(_rifleMag, 6);
+        addItemCountToBackpack(_rifleTMag, 2);
     };
 
     case "DMR": {
@@ -367,6 +382,39 @@ switch (_type) do {
         _unit addHeadgear _headGearHeli;
         _unit linkItem "ACE_NVG_Wide";
         _unit linkItem _gps;
+    };
+
+    case "CRATE": {
+        _unit addItemCountToCargo(_rifleMag, 20);
+        _unit addItemCountToCargo(_arMag, 4);
+        _unit addItemCountToCargo(_grenade, 8);
+        _unit addItemCountToCargo(_glhe, 12);
+        _unit addItemCountToCargo(_glsmokew, 6);
+        _unit addItemCountToCargo(_glflarew, 2);
+        _unit addItemCountToCargo(_glflareg, 2);
+        _unit addItemCountToCargo(_glflarer, 2);
+        _unit addItemCountToCargo(_glflareir, 4);
+        _unit addItemCountToCargo(_smoke, 6);
+        _unit addItemCountToCargo(_bandage, 20);
+        _unit addItemCountToCargo(_epine, 4);
+        _unit addItemCountToCargo(_adenosine, 4);
+        _unit addItemCountToCargo(_blood, 4);
+        _unit addItemCountToCargo(_morphine, 4);
+        _unit addItemCountToCargo(_splint, 10);
+        _unit addItemCountToCargo(_tourniquet, 8);
+        _unit addItemCountToCargo(_lat, 1);
+        _unit addItemCountToCargo(_chemuho, 8);
+        _unit addItemCountToCargo(_chemhg, 8);
+        _unit addItemCountToCargo(_chemhb, 8);
+        _unit addItemCountToCargo(_chemir, 8);
+        _unit addItemCountToCargo(_irstrobe, 8);
+        _unit addItemCountToCargo(_flarer, 8);
+        _unit addItemCountToCargo(_uavbattery, 1);
+    };
+
+    case "UAVCRATE": {
+        _unit addItemCountToCargo(_uavbattery, 1);
+        _unit addItemCountToCargo(_uavpack, 1);
     };
 
 };

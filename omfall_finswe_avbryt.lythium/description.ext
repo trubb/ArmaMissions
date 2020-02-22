@@ -1,8 +1,8 @@
 class Header{gameType =  Coop;};
 
 author = "Trubb | Anrop.se";
-onLoadName = "";
-briefingName = "";
+onLoadName = "Omfall | AVBRYT!";
+briefingName = "Omfall | AVBRYT!";
 loadScreen = "loadscreen.jpg";
 overviewPicture = "loadscreen.jpg";
 onLoadMission = "";
@@ -84,7 +84,7 @@ class Params
 		title = "Safe Start";
 		values[] = {0,1,2,4,6,9,14};
 		texts[] = {"Safe Start Off","2","3","5","7","10","15"};
-		default = 0;
+		default = 4;
 		code = "f_param_mission_timer = %1";
 	};
 };
