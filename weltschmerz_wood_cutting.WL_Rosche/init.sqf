@@ -1,0 +1,2 @@
+
+nul = [] execVM "Briefing.sqf";
