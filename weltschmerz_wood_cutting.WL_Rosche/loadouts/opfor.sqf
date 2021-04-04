@@ -4,16 +4,13 @@
 */
 params ["_type", "_unit"];
 
-    _type = _this select 0;
-    _unit = _this select 1;
-
     if (!(local _unit)) exitwith {}; // to make the script not run in some bad way
 
     #define addItemCountToInventory(item, count, inventory) for "_i" from 1 to count do {_unit inventory item;};
     #define addItemCountToUniform(item, count) addItemCountToInventory(item, count, addItemToUniform);
     #define addItemCountToVest(item, count) addItemCountToInventory(item, count, addItemToVest);
     #define addItemCountToBackpack(item, count) addItemCountToInventory(item, count, addItemToBackpack);
-    
+
     #define addItemCountToCargo(item, count) addItemCargoGlobal [item, count];
 
     removeAllWeapons _unit;
@@ -132,7 +129,7 @@ params ["_type", "_unit"];
 
     #define ATTACHMENTS \
         _unit addPrimaryWeaponItem _sightholo; \
-        _unit addPrimaryWeaponItem _laser;
+        //_unit addPrimaryWeaponItem _laser;
 
     #define BACKRADIO \
         _unit addBackpack _backradio; \
@@ -172,7 +169,7 @@ switch (_type) do {
         BACKRADIO;
         _unit addWeapon _binocular;
     };
-    
+
     case "SL": {
         RIFLEKIT;
         BACKRADIO;

@@ -2,9 +2,10 @@
 
 player createDiaryRecord ["Diary", ["Victory Conditions & Credits", "
 Victory Conditions:<br/>
-Destroy a majority of the Patriot launchers to complete the mission!<br/>
+Destroy the Patriot launchers to complete the mission!<br/>
 <br/>
-If you take 80% casualties you will be forced to retreat.
+<!--If you take 80% casualties you will be forced to retreat.-->
+No real limitations regarding time or death, if you get stuck try again!
 
 <br/>
 <br/>
@@ -38,7 +39,7 @@ Standard combat load of ammunition.<br/>
 b. Medical resources<br/>
 Advanced medical system. Your platoon medic can help you!<br/>
 <br/>
-TUN Respawn (3 mins) with Mobile Spawnpoint.
+TUN Respawn (3 mins) with Mobile Spawnpoint. Try not to park it within like 100m of the enemy or it will be hard to use.
 <br/>
 An extra MSP is provided in the form of another GAZ truck, don't let it be destroyed too!
 <br/>
@@ -51,7 +52,7 @@ Ammunition and medical supplies are carried in the GAZ trucks.
 Pack up the MSP to access its cargo space.
 <br/>
 <br/>
-No other help, you're on your own!
+No other help than this, you're on your own!
 "]];
 
 player createDiaryRecord ["Diary",["III. Mission","
@@ -71,7 +72,7 @@ The NATO forces in the area consist of mechanized US Army units. They have likel
 "]];
 
 player createDiaryRecord ["Diary",["I. Situation","
-Our platoon has been tasked with punching through enemy lines to find a Patriot battery and destroying its components.
+Our platoon has been tasked with punching through enemy lines in order to find and destroy a Patriot battery its components.
 "]];
 
 player createDiaryRecord ["Diary",["IMPORTANT NOTES","

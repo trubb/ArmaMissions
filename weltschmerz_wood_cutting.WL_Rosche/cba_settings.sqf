@@ -35,7 +35,7 @@ force ace_map_gestures_enabled = true;                  // Allow pointing in the
 /*************** ACE Medical ***************/
 /* AI specific */
 force ace_medical_ai_enabledFor = 0;                        // Medical system not enabled for AI
-force ace_medical_AIDamageThreshold = 1.0;                  // AI can take x damage
+force ace_medical_AIDamageThreshold = 0.8;                  // AI can take x damage
 force ace_medical_statemachine_AIUnconsciousness = false;   // Can AI go unconscious
 force ace_medical_statemachine_fatalInjuriesAI = 0;         // In what state can AI receive fatal damage?
 
@@ -130,7 +130,6 @@ force ace_medical_treatment_treatmentTimeSplint = 7;
 force ace_medical_treatment_treatmentTimeTourniquet = 7;
 force ace_medical_treatment_woundStitchTime = 5;
 
-
 /*************** ACE Mortar ***************/
 force ace_mk6mortar_airResistanceEnabled = true;        // Mortar rounds are affected by air and wind
 force ace_mk6mortar_allowComputerRangefinder = false;   // Can't use the artillery computer interface
@@ -138,7 +137,7 @@ force ace_mk6mortar_allowCompass = true;                // CAN use the sight
 force ace_mk6mortar_useAmmohandling = true;             // Manual loading of mortars required - THIS AFFECTS AI TOO
 
 /*************** ACE NVG ***************/
-force ace_nightvision_aimDownSightsBlur = 1;            // Sights are blurred
+force ace_nightvision_aimDownSightsBlur = 1;            // Sights are blurred when using NVG
 force ace_nightvision_disableNVGsWithSights = false;    // Allow NVG in sights so there's a reason to have them on
 force ace_nightvision_effectScaling = 0.5;              // Overall effect
 force ace_nightvision_fogScaling = 0.5;                 // How much fog in terraing
@@ -171,15 +170,15 @@ force tun_msp_enable = true;                                        // MSP enabl
 force tun_msp_progresbar_time_pack = 5;                             // Time taken for teardown
 force tun_msp_progresbar_time_setup = 5;                            // Time taken for setup
 force tun_msp_clasnames_civilian = "C_Truck_02_transport_F";        // Vehicles that civilians can use as MSP
-force tun_msp_clasnames_east = "rhs_gaz66_flat_vdv";                  // Vehicles that REDFOR can use as MSP
+force tun_msp_clasnames_east = "rhs_gaz66_flat_vdv";                // Vehicles that REDFOR can use as MSP
 force tun_msp_clasnames_resistance = "I_Truck_02_transport_F";      // Vehicles that INDEP can use as MSP
 force tun_msp_clasnames_west = "UK3CB_TKA_B_RHIB";                  // Vehicles that BLUFOR can use as MSP
-force tun_msp_contested_check_interval = 30;                        // Time in seconds
-force tun_msp_contested_radius_max = 100;                           // Radius where there needs to be more enemies than allies to disable MSP
-force tun_msp_contested_radius_min = 50;                            // Within this radius MSP is always disabled
+force tun_msp_contested_radius_max = 50;                            // Radius where there needs to be more enemies than allies to disable MSP
+force tun_msp_contested_radius_min = 25;                            // Within this radius MSP is always disabled
+force tun_msp_report_enemies_range = 75;                            // Within which range enemies are reported as nearby ?
 force tun_msp_report_enemies = true;                                // If msp availability due to enemy presence is reported
+force tun_msp_contested_check_interval = 30;                        // Time in seconds
 force tun_msp_report_enemies_interval = 30;                         // Time in seconds
-force tun_msp_report_enemies_range = 150;                           // Within which range enemies are reported as nearby ?
 
 /*************** TUN - Respawn System ***************/
 force tun_respawn_enable = true;                                    // Is respawn system enabled
@@ -193,11 +192,11 @@ force tun_respawn_spectate_Cameramode_free = true;                  // free spec
 force tun_respawn_tickets_civ = 0;                                  // Number of tickets for CIV
 force tun_respawn_tickets_east = 0;                                 // Number of tickets for OPFOR
 force tun_respawn_tickets_guer = 0;                                 // Number of tickets INDEP
-force force tun_respawn_tickets_west = 0;                                 // Number of tickets for BLUFOR
+force force tun_respawn_tickets_west = 0;                           // Number of tickets for BLUFOR
 force tun_respawn_time_civ = 15;                                    // Time in MINUTES
-force tun_respawn_time_east = 3;                                   // Time in MINUTES
+force tun_respawn_time_east = 3;                                    // Time in MINUTES
 force tun_respawn_time_guer = 15;                                   // Time in MINUTES
-force tun_respawn_time_west = 15;                                    // Time in MINUTES
+force tun_respawn_time_west = 15;                                   // Time in MINUTES
 force tun_respawn_use_gearscript = false;                           // Wether or not to use AFI gearscript ?? How use saved gear instead ??
-tun_respawn_waiting_area_range = 100;								// diameter of waiting area in meters
-tun_respawn_forced_respawn = false;
+force tun_respawn_waiting_area_range = 100;							// diameter of waiting area in meters
+force tun_respawn_forced_respawn = false;							// "Only forced respawn (scripted) no timed waves!

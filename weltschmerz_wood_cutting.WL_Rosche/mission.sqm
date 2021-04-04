@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1025;
+	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=5214;
+		nextID=5215;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6171.7559,71.023186,10982.891};
-		dir[]={-0.49611279,-0.664612,0.55871767};
-		up[]={-0.44128457,0.74718767,0.49697027};
-		aside[]={0.74775898,1.383014e-007,0.66397214};
+		pos[]={6256.98,120.0272,10925.409};
+		dir[]={-0.68333548,-0.40845719,0.60521817};
+		up[]={-0.30578449,0.91277403,0.27082756};
+		aside[]={0.66304302,-3.1408854e-007,0.74862742};
 	};
 };
 binarizationWanted=0;
@@ -2907,7 +2907,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=308;
+		items=309;
 		class Item0
 		{
 			dataType="Group";
@@ -26782,8 +26782,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4935.2817,49.865963,11538.93};
-				angles[]={0.022664838,2.170408,6.2658529};
+				position[]={4935.2822,49.865955,11538.93};
+				angles[]={0.022671828,2.1704042,6.2658539};
 			};
 			side="Empty";
 			flags=4;
@@ -26792,14 +26792,37 @@ class Mission
 			};
 			id=5115;
 			type="CamoNet_BLUFOR_big_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item303
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4953.8813,48.85894,11581.747};
-				angles[]={6.2717552,2.170408,6.2696447};
+				position[]={4953.8809,48.858948,11581.747};
+				angles[]={6.2717533,2.1704042,6.2696414};
 			};
 			side="Empty";
 			flags=4;
@@ -26808,6 +26831,29 @@ class Mission
 			};
 			id=5116;
 			type="CamoNet_BLUFOR_big_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item304
 		{
@@ -26815,7 +26861,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={4903.2231,51.323757,11467.932};
-				angles[]={6.2741294,2.170408,6.2326221};
+				angles[]={6.274127,2.1704042,6.2326231};
 			};
 			side="Empty";
 			flags=4;
@@ -26824,6 +26870,29 @@ class Mission
 			};
 			id=5117;
 			type="CamoNet_BLUFOR_big_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item305
 		{
@@ -27060,6 +27129,445 @@ class Mission
 					};
 				};
 				nAttributes=10;
+			};
+		};
+		class Item308
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6646.4873,21.713154,10955.659};
+				angles[]={0.0068446645,5.9653955,6.2793565};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=5214;
+			type="rhs_btr80a_vdv";
+			atlOffset=-1.9073486e-006;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="rhs_decalVV_type";
+					expression="_this setVariable ['rhs_decalVV_type', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="HonorGDR";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="rhs_decalArmy";
+					expression="if(parseNumber _value >= 0)then{ [_this, [ [ 'Label', cBTRBackArmSymPlaces,  _this getVariable ['rhs_decalArmy_type','Army'],call compile _value] ] ] call rhs_fnc_decalsInit};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="-1";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="crate_r2_unhide";
+					expression="[_this,_value,'crate_r2_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="rhs_decalFront_type";
+					expression="_this setVariable ['rhs_decalFront_type', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="PlatoonVDV";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="rhs_decalNumber_type";
+					expression="if(_value != 'NoChange')then{ _this setVariable ['rhs_decalNumber_type', _value];[_this,[['Number', cBTR3NumberPlaces, _value]]] call rhs_fnc_decalsInit}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="DefaultRed";
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="crate_l3_unhide";
+					expression="[_this,_value,'crate_l3_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="rhs_decalPlatoon";
+					expression="if(parseNumber _value >= 0)then{ [_this, [ [ 'Label', cBTRPlnSymPlaces,  _this getVariable ['rhs_decalPlatoon_type','Platoon'],call compile _value] ] ] call rhs_fnc_decalsInit};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="-1";
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="rhs_decalArmy_type";
+					expression="_this setVariable ['rhs_decalArmy_type', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="PlatoonVDV";
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="rhs_decalFront";
+					expression="if(parseNumber _value >= 0)then{ [_this, [ [ 'Label', cBTROMONSymbolPlaces,  _this getVariable ['rhs_decalFront_type','Army'],call compile _value] ] ] call rhs_fnc_decalsInit};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="-1";
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="rhs_externalMount";
+					expression="[_this,_value] call rhs_fnc_lockTop";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute10
+				{
+					property="crate_l1_unhide";
+					expression="[_this,_value,'crate_l1_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute11
+				{
+					property="rhs_decalPlatoon_type";
+					expression="_this setVariable ['rhs_decalPlatoon_type', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="PlatoonVDV";
+						};
+					};
+				};
+				class Attribute12
+				{
+					property="ace_cargo_space";
+					expression="[_this, _value] call ace_cargo_fnc_setSpace;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=8;
+						};
+					};
+				};
+				class Attribute13
+				{
+					property="rhs_decalRightTurret";
+					expression="if(parseNumber _value >= 0)then{ [_this, [ [ 'Label', cBTRRightGvardSymPlaces,  _this getVariable ['rhs_decalRightTurret_type','Honor'],call compile _value] ] ] call rhs_fnc_decalsInit};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="-1";
+						};
+					};
+				};
+				class Attribute14
+				{
+					property="rhs_decalRightTurret_type";
+					expression="_this setVariable ['rhs_decalRightTurret_type', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="PlatoonVDV";
+						};
+					};
+				};
+				class Attribute15
+				{
+					property="wheel_1_unhide";
+					expression="[_this,_value,'wheel_1_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute16
+				{
+					property="rhs_decalNumber";
+					expression="if( _value >= 0)then{if( _value == 0)then{{[_this setobjectTexture [_x,'a3\data_f\clear_empty.paa']]}foreach cBTR3NumberPlaces}else{[_this, [['Number', cBTR3NumberPlaces, _this getVariable ['rhs_decalNumber_type','Default'], _value] ] ] call rhs_fnc_decalsInit}};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=137;
+						};
+					};
+				};
+				class Attribute17
+				{
+					property="crate_r1_unhide";
+					expression="[_this,_value,'crate_r1_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute18
+				{
+					property="rhs_decalVV";
+					expression="if(parseNumber _value >= 0)then{ [_this, [ [ 'Label', cBTRVVLetterSymPlaces,  _this getVariable ['rhs_decalVV_type','Platoon'],call compile _value] ] ] call rhs_fnc_decalsInit};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="-1";
+						};
+					};
+				};
+				class Attribute19
+				{
+					property="crate_l2_unhide";
+					expression="[_this,_value,'crate_l2_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute20
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""rhs_30Rnd_545x39_7N10_AK"",""HandGrenade"",""SmokeShell"",""rhs_rpg7_PG7VL_mag"",""rhs_100Rnd_762x54mmR"",""rhs_100Rnd_762x54mmR_green""],[40,20,15,6,12,6]],[[""ToolKit""],[1]],[[""rhs_sidor""],[1]]],false]";
+						};
+					};
+				};
+				class Attribute21
+				{
+					property="ace_repair_editorLoadedWheels";
+					expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=2;
+						};
+					};
+				};
+				nAttributes=22;
 			};
 		};
 	};
