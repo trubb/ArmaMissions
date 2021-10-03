@@ -1,0 +1,104 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=4;
+	};
+	class MarkerIDProvider
+	{
+		nextID=2;
+	};
+	class Camera
+	{
+		pos[]={1143.701,106.34995,4917.2456};
+		dir[]={0.85188389,-0.42887905,0.30070323};
+		up[]={0.40443251,0.90335768,0.1427594};
+		aside[]={0.33286607,2.4435576e-007,-0.94300061};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Ui_F"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=1;
+		class Item0
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+	};
+};
+randomSeed=13942650;
+class ScenarioData
+{
+	author="Trubb";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.2;
+		startWind=0.1000001;
+		startWaves=0.1;
+		forecastWeather=0.2;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		wavesForced=1;
+		windForced=1;
+		year=2030;
+		month=6;
+		day=15;
+		hour=12;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=3;
+		class Item0
+		{
+			dataType="Marker";
+			position[]={1211.455,3,5060.3462};
+			name="marker_1";
+			text="EAM-station eller motsvarande sändare för en early warning radar bor här";
+			type="b_installation";
+			id=1;
+		};
+		class Item1
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={1260.201,2.75,4988.96};
+			};
+			title="Spela upp ljud playsound3D från en terminal nånstans i ett hus";
+			id=2;
+		};
+		class Item2
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={1370.583,2.6370001,4940.4878};
+			};
+			title="Anfall as jänkare";
+			id=3;
+			atlOffset=0.00023984909;
+		};
+	};
+};
