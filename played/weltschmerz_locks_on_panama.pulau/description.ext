@@ -1,0 +1,137 @@
+class Header{gameType =  Coop;};
+
+author = "Trubb | Anrop.se";
+onLoadName = "Coop 47 | Weltschmerz - Locks on the Panama Canal";
+briefingName = "Coop 47 | Weltschmerz - Locks on the Panama Canal";
+loadScreen = "loadscreen.jpg";
+overviewPicture = "loadscreen.jpg";
+onLoadMission = "";
+overviewText = "";
+
+DisabledAi = 1;
+/*
+RESPAWN and DELAY handled via 3DEN editor
+respawn = 1;
+respawnDelay = 2;
+*/
+respawnButton = 1;
+enableDebugConsole = 1;
+respawnOnStart = -1;
+corpseLimit = 100;
+
+class CfgFunctions {
+	class trubb {
+		class trubb {
+			class calculatePercentage {};
+			class checkEndCondition {};
+			class countPlayers {};
+			class endCondition {};
+			class initialize {};
+			class kneel {};
+			class moFire {};
+			class spawnGroup {};
+			class spawnOnHeadless {};
+			class stand {};
+			class targetOffset {};
+		};
+	};
+
+	class F {
+		class common {
+			file = "f\common";
+			class processParamsArray {
+				preInit = 1;
+				postInit = 1;
+			};
+		};
+	};
+};
+
+class cfgNotifications
+{
+	class Template
+	{
+		title = ""; // Tile displayed as text on black background. Filled by arguments.
+		iconPicture = ""; // Small icon displayed in left part. Colored by "color", filled by arguments.
+		iconText = ""; // Short text displayed over the icon. Colored by "color", filled by arguments.
+		description = ""; // Brief description displayed as structured text. Colored by "color", filled by arguments.
+		color[] = {1,1,1,1}; // Icon and text color
+		duration = 5; // How many seconds will the notification be displayed
+		priority = 0; // Priority; higher number = more important; tasks in queue are selected by priority
+		difficulty[] = {}; // Required difficulty settings. All listed difficulties has to be enabled
+	};
+
+	class SafeStart
+	{
+		title = "SAFE START";
+		description = "%1";
+		iconPicture="\A3\UI_F\data\IGUI\Cfg\Actions\settimer_ca.paa";
+		duration = 59;
+	};
+	class SafeStartMissionStarting
+	{
+		title = "SAFE START";
+		description = "%1";
+		iconPicture="\A3\UI_F\data\IGUI\Cfg\Actions\settimer_ca.paa";
+		duration = 3;
+	};
+};
+
+class Params
+{
+	class f_param_mission_timer
+	{
+		title = "Safe Start";
+		values[] = {0,1,2,4,6,9,14};
+		texts[] = {"Safe Start Off","2","3","5","7","10","15"};
+		default = 2;
+		code = "f_param_mission_timer = %1";
+	};
+};
+
+class CfgDebriefingSections {
+	class acex_killTracker {
+		title = "Acex Killed Events";
+		variable = "acex_killTracker_outputText";
+	};
+};
+
+class CfgDebriefing {
+
+	class trubb_b_dead_end {
+		title = "BLUFOR retreats!";
+		subtitle = "BLUFOR sustained too large losses!";
+		description = "BLUFOR sustained too large losses!";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+	class trubb_i_dead_end {
+		title = "INDEP retreats!";
+		subtitle = "INDEP sustained too large losses!";
+		description = "INDEP sustained too large losses!";
+		pictureBackground = "";
+		picture = "n_inf";
+		pictureColor[] = {0,0.5,0,1};
+	};
+
+	class trubb_o_dead_end {
+		title = "OPFOR retreats!";
+		subtitle = "OPFOR sustained too large losses!";
+		description = "OPFOR sustained too large losses!";
+		pictureBackground = "";
+		picture = "o_inf";
+		pictureColor[] = {0.5,0,0,1};
+	};
+
+	class trubb_time_end {
+		title = "The time ran out!";
+		subtitle = "The alloted time ran out!";
+		description = "You took too long to complete your assigned task!";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0.69,0.25,0.12,0.8};
+	};
+
+};

@@ -1,0 +1,225 @@
+respawn = 3;
+respawnDelay = 2;
+respawnButton = 0;
+enableDebugConsole = 1;
+respawnOnStart = -1;
+corpseLimit = 100;
+
+class Params
+{
+	class ZSN_WSize
+	{
+		title = "Wave Size"; // Param name visible in the list
+		values[] = {1,2,3,4,5,6,7,8,9,10}; // Values; must be integers; has to have the same number of elements as 'texts'
+		texts[] = {"1","2","3","4","5","6","7","8","9","10"}; // Description of each selectable item
+		default = 8; // Default value; must be listed in 'values' array, otherwise 0 is used
+	};
+	class ZSN_WCount
+	{
+		title = "Number of Waves"; // Param name visible in the list
+		values[] = {1,2,3,4,5,6,7,8,9,10,-1}; // Values; must be integers; has to have the same number of elements as 'texts'
+		texts[] = {"1","2","3","4","5","6","7","8","9","10","Infinite"}; // Description of each selectable item
+		default = -1; // Default value; must be listed in 'values' array, otherwise 0 is used
+	};
+};
+class CfgFunctions 
+{
+	class trubb
+	{
+		class trubb
+		{
+			class spawnGroup {};
+		};
+	};
+	class ZSN
+	{
+		class Functions
+		{
+			class addarsenal
+			{
+				file = "functions\fn_addarsenal.sqf";
+			};
+			class allplayersdead
+			{
+				file = "functions\fn_allplayersdead.sqf";
+			};
+			class respawndebug
+			{
+				file = "functions\fn_respawndebug.sqf";
+			};
+			class spawnwave_east
+			{
+				file = "functions\fn_spawnwave_east.sqf";
+			};
+			class spawnwave_resistance
+			{
+				file = "functions\fn_spawnwave_resistance.sqf";
+			};
+			class spawnwave_west
+			{
+				file = "functions\fn_spawnwave_west.sqf";
+			};
+			class waverespawn
+			{
+				file = "functions\fn_waverespawn.sqf";
+			};
+			class clearweapon
+			{
+				file = "functions\fn_clearweapon.sqf";
+			};
+			class loadinventory
+			{
+				file = "functions\fn_loadinventory.sqf";
+			};
+			class localplayerinit
+			{
+				file = "functions\fn_localplayerinit.sqf";
+			};
+			class safetyfirst
+			{
+				file = "functions\fn_safetyfirst.sqf";
+			};
+		};
+	};
+};
+class CfgRespawnInventory
+{
+// opfor
+	class ZSN_O_SquadLeader
+	{
+		weapons[] = {"hlc_rifle_ak74_dirty","Binocular"};
+		magazines[] = {"CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_HandGrenade_RGD5","CUP_HandGrenade_RGD5","SmokeShell","SmokeShell"};
+		items[] = {"FirstAidKit","FirstAidKit"};
+		linkedItems[] = {"CUP_V_O_SLA_Carrier_Belt","CUP_H_SLA_Helmet","ItemMap","ItemCompass","ItemWatch","TFAR_fadak"};
+		uniformClass = "ZSN_Uniform_KLMK";
+		backpack = "";
+	};
+	class ZSN_O_TeamLeader
+	{
+		weapons[] = {"hlc_rifle_ak74_dirty","Binocular"};
+		magazines[] = {"CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_HandGrenade_RGD5","CUP_HandGrenade_RGD5","SmokeShell","SmokeShell"};
+		items[] = {"FirstAidKit","FirstAidKit"};
+		linkedItems[] = {"CUP_V_O_SLA_Carrier_Belt","CUP_H_SLA_Helmet","ItemMap","ItemCompass","ItemWatch","TFAR_fadak"};
+		uniformClass = "ZSN_Uniform_KLMK";
+		backpack = "";
+	};
+	class ZSN_O_Soldier1
+	{
+		weapons[] = {"hlc_rifle_ak74_dirty","Binocular"};
+		magazines[] = {"CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_HandGrenade_RGD5","CUP_HandGrenade_RGD5","SmokeShell","SmokeShell"};
+		items[] = {"FirstAidKit","FirstAidKit"};
+		linkedItems[] = {"CUP_V_O_SLA_Carrier_Belt","CUP_H_SLA_Helmet","ItemMap","ItemCompass","ItemWatch","TFAR_fadak"};
+		uniformClass = "ZSN_Uniform_KLMK";
+		backpack = "";
+	};
+	class ZSN_O_Soldier2
+	{
+		weapons[] = {"hlc_rifle_ak74_dirty","Binocular"};
+		magazines[] = {"CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_HandGrenade_RGD5","CUP_HandGrenade_RGD5","SmokeShell","SmokeShell"};
+		items[] = {"FirstAidKit","FirstAidKit"};
+		linkedItems[] = {"CUP_V_O_SLA_Carrier_Belt","CUP_H_SLA_Helmet","ItemMap","ItemCompass","ItemWatch","TFAR_fadak"};
+		uniformClass = "ZSN_Uniform_KLMK";
+		backpack = "";
+	};
+	class ZSN_O_Soldier3
+	{
+		weapons[] = {"hlc_rifle_ak74_dirty","Binocular"};
+		magazines[] = {"CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_HandGrenade_RGD5","CUP_HandGrenade_RGD5","SmokeShell","SmokeShell"};
+		items[] = {"FirstAidKit","FirstAidKit"};
+		linkedItems[] = {"CUP_V_O_SLA_Carrier_Belt","CUP_H_SLA_Helmet","ItemMap","ItemCompass","ItemWatch","TFAR_fadak"};
+		uniformClass = "ZSN_Uniform_KLMK";
+		backpack = "";
+	};
+	class ZSN_O_Soldier4
+	{
+		weapons[] = {"hlc_rifle_ak74_dirty","Binocular"};
+		magazines[] = {"CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_HandGrenade_RGD5","CUP_HandGrenade_RGD5","SmokeShell","SmokeShell"};
+		items[] = {"FirstAidKit","FirstAidKit"};
+		linkedItems[] = {"CUP_V_O_SLA_Carrier_Belt","CUP_H_SLA_Helmet","ItemMap","ItemCompass","ItemWatch","TFAR_fadak"};
+		uniformClass = "ZSN_Uniform_KLMK";
+		backpack = "";
+	};
+	class ZSN_O_Soldier5
+	{
+		weapons[] = {"hlc_rifle_ak74_dirty","Binocular"};
+		magazines[] = {"CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_HandGrenade_RGD5","CUP_HandGrenade_RGD5","SmokeShell","SmokeShell"};
+		items[] = {"FirstAidKit","FirstAidKit"};
+		linkedItems[] = {"CUP_V_O_SLA_Carrier_Belt","CUP_H_SLA_Helmet","ItemMap","ItemCompass","ItemWatch","TFAR_fadak"};
+		uniformClass = "ZSN_Uniform_KLMK";
+		backpack = "";
+	};
+	class ZSN_O_Soldier6
+	{
+		weapons[] = {"hlc_rifle_ak74_dirty","Binocular"};
+		magazines[] = {"CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_HandGrenade_RGD5","CUP_HandGrenade_RGD5","SmokeShell","SmokeShell"};
+		items[] = {"FirstAidKit","FirstAidKit"};
+		linkedItems[] = {"CUP_V_O_SLA_Carrier_Belt","CUP_H_SLA_Helmet","ItemMap","ItemCompass","ItemWatch","TFAR_fadak"};
+		uniformClass = "ZSN_Uniform_KLMK";
+		backpack = "";
+	};
+	class ZSN_O_Medic
+	{
+		weapons[] = {"hlc_rifle_ak74_dirty","Binocular"};
+		magazines[] = {"CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_30Rnd_545x39_AK_M","CUP_HandGrenade_RGD5","CUP_HandGrenade_RGD5","SmokeShell","SmokeShell"};
+		items[] = {"FirstAidKit","FirstAidKit"};
+		linkedItems[] = {"CUP_V_O_SLA_Carrier_Belt","CUP_H_SLA_Helmet","ItemMap","ItemCompass","ItemWatch","TFAR_fadak"};
+		uniformClass = "ZSN_Uniform_KLMK";
+		backpack = "";
+	};
+
+// blufor
+	class ZSN_B_SquadLeader
+	{
+		weapons[] = {"sfp_ak4","Binocular"};
+		magazines[] = {"sfp_20Rnd_762x51_ak4","sfp_20Rnd_762x51_ak4","sfp_20Rnd_762x51_ak4","sfp_20Rnd_762x51_ak4","sfp_20Rnd_762x51_ak4","sfp_20Rnd_762x51_ak4","sfp_20Rnd_762x51_ak4","sfp_handgrenade_shgr56","sfp_handgrenade_shgr56","sfp_handgrenade_shgr56","SmokeShell","SmokeShell","SmokeShellBlue"};
+		items[] = {"ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_morphine","ACE_MapTools"};
+		linkedItems[] = {"sfp_stridssele_extrabag","sfp_m37w_helmet_dok","ItemMap","ItemCompass","ItemWatch","TFAR_anprc152"};
+		uniformClass = "sfp_m59w_uniform";
+		backpack = "sfp_stridssele_backpack";
+	};
+	class ZSN_B_TeamLeader
+	{
+		weapons[] = {"sfp_ak4","CUP_launch_M72A6","Binocular"};
+		magazines[] = {"sfp_20Rnd_762x51_ak4","sfp_20Rnd_762x51_ak4","sfp_20Rnd_762x51_ak4","sfp_20Rnd_762x51_ak4","sfp_20Rnd_762x51_ak4","sfp_20Rnd_762x51_ak4","sfp_20Rnd_762x51_ak4","sfp_handgrenade_shgr56","sfp_handgrenade_shgr56","sfp_handgrenade_shgr56","SmokeShell","SmokeShell","SmokeShellBlue"};
+		items[] = {"ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_morphine"};
+		linkedItems[] = {"sfp_stridssele_extrabag","sfp_m37w_helmet_dok","ItemMap","ItemCompass","TFAR_microdagr","TFAR_rf7800str"};
+		uniformClass = "sfp_m59w_uniform";
+		backpack = "sfp_stridssele_backpack";
+	};
+	class ZSN_B_Rifleman
+	{
+		weapons[] = {"sfp_ak4","CUP_launch_M72A6"};
+		magazines[] = {"sfp_20Rnd_762x51_ak4","sfp_20Rnd_762x51_ak4","sfp_20Rnd_762x51_ak4","sfp_20Rnd_762x51_ak4","sfp_20Rnd_762x51_ak4","sfp_20Rnd_762x51_ak4","sfp_20Rnd_762x51_ak4","sfp_20Rnd_762x51_ak4","sfp_handgrenade_shgr56","sfp_handgrenade_shgr56"};
+		items[] = {"ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_morphine"};
+		linkedItems[] = {"sfp_stridssele_extrabag","sfp_m37w_helmet_dok","ItemMap","ItemCompass","ItemWatch"};
+		uniformClass = "sfp_m59w_uniform";
+		backpack = "";
+	};
+	class ZSN_B_Machinegunner
+	{
+		weapons[] = {"sfp_ksp58"};
+		magazines[] = {"sfp_249Rnd_762x51_ksp58","sfp_249Rnd_762x51_ksp58","sfp_249Rnd_762x51_ksp58","sfp_handgrenade_shgr56"};
+		items[] = {"ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_morphine","ACE_SpareBarrel"};
+		linkedItems[] = {"sfp_stridssele_extrabag","sfp_m37w_helmet_dok","ItemMap","ItemCompass","ItemWatch"};
+		uniformClass = "sfp_m59w_uniform";
+		backpack = "sfp_stridssele_backpack";
+	};
+	class ZSN_B_MGAssistant
+	{
+		weapons[] = {"sfp_ak4","Binocular"};
+		magazines[] = {"sfp_20Rnd_762x51_ak4","sfp_20Rnd_762x51_ak4","sfp_20Rnd_762x51_ak4","sfp_20Rnd_762x51_ak4","sfp_20Rnd_762x51_ak4","sfp_20Rnd_762x51_ak4","sfp_20Rnd_762x51_ak4","sfp_20Rnd_762x51_ak4","sfp_handgrenade_shgr56","sfp_handgrenade_shgr56","sfp_249Rnd_762x51_ksp58","sfp_249Rnd_762x51_ksp58","sfp_249Rnd_762x51_ksp58"};
+		items[] = {"ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_morphine"};
+		linkedItems[] = {"sfp_stridssele_extrabag","sfp_m37w_helmet_dok","ItemMap","ItemCompass","ItemWatch"};
+		uniformClass = "sfp_m59w_uniform";
+		backpack = "sfp_stridssele_backpack";
+	};
+	class ZSN_B_Medic
+	{
+		weapons[] = {"sfp_kpistm45"};
+		magazines[] = {"sfp_36Rnd_9mm_kpistm45","sfp_36Rnd_9mm_kpistm45","sfp_36Rnd_9mm_kpistm45","sfp_36Rnd_9mm_kpistm45","sfp_36Rnd_9mm_kpistm45","sfp_36Rnd_9mm_kpistm45","SmokeShell","SmokeShell","sfp_handgrenade_shgr56","sfp_handgrenade_shgr56","SmokeShellPurple"};
+		items[] = {"ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_epinephrine","ACE_epinephrine","ACE_bloodIV","ACE_bloodIV"};
+		linkedItems[] = {"sfp_stridssele_medic","sfp_m37w_helmet_dok","ItemMap","ItemCompass","ItemWatch"};
+		uniformClass = "sfp_m59w_uniform";
+		backpack = "sfp_stridssele_backpack";
+	};
+};
