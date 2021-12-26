@@ -26,7 +26,7 @@
     // ie.
     private ["_marker_prefix", "_marker_count"];
     _marker_prefix = "border";
-		_marker_count = 4;
+	_marker_count = 10;
 
     for "_i" from 1 to _marker_count do {
         tun_border_polygon pushBack (getMarkerPos (format ["%2_%1", _i,_marker_prefix]));

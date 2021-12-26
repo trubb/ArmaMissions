@@ -8,12 +8,6 @@ spawnable_squad = [
 	"B_Soldier_F"
 ];
 
-// The maximum percentage of casualties a given side can take before automatically losing.
-// Edit their values to your liking
-trubb_east_casualty_limit = 75;
-trubb_indep_casualty_limit = 75;
-trubb_west_casualty_limit = 100;
-
 // Do not edit these values yourself
 trubb_wait = false;
 trubb_mission_end = false;

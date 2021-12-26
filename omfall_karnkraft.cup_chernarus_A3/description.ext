@@ -1,8 +1,8 @@
 class Header{gameType =  Coop;};
 
 author = "Trubb | Anrop.se";
-onLoadName = "";
-briefingName = "";
+onLoadName = "Omfall | Kärnkraft";
+briefingName = "Omfall | Kärnkraft";
 loadScreen = "loadscreen.jpg";
 overviewPicture = "loadscreen.jpg";
 onLoadMission = "";
@@ -13,14 +13,7 @@ respawn = "Base";
 Respawndelay = 999;
 DisabledAi = 1;
 
-/*
-RESPAWN and DELAY handled via 3DEN editor
-respawn = 1;
-respawnDelay = 2;
-*/
-//respawnButton = 1;
 enableDebugConsole = 1;
-//respawnOnStart = -1;
 corpseLimit = 100;
 
 class CfgFunctions {
@@ -90,6 +83,69 @@ class Params
 		texts[] = {"Safe Start Off","2","3","5","7","10","15"};
 		default = 5;
 		code = "f_param_mission_timer = %1";
+	};
+
+	// The maximum percentage of casualties a given side can take before automatically losing.
+	// i.e. "if more than N% of the players belonging to <side> are dead the mission ends.
+	class t_east_casualty_limit
+	{
+		title = "Max simultaneous OPFOR (player) casualties";
+		values[] = {
+				0,5,10,15,20,25,
+				30,35,40,45,50,
+				55,60,65,70,75,
+				80,85,90,95,100,
+				69
+			};
+		texts[] = {
+				"0%","5%","10%","15%","20%","25%",
+				"30%","35%","40%","45%","50%",
+				"55%","60%","65%","70%","75%",
+				"80%","85%","90%","95%","100%",
+				"nice%"
+			};
+		default = 75;
+		code = "t_east_casualty_limit = %1";
+	};
+	class t_indep_casualty_limit
+	{
+		title = "Max simultaneous INDEP (player) casualties";
+		values[] = {
+				0,5,10,15,20,25,
+				30,35,40,45,50,
+				55,60,65,70,75,
+				80,85,90,95,100,
+				69
+			};
+		texts[] = {
+				"0%","5%","10%","15%","20%","25%",
+				"30%","35%","40%","45%","50%",
+				"55%","60%","65%","70%","75%",
+				"80%","85%","90%","95%","100%",
+				"nice%"
+			};
+		default = 75;
+		code = "t_indep_casualty_limit = %1";
+	};
+	class t_west_casualty_limit
+	{
+		title = "Max simultaneous BLUFOR (player) casualties";
+		values[] = {
+				0,5,10,15,20,25,
+				30,35,40,45,50,
+				55,60,65,70,75,
+				80,85,90,95,100,
+				69
+			};
+		texts[] = {
+				"0%","5%","10%","15%","20%","25%",
+				"30%","35%","40%","45%","50%",
+				"55%","60%","65%","70%","75%",
+				"80%","85%","90%","95%","100%",
+				"nice%"
+			};
+		default = 75;
+		code = "t_west_casualty_limit = %1";
 	};
 };
 

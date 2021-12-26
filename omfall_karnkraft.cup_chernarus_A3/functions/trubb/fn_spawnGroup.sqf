@@ -22,6 +22,7 @@ params [
 private _group = [getMarkerPos _trubb_start, _trubb_side, _trubb_units ] call BIS_fnc_spawnGroup;
 
 {
+	// put gear script here if wanted
 	_x disableAI "COVER";
 	_x disableAI "SUPPRESSION";
 } forEach units _group;
