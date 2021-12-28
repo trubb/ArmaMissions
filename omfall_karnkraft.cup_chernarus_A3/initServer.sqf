@@ -1,11 +1,11 @@
 
 [] execVM "f\safeStart\f_safeStart.sqf";
 
-spawnable_squad = [
-	"B_Soldier_F",
-	"B_Soldier_F",
-	"B_Soldier_F",
-	"B_Soldier_F"
+locals = [
+	"rhsgref_cdf_reg_rifleman",
+	"rhsgref_cdf_reg_rifleman",
+	"rhsgref_cdf_reg_rifleman",
+	"rhsgref_cdf_reg_rifleman"
 ];
 
 // Do not edit these values yourself

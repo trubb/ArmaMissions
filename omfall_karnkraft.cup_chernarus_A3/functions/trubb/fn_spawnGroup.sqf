@@ -23,6 +23,8 @@ private _group = [getMarkerPos _trubb_start, _trubb_side, _trubb_units ] call BI
 
 {
 	// put gear script here if wanted
+	_type = ["SL", "AT", "RIF", "AR"]call BIS_fnc_selectRandom;
+	id = [_type, _x] call compile preprocessFileLineNumbers "loadouts\opfor.sqf";
 	_x disableAI "COVER";
 	_x disableAI "SUPPRESSION";
 } forEach units _group;

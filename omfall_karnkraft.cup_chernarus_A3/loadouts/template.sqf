@@ -34,7 +34,7 @@ _unit linkItem "ItemMap";
 _unit linkItem "ItemCompass";
 _unit linkItem "ItemRadio";     // Which radio will be given is defined via TFAR CBA Settings
 _unit linkItem "ItemWatch";     // give watch or microDAGR
-_unit linkItem "TFAR_microdagr";
+_unit linkItem "TFAR_rf7800str";    // default rifleman radio, define radio for leaders below
 //_unit linkItem "rhsusf_ANPVS_14";
 
 _headGear = [
@@ -56,8 +56,9 @@ _atpack = "sfp_backpack_grg_loader";
 _ladder = "ACE_TacticalLadder_Pack";
 _parachute = "ACE_NonSteerableParachute";
 
-_backradio = "sfp_ra180";
-_backradioLarge = "sfp_ra180";
+_handradio = "TFAR_anprc152";
+_backradio = "sfp_stridssele_backpack";
+_backradioLarge = "sfp_stridssele_backpack";
 
 _uniform = ["sfp_m58w_uniform", "sfp_m58w_uniform_alt1"] call BIS_fnc_selectRandom;
 
@@ -154,6 +155,7 @@ _defkit = "ACE_DefusalKit";
 _etool = "ACE_EntrenchingTool";
 _wirecutter = "ACE_wirecutter";
 _toolkit = "ToolKit";
+_handcuffs = "ACE_CableTie";
 
 _binocular = "Binocular";
 _vector = "ACE_Vector";
@@ -187,7 +189,8 @@ _flashlight = "ACE_Flashlight_MX991";
 
 #define GRENADES \
     addItemCountToVest(_smoke, 2); \
-    addItemCountToVest(_grenade, 2);
+    addItemCountToVest(_grenade, 2); \
+    addItemCountToVest(_handcuffs, 2);
 
 #define RIFLEMAGS \
     addItemCountToVest(_rifleTMag, 2); \
@@ -217,6 +220,7 @@ switch (_type) do {
         BACKRADIO;
         _unit addWeapon _binocular;
         _unit addItemToUniform(_dagr);
+        _unit linkItem _handradio;
     };
 
     case "MEDIC": {
@@ -233,6 +237,7 @@ switch (_type) do {
         addItemCountToBackpack(_smoker, 1);
         addItemCountToBackpack(_smokeg, 1);
         addItemCountToBackpack(_pak, 1);
+        _unit linkItem _handradio;
     };
     
     case "SL": {
@@ -241,6 +246,7 @@ switch (_type) do {
         _unit addWeapon _binocular;
         _unit addItemToUniform(_dagr);
         addItemCountToBackpack(_arMag, 2);
+        _unit linkItem _handradio;
     };
 
     case "CLS": {
@@ -475,7 +481,7 @@ switch (_type) do {
         _unit addItemCountToCargo(_smoke, 4);
         //_unit addItemCountToCargo(_glhe, 12);
         //_unit addItemCountToCargo(_glsmokew, 6);
-        _unit addWeaponCargoGlobal [_lat, 1];
+        //_unit addWeaponCargoGlobal [_lat, 1];
     };
 
     case "MEDBOX": {

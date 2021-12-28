@@ -36,20 +36,18 @@ Mission by Trubb for Anrop.se
 
 player createDiaryRecord ["Diary", ["VII. Gameplay settings","
 Medical Settings
-<br/>Go here
+<br/>AFI medical settings* are in use.
 <br/>
-<br/Respawn settings
-<br/>
-<br/>
-<br/Other mod settings
+<br/>Respawn settings
+<br/>4-minute waves, you have 25 tickets, try not to die.
 "]];
 
 player createDiaryRecord ["Diary", ["VI. Victory Conditions","
 Victory Conditions:
-<br/>HOW TO WIN.
+<br/>Successfully search through the village.
 <br/>
 <br/>End:
-<br/>No end trigger available, recommended time 60-90 minutes or until all friendly forces have returned to the starting position after a successful raid.
+<br/>No end trigger available, recommended time no more than 60 minutes.
 "]];
 
 player createDiaryRecord ["Diary", ["V. Command and Signal"," 
@@ -97,37 +95,53 @@ These buttons are activated after briefing phase ends.
 
 player createDiaryRecord ["Diary",["IV. Support and Assets","
 a. Equipment
-<br/>How much ammo?
-<br/>Utility equipment?
+<br/>You carry a standard combat load.
+<br/>Look in the Equipment tab if you want to know what this means.
 <br/>
-<br/>Reinforcements and resupply where if any?
-<br/>How get them?
+<br/>TUN Respawn is used.
+<br/>The Unimogs are used as Mobile Spawn Point, only one may be used at a time.
+<br/>
+<br/>Extra supplies are carried as cargo in your vehicles.
 <br/>
 <br/>b. Medical resources
-<br/>Medical system and criteria
+<br/>AFI medical settings* are in use, you might die and yes it is intended.
 <br/>
 <br/>Any other help players can expect.
 "]];
 
 player createDiaryRecord ["Diary",["III. Mission","
-THE COMBAT TASK
+Search for clues in the <marker name='village_1'>village</marker>.
 <br/>
+<br/>You are looking for evidence of cheating in the upcoming national referendum on nuclear energy.
+<br/>
+<br/>Large amounts of paper, or equipment for printing ballots, may be such evidence.
+<br/>
+<br/>Apprehend any individuals deemed to be part of any such operation.
 "]];
 
 player createDiaryRecord ["Diary",["IIB.Friendly Forces","
-WHAT FRIENDLY FORCES THERE ARE
+You are one infantry rifle platoon.
 <br/>
+<br/>Good luck, it will probably go fine)))
 "]];
 
 player createDiaryRecord ["Diary",["IIA. Enemy Forces","
-WHAT ENEMY FORCES THERE ARE
+The local population in the area can be expected to put up some resistance to your attempts to search through their houses.
 <br/>
+<br/>Cause them no undue harm. You may under no circumstance kill innocent civilians!
+<br/>
+<br/>Also by the way, don't expect to understand their dialect. This is after all not that far from the Malmö area.
 "]];
 
 player createDiaryRecord ["Diary",["I. Situation","
-1970-01-01T00:00:00+00:00
-<br/>WHAT'S THE SITUATION?
+1979-09-23T07:00:00+02:00
+<br/>Ahead of the national referendum on nuclear energy your platoon has been tasked with
+executing a village-wide search warrant due to suspicions that the inhabitants of a village
+in northern Skåne are preparing widespread cheating to get their way in the referendum.
 <br/>
+<br/>The village makes up one of several so-called 'green communities' and is run by a fraction of the organisation 'Gröna Khmererna'.
+<br/>Members of this organisation have previously clashed with police forces, hence why you are here and not some policeman.
+<br/>There are also some, likely unfounded, suspicions that the Soviet Union is funding these locals in order to destabilize the nation.
 "]];
 
 player createDiaryRecord ["Diary",["IMPORTANT NOTES","

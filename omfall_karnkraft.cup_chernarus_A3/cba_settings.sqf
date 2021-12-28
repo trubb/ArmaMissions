@@ -732,15 +732,15 @@ force TFAR_setting_defaultFrequencies_sr_west = "110,120,130,140,150,160,170,180
 force TFAR_setting_DefaultRadio_Airborne_east = "TFAR_mr6000l";
 force TFAR_setting_DefaultRadio_Airborne_Independent = "TFAR_anarc164";
 force TFAR_setting_DefaultRadio_Airborne_West = "TFAR_anarc210";
-force TFAR_setting_DefaultRadio_Backpack_east = "TFAR_mr3000";
-force TFAR_setting_DefaultRadio_Backpack_Independent = "TFAR_anprc155";
-force TFAR_setting_DefaultRadio_Backpack_west = "TFAR_rt1523g";
-force TFAR_setting_DefaultRadio_Personal_east = "TFAR_fadak";
-force TFAR_setting_DefaultRadio_Personal_Independent = "TFAR_anprc148jem";
-force TFAR_setting_DefaultRadio_Personal_West = "TFAR_anprc152";
-force TFAR_setting_DefaultRadio_Rifleman_East = "TFAR_fadak";
-force TFAR_setting_DefaultRadio_Rifleman_Independent = "TFAR_anprc148jem";
-force TFAR_setting_DefaultRadio_Rifleman_West = "TFAR_anprc152";
+force TFAR_setting_DefaultRadio_Backpack_east = "";
+force TFAR_setting_DefaultRadio_Backpack_Independent = "";
+force TFAR_setting_DefaultRadio_Backpack_west = "";
+force TFAR_setting_DefaultRadio_Personal_east = "";
+force TFAR_setting_DefaultRadio_Personal_Independent = "";
+force TFAR_setting_DefaultRadio_Personal_West = "";
+force TFAR_setting_DefaultRadio_Rifleman_East = "";
+force TFAR_setting_DefaultRadio_Rifleman_Independent = "";
+force TFAR_setting_DefaultRadio_Rifleman_West = "";
 force force TFAR_spectatorCanHearEnemyUnits = true;
 force force TFAR_spectatorCanHearFriendlies = true;
 force TFAR_takingRadio = 2;
@@ -750,23 +750,23 @@ force tfar_terrain_interception_coefficient = 7;
 force TFAR_voiceCone = true;
 
 // TUN Firesupport
-Tun_firesupport_debug = false;
-Tun_firesupport_is_required = true;
+force Tun_firesupport_debug = false;
+force Tun_firesupport_is_required = true;
 
 // TUN - Mobile Spawn Point
 force tun_msp_clasnames_civilian = "C_Truck_02_transport_F";        // Vehicles that civilians can use as MSP
 force tun_msp_clasnames_east = "O_Truck_03_transport_F";            // Vehicles that REDFOR can use as MSP
 force tun_msp_clasnames_resistance = "I_Truck_02_transport_F";      // Vehicles that INDEP can use as MSP
-force tun_msp_clasnames_west = "gm_demo_nato_mb_u1300l_cargo";    // Vehicles that BLUFOR can use as MSP
+force tun_msp_clasnames_west = "gm_demo_nato_mb_u1300l_cargo";      // Vehicles that BLUFOR can use as MSP
 force tun_msp_contested_check_interval = 30;                        // Time in seconds
 force tun_msp_contested_radius_max = 100;                           // Max radius that is checked for ??
-force tun_msp_contested_radius_min = 50;                            // Min radius that is checked for ??
+force tun_msp_contested_radius_min = 30;                            // Min radius that is checked for ??
 force tun_msp_enable = true;                                        // MSP enabled
 force tun_msp_progresbar_time_pack = 5;                             // Time taken for teardown
 force tun_msp_progresbar_time_setup = 5;                            // Time taken for setup
 force tun_msp_report_enemies = true;                                // If msp availability due to enemy presence is reported
 force tun_msp_report_enemies_interval = 30;                         // Time in seconds
-force tun_msp_report_enemies_range = 300;                           // Within which range enemies are reported as nearby ?
+force tun_msp_report_enemies_range = 150;                           // Within which range enemies are reported as nearby ?
 
 //  TUN - Respawn System
 force Tun_respawn_allowCheckTicketsBase = true;       // Allows checking of tickets at <place>
@@ -777,18 +777,18 @@ force Tun_respawn_forced_respawn = false;         // "only forced respawn waves.
 force Tun_respawn_gearscriptType = "Save gear"; // See tooltip in CBA settings editor, save gear works with the custom gearscripts present in this framework
 force Tun_respawn_killJIP = true;                   // Kill players that join after game start
 force Tun_respawn_killJIP_time = 15;                // Kill players that join after game start
-force Tun_respawn_respawn_type = "default";   // default: endless wave; sideticket: tickets, per side
+force Tun_respawn_respawn_type = "Sidetickets";   // default: endless wave; sideticket: tickets, per side
 force Tun_respawn_spectate_Cameramode_1st = true; // Enables this camera mode for spectators
 force Tun_respawn_spectate_Cameramode_3th = true; // Enables this camera mode for spectators
 force Tun_respawn_spectate_Cameramode_free = true;  // Enables this camera mode for spectators
 force Tun_respawn_tickets_civ = 0;  // Tickets for this side
 force Tun_respawn_tickets_east = 0; // Tickets for this side
 force Tun_respawn_tickets_guer = 0; // Tickets for this side
-force Tun_respawn_tickets_west = 0; // Tickets for this side
+force Tun_respawn_tickets_west = 25; // Tickets for this side
 force Tun_respawn_time_civ = 15;  // Respawn time for this side
 force Tun_respawn_time_east = 15; // Respawn time for this side
 force Tun_respawn_time_guer = 15; // Respawn time for this side
-force Tun_respawn_time_west = 2;  // Respawn time for this side
+force Tun_respawn_time_west = 5;  // Respawn time for this side
 force Tun_respawn_waiting_area_range = 100; // How far a player can stray from the respawn zone flagpost
 
 // VET_Unflipping
