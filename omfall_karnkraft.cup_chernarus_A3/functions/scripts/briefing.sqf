@@ -34,12 +34,16 @@ Mission by Trubb for Anrop.se
 <br/>Dahlgren, Rund, Trubb, and Tuntematon.
 "]];
 
-player createDiaryRecord ["Diary", ["VII. Gameplay settings","
+player createDiaryRecord ["Diary", ["VII. Gameplay settings and rules","
 Medical Settings
 <br/>AFI medical settings* are in use.
 <br/>
 <br/>Respawn settings
 <br/>4-minute waves, you have 25 tickets, try not to die.
+<br/>
+<br/>Do consider taking it slow and steady instead of rushing forward.
+<br/>
+<br/>You are acting in official capacity, and as such should stick to the speed limits and stay on the roads unless directly threatened.
 "]];
 
 player createDiaryRecord ["Diary", ["VI. Victory Conditions","
@@ -75,14 +79,14 @@ These buttons are activated after briefing phase ends.
 <br/>
 <br/>Short range:
 <br/>Alpha 1. - Ch.1 -
-<execute expression=""[0] call fusc_setActiveSwChannel;"">Set SR Primary.</execute> 
-<execute expression=""[0] call fusc_setActiveAdditionalSwChannel;"">Set SR Additional.</execute> 
+<execute expression=""[0] call fusc_setActiveSwChannel;"">Set SR Primary. </execute>
+<execute expression=""[0] call fusc_setActiveAdditionalSwChannel;"">Set SR Additional.</execute>
 <br/>Alpha 2. - Ch.2 -
-<execute expression=""[1] call fusc_setActiveSwChannel;"">Set SR Primary.</execute> 
-<execute expression=""[1] call fusc_setActiveAdditionalSwChannel;"">Set SR Additional.</execute> 
+<execute expression=""[1] call fusc_setActiveSwChannel;"">Set SR Primary. </execute>
+<execute expression=""[1] call fusc_setActiveAdditionalSwChannel;"">Set SR Additional.</execute>
 <br/>Alpha 3. - Ch.3 -
-<execute expression=""[2] call fusc_setActiveSwChannel;"">Set SR Primary.</execute> 
-<execute expression=""[2] call fusc_setActiveAdditionalSwChannel;"">Set SR Additional.</execute> 
+<execute expression=""[2] call fusc_setActiveSwChannel;"">Set SR Primary. </execute>
+<execute expression=""[2] call fusc_setActiveAdditionalSwChannel;"">Set SR Additional.</execute>
 
 <br/>
 <br/>Long Range:
@@ -104,9 +108,9 @@ a. Equipment
 <br/>Extra supplies are carried as cargo in your vehicles.
 <br/>
 <br/>b. Medical resources
-<br/>AFI medical settings* are in use, you might die and yes it is intended.
+<br/>AFI medical settings* are in use.
 <br/>
-<br/>Any other help players can expect.
+<br/>You might very well die, and yes it is intended. Be more careful next time.
 "]];
 
 player createDiaryRecord ["Diary",["III. Mission","
@@ -148,4 +152,6 @@ player createDiaryRecord ["Diary",["IMPORTANT NOTES","
 A setup timer is present in the mission.
 <br/>
 <br/>You should probably not try to engage the enemy while it is active.
+<br/>
+<br/>You are acting in official capacity, and as such should stick to the speed limits and stay on the roads unless directly threatened.
 "]];

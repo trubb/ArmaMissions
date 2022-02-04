@@ -479,6 +479,7 @@ switch (_type) do {
         _unit addItemCountToCargo(_arMag, 4);
         _unit addItemCountToCargo(_grenade, 8);
         _unit addItemCountToCargo(_smoke, 4);
+        _unit addItemCountToCargo(_sparebarrel, 2);
         //_unit addItemCountToCargo(_glhe, 12);
         //_unit addItemCountToCargo(_glsmokew, 6);
         //_unit addWeaponCargoGlobal [_lat, 1];
